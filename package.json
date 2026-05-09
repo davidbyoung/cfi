@@ -1,12 +1,17 @@
 {
-  "name": "untitled",
+  "name": "cfidave",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9"
+  },
+  "packageManager": "npm@11.11.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npm run verify:no-booking-link",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "verify:no-booking-link": "if grep -rE 'calendar\\.app\\.google|calendar\\.google\\.com/appointments' out/; then echo 'ERROR: booking-link pattern found in static export' >&2; exit 1; else echo 'OK: no booking-link patterns in out/'; fi"
   },
   "dependencies": {
     "next": "16.2.4",
