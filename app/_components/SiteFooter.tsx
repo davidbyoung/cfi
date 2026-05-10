@@ -1,10 +1,7 @@
-import {
-  CANCELLATION_LINE,
-  INSTRUCTOR_NAME,
-  PAYMENT_METHODS_LINE,
-} from "../_content";
+import { INSTRUCTOR_NAME } from "../_content";
 
 export default function SiteFooter() {
+  // Evaluated at build time — rebuild annually to keep current.
   const year = new Date().getFullYear();
   return (
     <footer className="border-t border-rule">

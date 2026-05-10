@@ -5,7 +5,7 @@
 **Status**: Draft
 **Input**: User description: "Build a minimal, highly professional multi-page marketing website for an independent flight instructor offering CFI / CFII / MEI services. Funnel prospective students through an intake form before granting access to a private Google Calendar booking link. No accounts, auth, payments, or public scheduling. Static Next.js site, $60/hr flat rate, primary airport KPWK, aircraft via Leading Edge Flying Club or student-supplied."
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Prospective student submits an intake inquiry (Priority: P1)
 
@@ -71,7 +71,7 @@ After receiving an intake inquiry, the instructor reviews it, optionally exchang
 - **Stale or contradictory pricing/policy information**: The $60/hr rate, payment methods, cancellation policy, and aircraft constraints must be stated consistently across pages so visitors do not see conflicting information.
 - **Accessibility**: Visitors using screen readers or keyboard navigation must be able to complete the intake form (labeled fields, error messages associated with their inputs, sensible focus order).
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -132,12 +132,12 @@ After receiving an intake inquiry, the instructor reviews it, optionally exchang
 - **FR-072**: The visual design MUST be minimal, professional, modern, and trustworthy, and MUST avoid flashy, gimmicky, or template-generic styling.
 - **FR-073**: Page weight MUST be kept light enough that the landing page remains usable on a typical mobile connection; large image-heavy sections and photo galleries are excluded.
 
-### Key Entities *(include if feature involves data)*
+### Key Entities _(include if feature involves data)_
 
 - **Intake Inquiry**: A single submission from a prospective student. Attributes: full name, email address, phone number, certificates/ratings held (free text), training goal (structured selection from defined options, possibly with optional notes), aircraft source (structured choice between student-provided and Leading Edge Flying Club), general availability (free text), short message (free text), submission timestamp. Lifecycle: created when the visitor submits the form; received by the instructor; optionally followed up by email; resolved manually when the instructor either shares the private booking link, declines, or lets it lapse. The website itself does not store, list, or expose past inquiries.
 - **Service Offering**: A named instruction service the instructor offers. Attributes: name, brief description. Used as both: (a) the catalog of services shown on the landing page, and (b) the option set that drives the Training Goal field of the intake form. The two MUST stay aligned.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

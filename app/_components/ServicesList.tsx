@@ -1,24 +1,16 @@
-const CERT_RATINGS = [
-  "Discovery Flights",
-  "Private Pilot",
-  "Instrument Rating",
-  "Commercial Pilot",
-  "Multiengine Add-On",
-];
+import { SERVICES } from "../_content";
 
-const CURRENCY_PROFICIENCY = [
-  "Flight Reviews (BFRs)",
-  "Instrument Proficiency Checks (IPCs)",
-  "Rusty Pilot Refreshers",
-  "Leading Edge Flying Club Checkouts",
-];
+const certificateServices = SERVICES.filter(
+  (s) => s.category === "certificates",
+);
+const currencyServices = SERVICES.filter((s) => s.category === "currency");
 
 function ServiceColumn({
   heading,
   items,
 }: {
   heading: string;
-  items: string[];
+  items: readonly { label: string }[];
 }) {
   return (
     <div>
@@ -27,8 +19,8 @@ function ServiceColumn({
       </h3>
       <ul className="space-y-2">
         {items.map((item) => (
-          <li key={item} className="text-sm text-foreground">
-            {item}
+          <li key={item.label} className="text-sm text-foreground">
+            {item.label}
           </li>
         ))}
       </ul>
@@ -39,10 +31,13 @@ function ServiceColumn({
 export default function ServicesList() {
   return (
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-      <ServiceColumn heading="Certificates & Ratings" items={CERT_RATINGS} />
+      <ServiceColumn
+        heading="Certificates & Ratings"
+        items={certificateServices}
+      />
       <ServiceColumn
         heading="Currency & Proficiency"
-        items={CURRENCY_PROFICIENCY}
+        items={currencyServices}
       />
     </div>
   );

@@ -21,7 +21,7 @@ A three-page, fully static marketing site (Landing, About Me, Contact) for an in
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
 The repository's constitution at `.specify/memory/constitution.md` is an unfilled template (placeholder principles only). There are no ratified principles to check this plan against.
 
@@ -88,5 +88,5 @@ eslint.config.mjs             # existing
 > No constitution violations to justify. Table intentionally empty.
 
 | Violation | Why Needed | Simpler Alternative Rejected Because |
-|---|---|---|
-| _(none)_ | _(none)_ | _(none)_ |
+| --------- | ---------- | ------------------------------------ |
+| _(none)_  | _(none)_   | _(none)_                             |

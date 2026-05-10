@@ -43,6 +43,7 @@ npm run dev
 Then open `http://localhost:3000`.
 
 You should see the three-page site:
+
 - `/` — Landing
 - `/about` — About Me
 - `/contact` — Contact + intake form
@@ -80,6 +81,7 @@ npx serve ./out    # one-off; preview the static export locally
 ```
 
 Manual checks before pushing:
+
 - Open `out/` artifacts (or `npx serve`) and **search every HTML/JS file for any Google Calendar URL**. The booking link must never appear (FR-050, SC-004). Quick check:
 
   ```bash

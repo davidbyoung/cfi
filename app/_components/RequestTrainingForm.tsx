@@ -15,29 +15,6 @@ import {
 
 const ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
 
-function buildPayload(state: FormState) {
-  const certLabels = state.certificates
-    .map((id) => CERTIFICATE_OPTIONS.find((o) => o.id === id)?.label ?? id)
-    .join(", ");
-  const ratingLabels = state.ratings.length
-    ? state.ratings.map((id) => RATING_OPTIONS.find((o) => o.id === id)?.label ?? id).join(", ")
-    : "None";
-  const goalLabels = state.trainingGoal
-    .map((id) => SERVICES.find((s) => s.id === id)?.label ?? id)
-    .join(", ");
-  return {
-    "Full name": state.fullName,
-    "Email": state.email,
-    "Phone": state.phone,
-    "Certificates": certLabels,
-    "Ratings": ratingLabels,
-    "Training goal": goalLabels,
-    ...(state.trainingGoalNotes.trim() && { "Training goal notes": state.trainingGoalNotes.trim() }),
-    "Aircraft access": "Yes — through Leading Edge Flying Club or own aircraft",
-    "_gotcha": state._gotcha,
-  };
-}
-
 const EMAIL_RE = /^\S+@\S+\.\S+$/;
 const PHONE_RE = /^[\d\s+\-()]+$/;
 
@@ -58,6 +35,33 @@ type FormState = {
   studentProvidesAircraft: boolean;
   _gotcha: string;
 };
+
+function buildPayload(state: FormState) {
+  const certLabels = state.certificates
+    .map((id) => CERTIFICATE_OPTIONS.find((o) => o.id === id)?.label ?? id)
+    .join(", ");
+  const ratingLabels = state.ratings.length
+    ? state.ratings
+        .map((id) => RATING_OPTIONS.find((o) => o.id === id)?.label ?? id)
+        .join(", ")
+    : "None";
+  const goalLabels = state.trainingGoal
+    .map((id) => SERVICES.find((s) => s.id === id)?.label ?? id)
+    .join(", ");
+  return {
+    "Full name": state.fullName,
+    Email: state.email,
+    Phone: state.phone,
+    Certificates: certLabels,
+    Ratings: ratingLabels,
+    "Training goal": goalLabels,
+    ...(state.trainingGoalNotes.trim() && {
+      "Training goal notes": state.trainingGoalNotes.trim(),
+    }),
+    "Aircraft access": "Yes — through Leading Edge Flying Club or own aircraft",
+    _gotcha: state._gotcha,
+  };
+}
 
 const INITIAL: FormState = {
   fullName: "",
@@ -92,7 +96,8 @@ function validate(state: FormState): Errors {
     errors.phone = "Phone may contain digits, spaces, +, -, ( and ).";
 
   if (state.certificates.length === 0)
-    errors.certificates = "Please select at least one option.";
+    errors.certificates =
+      'Please select at least one option, including "None" if you have no pilot certificate.';
   else if (state.certificates.some((id) => !CERTIFICATE_IDS.includes(id)))
     errors.certificates = "Invalid certificate selection.";
 
@@ -101,18 +106,15 @@ function validate(state: FormState): Errors {
 
   if (state.trainingGoal.length === 0)
     errors.trainingGoal = "Please select at least one training goal.";
-  else if (
-    state.trainingGoal.some(
-      (id) => !SERVICE_IDS.includes(id as ServiceId),
-    )
-  )
+  else if (state.trainingGoal.some((id) => !SERVICE_IDS.includes(id)))
     errors.trainingGoal = "Invalid training-goal selection.";
 
   if (state.trainingGoalNotes.length > 500)
     errors.trainingGoalNotes = "Please keep notes under 500 characters.";
 
   if (!state.studentProvidesAircraft)
-    errors.studentProvidesAircraft = "Please confirm you have access to an aircraft.";
+    errors.studentProvidesAircraft =
+      "Please confirm you have access to an aircraft.";
 
   return errors;
 }
@@ -151,29 +153,30 @@ export default function RequestTrainingForm() {
 
   function toggleCertificate(id: CertificateId, checked: boolean) {
     setState((s) => {
-      if (!checked) return { ...s, certificates: s.certificates.filter((c) => c !== id) };
+      if (!checked)
+        return { ...s, certificates: s.certificates.filter((c) => c !== id) };
       if (id === "none") return { ...s, certificates: ["none"] };
-      const next = Array.from(new Set([...s.certificates.filter((c) => c !== "none"), id]));
-      return { ...s, certificates: next };
+      return {
+        ...s,
+        certificates: [...s.certificates.filter((c) => c !== "none"), id],
+      };
     });
   }
 
   function toggleRating(id: RatingId, checked: boolean) {
-    setState((s) => {
-      const next = checked
-        ? Array.from(new Set([...s.ratings, id]))
-        : s.ratings.filter((r) => r !== id);
-      return { ...s, ratings: next };
-    });
+    setState((s) => ({
+      ...s,
+      ratings: checked ? [...s.ratings, id] : s.ratings.filter((r) => r !== id),
+    }));
   }
 
   function toggleGoal(id: ServiceId, checked: boolean) {
-    setState((s) => {
-      const next = checked
-        ? Array.from(new Set([...s.trainingGoal, id]))
-        : s.trainingGoal.filter((g) => g !== id);
-      return { ...s, trainingGoal: next };
-    });
+    setState((s) => ({
+      ...s,
+      trainingGoal: checked
+        ? [...s.trainingGoal, id]
+        : s.trainingGoal.filter((g) => g !== id),
+    }));
   }
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -225,11 +228,12 @@ export default function RequestTrainingForm() {
         aria-live="polite"
         className="rounded-md border border-rule p-6"
       >
-        <h2 className="text-lg font-semibold">Thanks — your request is in.</h2>
+        <h2 className="text-lg font-semibold">
+          Thanks — your request has been received.
+        </h2>
         <p className="mt-2 text-sm text-muted">
-          I&apos;ll follow up by email to confirm fit, aircraft access, and
-          training goals before we schedule anything — usually within a couple
-          of days.
+          I&apos;ll be in touch within a couple of days to learn more about your
+          goals and get you started.
         </p>
       </div>
     );
@@ -239,264 +243,283 @@ export default function RequestTrainingForm() {
   const showError = status.kind === "error";
 
   return (
-    <form
-      ref={formRef}
-      onSubmit={onSubmit}
-      noValidate
-      className="space-y-6"
-      aria-describedby={showError ? "form-error" : undefined}
-    >
-      {/* honeypot — hidden from sighted users, screen readers, and tab order */}
-      <input
-        type="text"
-        name="_gotcha"
-        tabIndex={-1}
-        autoComplete="off"
-        aria-hidden="true"
-        style={{ display: "none" }}
-        value={state._gotcha}
-        onChange={(e) => set("_gotcha", e.target.value)}
-      />
-
-      <Field
-        id={ids.fullName}
-        label="Full name"
-        error={errors.fullName}
+    <>
+      <p className="mb-8 text-muted">
+        Fill out the form and I&apos;ll be in touch to learn more about your
+        goals and get you started.
+      </p>
+      <form
+        ref={formRef}
+        onSubmit={onSubmit}
+        noValidate
+        className="space-y-6"
+        aria-describedby={showError ? "form-error" : undefined}
       >
+        {/* honeypot — hidden from sighted users, screen readers, and tab order */}
         <input
-          id={ids.fullName}
-          name="fullName"
           type="text"
-          autoComplete="name"
-          required
-          value={state.fullName}
-          onChange={(e) => set("fullName", e.target.value)}
-          className={inputClasses(errors.fullName)}
-          aria-invalid={errors.fullName ? true : undefined}
-          aria-describedby={errors.fullName ? `${ids.fullName}-err` : undefined}
+          name="_gotcha"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          style={{ display: "none" }}
+          value={state._gotcha}
+          onChange={(e) => set("_gotcha", e.target.value)}
         />
-      </Field>
 
-      <div className="grid gap-6 sm:grid-cols-2">
-        <Field id={ids.email} label="Email" error={errors.email}>
+        <Field id={ids.fullName} label="Full name" error={errors.fullName}>
           <input
-            id={ids.email}
-            name="email"
-            type="email"
-            inputMode="email"
-            autoComplete="email"
+            id={ids.fullName}
+            name="fullName"
+            type="text"
+            autoComplete="name"
             required
-            value={state.email}
-            onChange={(e) => set("email", e.target.value)}
-            className={inputClasses(errors.email)}
-            aria-invalid={errors.email ? true : undefined}
-            aria-describedby={errors.email ? `${ids.email}-err` : undefined}
+            value={state.fullName}
+            onChange={(e) => set("fullName", e.target.value)}
+            className={inputClasses(errors.fullName)}
+            aria-invalid={errors.fullName ? true : undefined}
+            aria-describedby={
+              errors.fullName ? `${ids.fullName}-err` : undefined
+            }
           />
         </Field>
 
-        <Field id={ids.phone} label="Phone" error={errors.phone}>
-          <input
-            id={ids.phone}
-            name="phone"
-            type="tel"
-            inputMode="tel"
-            autoComplete="tel"
-            required
-            value={state.phone}
-            onChange={(e) => set("phone", e.target.value)}
-            className={inputClasses(errors.phone)}
-            aria-invalid={errors.phone ? true : undefined}
-            aria-describedby={errors.phone ? `${ids.phone}-err` : undefined}
-          />
-        </Field>
-      </div>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <Field id={ids.email} label="Email" error={errors.email}>
+            <input
+              id={ids.email}
+              name="email"
+              type="email"
+              inputMode="email"
+              autoComplete="email"
+              required
+              value={state.email}
+              onChange={(e) => set("email", e.target.value)}
+              className={inputClasses(errors.email)}
+              aria-invalid={errors.email ? true : undefined}
+              aria-describedby={errors.email ? `${ids.email}-err` : undefined}
+            />
+          </Field>
 
-      <div className="grid gap-6 sm:grid-cols-2">
-      <fieldset
-        data-field="certificates"
-        aria-invalid={errors.certificates ? true : undefined}
-        aria-describedby={
-          errors.certificates ? `${ids.certificates}-err` : undefined
-        }
-      >
-        <legend className="mb-2 text-sm font-medium">
-          Certificates held
-          <span className="ml-2 text-muted">(select all that apply)</span>
-        </legend>
-        <div className="space-y-2">
-          {CERTIFICATE_OPTIONS.map((opt) => {
-            const checked = state.certificates.includes(opt.id);
-            return (
-              <label key={opt.id} className="flex items-start gap-3 text-sm">
-                <input
-                  type="checkbox"
-                  name="certificates"
-                  value={opt.id}
-                  checked={checked}
-                  onChange={(e) => toggleCertificate(opt.id, e.target.checked)}
-                  className="mt-1"
-                />
-                <span>{opt.label}</span>
-              </label>
-            );
-          })}
+          <Field id={ids.phone} label="Phone" error={errors.phone}>
+            <input
+              id={ids.phone}
+              name="phone"
+              type="tel"
+              inputMode="tel"
+              autoComplete="tel"
+              required
+              value={state.phone}
+              onChange={(e) => set("phone", e.target.value)}
+              className={inputClasses(errors.phone)}
+              aria-invalid={errors.phone ? true : undefined}
+              aria-describedby={errors.phone ? `${ids.phone}-err` : undefined}
+            />
+          </Field>
         </div>
-        {errors.certificates && (
-          <p
-            id={`${ids.certificates}-err`}
-            className="mt-2 text-sm text-red-600 dark:text-red-400"
-          >
-            {errors.certificates}
-          </p>
-        )}
-      </fieldset>
 
-      <fieldset
-        data-field="ratings"
-        aria-invalid={errors.ratings ? true : undefined}
-        aria-describedby={
-          errors.ratings ? `${ids.ratings}-err` : undefined
-        }
-      >
-        <legend className="mb-2 text-sm font-medium">
-          Ratings held
-          <span className="ml-2 text-muted">(optional — select all that apply)</span>
-        </legend>
-        <div className="space-y-2">
-          {RATING_OPTIONS.map((opt) => {
-            const checked = state.ratings.includes(opt.id);
-            return (
-              <label key={opt.id} className="flex items-start gap-3 text-sm">
-                <input
-                  type="checkbox"
-                  name="ratings"
-                  value={opt.id}
-                  checked={checked}
-                  onChange={(e) => toggleRating(opt.id, e.target.checked)}
-                  className="mt-1"
-                />
-                <span>{opt.label}</span>
-              </label>
-            );
-          })}
-        </div>
-        {errors.ratings && (
-          <p
-            id={`${ids.ratings}-err`}
-            className="mt-2 text-sm text-red-600 dark:text-red-400"
+        <div className="grid gap-6 sm:grid-cols-2">
+          <fieldset
+            data-field="certificates"
+            aria-invalid={errors.certificates ? true : undefined}
+            aria-describedby={
+              errors.certificates ? `${ids.certificates}-err` : undefined
+            }
           >
-            {errors.ratings}
-          </p>
-        )}
-      </fieldset>
-      </div>
-
-      <fieldset
-        data-field="trainingGoal"
-        aria-invalid={errors.trainingGoal ? true : undefined}
-        aria-describedby={
-          errors.trainingGoal ? `${ids.trainingGoal}-err` : undefined
-        }
-      >
-        <legend className="mb-2 text-sm font-medium">
-          Training goal
-          <span className="ml-2 text-muted">(select all that apply)</span>
-        </legend>
-        <div className="space-y-2">
-          {SERVICES.map((s) => {
-            const checked = state.trainingGoal.includes(s.id);
-            return (
-              <label
-                key={s.id}
-                className="flex items-start gap-3 text-sm"
+            <legend className="mb-2 text-sm font-medium">
+              Certificates held
+              <span className="ml-2 text-muted">(select all that apply)</span>
+            </legend>
+            <div className="space-y-2">
+              {CERTIFICATE_OPTIONS.map((opt) => {
+                const checked = state.certificates.includes(opt.id);
+                return (
+                  <label
+                    key={opt.id}
+                    className="flex items-start gap-3 text-sm"
+                  >
+                    <input
+                      type="checkbox"
+                      name="certificates"
+                      value={opt.id}
+                      checked={checked}
+                      onChange={(e) =>
+                        toggleCertificate(opt.id, e.target.checked)
+                      }
+                      className="mt-1"
+                    />
+                    <span>{opt.label}</span>
+                  </label>
+                );
+              })}
+            </div>
+            {errors.certificates && (
+              <p
+                id={`${ids.certificates}-err`}
+                className="mt-2 text-sm text-red-600 dark:text-red-400"
               >
-                <input
-                  type="checkbox"
-                  name="trainingGoal"
-                  value={s.id}
-                  checked={checked}
-                  onChange={(e) => toggleGoal(s.id, e.target.checked)}
-                  className="mt-1"
-                />
-                <span>{s.label}</span>
-              </label>
-            );
-          })}
-        </div>
-        {errors.trainingGoal && (
-          <p
-            id={`${ids.trainingGoal}-err`}
-            className="mt-2 text-sm text-red-600 dark:text-red-400"
+                {errors.certificates}
+              </p>
+            )}
+          </fieldset>
+
+          <fieldset
+            data-field="ratings"
+            aria-invalid={errors.ratings ? true : undefined}
+            aria-describedby={errors.ratings ? `${ids.ratings}-err` : undefined}
           >
-            {errors.trainingGoal}
-          </p>
-        )}
-      </fieldset>
-
-      <Field
-        id={ids.trainingGoalNotes}
-        label="Training goal notes"
-        hint="Anything you want me to know about your goal."
-        error={errors.trainingGoalNotes}
-        optional
-      >
-        <textarea
-          id={ids.trainingGoalNotes}
-          name="trainingGoalNotes"
-          rows={2}
-          value={state.trainingGoalNotes}
-          onChange={(e) => set("trainingGoalNotes", e.target.value)}
-          className={inputClasses(errors.trainingGoalNotes)}
-          aria-invalid={errors.trainingGoalNotes ? true : undefined}
-          aria-describedby={
-            errors.trainingGoalNotes
-              ? `${ids.trainingGoalNotes}-err`
-              : undefined
-          }
-        />
-      </Field>
-
-      <div>
-        <label className="flex items-start gap-3 text-sm">
-          <input
-            id={ids.studentProvidesAircraft}
-            type="checkbox"
-            name="studentProvidesAircraft"
-            checked={state.studentProvidesAircraft}
-            onChange={(e) => set("studentProvidesAircraft", e.target.checked)}
-            className="mt-1"
-            aria-invalid={errors.studentProvidesAircraft ? true : undefined}
-            aria-describedby={errors.studentProvidesAircraft ? `${ids.studentProvidesAircraft}-err` : undefined}
-          />
-          <span className="font-medium">I confirm I have access to an aircraft (through Leading Edge Flying Club or my own)</span>
-        </label>
-        {errors.studentProvidesAircraft && (
-          <p id={`${ids.studentProvidesAircraft}-err`} className="mt-1 ml-7 text-sm text-red-600 dark:text-red-400">
-            {errors.studentProvidesAircraft}
-          </p>
-        )}
-      </div>
-
-      {showError && (
-        <div
-          id="form-error"
-          role="alert"
-          className="rounded-md border border-red-300 bg-red-50 p-4 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-200"
-        >
-          Something went wrong sending your inquiry. Please try again shortly.
+            <legend className="mb-2 text-sm font-medium">
+              Ratings held
+              <span className="ml-2 text-muted">
+                (optional — select all that apply)
+              </span>
+            </legend>
+            <div className="space-y-2">
+              {RATING_OPTIONS.map((opt) => {
+                const checked = state.ratings.includes(opt.id);
+                return (
+                  <label
+                    key={opt.id}
+                    className="flex items-start gap-3 text-sm"
+                  >
+                    <input
+                      type="checkbox"
+                      name="ratings"
+                      value={opt.id}
+                      checked={checked}
+                      onChange={(e) => toggleRating(opt.id, e.target.checked)}
+                      className="mt-1"
+                    />
+                    <span>{opt.label}</span>
+                  </label>
+                );
+              })}
+            </div>
+            {errors.ratings && (
+              <p
+                id={`${ids.ratings}-err`}
+                className="mt-2 text-sm text-red-600 dark:text-red-400"
+              >
+                {errors.ratings}
+              </p>
+            )}
+          </fieldset>
         </div>
-      )}
 
-      <div>
-        <button
-          type="submit"
-          disabled={submitting}
-          className="inline-flex h-11 cursor-pointer items-center justify-center rounded-md bg-foreground px-6 text-sm font-medium text-background hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+        <fieldset
+          data-field="trainingGoal"
+          aria-invalid={errors.trainingGoal ? true : undefined}
+          aria-describedby={
+            errors.trainingGoal ? `${ids.trainingGoal}-err` : undefined
+          }
         >
-          {submitting ? "Sending…" : "Request training"}
-        </button>
-      </div>
-    </form>
+          <legend className="mb-2 text-sm font-medium">
+            Training goal
+            <span className="ml-2 text-muted">(select all that apply)</span>
+          </legend>
+          <div className="space-y-2">
+            {SERVICES.map((s) => {
+              const checked = state.trainingGoal.includes(s.id);
+              return (
+                <label key={s.id} className="flex items-start gap-3 text-sm">
+                  <input
+                    type="checkbox"
+                    name="trainingGoal"
+                    value={s.id}
+                    checked={checked}
+                    onChange={(e) => toggleGoal(s.id, e.target.checked)}
+                    className="mt-1"
+                  />
+                  <span>{s.label}</span>
+                </label>
+              );
+            })}
+          </div>
+          {errors.trainingGoal && (
+            <p
+              id={`${ids.trainingGoal}-err`}
+              className="mt-2 text-sm text-red-600 dark:text-red-400"
+            >
+              {errors.trainingGoal}
+            </p>
+          )}
+        </fieldset>
+
+        <Field
+          id={ids.trainingGoalNotes}
+          label="Training goal notes"
+          hint="Anything you want me to know about your goal."
+          error={errors.trainingGoalNotes}
+          optional
+        >
+          <textarea
+            id={ids.trainingGoalNotes}
+            name="trainingGoalNotes"
+            rows={2}
+            value={state.trainingGoalNotes}
+            onChange={(e) => set("trainingGoalNotes", e.target.value)}
+            className={inputClasses(errors.trainingGoalNotes)}
+            aria-invalid={errors.trainingGoalNotes ? true : undefined}
+            aria-describedby={
+              errors.trainingGoalNotes
+                ? `${ids.trainingGoalNotes}-err`
+                : undefined
+            }
+          />
+        </Field>
+
+        <div>
+          <label className="flex items-start gap-3 text-sm">
+            <input
+              id={ids.studentProvidesAircraft}
+              type="checkbox"
+              name="studentProvidesAircraft"
+              checked={state.studentProvidesAircraft}
+              onChange={(e) => set("studentProvidesAircraft", e.target.checked)}
+              className="mt-1"
+              aria-invalid={errors.studentProvidesAircraft ? true : undefined}
+              aria-describedby={
+                errors.studentProvidesAircraft
+                  ? `${ids.studentProvidesAircraft}-err`
+                  : undefined
+              }
+            />
+            <span className="font-medium">
+              I confirm I have access to an aircraft (through Leading Edge
+              Flying Club or my own)
+            </span>
+          </label>
+          {errors.studentProvidesAircraft && (
+            <p
+              id={`${ids.studentProvidesAircraft}-err`}
+              className="mt-1 ml-7 text-sm text-red-600 dark:text-red-400"
+            >
+              {errors.studentProvidesAircraft}
+            </p>
+          )}
+        </div>
+
+        {showError && (
+          <div
+            id="form-error"
+            role="alert"
+            className="rounded-md border border-red-300 bg-red-50 p-4 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-200"
+          >
+            Something went wrong sending your inquiry. Please try again shortly.
+          </div>
+        )}
+
+        <div>
+          <button
+            type="submit"
+            disabled={submitting}
+            className="inline-flex h-11 cursor-pointer items-center justify-center rounded-md bg-foreground px-6 text-sm font-medium text-background hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {submitting ? "Sending…" : "Request training"}
+          </button>
+        </div>
+      </form>
+    </>
   );
 }
 
@@ -520,19 +543,17 @@ type FieldProps = {
 function Field({ id, label, hint, error, optional, children }: FieldProps) {
   return (
     <div>
-      <label
-        htmlFor={id}
-        className="mb-1 block text-sm font-medium"
-      >
+      <label htmlFor={id} className="mb-1 block text-sm font-medium">
         {label}
         {optional && <span className="ml-2 text-muted">(optional)</span>}
       </label>
-      {hint && !error && (
-        <p className="mb-2 text-xs text-muted">{hint}</p>
-      )}
+      {hint && <p className="mb-2 text-xs text-muted">{hint}</p>}
       {children}
       {error && (
-        <p id={`${id}-err`} className="mt-1 text-sm text-red-600 dark:text-red-400">
+        <p
+          id={`${id}-err`}
+          className="mt-1 text-sm text-red-600 dark:text-red-400"
+        >
           {error}
         </p>
       )}

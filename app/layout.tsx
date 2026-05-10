@@ -1,21 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import SiteFooter from "./_components/SiteFooter";
 import SiteNav from "./_components/SiteNav";
-import {
-  PRIMARY_AIRPORT,
-  PRIMARY_AIRPORT_LONG,
-  RATE_PER_HOUR,
-} from "./_content";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -24,7 +14,8 @@ export const metadata: Metadata = {
     default: `Dave Young, CFI, CFII, MEI`,
     template: `%s | Dave Young, CFI, CFII, MEI`,
   },
-  description: `Independent flight instruction at ${PRIMARY_AIRPORT_LONG}. Private, instrument, commercial, multi-engine, flight reviews, and IPCs at ${RATE_PER_HOUR}.`,
+  description:
+    "Flight instruction from Dave Young, CFI/CFII/MEI at Chicago Executive Airport. Private, instrument, commercial, and multi-engine training, plus BFRs and IPCs.",
 };
 
 export default function RootLayout({
@@ -33,10 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col font-sans">
         <SiteNav />
         <main className="flex-1">{children}</main>

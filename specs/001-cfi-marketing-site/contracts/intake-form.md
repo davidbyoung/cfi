@@ -41,7 +41,7 @@ The endpoint URL is non-secret and is allowed to ship in the static bundle (per 
 - **`trainingGoal`**: at least one entry; each entry MUST be one of the seven enum values above. Order does not matter. Duplicate values are rejected client-side before submit.
 - **`aircraftSource`**: exactly one of the two enum values. The form UI MUST render this as a structured choice (radio group or equivalent), never as free text.
 - **`_gotcha`**: hidden honeypot, rendered with CSS `display: none` and `tabindex="-1"`. Real users never populate it. Formspree silently drops submissions with a non-empty value.
-- **All required string fields**: validated for non-empty *after trimming whitespace*. A field containing only spaces is invalid.
+- **All required string fields**: validated for non-empty _after trimming whitespace_. A field containing only spaces is invalid.
 
 ### Validation timing
 
@@ -59,6 +59,7 @@ The endpoint URL is non-secret and is allowed to ship in the static bundle (per 
 ```
 
 The site MUST treat any 2xx response as success and:
+
 - show a clear confirmation state telling the visitor what happens next (FR-038),
 - NOT auto-redirect to any third-party URL,
 - NOT expose Formspree's `next` URL or any branded confirmation page.
@@ -66,11 +67,13 @@ The site MUST treat any 2xx response as success and:
 ### Failure — `4xx` or `5xx` or network error
 
 The site MUST:
+
 - show a non-technical error message stating the submission did not go through (FR-039),
 - expose the public email address as a fallback channel (FR-039),
 - preserve the visitor's entered values so they can retry without re-typing.
 
 The site MUST NOT:
+
 - silently retry,
 - pretend success on failure,
 - expose raw status codes or stack traces in the user-visible message.
@@ -79,12 +82,12 @@ The site MUST NOT:
 
 ## Error taxonomy
 
-| Condition | What user sees | What we log/track (v1: nothing) |
-|---|---|---|
-| `400` validation rejection (e.g., honeypot tripped, malformed payload) | Generic failure + email fallback. | Console-only error; no analytics in v1. |
-| `403`/`429` rate or origin error | Generic failure + email fallback. | Console-only. |
-| `5xx` upstream error | Generic failure + email fallback. | Console-only. |
-| Network error (DNS, offline) | Generic failure + email fallback, "check your connection". | Console-only. |
+| Condition                                                              | What user sees                                             | What we log/track (v1: nothing)         |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------- |
+| `400` validation rejection (e.g., honeypot tripped, malformed payload) | Generic failure + email fallback.                          | Console-only error; no analytics in v1. |
+| `403`/`429` rate or origin error                                       | Generic failure + email fallback.                          | Console-only.                           |
+| `5xx` upstream error                                                   | Generic failure + email fallback.                          | Console-only.                           |
+| Network error (DNS, offline)                                           | Generic failure + email fallback, "check your connection". | Console-only.                           |
 
 A 400 due to honeypot is functionally indistinguishable from any other failure to the bot, which is intentional.
 

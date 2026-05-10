@@ -31,7 +31,7 @@ export default function SiteNav() {
               href="/request-training"
               className="rounded-full bg-foreground px-4 py-2.5 text-sm font-medium text-background hover:opacity-90"
             >
-              Request Training
+              Request training
             </Link>
           </li>
         </ul>

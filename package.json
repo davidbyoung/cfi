@@ -11,6 +11,8 @@
     "build": "next build && npm run verify:no-booking-link",
     "start": "next start",
     "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "verify:no-booking-link": "if grep -rE 'calendar\\.app\\.google|calendar\\.google\\.com/appointments' out/; then echo 'ERROR: booking-link pattern found in static export' >&2; exit 1; else echo 'OK: no booking-link patterns in out/'; fi"
   },
   "dependencies": {
@@ -25,6 +27,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
