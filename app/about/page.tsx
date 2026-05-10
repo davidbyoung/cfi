@@ -40,9 +40,9 @@ export default function AboutPage() {
         <p>
           Dave began flying in 2002 and earned his Private Pilot certificate
           while in high school. He went on to study Mathematics and Computer
-          Science at the University of Illinois, and through the University&apos;s
+          Science at the University of Illinois Urbana-Champaign, and through the University&apos;s
           flight program he completed his Instrument, Commercial ASEL and AMEL,
-          CFI, CFII, and MEI certificates.
+          CFI, CFII, and MEI certificates.  Dave is also endorsed in high-performance and tailwheel aircraft.
         </p>
         <p>
           He spent several years instructing at the university before
@@ -69,22 +69,19 @@ export default function AboutPage() {
       <section className="mb-10 space-y-4 text-foreground/90 leading-relaxed">
         <h2 className="text-xl font-semibold tracking-tight">Availability</h2>
         <p>
-          Dave works in software during the week and flies and teaches on
+          Dave works as a software engineering executive during the week and flies and teaches on
           weekends. The schedule is consistent week to week, which makes it
           easy to plan a regular lesson cadence.
         </p>
       </section>
 
       <section>
-        <p className="text-muted">
-          Ready to start?{" "}
-          <Link
-            className="text-foreground underline decoration-1 underline-offset-2 hover:opacity-80"
-            href="/request-training"
-          >
-            Send a short intake →
-          </Link>
-        </p>
+        <Link
+          href="/request-training"
+          className="inline-flex h-10 cursor-pointer items-center justify-center rounded-md bg-foreground px-5 text-sm font-medium text-background hover:opacity-90"
+        >
+          Request training
+        </Link>
       </section>
     </article>
   );

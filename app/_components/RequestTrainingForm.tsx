@@ -1,22 +1,42 @@
 "use client";
 
+import { type FormEvent, useId, useRef, useState } from "react";
 import {
-  type ChangeEvent,
-  type FormEvent,
-  useId,
-  useRef,
-  useState,
-} from "react";
-import {
-  AIRCRAFT_SOURCE_OPTIONS,
-  type AircraftSourceId,
-  INSTRUCTOR_EMAIL,
+  CERTIFICATE_IDS,
+  CERTIFICATE_OPTIONS,
+  type CertificateId,
+  RATING_IDS,
+  RATING_OPTIONS,
+  type RatingId,
   SERVICES,
   SERVICE_IDS,
   type ServiceId,
 } from "../_content";
 
 const ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
+
+function buildPayload(state: FormState) {
+  const certLabels = state.certificates
+    .map((id) => CERTIFICATE_OPTIONS.find((o) => o.id === id)?.label ?? id)
+    .join(", ");
+  const ratingLabels = state.ratings.length
+    ? state.ratings.map((id) => RATING_OPTIONS.find((o) => o.id === id)?.label ?? id).join(", ")
+    : "None";
+  const goalLabels = state.trainingGoal
+    .map((id) => SERVICES.find((s) => s.id === id)?.label ?? id)
+    .join(", ");
+  return {
+    "Full name": state.fullName,
+    "Email": state.email,
+    "Phone": state.phone,
+    "Certificates": certLabels,
+    "Ratings": ratingLabels,
+    "Training goal": goalLabels,
+    ...(state.trainingGoalNotes.trim() && { "Training goal notes": state.trainingGoalNotes.trim() }),
+    "Aircraft access": "Yes — through Leading Edge Flying Club or own aircraft",
+    "_gotcha": state._gotcha,
+  };
+}
 
 const EMAIL_RE = /^\S+@\S+\.\S+$/;
 const PHONE_RE = /^[\d\s+\-()]+$/;
@@ -31,11 +51,11 @@ type FormState = {
   fullName: string;
   email: string;
   phone: string;
-  certificatesRatings: string;
+  certificates: CertificateId[];
+  ratings: RatingId[];
   trainingGoal: ServiceId[];
   trainingGoalNotes: string;
-  aircraftSource: AircraftSourceId | "";
-  availability: string;
+  studentProvidesAircraft: boolean;
   _gotcha: string;
 };
 
@@ -43,11 +63,11 @@ const INITIAL: FormState = {
   fullName: "",
   email: "",
   phone: "",
-  certificatesRatings: "",
+  certificates: [],
+  ratings: [],
   trainingGoal: [],
   trainingGoalNotes: "",
-  aircraftSource: "",
-  availability: "",
+  studentProvidesAircraft: false,
   _gotcha: "",
 };
 
@@ -71,12 +91,13 @@ function validate(state: FormState): Errors {
   else if (!PHONE_RE.test(phone))
     errors.phone = "Phone may contain digits, spaces, +, -, ( and ).";
 
-  const certs = state.certificatesRatings.trim();
-  if (!certs)
-    errors.certificatesRatings =
-      "Please list any certificates and ratings (or 'student pilot').";
-  else if (certs.length > 500)
-    errors.certificatesRatings = "Please keep this under 500 characters.";
+  if (state.certificates.length === 0)
+    errors.certificates = "Please select at least one option.";
+  else if (state.certificates.some((id) => !CERTIFICATE_IDS.includes(id)))
+    errors.certificates = "Invalid certificate selection.";
+
+  if (state.ratings.some((id) => !RATING_IDS.includes(id)))
+    errors.ratings = "Invalid rating selection.";
 
   if (state.trainingGoal.length === 0)
     errors.trainingGoal = "Please select at least one training goal.";
@@ -90,17 +111,8 @@ function validate(state: FormState): Errors {
   if (state.trainingGoalNotes.length > 500)
     errors.trainingGoalNotes = "Please keep notes under 500 characters.";
 
-  if (
-    state.aircraftSource !== "student-provided" &&
-    state.aircraftSource !== "leading-edge-flying-club"
-  )
-    errors.aircraftSource = "Please choose an aircraft source.";
-
-  const availability = state.availability.trim();
-  if (!availability)
-    errors.availability = "Please describe your general availability.";
-  else if (availability.length > 500)
-    errors.availability = "Please keep this under 500 characters.";
+  if (!state.studentProvidesAircraft)
+    errors.studentProvidesAircraft = "Please confirm you have access to an aircraft.";
 
   return errors;
 }
@@ -109,14 +121,13 @@ const ERROR_FOCUS_ORDER: ReadonlyArray<keyof FormState> = [
   "fullName",
   "email",
   "phone",
-  "certificatesRatings",
+  "certificates",
   "trainingGoal",
   "trainingGoalNotes",
-  "aircraftSource",
-  "availability",
+  "studentProvidesAircraft",
 ];
 
-export default function IntakeForm() {
+export default function RequestTrainingForm() {
   const [state, setState] = useState<FormState>(INITIAL);
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<Status>({ kind: "idle" });
@@ -127,15 +138,33 @@ export default function IntakeForm() {
     fullName: useId(),
     email: useId(),
     phone: useId(),
-    certificatesRatings: useId(),
+    certificates: useId(),
+    ratings: useId(),
     trainingGoal: useId(),
     trainingGoalNotes: useId(),
-    aircraftSource: useId(),
-    availability: useId(),
+    studentProvidesAircraft: useId(),
   };
 
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     setState((s) => ({ ...s, [key]: value }));
+  }
+
+  function toggleCertificate(id: CertificateId, checked: boolean) {
+    setState((s) => {
+      if (!checked) return { ...s, certificates: s.certificates.filter((c) => c !== id) };
+      if (id === "none") return { ...s, certificates: ["none"] };
+      const next = Array.from(new Set([...s.certificates.filter((c) => c !== "none"), id]));
+      return { ...s, certificates: next };
+    });
+  }
+
+  function toggleRating(id: RatingId, checked: boolean) {
+    setState((s) => {
+      const next = checked
+        ? Array.from(new Set([...s.ratings, id]))
+        : s.ratings.filter((r) => r !== id);
+      return { ...s, ratings: next };
+    });
   }
 
   function toggleGoal(id: ServiceId, checked: boolean) {
@@ -177,7 +206,7 @@ export default function IntakeForm() {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(state),
+        body: JSON.stringify(buildPayload(state)),
       });
       if (res.ok) {
         setStatus({ kind: "success" });
@@ -217,10 +246,6 @@ export default function IntakeForm() {
       className="space-y-6"
       aria-describedby={showError ? "form-error" : undefined}
     >
-      <p className="text-sm text-muted">
-        All fields are required unless marked optional.
-      </p>
-
       {/* honeypot — hidden from sighted users, screen readers, and tab order */}
       <input
         type="text"
@@ -286,30 +311,85 @@ export default function IntakeForm() {
         </Field>
       </div>
 
-      <Field
-        id={ids.certificatesRatings}
-        label="Certificates and ratings held"
-        hint="e.g. Student pilot, PPL-ASEL, IR, or CPL-ASEL/AMEL, IR."
-        error={errors.certificatesRatings}
+      <div className="grid gap-6 sm:grid-cols-2">
+      <fieldset
+        data-field="certificates"
+        aria-invalid={errors.certificates ? true : undefined}
+        aria-describedby={
+          errors.certificates ? `${ids.certificates}-err` : undefined
+        }
       >
-        <textarea
-          id={ids.certificatesRatings}
-          name="certificatesRatings"
-          rows={2}
-          required
-          value={state.certificatesRatings}
-          onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-            set("certificatesRatings", e.target.value)
-          }
-          className={inputClasses(errors.certificatesRatings)}
-          aria-invalid={errors.certificatesRatings ? true : undefined}
-          aria-describedby={
-            errors.certificatesRatings
-              ? `${ids.certificatesRatings}-err`
-              : undefined
-          }
-        />
-      </Field>
+        <legend className="mb-2 text-sm font-medium">
+          Certificates held
+          <span className="ml-2 text-muted">(select all that apply)</span>
+        </legend>
+        <div className="space-y-2">
+          {CERTIFICATE_OPTIONS.map((opt) => {
+            const checked = state.certificates.includes(opt.id);
+            return (
+              <label key={opt.id} className="flex items-start gap-3 text-sm">
+                <input
+                  type="checkbox"
+                  name="certificates"
+                  value={opt.id}
+                  checked={checked}
+                  onChange={(e) => toggleCertificate(opt.id, e.target.checked)}
+                  className="mt-1"
+                />
+                <span>{opt.label}</span>
+              </label>
+            );
+          })}
+        </div>
+        {errors.certificates && (
+          <p
+            id={`${ids.certificates}-err`}
+            className="mt-2 text-sm text-red-600 dark:text-red-400"
+          >
+            {errors.certificates}
+          </p>
+        )}
+      </fieldset>
+
+      <fieldset
+        data-field="ratings"
+        aria-invalid={errors.ratings ? true : undefined}
+        aria-describedby={
+          errors.ratings ? `${ids.ratings}-err` : undefined
+        }
+      >
+        <legend className="mb-2 text-sm font-medium">
+          Ratings held
+          <span className="ml-2 text-muted">(optional — select all that apply)</span>
+        </legend>
+        <div className="space-y-2">
+          {RATING_OPTIONS.map((opt) => {
+            const checked = state.ratings.includes(opt.id);
+            return (
+              <label key={opt.id} className="flex items-start gap-3 text-sm">
+                <input
+                  type="checkbox"
+                  name="ratings"
+                  value={opt.id}
+                  checked={checked}
+                  onChange={(e) => toggleRating(opt.id, e.target.checked)}
+                  className="mt-1"
+                />
+                <span>{opt.label}</span>
+              </label>
+            );
+          })}
+        </div>
+        {errors.ratings && (
+          <p
+            id={`${ids.ratings}-err`}
+            className="mt-2 text-sm text-red-600 dark:text-red-400"
+          >
+            {errors.ratings}
+          </p>
+        )}
+      </fieldset>
+      </div>
 
       <fieldset
         data-field="trainingGoal"
@@ -355,8 +435,8 @@ export default function IntakeForm() {
 
       <Field
         id={ids.trainingGoalNotes}
-        label="Training-goal notes"
-        hint="Optional — anything you want me to know about your goal."
+        label="Training goal notes"
+        hint="Anything you want me to know about your goal."
         error={errors.trainingGoalNotes}
         optional
       >
@@ -376,60 +456,26 @@ export default function IntakeForm() {
         />
       </Field>
 
-      <fieldset
-        data-field="aircraftSource"
-        aria-invalid={errors.aircraftSource ? true : undefined}
-        aria-describedby={
-          errors.aircraftSource ? `${ids.aircraftSource}-err` : undefined
-        }
-      >
-        <legend className="mb-2 text-sm font-medium">Aircraft source</legend>
-        <div className="space-y-2">
-          {AIRCRAFT_SOURCE_OPTIONS.map((opt) => (
-            <label key={opt.id} className="flex items-start gap-3 text-sm">
-              <input
-                type="radio"
-                name="aircraftSource"
-                value={opt.id}
-                checked={state.aircraftSource === opt.id}
-                onChange={() => set("aircraftSource", opt.id)}
-                className="mt-1"
-                required
-              />
-              <span>{opt.label}</span>
-            </label>
-          ))}
-        </div>
-        {errors.aircraftSource && (
-          <p
-            id={`${ids.aircraftSource}-err`}
-            className="mt-2 text-sm text-red-600 dark:text-red-400"
-          >
-            {errors.aircraftSource}
+      <div>
+        <label className="flex items-start gap-3 text-sm">
+          <input
+            id={ids.studentProvidesAircraft}
+            type="checkbox"
+            name="studentProvidesAircraft"
+            checked={state.studentProvidesAircraft}
+            onChange={(e) => set("studentProvidesAircraft", e.target.checked)}
+            className="mt-1"
+            aria-invalid={errors.studentProvidesAircraft ? true : undefined}
+            aria-describedby={errors.studentProvidesAircraft ? `${ids.studentProvidesAircraft}-err` : undefined}
+          />
+          <span className="font-medium">I confirm I have access to an aircraft (through Leading Edge Flying Club or my own)</span>
+        </label>
+        {errors.studentProvidesAircraft && (
+          <p id={`${ids.studentProvidesAircraft}-err`} className="mt-1 ml-7 text-sm text-red-600 dark:text-red-400">
+            {errors.studentProvidesAircraft}
           </p>
         )}
-      </fieldset>
-
-      <Field
-        id={ids.availability}
-        label="General availability"
-        hint="e.g. weekday evenings, weekend mornings."
-        error={errors.availability}
-      >
-        <textarea
-          id={ids.availability}
-          name="availability"
-          rows={2}
-          required
-          value={state.availability}
-          onChange={(e) => set("availability", e.target.value)}
-          className={inputClasses(errors.availability)}
-          aria-invalid={errors.availability ? true : undefined}
-          aria-describedby={
-            errors.availability ? `${ids.availability}-err` : undefined
-          }
-        />
-      </Field>
+      </div>
 
       {showError && (
         <div
@@ -437,15 +483,7 @@ export default function IntakeForm() {
           role="alert"
           className="rounded-md border border-red-300 bg-red-50 p-4 text-sm text-red-800 dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-200"
         >
-          Something went wrong sending your inquiry. Please try again, or
-          email me directly at{" "}
-          <a
-            className="font-medium underline underline-offset-2"
-            href={`mailto:${INSTRUCTOR_EMAIL}`}
-          >
-            {INSTRUCTOR_EMAIL}
-          </a>
-          .
+          Something went wrong sending your inquiry. Please try again shortly.
         </div>
       )}
 
@@ -453,9 +491,9 @@ export default function IntakeForm() {
         <button
           type="submit"
           disabled={submitting}
-          className="inline-flex h-11 items-center justify-center rounded-md bg-foreground px-6 text-sm font-medium text-background hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+          className="inline-flex h-11 cursor-pointer items-center justify-center rounded-md bg-foreground px-6 text-sm font-medium text-background hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {submitting ? "Sending…" : "Send inquiry"}
+          {submitting ? "Sending…" : "Request training"}
         </button>
       </div>
     </form>

@@ -29,7 +29,7 @@ export default function SiteNav() {
           <li>
             <Link
               href="/request-training"
-              className="rounded-full border border-rule bg-[#e8e8e8] px-4 py-2.5 font-medium text-foreground tracking-tight hover:bg-[#d8d8d8]"
+              className="rounded-full bg-foreground px-4 py-2.5 text-sm font-medium text-background hover:opacity-90"
             >
               Request Training
             </Link>

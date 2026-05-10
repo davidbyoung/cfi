@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `Independent CFI / CFII / MEI — Flight Instruction at ${PRIMARY_AIRPORT}`,
-    template: `%s — Independent CFI at ${PRIMARY_AIRPORT}`,
+    default: `Dave Young, CFI, CFII, MEI`,
+    template: `%s | Dave Young, CFI, CFII, MEI`,
   },
   description: `Independent flight instruction at ${PRIMARY_AIRPORT_LONG}. Private, instrument, commercial, multi-engine, flight reviews, and IPCs at ${RATE_PER_HOUR}.`,
 };
