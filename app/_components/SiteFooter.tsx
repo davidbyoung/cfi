@@ -7,7 +7,7 @@ import {
 export default function SiteFooter() {
   const year = new Date().getFullYear();
   return (
-    <footer className="mt-16 border-t border-rule">
+    <footer className="border-t border-rule">
       <div className="mx-auto max-w-4xl px-6 py-8 sm:px-8 text-sm text-muted">
         <p>
           © {year} {INSTRUCTOR_NAME}

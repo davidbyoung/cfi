@@ -41,7 +41,6 @@ export const RATING_IDS: ReadonlyArray<RatingId> = RATING_OPTIONS.map(
 
 
 export const INSTRUCTOR_NAME = "Dave Young";
-export const INSTRUCTOR_EMAIL = "dbyoung2@gmail.com";
 
 export const PRIMARY_AIRPORT = "KPWK";
 export const PRIMARY_AIRPORT_NAME = "Chicago Executive Airport";
