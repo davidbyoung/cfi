@@ -6,7 +6,7 @@ import { PAYMENT_METHODS_LINE } from "./_content";
 export const metadata: Metadata = {
   title: "Dave Young, CFI, CFII, MEI",
   description:
-    "Flight instruction from Dave Young, CFI/CFII/MEI at Chicago Executive Airport. Private, instrument, commercial, and multi-engine training, plus BFRs and IPCs.",
+    "Flight instruction from Dave Young, CFI/CFII/MEI at Chicago Executive Airport (KPWK) and DuPage Airport (KDPA). Private, instrument, commercial, and multi-engine training, plus BFRs and IPCs.",
 };
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
               Dave Young, CFI · CFII · MEI
             </span>
             <span className="block text-lg mt-2 sm:text-xl text-white/75 font-normal tracking-normal">
-              Chicago Executive Airport
+              Chicago Executive (KPWK) · DuPage (KDPA)
             </span>
           </h1>
           <div className="mt-8">

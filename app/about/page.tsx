@@ -6,18 +6,17 @@ import { INSTRUCTOR_NAME } from "../_content";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Background, ratings, and instructional approach for independent flight instruction at KPWK.",
+    "Background, ratings, and instructional approach for independent flight instruction at KPWK and KDPA.",
 };
 
 export default function AboutPage() {
   return (
     <article className="mx-auto max-w-4xl px-6 py-12 sm:px-8">
       <header className="mb-8">
-        <h1 className="text-3xl font-semibold tracking-tight">
-          About {INSTRUCTOR_NAME}
-        </h1>
+        <h1 className="text-3xl font-semibold tracking-tight">About me</h1>
         <p className="mt-3 text-muted">
-          Independent flight instructor at Chicago Executive Airport (KPWK).
+          Independent flight instructor at Chicago Executive Airport (KPWK) and
+          DuPage Airport (KDPA).
         </p>
       </header>
 
@@ -59,10 +58,10 @@ export default function AboutPage() {
           Teaching philosophy
         </h2>
         <p>
-          My lessons focus on building real confidence and aeronautical
-          decision-making in a supportive, low-pressure environment. Each flight
-          is briefed and debriefed; ground time is treated as seriously as
-          flight time and is billed at the same rate.
+          My lessons focus on building confidence and aeronautical
+          decision-making in a supportive, realistic training environment. Each
+          flight is briefed and debriefed; ground time is treated as seriously
+          as flight time and is billed at the same rate.
         </p>
       </section>
 

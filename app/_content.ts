@@ -48,6 +48,13 @@ export const RATING_IDS: ReadonlyArray<RatingId> = RATING_OPTIONS.map(
   (r) => r.id,
 );
 
+export const AIRPORT_OPTIONS = [
+  { id: "kpwk", label: "Chicago Executive Airport (KPWK)" },
+  { id: "kdpa", label: "DuPage Airport (KDPA)" },
+] as const;
+
+export type AirportId = (typeof AIRPORT_OPTIONS)[number]["id"];
+
 export const INSTRUCTOR_NAME = "Dave Young";
 
 export const PAYMENT_METHODS_LINE =

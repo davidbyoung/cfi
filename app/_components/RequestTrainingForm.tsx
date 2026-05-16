@@ -2,6 +2,8 @@
 
 import { type FormEvent, useId, useRef, useState } from "react";
 import {
+  AIRPORT_OPTIONS,
+  type AirportId,
   CERTIFICATE_IDS,
   CERTIFICATE_OPTIONS,
   type CertificateId,
@@ -28,6 +30,7 @@ type FormState = {
   fullName: string;
   email: string;
   phone: string;
+  airport: AirportId | "";
   certificates: CertificateId[];
   ratings: RatingId[];
   trainingGoal: ServiceId[];
@@ -48,10 +51,13 @@ function buildPayload(state: FormState) {
   const goalLabels = state.trainingGoal
     .map((id) => SERVICES.find((s) => s.id === id)?.label ?? id)
     .join(", ");
+  const airportLabel =
+    AIRPORT_OPTIONS.find((o) => o.id === state.airport)?.label ?? state.airport;
   return {
     "Full name": state.fullName,
     Email: state.email,
     Phone: state.phone,
+    Airport: airportLabel,
     Certificates: certLabels,
     Ratings: ratingLabels,
     "Training goal": goalLabels,
@@ -67,6 +73,7 @@ const INITIAL: FormState = {
   fullName: "",
   email: "",
   phone: "",
+  airport: "",
   certificates: [],
   ratings: [],
   trainingGoal: [],
@@ -94,6 +101,8 @@ function validate(state: FormState): Errors {
     errors.phone = "Please enter a valid phone number.";
   else if (!PHONE_RE.test(phone))
     errors.phone = "Phone may contain digits, spaces, +, -, ( and ).";
+
+  if (!state.airport) errors.airport = "Please select an airport.";
 
   if (state.certificates.length === 0)
     errors.certificates =
@@ -123,6 +132,7 @@ const ERROR_FOCUS_ORDER: ReadonlyArray<keyof FormState> = [
   "fullName",
   "email",
   "phone",
+  "airport",
   "certificates",
   "trainingGoal",
   "trainingGoalNotes",
@@ -140,6 +150,7 @@ export default function RequestTrainingForm() {
     fullName: useId(),
     email: useId(),
     phone: useId(),
+    airport: useId(),
     certificates: useId(),
     ratings: useId(),
     trainingGoal: useId(),
@@ -317,6 +328,28 @@ export default function RequestTrainingForm() {
             />
           </Field>
         </div>
+
+        <Field id={ids.airport} label="Training airport" error={errors.airport}>
+          <select
+            id={ids.airport}
+            name="airport"
+            required
+            value={state.airport}
+            onChange={(e) => set("airport", e.target.value as AirportId | "")}
+            className={selectClasses(errors.airport)}
+            aria-invalid={errors.airport ? true : undefined}
+            aria-describedby={errors.airport ? `${ids.airport}-err` : undefined}
+          >
+            <option value="" disabled>
+              Select an airport
+            </option>
+            {AIRPORT_OPTIONS.map((opt) => (
+              <option key={opt.id} value={opt.id}>
+                {opt.label}
+              </option>
+            ))}
+          </select>
+        </Field>
 
         <div className="grid gap-6 sm:grid-cols-2">
           <fieldset
@@ -524,6 +557,14 @@ export default function RequestTrainingForm() {
 }
 
 function inputClasses(error?: string) {
+  const base =
+    "w-full rounded-md border bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
+  return error
+    ? `${base} border-red-400 dark:border-red-700`
+    : `${base} border-rule`;
+}
+
+function selectClasses(error?: string) {
   const base =
     "w-full rounded-md border bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
   return error

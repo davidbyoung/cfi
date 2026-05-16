@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: `%s | Dave Young, CFI, CFII, MEI`,
   },
   description:
-    "Flight instruction from Dave Young, CFI/CFII/MEI at Chicago Executive Airport. Private, instrument, commercial, and multi-engine training, plus BFRs and IPCs.",
+    "Flight instruction from Dave Young, CFI/CFII/MEI at Chicago Executive Airport (KPWK) and DuPage Airport (KDPA). Private, instrument, commercial, and multi-engine training, plus BFRs and IPCs.",
 };
 
 export default function RootLayout({
