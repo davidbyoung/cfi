@@ -34,3 +34,15 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+@layer base {
+  a:not([class]) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a:not([class]):hover {
+    opacity: 0.7;
+  }
+}

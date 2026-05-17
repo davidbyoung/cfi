@@ -70,7 +70,9 @@ export default function AboutPage() {
         <p>
           I work as a software engineering executive during the week and fly and
           teach on weekends. The schedule is consistent week to week, which
-          makes it easy to plan a regular lesson cadence.
+          makes it easy to plan a regular lesson cadence. My up-to-date schedule
+          will be shared after you{" "}
+          <a href="/request-training">request training</a>.
         </p>
       </section>
 
