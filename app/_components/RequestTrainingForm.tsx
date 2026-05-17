@@ -240,12 +240,9 @@ export default function RequestTrainingForm() {
         className="rounded-md border border-rule p-6"
       >
         <h2 className="text-lg font-semibold">
-          Thanks — your request has been received.
+          Thanks — I&apos;ll be in touch shortly with next steps to get you
+          scheduled.
         </h2>
-        <p className="mt-2 text-sm text-muted">
-          I&apos;ll be in touch within a couple of days to learn more about your
-          goals and get you started.
-        </p>
       </div>
     );
   }
@@ -558,7 +555,7 @@ export default function RequestTrainingForm() {
 
 function inputClasses(error?: string) {
   const base =
-    "w-full rounded-md border bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
+    "w-full rounded-md border bg-input-bg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
   return error
     ? `${base} border-red-400 dark:border-red-700`
     : `${base} border-rule`;
@@ -566,7 +563,7 @@ function inputClasses(error?: string) {
 
 function selectClasses(error?: string) {
   const base =
-    "w-full rounded-md border bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
+    "w-full rounded-md border bg-input-bg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
   return error
     ? `${base} border-red-400 dark:border-red-700`
     : `${base} border-rule`;
