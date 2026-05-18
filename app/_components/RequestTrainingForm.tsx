@@ -356,7 +356,7 @@ export default function RequestTrainingForm() {
               errors.certificates ? `${ids.certificates}-err` : undefined
             }
           >
-            <legend className="mb-2 text-sm font-medium">
+            <legend className="mb-2 font-medium">
               Certificates held
               <span className="ml-2 text-muted">(select all that apply)</span>
             </legend>
@@ -364,10 +364,7 @@ export default function RequestTrainingForm() {
               {CERTIFICATE_OPTIONS.map((opt) => {
                 const checked = state.certificates.includes(opt.id);
                 return (
-                  <label
-                    key={opt.id}
-                    className="flex items-start gap-3 text-sm"
-                  >
+                  <label key={opt.id} className="flex items-start gap-3">
                     <input
                       type="checkbox"
                       name="certificates"
@@ -398,7 +395,7 @@ export default function RequestTrainingForm() {
             aria-invalid={errors.ratings ? true : undefined}
             aria-describedby={errors.ratings ? `${ids.ratings}-err` : undefined}
           >
-            <legend className="mb-2 text-sm font-medium">
+            <legend className="mb-2 font-medium">
               Ratings held
               <span className="ml-2 text-muted">
                 (optional — select all that apply)
@@ -408,10 +405,7 @@ export default function RequestTrainingForm() {
               {RATING_OPTIONS.map((opt) => {
                 const checked = state.ratings.includes(opt.id);
                 return (
-                  <label
-                    key={opt.id}
-                    className="flex items-start gap-3 text-sm"
-                  >
+                  <label key={opt.id} className="flex items-start gap-3">
                     <input
                       type="checkbox"
                       name="ratings"
@@ -443,7 +437,7 @@ export default function RequestTrainingForm() {
             errors.trainingGoal ? `${ids.trainingGoal}-err` : undefined
           }
         >
-          <legend className="mb-2 text-sm font-medium">
+          <legend className="mb-2 font-medium">
             Training goal
             <span className="ml-2 text-muted">(select all that apply)</span>
           </legend>
@@ -451,7 +445,7 @@ export default function RequestTrainingForm() {
             {SERVICES.map((s) => {
               const checked = state.trainingGoal.includes(s.id);
               return (
-                <label key={s.id} className="flex items-start gap-3 text-sm">
+                <label key={s.id} className="flex items-start gap-3">
                   <input
                     type="checkbox"
                     name="trainingGoal"
@@ -499,7 +493,7 @@ export default function RequestTrainingForm() {
         </Field>
 
         <div>
-          <label className="flex items-start gap-3 text-sm">
+          <label className="flex items-start gap-3">
             <input
               id={ids.studentProvidesAircraft}
               type="checkbox"
@@ -555,7 +549,7 @@ export default function RequestTrainingForm() {
 
 function inputClasses(error?: string) {
   const base =
-    "w-full rounded-md border bg-input-bg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
+    "w-full rounded-md border bg-input-bg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-accent";
   return error
     ? `${base} border-red-400 dark:border-red-700`
     : `${base} border-rule`;
@@ -563,7 +557,7 @@ function inputClasses(error?: string) {
 
 function selectClasses(error?: string) {
   const base =
-    "w-full rounded-md border bg-input-bg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent";
+    "w-full rounded-md border bg-input-bg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-accent";
   return error
     ? `${base} border-red-400 dark:border-red-700`
     : `${base} border-rule`;
@@ -581,7 +575,7 @@ type FieldProps = {
 function Field({ id, label, hint, error, optional, children }: FieldProps) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1 block text-sm font-medium">
+      <label htmlFor={id} className="mb-1 block font-medium">
         {label}
         {optional && <span className="ml-2 text-muted">(optional)</span>}
       </label>

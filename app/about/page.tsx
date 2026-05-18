@@ -47,7 +47,7 @@ export default function AboutPage() {
         <p>
           I spent several years instructing at the university before
           transitioning into a software engineering career. I&apos;ve been a
-          member of Leading Edge Flying Club at KPWK since 2013 and have
+          member of <a href="https://www.leadingedgeflyingclub.com" target="_blank">Leading Edge Flying Club</a> at KPWK since 2013 and have
           volunteered as a pilot with Angel Flight, flying patients to critical
           medical care — work I consider both humbling and rewarding.
         </p>

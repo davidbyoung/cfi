@@ -19,7 +19,7 @@ function ServiceColumn({
       </h3>
       <ul className="space-y-2">
         {items.map((item) => (
-          <li key={item.label} className="text-sm text-foreground">
+          <li key={item.label} className="text-foreground">
             {item.label}
           </li>
         ))}

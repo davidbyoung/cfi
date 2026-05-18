@@ -2,10 +2,7 @@ import Link from "next/link";
 import { INSTRUCTOR_NAME } from "../_content";
 import NavLink from "./NavLink";
 
-const LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-] as const;
+const LINKS = [{ href: "/about", label: "About" }] as const;
 
 export default function SiteNav() {
   return (
@@ -14,13 +11,17 @@ export default function SiteNav() {
         aria-label="Primary"
         className="mx-auto flex max-w-4xl items-center justify-between px-6 py-5 sm:px-8"
       >
-        <Link
-          href="/"
-          className="text-base font-semibold tracking-tight hover:opacity-80"
-        >
-          {INSTRUCTOR_NAME}
+        <Link href="/" className="text-base hover:opacity-80">
+          <span className="sm:hidden">
+            {INSTRUCTOR_NAME}
+            <span className="text-muted">, CFI</span>
+          </span>
+          <span className="hidden sm:inline">
+            {INSTRUCTOR_NAME}
+            <span className="text-muted">, Certified Flight Instructor</span>
+          </span>
         </Link>
-        <ul className="flex items-center gap-5 text-sm sm:gap-7">
+        <ul className="flex items-center gap-5 text-base sm:gap-7">
           {LINKS.map((link) => (
             <li key={link.href}>
               <NavLink href={link.href}>{link.label}</NavLink>
