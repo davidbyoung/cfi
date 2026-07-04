@@ -1,4 +1,6 @@
 .next
+.specify
 out
 node_modules
 public
+package-lock.json
