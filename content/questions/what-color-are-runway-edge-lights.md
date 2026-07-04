@@ -2,8 +2,8 @@
 id: what-color-are-runway-edge-lights
 title: What color are runway edge lights
 tags:
-- airport-lighting
-- runway-lighting
+  - airport-lighting
+  - runway-lighting
 ---
 
 ### Question

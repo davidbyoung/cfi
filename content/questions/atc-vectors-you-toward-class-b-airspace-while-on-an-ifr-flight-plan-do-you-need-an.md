@@ -2,11 +2,11 @@
 id: atc-vectors-you-toward-class-b-airspace-while-on-an-ifr-flight-plan-do-you-need-an
 title: ATC vectors you toward Class B airspace while on an IFR flight plan. Do you need an explicit clearance to enter it
 tags:
-- airspace
-- ads-b
-- ifr-clearance
-- ifr
-- airspace-and-ads-b-requirements
+  - airspace
+  - ads-b
+  - ifr-clearance
+  - ifr
+  - airspace-and-ads-b-requirements
 ---
 
 ### Question

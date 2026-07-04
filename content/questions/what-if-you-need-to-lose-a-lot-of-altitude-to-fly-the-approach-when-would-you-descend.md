@@ -2,11 +2,11 @@
 id: what-if-you-need-to-lose-a-lot-of-altitude-to-fly-the-approach-when-would-you-descend
 title: What if you need to lose a lot of altitude to fly the approach? When would you descend
 tags:
-- lost-communications
-- kpwk
-- kmsn
-- altimeter
-- lost-comms-scenario-kpwk-to-kmsn
+  - lost-communications
+  - kpwk
+  - kmsn
+  - altimeter
+  - lost-comms-scenario-kpwk-to-kmsn
 ---
 
 ### Question

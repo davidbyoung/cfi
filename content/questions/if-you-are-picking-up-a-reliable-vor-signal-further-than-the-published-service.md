@@ -2,11 +2,11 @@
 id: if-you-are-picking-up-a-reliable-vor-signal-further-than-the-published-service
 title: If you are picking up a reliable VOR signal further than the published service volume, can you use it for navigation
 tags:
-- vor
-- navigation
-- icing
-- ifr
-- vor-navigation
+  - vor
+  - navigation
+  - icing
+  - ifr
+  - vor-navigation
 ---
 
 ### Question

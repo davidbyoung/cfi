@@ -2,9 +2,9 @@
 id: youre-struggling-to-get-an-approach-programmed-in-time-what-do-you-do-next
 title: You’re struggling to get an approach programmed in time. What do you do next
 tags:
-- approaches
-- approach-concepts
-- general-approach-concepts
+  - approaches
+  - approach-concepts
+  - general-approach-concepts
 ---
 
 ### Question

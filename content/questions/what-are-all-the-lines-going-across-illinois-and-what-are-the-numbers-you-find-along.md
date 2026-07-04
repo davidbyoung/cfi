@@ -2,9 +2,9 @@
 id: what-are-all-the-lines-going-across-illinois-and-what-are-the-numbers-you-find-along
 title: What are all the lines going across Illinois, and what are the numbers you find along them
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

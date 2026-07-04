@@ -2,15 +2,15 @@
 id: what-does-the-t-shape-on-either-side-of-farmm-indicate
 title: What does the “T” shape on either side of FARMM indicate
 tags:
-- minimum-altitudes
-- mea
-- moca
-- mra
-- mca
-- maa
-- oroca
-- ifr
-- mea-moca-mra-mca-maa-and-oroca
+  - minimum-altitudes
+  - mea
+  - moca
+  - mra
+  - mca
+  - maa
+  - oroca
+  - ifr
+  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

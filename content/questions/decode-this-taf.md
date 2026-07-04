@@ -1,11 +1,11 @@
 ---
 id: decode-this-taf
-title: 'Decode this TAF:'
+title: "Decode this TAF:"
 tags:
-- taf
-- weather
-- forecast
-- tafs
+  - taf
+  - weather
+  - forecast
+  - tafs
 ---
 
 ### Question

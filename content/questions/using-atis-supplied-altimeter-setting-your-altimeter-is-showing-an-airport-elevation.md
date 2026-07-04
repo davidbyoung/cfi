@@ -2,11 +2,11 @@
 id: using-atis-supplied-altimeter-setting-your-altimeter-is-showing-an-airport-elevation
 title: Using ATIS-supplied altimeter setting, your altimeter is showing an airport elevation of 83 ft lower than what’s published. Can you fly IFR
 tags:
-- altimeter
-- pressure-errors
-- temperature-errors
-- ifr
-- altimeter-and-temperature-pressure-errors
+  - altimeter
+  - pressure-errors
+  - temperature-errors
+  - ifr
+  - altimeter-and-temperature-pressure-errors
 ---
 
 ### Question

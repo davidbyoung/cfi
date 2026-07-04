@@ -2,12 +2,12 @@
 id: why-do-they-have-an-alternate-missed-approach-fix
 title: Why do they have an alternate missed approach fix
 tags:
-- approach-briefing
-- ils
-- localizer
-- kmsn
-- alternates
-- kmsn-ils-loc-rwy-18
+  - approach-briefing
+  - ils
+  - localizer
+  - kmsn
+  - alternates
+  - kmsn-ils-loc-rwy-18
 ---
 
 ### Question

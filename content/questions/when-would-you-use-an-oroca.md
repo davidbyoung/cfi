@@ -2,15 +2,15 @@
 id: when-would-you-use-an-oroca
 title: When would you use an OROCA
 tags:
-- minimum-altitudes
-- mea
-- moca
-- mra
-- mca
-- maa
-- oroca
-- ifr
-- mea-moca-mra-mca-maa-and-oroca
+  - minimum-altitudes
+  - mea
+  - moca
+  - mra
+  - mca
+  - maa
+  - oroca
+  - ifr
+  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

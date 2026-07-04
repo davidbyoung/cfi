@@ -2,11 +2,11 @@
 id: your-pitot-heat-is-inoperative-can-you-fly
 title: Your pitot heat is inoperative. Can you fly
 tags:
-- inoperative-equipment
-- airworthiness
-- pitot-static
-- ifr
-- inoperative-equipment-scenarios
+  - inoperative-equipment
+  - airworthiness
+  - pitot-static
+  - ifr
+  - inoperative-equipment-scenarios
 ---
 
 ### Question

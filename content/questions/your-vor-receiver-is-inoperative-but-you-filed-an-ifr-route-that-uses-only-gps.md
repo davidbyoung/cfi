@@ -2,12 +2,12 @@
 id: your-vor-receiver-is-inoperative-but-you-filed-an-ifr-route-that-uses-only-gps
 title: Your VOR receiver is inoperative, but you filed an IFR route that uses only GPS waypoints. Can you fly
 tags:
-- inoperative-equipment
-- airworthiness
-- vor
-- gps
-- ifr
-- inoperative-equipment-scenarios
+  - inoperative-equipment
+  - airworthiness
+  - vor
+  - gps
+  - ifr
+  - inoperative-equipment-scenarios
 ---
 
 ### Question

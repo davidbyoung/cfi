@@ -2,10 +2,10 @@
 id: what-if-you-get-to-the-iaf-and-your-eta-has-already-elapsed
 title: What if you get to the IAF and your ETA has already elapsed
 tags:
-- lost-communications
-- kpwk
-- kmsn
-- lost-comms-scenario-kpwk-to-kmsn
+  - lost-communications
+  - kpwk
+  - kmsn
+  - lost-comms-scenario-kpwk-to-kmsn
 ---
 
 ### Question

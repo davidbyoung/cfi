@@ -2,10 +2,10 @@
 id: how-frequently-are-tafs-published
 title: How frequently are TAFs published
 tags:
-- taf
-- weather
-- forecast
-- tafs
+  - taf
+  - weather
+  - forecast
+  - tafs
 ---
 
 ### Question

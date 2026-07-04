@@ -2,10 +2,10 @@
 id: youre-flying-into-a-non-towered-airport-on-an-ifr-flight-plan-and-its-vmc-what
 title: You’re flying into a non-towered airport on an IFR flight plan, and it’s VMC. What should you consider doing prior to arrival
 tags:
-- ifr-flight-plan
-- airport-operations
-- ifr
-- closing-ifr-flight-plans
+  - ifr-flight-plan
+  - airport-operations
+  - ifr
+  - closing-ifr-flight-plans
 ---
 
 ### Question

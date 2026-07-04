@@ -2,8 +2,8 @@
 id: how-do-you-file-a-pirep
 title: How do you file a PIREP
 tags:
-- pireps
-- weather
+  - pireps
+  - weather
 ---
 
 ### Question

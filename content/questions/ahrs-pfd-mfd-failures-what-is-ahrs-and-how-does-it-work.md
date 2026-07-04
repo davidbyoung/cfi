@@ -2,12 +2,12 @@
 id: ahrs-pfd-mfd-failures-what-is-ahrs-and-how-does-it-work
 title: What is AHRS and how does it work
 tags:
-- ahrs
-- pfd
-- mfd
-- instrument-failures
-- ifr
-- ahrs-pfd-mfd-failures
+  - ahrs
+  - pfd
+  - mfd
+  - instrument-failures
+  - ifr
+  - ahrs-pfd-mfd-failures
 ---
 
 ### Question

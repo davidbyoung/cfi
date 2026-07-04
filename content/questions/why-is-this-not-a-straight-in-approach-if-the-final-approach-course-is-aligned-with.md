@@ -2,12 +2,12 @@
 id: why-is-this-not-a-straight-in-approach-if-the-final-approach-course-is-aligned-with
 title: Why is this not a straight-in approach if the final approach course is aligned with the runway
 tags:
-- approach-briefing
-- localizer
-- dme
-- kase
-- circling
-- kase-loc-dme-e
+  - approach-briefing
+  - localizer
+  - dme
+  - kase
+  - circling
+  - kase-loc-dme-e
 ---
 
 ### Question

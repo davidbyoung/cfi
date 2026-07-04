@@ -2,8 +2,8 @@
 id: how-can-you-identify-a-taxiway
 title: How can you identify a taxiway
 tags:
-- airport-lighting
-- runway-lighting
+  - airport-lighting
+  - runway-lighting
 ---
 
 ### Question

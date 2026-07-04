@@ -1,12 +1,12 @@
 ---
 id: what-do-the-following-symbols-mean-in-the-airport-diagram-section-and-why-are-they
-title: 'What do the following symbols mean in the airport diagram section, and why are they relevant to us:'
+title: "What do the following symbols mean in the airport diagram section, and why are they relevant to us:"
 tags:
-- approach-briefing
-- ils
-- localizer
-- kmsn
-- kmsn-ils-loc-rwy-18
+  - approach-briefing
+  - ils
+  - localizer
+  - kmsn
+  - kmsn-ils-loc-rwy-18
 ---
 
 ### Question

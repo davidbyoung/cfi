@@ -2,7 +2,7 @@
 
 **Feature Branch**: `002-study-guide-question-bank`  
 **Created**: 2026-07-04  
-**Status**: Draft  
+**Status**: Draft
 
 ## User Scenarios & Testing _(mandatory)_
 

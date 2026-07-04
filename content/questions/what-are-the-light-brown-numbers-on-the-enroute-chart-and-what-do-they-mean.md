@@ -2,15 +2,15 @@
 id: what-are-the-light-brown-numbers-on-the-enroute-chart-and-what-do-they-mean
 title: What are the light brown numbers on the enroute chart, and what do they mean
 tags:
-- minimum-altitudes
-- mea
-- moca
-- mra
-- mca
-- maa
-- oroca
-- ifr
-- mea-moca-mra-mca-maa-and-oroca
+  - minimum-altitudes
+  - mea
+  - moca
+  - mra
+  - mca
+  - maa
+  - oroca
+  - ifr
+  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

@@ -2,13 +2,13 @@
 id: what-types-of-approaches-does-waas-permit
 title: What types of approaches does WAAS permit
 tags:
-- gps
-- rnav
-- rnp
-- pbn
-- waas
-- ifr
-- gps-rnav-rnp
+  - gps
+  - rnav
+  - rnp
+  - pbn
+  - waas
+  - ifr
+  - gps-rnav-rnp
 ---
 
 ### Question

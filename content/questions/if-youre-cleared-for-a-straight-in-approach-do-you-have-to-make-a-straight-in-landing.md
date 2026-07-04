@@ -2,9 +2,9 @@
 id: if-youre-cleared-for-a-straight-in-approach-do-you-have-to-make-a-straight-in-landing
 title: If you’re cleared for a straight-in approach, do you have to make a straight-in landing
 tags:
-- approaches
-- approach-concepts
-- general-approach-concepts
+  - approaches
+  - approach-concepts
+  - general-approach-concepts
 ---
 
 ### Question

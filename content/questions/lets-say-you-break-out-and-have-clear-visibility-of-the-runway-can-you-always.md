@@ -2,10 +2,10 @@
 id: lets-say-you-break-out-and-have-clear-visibility-of-the-runway-can-you-always
 title: Let’s say you break out and have clear visibility of the runway. Can you always continue your descent
 tags:
-- stable-approach
-- landing-minimums
-- ifr
-- stable-descent-to-landing
+  - stable-approach
+  - landing-minimums
+  - ifr
+  - stable-descent-to-landing
 ---
 
 ### Question

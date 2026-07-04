@@ -2,10 +2,10 @@
 id: when-your-vacuum-system-fails-which-instruments-should-you-rely-on-for-pitch-for
 title: When your vacuum system fails, which instruments should you rely on for pitch? For bank? For heading
 tags:
-- vacuum-failure
-- instrument-failures
-- partial-panel
-- ifr
+  - vacuum-failure
+  - instrument-failures
+  - partial-panel
+  - ifr
 ---
 
 ### Question

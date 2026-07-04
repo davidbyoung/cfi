@@ -2,10 +2,10 @@
 id: what-are-the-different-types-of-vor-checks
 title: What are the different types of VOR checks
 tags:
-- vor-checks
-- vor
-- inspections
-- ifr
+  - vor-checks
+  - vor
+  - inspections
+  - ifr
 ---
 
 ### Question

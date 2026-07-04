@@ -2,11 +2,11 @@
 id: do-they-need-an-instrument-rating
 title: Do they need an instrument rating
 tags:
-- safety-pilot
-- logging
-- currency
-- ifr
-- safety-pilot-rules-and-logging
+  - safety-pilot
+  - logging
+  - currency
+  - ifr
+  - safety-pilot-rules-and-logging
 ---
 
 ### Question

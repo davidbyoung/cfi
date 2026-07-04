@@ -2,13 +2,13 @@
 id: how-can-we-get-updated-weather-enroute
 title: How can we get updated weather enroute
 tags:
-- enroute-weather
-- ads-b-weather
-- atis
-- asos
-- awos
-- landing-minimums
-- enroute-weather-updates
+  - enroute-weather
+  - ads-b-weather
+  - atis
+  - asos
+  - awos
+  - landing-minimums
+  - enroute-weather-updates
 ---
 
 ### Question

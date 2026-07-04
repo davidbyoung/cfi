@@ -2,10 +2,10 @@
 id: how-would-you-fly-a-loc-bc-on-an-hsi
 title: How would you fly a LOC BC on an HSI
 tags:
-- ils
-- localizer
-- loc-back-course
-- ils-loc-loc-back-course
+  - ils
+  - localizer
+  - loc-back-course
+  - ils-loc-loc-back-course
 ---
 
 ### Question

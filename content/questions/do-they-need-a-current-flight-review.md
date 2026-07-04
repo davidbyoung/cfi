@@ -2,11 +2,11 @@
 id: do-they-need-a-current-flight-review
 title: Do they need a current flight review
 tags:
-- safety-pilot
-- logging
-- currency
-- flight-review
-- safety-pilot-rules-and-logging
+  - safety-pilot
+  - logging
+  - currency
+  - flight-review
+  - safety-pilot-rules-and-logging
 ---
 
 ### Question

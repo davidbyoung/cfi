@@ -2,12 +2,12 @@
 id: atc-gives-you-your-clearance-but-includes-hold-for-release-how-does-that-impact-your
 title: ATC gives you your clearance, but includes “Hold for release”. How does that impact your departure
 tags:
-- clearance-void-time
-- hold-for-release
-- ifr-clearance
-- holds
-- ifr
-- clearance-void-times-and-hold-for-release
+  - clearance-void-time
+  - hold-for-release
+  - ifr-clearance
+  - holds
+  - ifr
+  - clearance-void-times-and-hold-for-release
 ---
 
 ### Question

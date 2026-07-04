@@ -2,10 +2,10 @@
 id: if-you-are-flying-under-the-hood-in-a-high-performance-airplane-for-which-you-have
 title: If you are flying under the hood in a high-performance airplane for which you have an endorsement, must your safety pilot also have a high-performance endorsement
 tags:
-- safety-pilot
-- logging
-- currency
-- safety-pilot-rules-and-logging
+  - safety-pilot
+  - logging
+  - currency
+  - safety-pilot-rules-and-logging
 ---
 
 ### Question
@@ -14,7 +14,7 @@ If you are flying under the hood in a high-performance airplane for which you ha
 
 ### Answer
 
-If prior to the flight it is agreed that the safety pilot will be acting as PIC, then yes, they need the endorsement.  If they are not acting as PIC, though, they do not, and can log SIC time because they are a required crewmember.
+If prior to the flight it is agreed that the safety pilot will be acting as PIC, then yes, they need the endorsement. If they are not acting as PIC, though, they do not, and can log SIC time because they are a required crewmember.
 
 ### Sources
 

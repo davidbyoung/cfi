@@ -2,10 +2,10 @@
 id: why-might-you-want-to-depart-vfr-instead-of-getting-your-clearance-on-the-ground
 title: Why might you want to depart VFR instead of getting your clearance on the ground
 tags:
-- ifr-clearance
-- clearances
-- ifr
-- obtaining-an-ifr-clearance
+  - ifr-clearance
+  - clearances
+  - ifr
+  - obtaining-an-ifr-clearance
 ---
 
 ### Question

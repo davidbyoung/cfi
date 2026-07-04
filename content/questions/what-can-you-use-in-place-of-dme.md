@@ -2,9 +2,9 @@
 id: what-can-you-use-in-place-of-dme
 title: What can you use in place of DME
 tags:
-- dme
-- navigation
-- ifr
+  - dme
+  - navigation
+  - ifr
 ---
 
 ### Question

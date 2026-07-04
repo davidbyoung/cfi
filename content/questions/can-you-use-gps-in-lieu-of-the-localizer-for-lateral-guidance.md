@@ -2,12 +2,12 @@
 id: can-you-use-gps-in-lieu-of-the-localizer-for-lateral-guidance
 title: Can you use GPS in lieu of the localizer for lateral guidance
 tags:
-- ils
-- localizer
-- loc-back-course
-- gps
-- landing-minimums
-- ils-loc-loc-back-course
+  - ils
+  - localizer
+  - loc-back-course
+  - gps
+  - landing-minimums
+  - ils-loc-loc-back-course
 ---
 
 ### Question

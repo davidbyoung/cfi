@@ -2,8 +2,8 @@
 id: you-land-and-see-alternating-yellow-and-green-lights-turning-off-the-runway-what-are
 title: You land, and see alternating yellow and green lights turning off the runway. What are those
 tags:
-- airport-lighting
-- runway-lighting
+  - airport-lighting
+  - runway-lighting
 ---
 
 ### Question

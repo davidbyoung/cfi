@@ -2,10 +2,10 @@
 id: if-you-didnt-file-an-alternate-do-you-still-need-the-45-minute-reserve
 title: If you didn’t file an alternate, do you still need the 45-minute reserve
 tags:
-- fuel-planning
-- ifr-flight-plan
-- alternates
-- ifr
+  - fuel-planning
+  - ifr-flight-plan
+  - alternates
+  - ifr
 ---
 
 ### Question

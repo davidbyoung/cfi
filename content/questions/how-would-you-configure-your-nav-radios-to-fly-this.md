@@ -2,12 +2,12 @@
 id: how-would-you-configure-your-nav-radios-to-fly-this
 title: How would you configure your NAV radios to fly this
 tags:
-- approach-briefing
-- localizer
-- dme
-- kase
-- circling
-- kase-loc-dme-e
+  - approach-briefing
+  - localizer
+  - dme
+  - kase
+  - circling
+  - kase-loc-dme-e
 ---
 
 ### Question

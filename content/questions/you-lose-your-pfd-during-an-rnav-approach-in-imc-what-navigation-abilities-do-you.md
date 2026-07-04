@@ -2,14 +2,14 @@
 id: you-lose-your-pfd-during-an-rnav-approach-in-imc-what-navigation-abilities-do-you
 title: You lose your PFD during an RNAV approach in IMC. What navigation abilities do you still have
 tags:
-- n3096b
-- aircraft-systems
-- avionics
-- avidyne
-- rnav
-- ahrs
-- ifr
-- n3096b-specific-equipment-and-limitations
+  - n3096b
+  - aircraft-systems
+  - avionics
+  - avidyne
+  - rnav
+  - ahrs
+  - ifr
+  - n3096b-specific-equipment-and-limitations
 ---
 
 ### Question

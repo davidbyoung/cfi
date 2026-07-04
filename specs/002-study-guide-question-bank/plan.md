@@ -96,6 +96,7 @@ No constitution violations. No complexity justification required.
 **Status**: Complete. See [research.md](./research.md) for full decision log.
 
 Key decisions:
+
 - `gray-matter` for frontmatter parsing
 - `unified` + `remark` + `rehype` for Markdown → HTML (AST-based section extraction)
 - `js-yaml` for YAML parsing
@@ -141,6 +142,7 @@ Implement in this order (each module depends on the previous):
 #### Step 4 — Tests (`lib/content/__tests__/`)
 
 Write tests for:
+
 - `parse-question.test.ts`: valid question, multiline question with code block, with/without instructor notes, with/without sources, with image reference, missing `### Question`, missing `### Answer`, duplicate IDs, filename mismatch, non-kebab-case ID, unknown tag
 - `parse-guide.test.ts`: valid guide, chapter/section/question order preserved, missing question ID, duplicate guide slug, no chapters, no sections, no questions, same question in two guides (allowed), same question twice in one guide (fails)
 - `parse-tags.test.ts`: valid tags.yml, missing file, non-kebab-case key, missing label
@@ -219,9 +221,9 @@ The content loader exposes one public interface consumed by all study pages:
 // lib/content/loader.ts
 
 export type ContentLibrary = {
-  questions: Question[];           // all questions, sorted by id
+  questions: Question[]; // all questions, sorted by id
   questionMap: Record<string, Question>;
-  guides: Guide[];                 // all guides (chapters + questions resolved)
+  guides: Guide[]; // all guides (chapters + questions resolved)
   guideMap: Record<string, Guide>;
   tags: TagMap;
   searchIndex: QuestionSearchIndexEntry[];

@@ -2,10 +2,10 @@
 id: can-you-fly-a-loc-bc-on-any-ils
 title: Can you fly a LOC BC on any ILS
 tags:
-- ils
-- localizer
-- loc-back-course
-- ils-loc-loc-back-course
+  - ils
+  - localizer
+  - loc-back-course
+  - ils-loc-loc-back-course
 ---
 
 ### Question

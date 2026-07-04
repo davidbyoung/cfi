@@ -2,12 +2,12 @@
 id: how-do-you-use-a-gco
 title: How do you use a GCO
 tags:
-- rco
-- gco
-- communications
-- ifr-clearance
-- ifr
-- rcos-and-gcos
+  - rco
+  - gco
+  - communications
+  - ifr-clearance
+  - ifr
+  - rcos-and-gcos
 ---
 
 ### Question

@@ -2,8 +2,8 @@
 id: what-is-a-pirep
 title: What is a PIREP
 tags:
-- pireps
-- weather
+  - pireps
+  - weather
 ---
 
 ### Question

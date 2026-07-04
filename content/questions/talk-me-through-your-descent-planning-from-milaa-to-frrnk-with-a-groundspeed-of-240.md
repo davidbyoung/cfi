@@ -2,10 +2,10 @@
 id: talk-me-through-your-descent-planning-from-milaa-to-frrnk-with-a-groundspeed-of-240
 title: Talk me through your descent planning from MILAA to FRRNK with a groundspeed of 240 kt
 tags:
-- star
-- arrival-procedures
-- krfd
-- krfd-milaa-alexs1-star
+  - star
+  - arrival-procedures
+  - krfd
+  - krfd-milaa-alexs1-star
 ---
 
 ### Question

@@ -2,12 +2,12 @@
 id: when-would-you-fly-the-alternate-missed-approach
 title: When would you fly the alternate missed approach
 tags:
-- approach-briefing
-- ils
-- localizer
-- kmsn
-- alternates
-- kmsn-ils-loc-rwy-18
+  - approach-briefing
+  - ils
+  - localizer
+  - kmsn
+  - alternates
+  - kmsn-ils-loc-rwy-18
 ---
 
 ### Question

@@ -2,10 +2,10 @@
 id: how-do-you-know-when-its-active
 title: How do you know when it’s active
 tags:
-- ils-critical-area
-- airport-markings
-- ils
-- ils-critical-areas
+  - ils-critical-area
+  - airport-markings
+  - ils
+  - ils-critical-areas
 ---
 
 ### Question

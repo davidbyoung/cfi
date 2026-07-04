@@ -2,12 +2,12 @@
 id: what-is-the-primary-purpose-of-a-standard-instrument-departure-procedure-sid
 title: What is the primary purpose of a standard instrument departure procedure (SID)
 tags:
-- sid
-- departure-procedures
-- krfd
-- landing-minimums
-- ifr
-- krfd-bixby1-quizz-sid
+  - sid
+  - departure-procedures
+  - krfd
+  - landing-minimums
+  - ifr
+  - krfd-bixby1-quizz-sid
 ---
 
 ### Question

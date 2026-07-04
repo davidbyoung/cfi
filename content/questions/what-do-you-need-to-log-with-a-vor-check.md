@@ -2,10 +2,10 @@
 id: what-do-you-need-to-log-with-a-vor-check
 title: What do you need to log with a VOR check
 tags:
-- vor-checks
-- vor
-- inspections
-- ifr
+  - vor-checks
+  - vor
+  - inspections
+  - ifr
 ---
 
 ### Question

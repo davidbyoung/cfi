@@ -2,9 +2,9 @@
 id: what-is-the-holding-and-non-holding-side-of-a-hold
 title: What is the holding and non-holding side of a hold
 tags:
-- holds
-- protected-airspace
-- holding-side-vs-non-holding-side
+  - holds
+  - protected-airspace
+  - holding-side-vs-non-holding-side
 ---
 
 ### Question

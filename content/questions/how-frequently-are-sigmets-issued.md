@@ -2,11 +2,11 @@
 id: how-frequently-are-sigmets-issued
 title: How frequently are SIGMETs issued
 tags:
-- airmets
-- sigmets
-- weather-advisories
-- thunderstorms
-- airmets-sigmets-and-convective-sigmets
+  - airmets
+  - sigmets
+  - weather-advisories
+  - thunderstorms
+  - airmets-sigmets-and-convective-sigmets
 ---
 
 ### Question

@@ -2,11 +2,11 @@
 id: can-you-use-gps-in-place-of-a-vor-for-enroute-navigation
 title: Can you use GPS in place of a VOR for enroute navigation
 tags:
-- vor
-- navigation
-- gps
-- ifr
-- vor-navigation
+  - vor
+  - navigation
+  - gps
+  - ifr
+  - vor-navigation
 ---
 
 ### Question

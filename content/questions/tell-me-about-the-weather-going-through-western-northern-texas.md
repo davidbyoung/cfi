@@ -2,9 +2,9 @@
 id: tell-me-about-the-weather-going-through-western-northern-texas
 title: Tell me about the weather going through western/northern Texas
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

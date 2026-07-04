@@ -2,11 +2,11 @@
 id: what-are-sigmets-and-what-type-of-weather-is-associated-with-them
 title: What are SIGMETs, and what type of weather is associated with them
 tags:
-- airmets
-- sigmets
-- weather-advisories
-- thunderstorms
-- airmets-sigmets-and-convective-sigmets
+  - airmets
+  - sigmets
+  - weather-advisories
+  - thunderstorms
+  - airmets-sigmets-and-convective-sigmets
 ---
 
 ### Question

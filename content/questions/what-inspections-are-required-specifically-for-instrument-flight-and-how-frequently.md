@@ -2,10 +2,10 @@
 id: what-inspections-are-required-specifically-for-instrument-flight-and-how-frequently
 title: What inspections are required specifically for instrument flight, and how frequently must they be done
 tags:
-- inspections
-- ifr-inspections
-- ifr
-- required-ifr-inspections
+  - inspections
+  - ifr-inspections
+  - ifr
+  - required-ifr-inspections
 ---
 
 ### Question

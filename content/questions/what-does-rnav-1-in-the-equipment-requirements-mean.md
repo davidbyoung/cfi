@@ -2,11 +2,11 @@
 id: what-does-rnav-1-in-the-equipment-requirements-mean
 title: What does “RNAV 1” in the equipment requirements mean
 tags:
-- star
-- arrival-procedures
-- krfd
-- rnav
-- krfd-milaa-alexs1-star
+  - star
+  - arrival-procedures
+  - krfd
+  - rnav
+  - krfd-milaa-alexs1-star
 ---
 
 ### Question

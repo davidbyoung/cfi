@@ -2,9 +2,9 @@
 id: your-airspeed-suddenly-drops-unexpectedly-but-your-power-and-pitch-settings-remain
 title: Your airspeed suddenly drops unexpectedly, but your power and pitch settings remain stable. How do you troubleshoot
 tags:
-- pitot-static
-- pitot-tube-blockage
-- ifr
+  - pitot-static
+  - pitot-tube-blockage
+  - ifr
 ---
 
 ### Question

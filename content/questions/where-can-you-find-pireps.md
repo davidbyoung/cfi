@@ -2,8 +2,8 @@
 id: where-can-you-find-pireps
 title: Where can you find PIREPs
 tags:
-- pireps
-- weather
+  - pireps
+  - weather
 ---
 
 ### Question

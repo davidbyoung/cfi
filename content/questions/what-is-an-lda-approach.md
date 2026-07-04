@@ -2,10 +2,10 @@
 id: what-is-an-lda-approach
 title: What is an LDA approach
 tags:
-- approaches
-- approach-concepts
-- landing-minimums
-- general-approach-concepts
+  - approaches
+  - approach-concepts
+  - landing-minimums
+  - general-approach-concepts
 ---
 
 ### Question

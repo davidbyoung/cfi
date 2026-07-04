@@ -2,11 +2,11 @@
 id: how-does-a-traditional-altimeter-work
 title: How does a traditional altimeter work
 tags:
-- pitot-static
-- aircraft-systems
-- altimeter
-- ifr
-- pitot-static-system
+  - pitot-static
+  - aircraft-systems
+  - altimeter
+  - ifr
+  - pitot-static-system
 ---
 
 ### Question

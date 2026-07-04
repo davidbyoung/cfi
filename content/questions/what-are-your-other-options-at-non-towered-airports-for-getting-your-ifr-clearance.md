@@ -2,10 +2,10 @@
 id: what-are-your-other-options-at-non-towered-airports-for-getting-your-ifr-clearance
 title: What are your other options at non-towered airports for getting your IFR clearance
 tags:
-- ifr-clearance
-- clearances
-- ifr
-- obtaining-an-ifr-clearance
+  - ifr-clearance
+  - clearances
+  - ifr
+  - obtaining-an-ifr-clearance
 ---
 
 ### Question

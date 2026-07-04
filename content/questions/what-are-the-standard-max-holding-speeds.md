@@ -2,9 +2,9 @@
 id: what-are-the-standard-max-holding-speeds
 title: What are the standard max holding speeds
 tags:
-- holds
-- holding-speeds
-- landing-minimums
+  - holds
+  - holding-speeds
+  - landing-minimums
 ---
 
 ### Question

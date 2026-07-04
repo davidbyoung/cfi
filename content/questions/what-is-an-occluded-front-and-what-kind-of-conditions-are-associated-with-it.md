@@ -2,9 +2,9 @@
 id: what-is-an-occluded-front-and-what-kind-of-conditions-are-associated-with-it
 title: What is an occluded front, and what kind of conditions are associated with it
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

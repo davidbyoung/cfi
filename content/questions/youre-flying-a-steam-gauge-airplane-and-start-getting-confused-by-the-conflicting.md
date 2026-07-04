@@ -2,11 +2,11 @@
 id: youre-flying-a-steam-gauge-airplane-and-start-getting-confused-by-the-conflicting
 title: You’re flying a steam gauge airplane, and start getting confused by the conflicting information your instruments are displaying. You look at your suction gauge and notice it’s low. What’s wrong
 tags:
-- vacuum-failure
-- instrument-failures
-- partial-panel
-- icing
-- ifr
+  - vacuum-failure
+  - instrument-failures
+  - partial-panel
+  - icing
+  - ifr
 ---
 
 ### Question

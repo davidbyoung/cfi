@@ -25,9 +25,9 @@ All types live in `lib/content/types.ts`.
 
 export type Question = {
   id: string;
-  slug: string;          // equals id; used in /study/questions/[slug]
+  slug: string; // equals id; used in /study/questions/[slug]
   title: string;
-  tags: string[];        // array of tag ids
+  tags: string[]; // array of tag ids
   questionHtml: string;
   answerHtml: string;
   instructorNotesHtml?: string;
@@ -36,7 +36,7 @@ export type Question = {
 
 export type Guide = {
   title: string;
-  slug: string;          // used in /study/guides/[slug]
+  slug: string; // used in /study/guides/[slug]
   description?: string;
   chapters: GuideChapter[];
 };
@@ -48,7 +48,7 @@ export type GuideChapter = {
 
 export type GuideSection = {
   title: string;
-  questions: Question[];  // fully resolved Question objects (not just IDs)
+  questions: Question[]; // fully resolved Question objects (not just IDs)
 };
 
 export type TagDefinition = {
@@ -67,7 +67,7 @@ export type QuestionSearchIndexEntry = {
   slug: string;
   title: string;
   tags: string[];
-  questionText: string;   // plain text (HTML stripped)
+  questionText: string; // plain text (HTML stripped)
   answerText: string;
   instructorNotesText?: string;
   sourcesText?: string;
@@ -99,36 +99,36 @@ export type RawGuide = {
 
 ### Question
 
-| Field | Rule |
-|---|---|
-| `id` | Required. Lowercase kebab-case. Unique across all questions. Matches filename without `.md`. |
-| `title` | Required. Non-empty string. |
-| `tags` | Required array (may be empty). Each tag must be lowercase kebab-case and defined in `TagMap`. |
-| `### Question` | Required body section. |
-| `### Answer` | Required body section. |
-| `### Instructor notes` | Optional body section. |
-| `### Sources` | Optional body section. |
-| Unknown `### Heading` | Causes build failure with file path + heading name. |
+| Field                  | Rule                                                                                          |
+| ---------------------- | --------------------------------------------------------------------------------------------- |
+| `id`                   | Required. Lowercase kebab-case. Unique across all questions. Matches filename without `.md`.  |
+| `title`                | Required. Non-empty string.                                                                   |
+| `tags`                 | Required array (may be empty). Each tag must be lowercase kebab-case and defined in `TagMap`. |
+| `### Question`         | Required body section.                                                                        |
+| `### Answer`           | Required body section.                                                                        |
+| `### Instructor notes` | Optional body section.                                                                        |
+| `### Sources`          | Optional body section.                                                                        |
+| Unknown `### Heading`  | Causes build failure with file path + heading name.                                           |
 
 ### Guide
 
-| Field | Rule |
-|---|---|
-| `title` | Required. Non-empty string. |
-| `slug` | Required. Lowercase kebab-case. Unique across all guides. |
-| `chapters` | Required. Non-empty array. |
-| Chapter `title` | Required. Non-empty string. |
-| Chapter `sections` | Required. Non-empty array. |
-| Section `title` | Required. Non-empty string. |
-| Section `questions` | Required. Non-empty array of question IDs. Each ID must resolve in `QuestionMap`. No duplicates within same guide. |
-| Extra fields (`number`, etc.) | Accepted and ignored (`.strip()` behavior). |
+| Field                         | Rule                                                                                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `title`                       | Required. Non-empty string.                                                                                        |
+| `slug`                        | Required. Lowercase kebab-case. Unique across all guides.                                                          |
+| `chapters`                    | Required. Non-empty array.                                                                                         |
+| Chapter `title`               | Required. Non-empty string.                                                                                        |
+| Chapter `sections`            | Required. Non-empty array.                                                                                         |
+| Section `title`               | Required. Non-empty string.                                                                                        |
+| Section `questions`           | Required. Non-empty array of question IDs. Each ID must resolve in `QuestionMap`. No duplicates within same guide. |
+| Extra fields (`number`, etc.) | Accepted and ignored (`.strip()` behavior).                                                                        |
 
 ### Tags
 
-| Field | Rule |
-|---|---|
-| `id` | Required. Lowercase kebab-case. Unique. |
-| `label` | Required. Non-empty string. |
+| Field   | Rule                                    |
+| ------- | --------------------------------------- |
+| `id`    | Required. Lowercase kebab-case. Unique. |
+| `label` | Required. Non-empty string.             |
 
 ---
 
@@ -149,15 +149,15 @@ The parser loads this list and builds a `TagMap` keyed by `id` for O(1) validati
 
 ## Content Loader Modules (`lib/content/`)
 
-| File | Responsibility |
-|---|---|
-| `types.ts` | All exported TypeScript types (above) |
-| `parse-tags.ts` | Read `content/tags.yml` → `TagMap` |
-| `parse-question.ts` | Read one `content/questions/*.md` → `Question` |
-| `parse-guide.ts` | Read one `content/guides/*.yml` → `RawGuide` |
-| `validate.ts` | Cross-validate: question IDs in guides exist; tags in questions are defined |
-| `loader.ts` | Entry point: orchestrates all parsing + validation; returns `{ questions, guides, tags }` |
-| `search-index.ts` | Build `QuestionSearchIndexEntry[]` from `Question[]` (strips HTML to plain text) |
+| File                | Responsibility                                                                            |
+| ------------------- | ----------------------------------------------------------------------------------------- |
+| `types.ts`          | All exported TypeScript types (above)                                                     |
+| `parse-tags.ts`     | Read `content/tags.yml` → `TagMap`                                                        |
+| `parse-question.ts` | Read one `content/questions/*.md` → `Question`                                            |
+| `parse-guide.ts`    | Read one `content/guides/*.yml` → `RawGuide`                                              |
+| `validate.ts`       | Cross-validate: question IDs in guides exist; tags in questions are defined               |
+| `loader.ts`         | Entry point: orchestrates all parsing + validation; returns `{ questions, guides, tags }` |
+| `search-index.ts`   | Build `QuestionSearchIndexEntry[]` from `Question[]` (strips HTML to plain text)          |
 
 ---
 

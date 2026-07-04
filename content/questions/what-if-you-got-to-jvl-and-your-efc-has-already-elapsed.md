@@ -2,10 +2,10 @@
 id: what-if-you-got-to-jvl-and-your-efc-has-already-elapsed
 title: What if you got to JVL and your EFC has already elapsed
 tags:
-- lost-communications
-- kpwk
-- kmsn
-- lost-comms-scenario-kpwk-to-kmsn
+  - lost-communications
+  - kpwk
+  - kmsn
+  - lost-comms-scenario-kpwk-to-kmsn
 ---
 
 ### Question

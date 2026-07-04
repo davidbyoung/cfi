@@ -2,8 +2,8 @@
 id: what-color-are-runway-centerline-lights
 title: What color are runway centerline lights
 tags:
-- airport-lighting
-- runway-lighting
+  - airport-lighting
+  - runway-lighting
 ---
 
 ### Question

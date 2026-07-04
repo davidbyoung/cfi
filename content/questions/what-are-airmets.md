@@ -2,11 +2,11 @@
 id: what-are-airmets
 title: What are AIRMETs
 tags:
-- airmets
-- sigmets
-- weather-advisories
-- thunderstorms
-- airmets-sigmets-and-convective-sigmets
+  - airmets
+  - sigmets
+  - weather-advisories
+  - thunderstorms
+  - airmets-sigmets-and-convective-sigmets
 ---
 
 ### Question

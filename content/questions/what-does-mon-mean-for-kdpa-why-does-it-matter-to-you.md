@@ -2,11 +2,11 @@
 id: what-does-mon-mean-for-kdpa-why-does-it-matter-to-you
 title: What does “MON” mean for KDPA? Why does it matter to you
 tags:
-- enroute-charts
-- chart-symbols
-- altimeter
-- ifr
-- low-altitude-enroute-chart-symbols
+  - enroute-charts
+  - chart-symbols
+  - altimeter
+  - ifr
+  - low-altitude-enroute-chart-symbols
 ---
 
 ### Question

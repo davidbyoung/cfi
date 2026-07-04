@@ -2,12 +2,12 @@
 id: n3096b-specific-failure-scenarios-atc-asks-you-to-continue-holding-after-you-performed-a-hold-in-lieu-of-a-procedure
 title: ATC asks you to continue holding after you performed a hold in lieu of a procedure turn. How do you do that with the IFD440
 tags:
-- n3096b
-- avidyne
-- instrument-failures
-- holds
-- ifr
-- n3096b-specific-failure-scenarios
+  - n3096b
+  - avidyne
+  - instrument-failures
+  - holds
+  - ifr
+  - n3096b-specific-failure-scenarios
 ---
 
 ### Question

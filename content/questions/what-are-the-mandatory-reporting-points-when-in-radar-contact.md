@@ -2,11 +2,11 @@
 id: what-are-the-mandatory-reporting-points-when-in-radar-contact
 title: What are the mandatory reporting points when in radar contact
 tags:
-- mandatory-reports
-- ifr-communications
-- landing-minimums
-- ifr
-- mandatory-ifr-reports
+  - mandatory-reports
+  - ifr-communications
+  - landing-minimums
+  - ifr
+  - mandatory-ifr-reports
 ---
 
 ### Question

@@ -2,15 +2,15 @@
 id: on-v24-228-off-of-obk-what-does-2700-mean-why-is-it-important
 title: On V24-228 off of OBK, what does “2700” mean? Why is it important
 tags:
-- minimum-altitudes
-- mea
-- moca
-- mra
-- mca
-- maa
-- oroca
-- ifr
-- mea-moca-mra-mca-maa-and-oroca
+  - minimum-altitudes
+  - mea
+  - moca
+  - mra
+  - mca
+  - maa
+  - oroca
+  - ifr
+  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

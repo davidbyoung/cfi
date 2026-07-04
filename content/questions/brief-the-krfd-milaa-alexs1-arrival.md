@@ -2,10 +2,10 @@
 id: brief-the-krfd-milaa-alexs1-arrival
 title: Brief the KRFD MILAA.ALEXS1 arrival
 tags:
-- star
-- arrival-procedures
-- krfd
-- krfd-milaa-alexs1-star
+  - star
+  - arrival-procedures
+  - krfd
+  - krfd-milaa-alexs1-star
 ---
 
 ### Question

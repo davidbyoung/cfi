@@ -2,13 +2,13 @@
 id: whats-the-difference-between-atis-asos-and-awos
 title: What’s the difference between ATIS, ASOS, and AWOS
 tags:
-- enroute-weather
-- ads-b-weather
-- atis
-- asos
-- awos
-- landing-minimums
-- enroute-weather-updates
+  - enroute-weather
+  - ads-b-weather
+  - atis
+  - asos
+  - awos
+  - landing-minimums
+  - enroute-weather-updates
 ---
 
 ### Question

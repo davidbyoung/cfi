@@ -2,9 +2,9 @@
 id: what-is-the-red-and-blue-line-over-montana-and-what-kind-of-conditions-are
 title: What is the red and blue line over Montana, and what kind of conditions are associated with it
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

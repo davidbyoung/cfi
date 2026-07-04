@@ -2,10 +2,10 @@
 id: how-do-you-identify-airports-airspace-types-on-an-enroute-chart
 title: How do you identify airports’ airspace types on an enroute chart
 tags:
-- airspace
-- ads-b
-- ifr
-- airspace-and-ads-b-requirements
+  - airspace
+  - ads-b
+  - ifr
+  - airspace-and-ads-b-requirements
 ---
 
 ### Question

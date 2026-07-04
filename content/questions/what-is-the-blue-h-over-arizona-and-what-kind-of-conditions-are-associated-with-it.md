@@ -2,9 +2,9 @@
 id: what-is-the-blue-h-over-arizona-and-what-kind-of-conditions-are-associated-with-it
 title: What is the blue “H” over Arizona, and what kind of conditions are associated with it
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

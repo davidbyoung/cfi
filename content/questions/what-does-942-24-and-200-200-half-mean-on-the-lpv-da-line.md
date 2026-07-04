@@ -2,12 +2,12 @@
 id: what-does-942-24-and-200-200-half-mean-on-the-lpv-da-line
 title: What does “942/24” and “200 (200-½)” mean on the LPV DA line
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- krfd
-- landing-minimums
-- krfd-rnav-7
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - krfd
+  - landing-minimums
+  - krfd-rnav-7
 ---
 
 ### Question

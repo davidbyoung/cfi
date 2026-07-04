@@ -2,9 +2,9 @@
 id: what-are-the-bright-flashing-strobe-lights-at-the-threshold-of-a-runway
 title: What are the bright flashing strobe lights at the threshold of a runway
 tags:
-- airport-lighting
-- runway-lighting
-- holds
+  - airport-lighting
+  - runway-lighting
+  - holds
 ---
 
 ### Question

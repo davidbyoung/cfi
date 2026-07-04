@@ -2,11 +2,11 @@
 id: what-are-your-personal-minimums
 title: What are your personal minimums
 tags:
-- personal-minimums
-- risk-management
-- currency
-- landing-minimums
-- personal-minimums-and-risk-management
+  - personal-minimums
+  - risk-management
+  - currency
+  - landing-minimums
+  - personal-minimums-and-risk-management
 ---
 
 ### Question

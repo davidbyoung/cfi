@@ -2,12 +2,12 @@
 id: gps-rnav-rnp-what-is-rnp
 title: What is RNP
 tags:
-- gps
-- rnav
-- rnp
-- pbn
-- ifr
-- gps-rnav-rnp
+  - gps
+  - rnav
+  - rnp
+  - pbn
+  - ifr
+  - gps-rnav-rnp
 ---
 
 ### Question

@@ -2,10 +2,10 @@
 id: you-are-in-imc-and-notice-a-low-voltage-indication-what-might-be-happening-and-what
 title: You are in IMC and notice a low voltage indication. What might be happening, and what are next steps
 tags:
-- electrical-failure
-- instrument-failures
-- icing
-- ifr
+  - electrical-failure
+  - instrument-failures
+  - icing
+  - ifr
 ---
 
 ### Question

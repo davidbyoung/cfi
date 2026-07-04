@@ -2,10 +2,10 @@
 id: you-land-at-kpwk-at-0600z-after-an-ifr-flight-what-do-you-do-after-you-land
 title: You land at KPWK at 0600Z after an IFR flight. What do you do after you land
 tags:
-- ifr-flight-plan
-- airport-operations
-- ifr
-- closing-ifr-flight-plans
+  - ifr-flight-plan
+  - airport-operations
+  - ifr
+  - closing-ifr-flight-plans
 ---
 
 ### Question

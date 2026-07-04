@@ -2,10 +2,10 @@
 id: what-does-3-000-mean-between-bixby-and-quizz-and-when-would-you-abide-by-it
 title: What does “3,000” mean between BIXBY and QUIZZ, and when would you abide by it
 tags:
-- sid
-- departure-procedures
-- krfd
-- krfd-bixby1-quizz-sid
+  - sid
+  - departure-procedures
+  - krfd
+  - krfd-bixby1-quizz-sid
 ---
 
 ### Question

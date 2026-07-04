@@ -2,15 +2,15 @@
 id: when-might-you-want-to-request-descent-from-mea-to-moca
 title: When might you want to request descent from MEA to MOCA
 tags:
-- minimum-altitudes
-- mea
-- moca
-- mra
-- mca
-- maa
-- oroca
-- ifr
-- mea-moca-mra-mca-maa-and-oroca
+  - minimum-altitudes
+  - mea
+  - moca
+  - mra
+  - mca
+  - maa
+  - oroca
+  - ifr
+  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

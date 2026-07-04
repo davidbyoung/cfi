@@ -2,13 +2,13 @@
 id: what-is-raim
 title: What is RAIM
 tags:
-- gps
-- rnav
-- rnp
-- pbn
-- raim
-- ifr
-- gps-rnav-rnp
+  - gps
+  - rnav
+  - rnp
+  - pbn
+  - raim
+  - ifr
+  - gps-rnav-rnp
 ---
 
 ### Question

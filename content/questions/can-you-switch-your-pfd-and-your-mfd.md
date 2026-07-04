@@ -2,13 +2,13 @@
 id: can-you-switch-your-pfd-and-your-mfd
 title: Can you switch your PFD and your MFD
 tags:
-- n3096b
-- aircraft-systems
-- avionics
-- avidyne
-- ahrs
-- ifr
-- n3096b-specific-equipment-and-limitations
+  - n3096b
+  - aircraft-systems
+  - avionics
+  - avidyne
+  - ahrs
+  - ifr
+  - n3096b-specific-equipment-and-limitations
 ---
 
 ### Question

@@ -2,12 +2,12 @@
 id: when-do-you-need-an-instrument-rating
 title: When do you need an instrument rating
 tags:
-- pilot-qualifications
-- privileges
-- ifr
-- imc
-- currency
-- when-an-instrument-rating-is-required
+  - pilot-qualifications
+  - privileges
+  - ifr
+  - imc
+  - currency
+  - when-an-instrument-rating-is-required
 ---
 
 ### Question

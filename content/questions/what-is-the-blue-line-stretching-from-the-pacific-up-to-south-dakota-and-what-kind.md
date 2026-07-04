@@ -2,10 +2,10 @@
 id: what-is-the-blue-line-stretching-from-the-pacific-up-to-south-dakota-and-what-kind
 title: What is the blue line stretching from the Pacific up to South Dakota, and what kind of conditions are associated with it
 tags:
-- surface-analysis
-- weather-charts
-- landing-minimums
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - landing-minimums
+  - surface-analysis-charts
 ---
 
 ### Question

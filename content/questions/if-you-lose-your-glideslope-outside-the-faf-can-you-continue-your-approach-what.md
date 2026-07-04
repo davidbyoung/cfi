@@ -2,10 +2,10 @@
 id: if-you-lose-your-glideslope-outside-the-faf-can-you-continue-your-approach-what
 title: If you lose your glideslope outside the FAF, can you continue your approach? What would change about it
 tags:
-- ils
-- localizer
-- loc-back-course
-- ils-loc-loc-back-course
+  - ils
+  - localizer
+  - loc-back-course
+  - ils-loc-loc-back-course
 ---
 
 ### Question

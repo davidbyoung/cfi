@@ -2,10 +2,10 @@
 id: what-documents-do-you-personally-need-to-carry-with-you-to-act-as-pic
 title: What documents do you personally need to carry with you to act as PIC
 tags:
-- pilot-documents
-- medical
-- currency
-- required-pilot-documents
+  - pilot-documents
+  - medical
+  - currency
+  - required-pilot-documents
 ---
 
 ### Question

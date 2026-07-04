@@ -2,10 +2,10 @@
 id: what-is-the-dashed-brown-line-going-over-the-gulf-of-california-and-what-kind-of
 title: What is the dashed brown line going over the Gulf of California, and what kind of conditions can you expect
 tags:
-- surface-analysis
-- weather-charts
-- landing-minimums
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - landing-minimums
+  - surface-analysis-charts
 ---
 
 ### Question

@@ -2,10 +2,10 @@
 id: what-are-prognostic-charts
 title: What are prognostic charts
 tags:
-- prognostic-charts
-- gfa
-- weather-charts
-- prognostic-charts-and-gfa
+  - prognostic-charts
+  - gfa
+  - weather-charts
+  - prognostic-charts-and-gfa
 ---
 
 ### Question

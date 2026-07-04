@@ -2,10 +2,10 @@
 id: where-can-we-find-the-requirements-of-an-ipc
 title: Where can we find the requirements of an IPC
 tags:
-- ipc
-- instrument-proficiency-check
-- currency
-- ipc-requirements
+  - ipc
+  - instrument-proficiency-check
+  - currency
+  - ipc-requirements
 ---
 
 ### Question

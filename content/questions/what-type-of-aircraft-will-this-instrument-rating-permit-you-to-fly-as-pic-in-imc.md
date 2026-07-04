@@ -2,12 +2,12 @@
 id: what-type-of-aircraft-will-this-instrument-rating-permit-you-to-fly-as-pic-in-imc
 title: What type of aircraft will this instrument rating permit you to fly as PIC in IMC
 tags:
-- pilot-qualifications
-- privileges
-- ifr
-- imc
-- currency
-- when-an-instrument-rating-is-required
+  - pilot-qualifications
+  - privileges
+  - ifr
+  - imc
+  - currency
+  - when-an-instrument-rating-is-required
 ---
 
 ### Question

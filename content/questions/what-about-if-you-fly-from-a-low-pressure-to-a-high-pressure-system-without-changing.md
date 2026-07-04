@@ -2,11 +2,11 @@
 id: what-about-if-you-fly-from-a-low-pressure-to-a-high-pressure-system-without-changing
 title: What about if you fly from a low pressure to a high pressure system without changing your altimeter? What happens to your true altitude
 tags:
-- altimeter
-- pressure-errors
-- temperature-errors
-- ifr
-- altimeter-and-temperature-pressure-errors
+  - altimeter
+  - pressure-errors
+  - temperature-errors
+  - ifr
+  - altimeter-and-temperature-pressure-errors
 ---
 
 ### Question

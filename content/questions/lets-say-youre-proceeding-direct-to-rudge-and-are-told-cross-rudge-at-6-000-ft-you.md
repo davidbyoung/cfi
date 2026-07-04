@@ -2,11 +2,11 @@
 id: lets-say-youre-proceeding-direct-to-rudge-and-are-told-cross-rudge-at-6-000-ft-you
 title: Let’s say you’re proceeding direct to RUDGE, and are told “Cross RUDGE at 6,000 ft, you are cleared for the RNAV 7 approach”. What do you do when you get to RUDGE
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- krfd
-- krfd-rnav-7
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - krfd
+  - krfd-rnav-7
 ---
 
 ### Question

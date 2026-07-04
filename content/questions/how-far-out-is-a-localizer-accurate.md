@@ -2,10 +2,10 @@
 id: how-far-out-is-a-localizer-accurate
 title: How far out is a localizer accurate
 tags:
-- ils
-- localizer
-- loc-back-course
-- ils-loc-loc-back-course
+  - ils
+  - localizer
+  - loc-back-course
+  - ils-loc-loc-back-course
 ---
 
 ### Question

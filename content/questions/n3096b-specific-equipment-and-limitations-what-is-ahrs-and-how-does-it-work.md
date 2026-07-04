@@ -2,13 +2,13 @@
 id: n3096b-specific-equipment-and-limitations-what-is-ahrs-and-how-does-it-work
 title: What is AHRS and how does it work
 tags:
-- n3096b
-- aircraft-systems
-- avionics
-- avidyne
-- ahrs
-- ifr
-- n3096b-specific-equipment-and-limitations
+  - n3096b
+  - aircraft-systems
+  - avionics
+  - avidyne
+  - ahrs
+  - ifr
+  - n3096b-specific-equipment-and-limitations
 ---
 
 ### Question

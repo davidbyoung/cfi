@@ -2,10 +2,10 @@
 id: what-flight-experience-do-you-need-for-an-instrument-rating
 title: What flight experience do you need for an instrument rating
 tags:
-- training-requirements
-- currency
-- ifr
-- instrument-rating-experience-requirements
+  - training-requirements
+  - currency
+  - ifr
+  - instrument-rating-experience-requirements
 ---
 
 ### Question

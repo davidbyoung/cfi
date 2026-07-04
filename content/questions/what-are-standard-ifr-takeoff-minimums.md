@@ -2,11 +2,11 @@
 id: what-are-standard-ifr-takeoff-minimums
 title: What are standard IFR takeoff minimums
 tags:
-- takeoff-minimums
-- climb-gradient
-- landing-minimums
-- ifr
-- takeoff-minimums-and-climb-rates
+  - takeoff-minimums
+  - climb-gradient
+  - landing-minimums
+  - ifr
+  - takeoff-minimums-and-climb-rates
 ---
 
 ### Question
@@ -15,7 +15,7 @@ What are standard IFR takeoff minimums?
 
 ### Answer
 
-In Part 91, there are none.  For Parts 121 and 135, it is 1 SM for aircraft with 1-2 engines, and ½ SM for aircraft with 3+ engines.
+In Part 91, there are none. For Parts 121 and 135, it is 1 SM for aircraft with 1-2 engines, and ½ SM for aircraft with 3+ engines.
 
 ### Sources
 

@@ -1,9 +1,9 @@
 ---
 id: decode-this-pirep-eau-ua-ov-eau-tm-2247-fl340-tp-crj7-tb-ocnl-lgt-chop
-title: 'Decode this PIREP: EAU UA /OV EAU/TM 2247/FL340/TP CRJ7/TB OCNL LGT CHOP'
+title: "Decode this PIREP: EAU UA /OV EAU/TM 2247/FL340/TP CRJ7/TB OCNL LGT CHOP"
 tags:
-- pireps
-- weather
+  - pireps
+  - weather
 ---
 
 ### Question

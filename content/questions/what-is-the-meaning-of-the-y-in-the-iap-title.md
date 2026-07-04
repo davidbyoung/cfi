@@ -2,12 +2,12 @@
 id: what-is-the-meaning-of-the-y-in-the-iap-title
 title: What is the meaning of the “Y” in the IAP title
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- kprc
-- gps
-- kprc-rnav-gps-y-03r
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - kprc
+  - gps
+  - kprc-rnav-gps-y-03r
 ---
 
 ### Question

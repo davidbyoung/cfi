@@ -2,12 +2,12 @@
 id: on-the-v12-between-bib-and-shb-vors-what-does-the-symbol-mean-approximately-halfway
 title: On the V12 between BIB and SHB VORs, what does the symbol mean approximately halfway between with “61” and “70”
 tags:
-- airways
-- fixes
-- waypoints
-- changeover-points
-- ifr
-- airways-fixes-waypoints-and-changeover-points
+  - airways
+  - fixes
+  - waypoints
+  - changeover-points
+  - ifr
+  - airways-fixes-waypoints-and-changeover-points
 ---
 
 ### Question

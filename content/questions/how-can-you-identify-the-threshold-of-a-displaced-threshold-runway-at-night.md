@@ -2,9 +2,9 @@
 id: how-can-you-identify-the-threshold-of-a-displaced-threshold-runway-at-night
 title: How can you identify the threshold of a displaced threshold runway at night
 tags:
-- airport-lighting
-- runway-lighting
-- holds
+  - airport-lighting
+  - runway-lighting
+  - holds
 ---
 
 ### Question

@@ -2,11 +2,11 @@
 id: what-scenarios-would-you-not-need-to-fly-the-course-reversal-at-jigta
 title: What scenarios would you not need to fly the course reversal at JIGTA
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- kbuu
-- kbuu-rnav-11
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - kbuu
+  - kbuu-rnav-11
 ---
 
 ### Question

@@ -2,10 +2,10 @@
 id: how-do-you-identify-it
 title: How do you identify it
 tags:
-- ils-critical-area
-- airport-markings
-- ils
-- ils-critical-areas
+  - ils-critical-area
+  - airport-markings
+  - ils
+  - ils-critical-areas
 ---
 
 ### Question

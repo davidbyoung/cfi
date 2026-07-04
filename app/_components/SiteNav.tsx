@@ -2,7 +2,10 @@ import Link from "next/link";
 import { INSTRUCTOR_NAME } from "../_content";
 import NavLink from "./NavLink";
 
-const LINKS = [{ href: "/about", label: "About" }] as const;
+const LINKS = [
+  { href: "/about", label: "About" },
+  { href: "/study", label: "Study" },
+] as const;
 
 export default function SiteNav() {
   return (

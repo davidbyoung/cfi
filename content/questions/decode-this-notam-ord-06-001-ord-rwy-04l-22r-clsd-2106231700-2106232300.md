@@ -1,10 +1,10 @@
 ---
 id: decode-this-notam-ord-06-001-ord-rwy-04l-22r-clsd-2106231700-2106232300
-title: 'Decode this NOTAM: !ORD 06/001 ORD RWY 04L/22R CLSD 2106231700-2106232300'
+title: "Decode this NOTAM: !ORD 06/001 ORD RWY 04L/22R CLSD 2106231700-2106232300"
 tags:
-- notams
-- preflight
-- ifr
+  - notams
+  - preflight
+  - ifr
 ---
 
 ### Question

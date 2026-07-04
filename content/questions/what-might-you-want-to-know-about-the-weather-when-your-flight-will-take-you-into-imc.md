@@ -2,10 +2,10 @@
 id: what-might-you-want-to-know-about-the-weather-when-your-flight-will-take-you-into-imc
 title: What might you want to know about the weather when your flight will take you into IMC
 tags:
-- weather-briefing
-- preflight
-- weather
-- weather-briefing-strategy
+  - weather-briefing
+  - preflight
+  - weather
+  - weather-briefing-strategy
 ---
 
 ### Question

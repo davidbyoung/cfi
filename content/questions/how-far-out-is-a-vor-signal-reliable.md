@@ -2,10 +2,10 @@
 id: how-far-out-is-a-vor-signal-reliable
 title: How far out is a VOR signal reliable
 tags:
-- vor
-- navigation
-- ifr
-- vor-navigation
+  - vor
+  - navigation
+  - ifr
+  - vor-navigation
 ---
 
 ### Question

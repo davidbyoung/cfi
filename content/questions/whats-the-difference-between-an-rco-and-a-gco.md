@@ -2,12 +2,12 @@
 id: whats-the-difference-between-an-rco-and-a-gco
 title: What’s the difference between an RCO and a GCO
 tags:
-- rco
-- gco
-- communications
-- ifr-clearance
-- ifr
-- rcos-and-gcos
+  - rco
+  - gco
+  - communications
+  - ifr-clearance
+  - ifr
+  - rcos-and-gcos
 ---
 
 ### Question

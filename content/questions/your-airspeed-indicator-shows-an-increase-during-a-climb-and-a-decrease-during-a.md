@@ -2,9 +2,9 @@
 id: your-airspeed-indicator-shows-an-increase-during-a-climb-and-a-decrease-during-a
 title: Your airspeed indicator shows an increase during a climb and a decrease during a descent. What’s happening
 tags:
-- pitot-static
-- pitot-tube-blockage
-- ifr
+  - pitot-static
+  - pitot-tube-blockage
+  - ifr
 ---
 
 ### Question

@@ -2,13 +2,13 @@
 id: what-types-of-approaches-does-raim-permit
 title: What types of approaches does RAIM permit
 tags:
-- gps
-- rnav
-- rnp
-- pbn
-- raim
-- ifr
-- gps-rnav-rnp
+  - gps
+  - rnav
+  - rnp
+  - pbn
+  - raim
+  - ifr
+  - gps-rnav-rnp
 ---
 
 ### Question

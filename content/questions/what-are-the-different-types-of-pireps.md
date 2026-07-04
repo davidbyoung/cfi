@@ -2,8 +2,8 @@
 id: what-are-the-different-types-of-pireps
 title: What are the different types of PIREPs
 tags:
-- pireps
-- weather
+  - pireps
+  - weather
 ---
 
 ### Question

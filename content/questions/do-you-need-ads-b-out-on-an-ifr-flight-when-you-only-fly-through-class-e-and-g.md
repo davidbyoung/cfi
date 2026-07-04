@@ -2,10 +2,10 @@
 id: do-you-need-ads-b-out-on-an-ifr-flight-when-you-only-fly-through-class-e-and-g
 title: Do you need ADS-B out on an IFR flight when you only fly through Class E and G airspace
 tags:
-- airspace
-- ads-b
-- ifr
-- airspace-and-ads-b-requirements
+  - airspace
+  - ads-b
+  - ifr
+  - airspace-and-ads-b-requirements
 ---
 
 ### Question

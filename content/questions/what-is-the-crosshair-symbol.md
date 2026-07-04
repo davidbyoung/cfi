@@ -2,10 +2,10 @@
 id: what-is-the-crosshair-symbol
 title: What is the crosshair symbol
 tags:
-- star
-- arrival-procedures
-- krfd
-- krfd-milaa-alexs1-star
+  - star
+  - arrival-procedures
+  - krfd
+  - krfd-milaa-alexs1-star
 ---
 
 ### Question

@@ -2,12 +2,12 @@
 id: you-flew-6-iaps-and-intercepted-courses-in-a-simulator-today-but-last-flew-a-hold-7
 title: You flew 6 IAPs and intercepted courses in a simulator today, but last flew a hold 7 months ago. What do you need to do to be current
 tags:
-- instrument-currency
-- currency
-- ipc
-- holds
-- landing-minimums
-- ifr
+  - instrument-currency
+  - currency
+  - ipc
+  - holds
+  - landing-minimums
+  - ifr
 ---
 
 ### Question

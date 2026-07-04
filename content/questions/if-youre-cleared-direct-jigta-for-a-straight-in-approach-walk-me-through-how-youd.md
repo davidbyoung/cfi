@@ -2,11 +2,11 @@
 id: if-youre-cleared-direct-jigta-for-a-straight-in-approach-walk-me-through-how-youd
 title: If you’re cleared direct JIGTA for a straight-in approach, walk me through how you’d configure your FMS (Avidyne Entegra EX5000)
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- kbuu
-- kbuu-rnav-11
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - kbuu
+  - kbuu-rnav-11
 ---
 
 ### Question

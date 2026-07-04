@@ -2,12 +2,12 @@
 id: why-might-you-care-about-the-note-vgsi-and-descent-angles-not-coincident
 title: Why might you care about the note “VGSI and descent angles not coincident”
 tags:
-- approach-briefing
-- localizer
-- dme
-- kase
-- circling
-- kase-loc-dme-e
+  - approach-briefing
+  - localizer
+  - dme
+  - kase
+  - circling
+  - kase-loc-dme-e
 ---
 
 ### Question

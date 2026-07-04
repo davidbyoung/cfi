@@ -2,11 +2,11 @@
 id: partial-panel-scenarios-can-you-switch-your-pfd-and-your-mfd
 title: Can you switch your PFD and your MFD
 tags:
-- partial-panel
-- instrument-failures
-- ahrs
-- ifr
-- partial-panel-scenarios
+  - partial-panel
+  - instrument-failures
+  - ahrs
+  - ifr
+  - partial-panel-scenarios
 ---
 
 ### Question

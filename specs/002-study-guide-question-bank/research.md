@@ -13,6 +13,7 @@
 **Rationale**: The de-facto standard for YAML frontmatter in Next.js projects. Returns `{data, content}` cleanly. TypeScript types included. Zero configuration.
 
 **Alternatives considered**:
+
 - `front-matter`: Older, less maintained.
 - `@next/mdx`: Overkill — requires MDX file format; our questions are plain `.md` files.
 
@@ -25,6 +26,7 @@
 **Rationale**: The unified/remark/rehype pipeline is the standard for safe Markdown→HTML in Next.js. It produces an AST that can be walked to extract named sections (`### Question`, `### Answer`, etc.) before converting to HTML. `rehype-sanitize` prevents XSS from any malformed Markdown input.
 
 **Alternatives considered**:
+
 - `marked`: Simpler API but no AST access for section extraction; would require fragile regex splitting.
 - `micromark`: Lower-level than needed; remark builds on it anyway.
 
@@ -37,6 +39,7 @@
 **Rationale**: Battle-tested, typed (`@types/js-yaml` available), well-maintained, and already a transitive dependency in many Next.js toolchains. `js-yaml.load()` returns a plain JS object; `safeLoad` alias enforces no-code execution.
 
 **Alternatives considered**:
+
 - `yaml`: Also good; slightly heavier API. Either works.
 
 ---
@@ -48,6 +51,7 @@
 **Rationale**: Best TypeScript inference in the ecosystem. Error messages include the path and problem, which directly satisfies the spec requirement for "clear, actionable error messages." `z.infer<>` produces the TypeScript types automatically, eliminating interface drift.
 
 **Alternatives considered**:
+
 - `joi`: JavaScript-first, inferior TypeScript inference.
 - Manual validation: Adequate but produces worse errors and more boilerplate.
 
@@ -60,6 +64,7 @@
 **Rationale**: Native ESM + TypeScript support with zero additional config. Fast (esbuild-based transforms). Compatible with the existing TypeScript/Next.js project. No need for `babel-jest` or `ts-jest`.
 
 **Alternatives considered**:
+
 - `jest`: Works but requires `jest.config.ts`, `ts-jest` or `babel-jest`, and explicit ESM workarounds for Node.js ESM modules. Unnecessary friction.
 
 ---
@@ -71,6 +76,7 @@
 **Rationale**: Simplest, most transparent approach. A small `scripts/copy-content-assets.mjs` script runs before `next build`. No webpack plugin, no next.config.ts complexity.
 
 **Mechanism**:
+
 - Source: `content/assets/`
 - Destination: `public/images/`
 - Trigger: `"prebuild": "node scripts/copy-content-assets.mjs"` in `package.json`
@@ -78,6 +84,7 @@
 - The content loader rewrites `../assets/` relative paths in Markdown to `/images/` during HTML generation
 
 **Alternatives considered**:
+
 - `next.config.ts` webpack `CopyPlugin`: More complex; webpack runs after Next.js starts, timing is tricky for static export.
 - `cpx` / `ncp`: External dependencies not needed when `fs.cpSync` (Node 16.7+) handles recursive copies.
 

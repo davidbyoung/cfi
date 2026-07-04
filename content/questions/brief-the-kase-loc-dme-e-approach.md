@@ -2,12 +2,12 @@
 id: brief-the-kase-loc-dme-e-approach
 title: Brief the KASE LOC/DME-E approach
 tags:
-- approach-briefing
-- localizer
-- dme
-- kase
-- circling
-- kase-loc-dme-e
+  - approach-briefing
+  - localizer
+  - dme
+  - kase
+  - circling
+  - kase-loc-dme-e
 ---
 
 ### Question

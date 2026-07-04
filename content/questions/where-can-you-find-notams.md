@@ -2,9 +2,9 @@
 id: where-can-you-find-notams
 title: Where can you find NOTAMs
 tags:
-- notams
-- preflight
-- ifr
+  - notams
+  - preflight
+  - ifr
 ---
 
 ### Question

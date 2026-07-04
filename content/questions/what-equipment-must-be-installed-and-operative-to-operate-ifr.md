@@ -2,11 +2,11 @@
 id: what-equipment-must-be-installed-and-operative-to-operate-ifr
 title: What equipment must be installed and operative to operate IFR
 tags:
-- required-equipment
-- ifr-equipment
-- airworthiness
-- ifr
-- required-equipment-for-ifr-flight
+  - required-equipment
+  - ifr-equipment
+  - airworthiness
+  - ifr
+  - required-equipment-for-ifr-flight
 ---
 
 ### Question

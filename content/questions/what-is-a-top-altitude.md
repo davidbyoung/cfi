@@ -2,11 +2,11 @@
 id: what-is-a-top-altitude
 title: What is a “top altitude”
 tags:
-- sid
-- departure-procedures
-- krfd
-- altimeter
-- krfd-bixby1-quizz-sid
+  - sid
+  - departure-procedures
+  - krfd
+  - altimeter
+  - krfd-bixby1-quizz-sid
 ---
 
 ### Question

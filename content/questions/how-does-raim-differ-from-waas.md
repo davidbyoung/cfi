@@ -2,14 +2,14 @@
 id: how-does-raim-differ-from-waas
 title: How does RAIM differ from WAAS
 tags:
-- gps
-- rnav
-- rnp
-- pbn
-- waas
-- raim
-- ifr
-- gps-rnav-rnp
+  - gps
+  - rnav
+  - rnp
+  - pbn
+  - waas
+  - raim
+  - ifr
+  - gps-rnav-rnp
 ---
 
 ### Question

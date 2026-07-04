@@ -2,10 +2,10 @@
 id: do-i-need-to-close-my-ifr-flight-plan-if-i-land-at-2300z
 title: Do I need to close my IFR flight plan if I land at 2300Z
 tags:
-- ifr-flight-plan
-- airport-operations
-- ifr
-- closing-ifr-flight-plans
+  - ifr-flight-plan
+  - airport-operations
+  - ifr
+  - closing-ifr-flight-plans
 ---
 
 ### Question

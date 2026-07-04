@@ -2,10 +2,10 @@
 id: how-does-a-vor-work
 title: How does a VOR work
 tags:
-- vor
-- navigation
-- ifr
-- vor-navigation
+  - vor
+  - navigation
+  - ifr
+  - vor-navigation
 ---
 
 ### Question

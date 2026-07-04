@@ -2,11 +2,11 @@
 id: lets-say-were-at-4-000-ft-19-nm-due-west-of-jigta-and-atc-has-cleared-us-for-the
 title: Let’s say we’re at 4,000 ft, 19 NM due west of JIGTA, and ATC has cleared us for the RNAV 11 straight-in approach. What can we do
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- kbuu
-- kbuu-rnav-11
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - kbuu
+  - kbuu-rnav-11
 ---
 
 ### Question

@@ -2,9 +2,9 @@
 id: what-is-the-red-line-stretching-from-western-michigan-to-virginia-and-what-kind-of
 title: What is the red line stretching from western Michigan to Virginia, and what kind of conditions are associated with it
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

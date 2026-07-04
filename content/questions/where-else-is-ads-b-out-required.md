@@ -2,10 +2,10 @@
 id: where-else-is-ads-b-out-required
 title: Where else is ADS-B out required
 tags:
-- airspace
-- ads-b
-- ifr
-- airspace-and-ads-b-requirements
+  - airspace
+  - ads-b
+  - ifr
+  - airspace-and-ads-b-requirements
 ---
 
 ### Question

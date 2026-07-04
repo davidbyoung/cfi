@@ -2,11 +2,11 @@
 id: what-is-the-msa-and-when-would-you-use-it
 title: What is the MSA, and when would you use it
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- krfd
-- krfd-rnav-7
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - krfd
+  - krfd-rnav-7
 ---
 
 ### Question

@@ -2,10 +2,10 @@
 id: for-what-area-is-a-taf-valid
 title: For what area is a TAF valid
 tags:
-- taf
-- weather
-- forecast
-- tafs
+  - taf
+  - weather
+  - forecast
+  - tafs
 ---
 
 ### Question

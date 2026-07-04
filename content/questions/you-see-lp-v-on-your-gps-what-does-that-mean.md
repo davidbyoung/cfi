@@ -2,12 +2,12 @@
 id: you-see-lp-v-on-your-gps-what-does-that-mean
 title: You see “LP+V” on your GPS. What does that mean
 tags:
-- approach-briefing
-- rnav-approach
-- rnav
-- kbuu
-- gps
-- kbuu-rnav-11
+  - approach-briefing
+  - rnav-approach
+  - rnav
+  - kbuu
+  - gps
+  - kbuu-rnav-11
 ---
 
 ### Question

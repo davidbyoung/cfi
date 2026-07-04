@@ -2,11 +2,11 @@
 id: altimeter-setting-is-30-42-and-you-reach-fl180-and-re-adjust-your-altimeter-setting
 title: Altimeter setting is 30.42, and you reach FL180 and re-adjust your altimeter setting. What does your altimeter show now
 tags:
-- altimeter
-- pressure-errors
-- temperature-errors
-- ifr
-- altimeter-and-temperature-pressure-errors
+  - altimeter
+  - pressure-errors
+  - temperature-errors
+  - ifr
+  - altimeter-and-temperature-pressure-errors
 ---
 
 ### Question

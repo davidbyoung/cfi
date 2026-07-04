@@ -2,9 +2,9 @@
 id: what-do-you-do-to-fix-the-situation
 title: What do you do to fix the situation
 tags:
-- pitot-static
-- static-port-blockage
-- ifr
+  - pitot-static
+  - static-port-blockage
+  - ifr
 ---
 
 ### Question

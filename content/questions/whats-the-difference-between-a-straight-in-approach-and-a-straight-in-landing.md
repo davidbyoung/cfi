@@ -2,9 +2,9 @@
 id: whats-the-difference-between-a-straight-in-approach-and-a-straight-in-landing
 title: What’s the difference between a straight-in approach and a straight-in landing
 tags:
-- approaches
-- approach-concepts
-- general-approach-concepts
+  - approaches
+  - approach-concepts
+  - general-approach-concepts
 ---
 
 ### Question

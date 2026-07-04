@@ -2,9 +2,9 @@
 id: how-do-winds-typically-move-in-relation-to-isobars
 title: How do winds typically move in relation to isobars
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question
@@ -17,7 +17,7 @@ How do winds typically move in relation to isobars?
 
 ### Answer
 
-They move perpendicularly from high to low pressure.  Closer to the ground, surface friction slows down the air and makes it more susceptible to the Coriolis Effect, meaning it moves at an angle to the isobars.
+They move perpendicularly from high to low pressure. Closer to the ground, surface friction slows down the air and makes it more susceptible to the Coriolis Effect, meaning it moves at an angle to the isobars.
 
 ### Sources
 

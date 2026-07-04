@@ -2,12 +2,12 @@
 id: reported-visibility-is-1-4-sm-and-youre-on-the-lpv-approach-can-you-land-out-of-that
 title: Reported visibility is 1/4 SM and you’re on the LPV approach. Can you land out of that approach
 tags:
-- landing-minimums
-- visibility
-- rvr
-- rnav
-- ifr
-- required-flight-visibility-and-reported-visibility
+  - landing-minimums
+  - visibility
+  - rvr
+  - rnav
+  - ifr
+  - required-flight-visibility-and-reported-visibility
 ---
 
 ### Question

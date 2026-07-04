@@ -2,9 +2,9 @@
 id: if-there-are-many-isobars-closely-spaced-together-what-kind-of-conditions-can-you
 title: If there are many isobars closely spaced together, what kind of conditions can you expect
 tags:
-- surface-analysis
-- weather-charts
-- surface-analysis-charts
+  - surface-analysis
+  - weather-charts
+  - surface-analysis-charts
 ---
 
 ### Question

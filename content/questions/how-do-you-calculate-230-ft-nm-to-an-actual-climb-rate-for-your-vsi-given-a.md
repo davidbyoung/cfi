@@ -2,11 +2,11 @@
 id: how-do-you-calculate-230-ft-nm-to-an-actual-climb-rate-for-your-vsi-given-a
 title: How do you calculate 230 ft/NM to an actual climb rate for your VSI given a groundspeed of 90 kt
 tags:
-- sid
-- departure-procedures
-- krfd
-- climb-gradient
-- krfd-bixby1-quizz-sid
+  - sid
+  - departure-procedures
+  - krfd
+  - climb-gradient
+  - krfd-bixby1-quizz-sid
 ---
 
 ### Question
