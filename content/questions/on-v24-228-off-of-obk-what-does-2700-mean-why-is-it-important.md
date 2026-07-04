@@ -1,0 +1,28 @@
+---
+id: on-v24-228-off-of-obk-what-does-2700-mean-why-is-it-important
+title: On V24-228 off of OBK, what does “2700” mean? Why is it important
+tags:
+- minimum-altitudes
+- mea
+- moca
+- mra
+- mca
+- maa
+- oroca
+- ifr
+- mea-moca-mra-mca-maa-and-oroca
+---
+
+### Question
+
+On V24-228 off of OBK, what does “2700” mean? Why is it important?
+
+### Answer
+
+Minimum Enroute Altitude (MEA) - It guarantees obstacle clearance and navigational signal along the airway
+
+### Sources
+
+- [14 CFR § 91.177 — Minimum altitudes for IFR operations](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.177)
+- [FAA Aeronautical Chart User’s Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
+- [FAA AIM Chapter 5, Section 3 — En Route procedures](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_3.html)

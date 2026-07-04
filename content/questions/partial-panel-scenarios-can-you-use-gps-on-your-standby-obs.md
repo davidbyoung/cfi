@@ -1,0 +1,26 @@
+---
+id: partial-panel-scenarios-can-you-use-gps-on-your-standby-obs
+title: Can you use GPS on your standby OBS
+tags:
+- partial-panel
+- instrument-failures
+- gps
+- ifr
+- partial-panel-scenarios
+---
+
+### Question
+
+Can you use GPS on your standby OBS?
+
+### Answer
+
+No, you must use VLOC
+
+### Sources
+
+- [FAA Instrument Flying Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_flying_handbook)
+- Aircraft-specific source: AFM/POH and avionics supplements
+- [FAA Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
+- [FAA AIM ¶ 1-2-1 — Performance-Based Navigation and Area Navigation](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
+- [FAA AIM ¶ 1-2-3 — Use of Suitable RNAV Systems on Conventional Procedures and Routes](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
