@@ -62,6 +62,23 @@ A student bookmarks a specific question URL from a search result and returns to 
 
 ---
 
+### User Story 5 — Student Views Disclaimer (Priority: P5)
+
+A student accessing any study page sees a concise educational-use disclaimer at the bottom of the page content, with a link to the full disclaimer. They can navigate to `/study/disclaimer` to read the complete Student Resources Disclaimer and Terms of Use.
+
+**Why this priority**: Legal and safety risk management. Must be present before the study section is publicly accessible, but does not block the core study flow.
+
+**Independent Test**: Can be fully tested by loading any study page and confirming the concise disclaimer appears at the bottom of the content area (before the site footer) with a working link to `/study/disclaimer`. Load `/study/disclaimer` and confirm all required legal content is present.
+
+**Acceptance Scenarios**:
+
+1. **Given** a student visits `/study`, `/study/guides/[slug]`, or `/study/questions/[slug]`, **When** the page loads, **Then** a concise educational-use disclaimer appears at the bottom of the page content area, before the site footer.
+2. **Given** the concise disclaimer is visible, **When** the student clicks the disclaimer link, **Then** they are taken to `/study/disclaimer`.
+3. **Given** a student visits `/study/disclaimer`, **When** the page loads, **Then** the full "Student Resources Disclaimer and Terms of Use" is displayed with all required legal provisions (education-only purpose, not official FAA publications, may contain errors, verification requirement, PIC responsibility, no outcome guarantees, not legal advice, no-warranty and limitation of liability).
+4. **Given** the disclaimer text is updated, **When** the build runs, **Then** the updated text appears consistently on all pages that display the disclaimer without editing multiple files.
+
+---
+
 ### User Story 4 — Instructor Authors Content (Priority: P4)
 
 The site owner creates a new question file under `content/questions/`, adds its ID to one or more guide YAML files, and runs the build. The question appears in the correct position in each guide and in the question bank. If the content has validation errors, the build fails with a clear, actionable error message pointing to the exact file and problem.
@@ -186,6 +203,22 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - **FR-038**: Question slugs MUST equal the question `id` and MUST NOT change if the question is moved to a different guide or section.
 - **FR-039**: A question reused in multiple guides MUST have exactly one canonical URL at `/study/questions/[questionSlug]`.
 
+**Disclaimer**
+
+- **FR-042**: A reusable concise disclaimer component MUST be implemented as a single TypeScript component. Its text MUST NOT be duplicated or hard-coded in multiple pages.
+- **FR-043**: The concise disclaimer MUST appear at the bottom of the page content area (after main content, before the site footer) on `/study`, every `/study/guides/[slug]` page, and every `/study/questions/[slug]` page. It MUST NOT appear on the question bank page (`/study/questions`).
+- **FR-044**: The concise disclaimer MUST include a link to `/study/disclaimer`.
+- **FR-045**: The system MUST generate a dedicated page at `/study/disclaimer` containing the full "Student Resources Disclaimer and Terms of Use."
+- **FR-046**: The full disclaimer MUST state that the materials are for general aviation education, study, and oral-exam preparation only.
+- **FR-047**: The full disclaimer MUST state that the materials are not official FAA publications, legal interpretations, aircraft operating instructions, checklists, flight-planning tools, or substitutes for instruction from a qualified flight instructor.
+- **FR-048**: The full disclaimer MUST state that the materials may contain errors, omissions, outdated information, oversimplifications, or interpretations that may not apply to a particular aircraft, operation, location, examiner, or flight scenario.
+- **FR-049**: The full disclaimer MUST state that users must verify information against current authoritative sources: current FAA regulations, the AIM, FAA handbooks, FAA advisory circulars, applicable ACS/practical-test standards, AFM/POH, avionics supplements, current charts, NOTAMs, weather products, maintenance records, ATC clearances, and other applicable operational documents.
+- **FR-050**: The full disclaimer MUST state that the pilot in command is responsible for and is the final authority as to the operation of the aircraft, and that each pilot in command must become familiar with all available information before flight.
+- **FR-051**: The full disclaimer MUST state that the materials do not guarantee checkride success, IPC completion, flight-review completion, FAA compliance, insurance compliance, rental checkout approval, or any other training or operational outcome.
+- **FR-052**: The full disclaimer MUST state that the materials are not legal advice.
+- **FR-053**: The full disclaimer MUST include no-warranty and limitation-of-liability language to the fullest extent permitted by law.
+- **FR-054**: The disclaimer architecture MUST support, without a full rewrite, a future requirement to prompt an authenticated user to acknowledge the disclaimer before accessing protected study-guide content.
+
 ### Key Entities
 
 - **Question**: A reusable unit of content with an ID, title, tags, required question and answer sections, and optional instructor notes and sources. Canonical URL: `/study/questions/[id]`.
@@ -195,6 +228,8 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - **Tag**: A controlled-vocabulary label defined in `content/tags.yml` used for filtering and search categorization.
 - **Tag Catalog**: The central list of all valid tags, each with a label and optional description, stored in `content/tags.yml`.
 - **Search Index Entry**: A flattened representation of a question (plain text, no HTML) used for client-side search and filtering.
+- **Concise Disclaimer**: A brief educational-use notice rendered at the bottom of study content pages, maintained as a single reusable TypeScript component, linking to the full disclaimer page.
+- **Full Disclaimer**: The complete "Student Resources Disclaimer and Terms of Use" page at `/study/disclaimer`, containing all required legal provisions.
 
 ## Success Criteria _(mandatory)_
 
@@ -207,6 +242,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - **SC-005**: A guide page with 100 questions prints legibly on standard letter paper with answers visible.
 - **SC-006**: All "Show answer" controls and tag filters are operable by keyboard-only users without any additional tooling.
 - **SC-007**: The same question ID referenced in three different guide YAML files produces three guide entries but exactly one question page URL.
+- **SC-008**: Updating the disclaimer text in one place (the single TypeScript component) causes the updated text to appear on all affected pages after a single build, with no other files requiring edits.
 
 ## Clarifications
 
@@ -216,6 +252,9 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - Q: Should "Study" be added to the main site nav? → A: Yes — add a "Study" link to the existing SiteNav pointing to `/study`.
 - Q: How should instructor notes be displayed? → A: Collapsed by default behind a "Show instructor notes" disclosure control when present; nothing rendered (no toggle, no label) when the question has no instructor notes.
 - Clarification: Assets referenced in question Markdown (e.g., `.png` files in `content/assets/`) must be served from `public/images/` in the built output. The build process must copy files from `content/assets/` to `public/images/`, and image references in rendered HTML must resolve to the correct public URL.
+- Q: What URL should the full disclaimer page use? → A: `/study/disclaimer` — co-located with the study section.
+- Q: Where does the concise disclaimer appear on guide and question pages? → A: Bottom of page content, after main content, before the site footer. Does not interrupt the study flow.
+- Q: What is the single source of truth for disclaimer text? → A: A TypeScript component (no Markdown parser needed); developer edits one `.tsx` file and all affected pages update on next build.
 
 ## Assumptions
 
