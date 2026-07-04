@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { parseQuestionContent } from "../parse-question";
-import type { TagMap } from "../types";
+import { parseQuestionContent } from "@/lib/content/parse-question";
+import type { TagMap } from "@/lib/content/types";
 
 const tagMap: TagMap = {
   weather: { id: "weather", label: "Weather" },

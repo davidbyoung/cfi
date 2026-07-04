@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { parseGuideContent } from "../parse-guide";
-import { resolveGuide, validateGuideSlugs } from "../validate";
-import type { Question, RawGuide } from "../types";
+import { parseGuideContent } from "@/lib/content/parse-guide";
+import { resolveGuide, validateGuideSlugs } from "@/lib/content/validate";
+import type { Question, RawGuide } from "@/lib/content/types";
 
 function makeQuestion(id: string): Question {
   return {

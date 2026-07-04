@@ -18,7 +18,7 @@ content/
 
 ## TypeScript Types
 
-All types live in `lib/content/types.ts`.
+All types live in `src/lib/content/types.ts`.
 
 ```typescript
 // ── Parsed output types (consumed by pages) ──────────────────────────────
@@ -147,7 +147,7 @@ The parser loads this list and builds a `TagMap` keyed by `id` for O(1) validati
 
 ---
 
-## Content Loader Modules (`lib/content/`)
+## Content Loader Modules (`src/lib/content/`)
 
 | File                | Responsibility                                                                            |
 | ------------------- | ----------------------------------------------------------------------------------------- |
@@ -185,16 +185,16 @@ loader.ts
   ├─ parse-guide.ts × N → RawGuide[]
   └─ validate.ts → Guide[] (resolved)
 
-app/study/page.tsx
+src/app/study/page.tsx
   └─ guides.map(g => {title, slug, description})  → rendered HTML
 
-app/study/guides/[slug]/page.tsx
+src/app/study/guides/[slug]/page.tsx
   └─ full Guide object                            → rendered HTML
 
-app/study/questions/page.tsx
+src/app/study/questions/page.tsx
   └─ QuestionSearchIndexEntry[]  ──props──>  QuestionSearch.tsx ("use client")
                                               └─ in-memory filter + render
 
-app/study/questions/[slug]/page.tsx
+src/app/study/questions/[slug]/page.tsx
   └─ full Question object                         → rendered HTML
 ```

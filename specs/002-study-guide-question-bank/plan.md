@@ -40,35 +40,38 @@ specs/002-study-guide-question-bank/
 scripts/
 └── copy-content-assets.mjs      ← copies content/assets/ → public/images/ (prebuild)
 
-lib/
-└── content/
-    ├── types.ts                  ← all exported TypeScript interfaces
-    ├── loader.ts                 ← entry point: load all questions, guides, tags
-    ├── parse-question.ts         ← parse one .md file → Question
-    ├── parse-guide.ts            ← parse one .yml guide file → RawGuide
-    ├── parse-tags.ts             ← parse tags.yml → TagMap
-    ├── validate.ts               ← cross-validate tag refs, guide question refs
-    ├── search-index.ts           ← build QuestionSearchIndexEntry[] (HTML → plain text)
-    └── __tests__/
+src/
+├── lib/
+│   └── content/
+│       ├── types.ts              ← all exported TypeScript interfaces
+│       ├── loader.ts             ← entry point: load all questions, guides, tags
+│       ├── parse-question.ts     ← parse one .md file → Question
+│       ├── parse-guide.ts        ← parse one .yml guide file → RawGuide
+│       ├── parse-tags.ts         ← parse tags.yml → TagMap
+│       ├── validate.ts           ← cross-validate tag refs, guide question refs
+│       └── search-index.ts       ← build QuestionSearchIndexEntry[] (HTML → plain text)
+└── app/
+    ├── _components/
+    │   └── SiteNav.tsx           ← add "Study" link (existing file, one-line edit)
+    └── study/
+        ├── page.tsx              ← /study index: brief intro + guide list + question bank link
+        ├── guides/
+        │   └── [slug]/
+        │       └── page.tsx      ← /study/guides/[slug]: full guide renderer
+        └── questions/
+            ├── page.tsx          ← /study/questions: server component wrapper
+            ├── _components/
+            │   └── QuestionSearch.tsx  ← "use client" — search/filter UI
+            └── [slug]/
+                └── page.tsx      ← /study/questions/[slug]: individual question page
+
+tests/
+└── lib/
+    └── content/
         ├── parse-question.test.ts
         ├── parse-guide.test.ts
         ├── parse-tags.test.ts
         └── search-index.test.ts
-
-app/
-├── _components/
-│   └── SiteNav.tsx               ← add "Study" link (existing file, one-line edit)
-└── study/
-    ├── page.tsx                  ← /study index: brief intro + guide list + question bank link
-    ├── guides/
-    │   └── [slug]/
-    │       └── page.tsx          ← /study/guides/[slug]: full guide renderer
-    └── questions/
-        ├── page.tsx              ← /study/questions: server component wrapper
-        ├── _components/
-        │   └── QuestionSearch.tsx  ← "use client" — search/filter UI
-        └── [slug]/
-            └── page.tsx          ← /study/questions/[slug]: individual question page
 
 content/                          ← existing; author's source of truth
 ├── assets/
@@ -83,7 +86,7 @@ public/
 └── images/                       ← populated at prebuild from content/assets/
 ```
 
-**Structure Decision**: Next.js App Router (single project). Content loading is server-only (`lib/content/`). Client interactivity is isolated to `app/study/questions/_components/QuestionSearch.tsx`. All other study pages are React Server Components.
+**Structure Decision**: Next.js App Router (single project). Content loading is server-only (`src/lib/content/`). Client interactivity is isolated to `src/app/study/questions/_components/QuestionSearch.tsx`. All other study pages are React Server Components.
 
 ## Complexity Tracking
 
@@ -127,7 +130,7 @@ npm install --save-dev @types/js-yaml vitest @vitest/ui
 
 Create `scripts/copy-content-assets.mjs`. Add `"prebuild": "node scripts/copy-content-assets.mjs"` to `package.json` scripts. The script uses `fs.cpSync('content/assets', 'public/images', { recursive: true })`.
 
-#### Step 3 — Content loader library (`lib/content/`)
+#### Step 3 — Content loader library (`src/lib/content/`)
 
 Implement in this order (each module depends on the previous):
 
@@ -139,7 +142,7 @@ Implement in this order (each module depends on the previous):
 6. `search-index.ts` — strips HTML from `Question[]` to produce `QuestionSearchIndexEntry[]`
 7. `loader.ts` — orchestrates all of the above; exposes `loadContent(): ContentLibrary`
 
-#### Step 4 — Tests (`lib/content/__tests__/`)
+#### Step 4 — Tests (`tests/lib/content/`)
 
 Write tests for:
 
@@ -150,14 +153,14 @@ Write tests for:
 
 #### Step 5 — Study pages
 
-1. `app/study/page.tsx` — brief intro sentence + guide list + "Browse all questions" link
-2. `app/study/guides/[slug]/page.tsx` — `generateStaticParams` + full guide renderer with collapsible answers and optional instructor notes disclosure; print-friendly styles
-3. `app/study/questions/page.tsx` + `_components/QuestionSearch.tsx` — server component passes `QuestionSearchIndexEntry[]` as prop to client component; client handles search + tag filter UI
-4. `app/study/questions/[slug]/page.tsx` — `generateStaticParams` + individual question page
+1. `src/app/study/page.tsx` — brief intro sentence + guide list + "Browse all questions" link
+2. `src/app/study/guides/[slug]/page.tsx` — `generateStaticParams` + full guide renderer with collapsible answers and optional instructor notes disclosure; print-friendly styles
+3. `src/app/study/questions/page.tsx` + `_components/QuestionSearch.tsx` — server component passes `QuestionSearchIndexEntry[]` as prop to client component; client handles search + tag filter UI
+4. `src/app/study/questions/[slug]/page.tsx` — `generateStaticParams` + individual question page
 
 #### Step 6 — Site nav update
 
-Add "Study" link to `app/_components/SiteNav.tsx` pointing to `/study`.
+Add "Study" link to `src/app/_components/SiteNav.tsx` pointing to `/study`.
 
 #### Step 7 — Build integration
 
@@ -218,7 +221,7 @@ If any validation error is found, the loader throws an aggregated error listing 
 The content loader exposes one public interface consumed by all study pages:
 
 ```typescript
-// lib/content/loader.ts
+// src/lib/content/loader.ts
 
 export type ContentLibrary = {
   questions: Question[]; // all questions, sorted by id

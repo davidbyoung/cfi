@@ -4,11 +4,11 @@ import path from "node:path";
 export default defineConfig({
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "."),
+      "@": path.resolve(__dirname, "src"),
     },
   },
   test: {
-    include: ["lib/**/*.test.ts"],
+    include: ["tests/**/*.test.ts"],
     environment: "node",
   },
 });

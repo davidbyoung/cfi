@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseTagsContent } from "../parse-tags";
+import { parseTagsContent } from "@/lib/content/parse-tags";
 
 const VALID_YAML = `
 - id: safety-pilot

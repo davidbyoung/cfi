@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { buildSearchIndex } from "../search-index";
-import type { Question } from "../types";
+import { buildSearchIndex } from "@/lib/content/search-index";
+import type { Question } from "@/lib/content/types";
 
 function makeQuestion(overrides: Partial<Question> = {}): Question {
   return {
