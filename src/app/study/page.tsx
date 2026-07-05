@@ -16,8 +16,8 @@ export default function StudyPage() {
         Study Resources
       </h1>
       <p className="mb-10 text-muted">
-        Oral exam prep guides and a searchable question bank for instrument
-        rating, IPC, flight review, and CFII preparation.
+        Review these guides to help prepare you for oral exams, flight reviews,
+        and instrument proficiency checks.
       </p>
 
       {guides.length > 0 && (

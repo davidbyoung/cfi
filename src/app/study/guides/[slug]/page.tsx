@@ -55,20 +55,6 @@ export default async function GuidePage({ params }: Props) {
                   key={question.id}
                   className="mb-5 rounded-md border border-rule p-5 study-question"
                 >
-                  {question.tags.length > 0 && (
-                    <div className="mb-3 flex flex-wrap gap-1.5">
-                      {question.tags.map((tagId) => (
-                        <Link
-                          key={tagId}
-                          href={`/study/questions?tag=${encodeURIComponent(tagId)}`}
-                          className="rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
-                        >
-                          {tags[tagId]?.label ?? tagId}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-
                   <div
                     className="study-prose text-sm"
                     dangerouslySetInnerHTML={{ __html: question.questionHtml }}
@@ -108,6 +94,20 @@ export default async function GuidePage({ params }: Props) {
                             __html: question.sourcesHtml,
                           }}
                         />
+                      </div>
+                    )}
+
+                    {question.tags.length > 0 && (
+                      <div className="mt-4 flex flex-wrap gap-1.5">
+                        {question.tags.map((tagId) => (
+                          <Link
+                            key={tagId}
+                            href={`/study/questions?tag=${encodeURIComponent(tagId)}`}
+                            className="rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
+                          >
+                            {tags[tagId]?.label ?? tagId}
+                          </Link>
+                        ))}
                       </div>
                     )}
                   </details>

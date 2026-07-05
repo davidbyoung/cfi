@@ -36,7 +36,7 @@ A student wants to review everything related to instrument currency. They naviga
 
 **Acceptance Scenarios**:
 
-1. **Given** a student visits `/study/questions`, **When** the page loads, **Then** all questions are listed, each showing its question text, tags as clickable pills, and a "Show answer" control.
+1. **Given** a student visits `/study/questions`, **When** the page loads, **Then** all questions are listed, each showing its question text and a "Show answer" control; tags as clickable pills appear inside the revealed answer, after Sources.
 2. **Given** a student types in the search field, **When** text is entered, **Then** only questions matching the text in question body, answer, instructor notes, tags, or sources are shown, and a result count is updated.
 3. **Given** a student clicks a tag filter button at the top, **When** selected, **Then** only questions bearing that tag are shown.
 4. **Given** a student clicks a tag pill on an individual question result, **When** clicked, **Then** the tag filter activates for that tag, filtering all results.
@@ -161,7 +161,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 **Guide page behavior**
 
 - **FR-026**: Guide pages MUST render chapters, sections, and questions in the exact order defined in the guide YAML.
-- **FR-026a**: On guide pages, each question MUST display: (1) its tags as clickable pills above the question text, each linking to `/study/questions?tag=[id]`; (2) the full question body HTML; (3) a "Show answer" control. No link to a per-question URL is rendered.
+- **FR-026a**: On guide pages, each question MUST display: (1) the full question body HTML; (2) a "Show answer" control; (3) its tags as clickable pills, each linking to `/study/questions?tag=[id]`, rendered inside the revealed answer after Sources — not above the question text, so a tag cannot hint at the answer before the student attempts it. No link to a per-question URL is rendered.
 - **FR-026b**: On guide pages, chapter headings MUST be prefixed with their 1-based ordinal number and a period (e.g., "1. Pilot Qualifications, Privileges, and Currency"). Section headings MUST be prefixed with chapter.section notation (e.g., "1.1 When an Instrument Rating Is Required"). Numbering MUST be computed from each chapter's/section's position in the guide YAML — there is no `number` field for authors to set, and one is rejected as an unrecognized frontmatter key if present.
 - **FR-027**: Answers on guide pages MUST be hidden by default and revealed by an accessible "Show answer" control.
 - **FR-028**: Guide pages MUST support print-friendly styling with answers visible when printed.
@@ -171,12 +171,12 @@ The site owner creates a new question file under `content/questions/`, adds its 
 **Question bank behavior**
 
 - **FR-030**: The question bank page MUST provide a text search input that matches across question text, answer text, instructor notes, tags, and sources (no title field exists).
-- **FR-031**: The question bank page MUST provide a tag filter at the top of the page. Each question result MUST also show its tags as clickable pills; clicking a tag pill on a result activates the tag filter for that tag.
+- **FR-031**: The question bank page MUST provide a tag filter at the top of the page. Each question result MUST also show its tags as clickable pills inside its revealed answer (after Sources, not before the question is shown); clicking a tag pill on a result activates the tag filter for that tag.
 - **FR-032**: The question bank page MUST show a result count and a "Clear filters" control.
 - **FR-033**: Search and tag filtering MUST work without an external search service.
 - **FR-057**: All hyperlinks within the rendered `### Sources` section MUST include `target="_blank" rel="noopener noreferrer"` so they open in a new browser tab.
 - **FR-058**: The question bank MUST pre-populate the active tag filter from a `?tag=[id]` URL query parameter on load, enabling guide tag pills to link directly to a pre-filtered question bank view.
-- **FR-059**: Each question result in the question bank MUST display the full question body HTML and a "Show answer" control that reveals the answer, instructor notes (if present), and sources (if present) inline.
+- **FR-059**: Each question result in the question bank MUST display the full question body HTML and a "Show answer" control that reveals, in order, the answer, instructor notes (if present), sources (if present), and tags (if present) inline.
 
 **Accessibility**
 
@@ -253,13 +253,17 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - Q: Should individual question pages (`/study/questions/[slug]`) be generated? → A: No — removed entirely. Questions are accessed only through guides or the question bank.
 - Q: Should `title` remain in the question data model? → A: No — `title` and `slug` are removed from the `Question` type. The `### Question` markdown section is the question content. Question frontmatter contains only `tags` (see supplement 3 below for removal of `id`).
 - Q: Should source links open in a new tab? → A: Yes — all `<a>` elements in the rendered `### Sources` section MUST include `target="_blank" rel="noopener noreferrer"`.
-- Q: How should tags appear and behave on guide and question bank pages? → A: Tags appear as clickable pills above the question text on both guide pages and question bank result cards. In guides, tag pills link to `/study/questions?tag=[id]`. In the question bank, tag pills on result cards activate the inline tag filter. The question bank reads a `?tag=` URL parameter on mount to pre-populate the filter.
+- Q: How should tags appear and behave on guide and question bank pages? → A: Tags appear as clickable pills above the question text on both guide pages and question bank result cards. In guides, tag pills link to `/study/questions?tag=[id]`. In the question bank, tag pills on result cards activate the inline tag filter. The question bank reads a `?tag=` URL parameter on mount to pre-populate the filter. (Pill _position_ superseded by supplement 4 below — tags moved to inside the revealed answer.)
 
 ### Session 2026-07-04 (supplement 3)
 
 - Q: Should questions keep a separate `id` frontmatter field alongside the filename? → A: No — `id` is removed entirely. The filename (sans `.md`) is now the question's sole, canonical identifier; guide YAML files reference questions by filename. This also renders "filename must match id" validation moot (removed), since there is nothing left for the filename to disagree with. Question filenames were also renamed from literal slugified question text to short, semantic, theme-based slugs (e.g. `safety-pilot-flight-review-currency.md` instead of a slugified copy of the question sentence).
 - Q: `title` was already dropped from the `Question` type (supplement 2), but content files still carried a `title:` frontmatter key that was silently parsed and discarded. Worth keeping? → A: No — it was pure duplication of `### Question` with no reader. Removed from all question files. Frontmatter parsing is now `.strict()`: a `title` key, or any key other than `tags`, fails the build with a clear error instead of being silently ignored.
 - Q: Guide YAML files had a manually-authored `number` field on every chapter and section (e.g. `number: "1.4"`). Is it needed? → A: No — chapter/section numbering displayed on guide pages (FR-026b) was already computed from array position in `src/app/study/guides/[slug]/page.tsx`; the `number` field was parsed and silently discarded the same way `title` was for questions. Removed from the guide YAML and from the guide schema; `parse-guide.ts`'s chapter/section/guide schemas are now `.strict()`, so a stray `number` (or any other unrecognized key) fails the build instead of being silently ignored.
+
+### Session 2026-07-04 (supplement 4)
+
+- Q: Tags rendered above the question text (per the original tag-position decision, session supplement 2 above) can hint at or give away the answer before a student attempts it — e.g. a tag naming the specific failure mode of a diagnostic scenario question. Should tag position change? → A: Yes — tags moved off the pre-reveal question block entirely, onto the end of the revealed answer, after Sources (FR-026a, FR-031, FR-059). Tag-based filtering (search box, the "Filter by tag" panel, and the `?tag=` URL parameter per FR-058) is unaffected since none of it depends on a tag pill being visible on an unrevealed question — only the "click a tag pill on a question you haven't opened yet" pivot is lost, which is an acceptable tradeoff against spoiling answers before a self-test attempt.
 
 ## Assumptions
 

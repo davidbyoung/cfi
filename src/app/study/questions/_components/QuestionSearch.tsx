@@ -12,12 +12,23 @@ type Props = {
   tagList: TagDefinition[];
 };
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// Matches at a word boundary (e.g. "ils" matches "ILS approach" but not
+// "details") rather than a raw substring anywhere in the text.
+function matchesQuery(haystack: string, query: string): boolean {
+  if (!query) return true;
+  return new RegExp(`\\b${escapeRegExp(query)}`, "i").test(haystack);
+}
+
 function filterQuestions(
   index: QuestionSearchIndexEntry[],
   query: string,
   activeTag: string | null,
 ): QuestionSearchIndexEntry[] {
-  const q = query.toLowerCase().trim();
+  const q = query.trim();
   return index.filter((entry) => {
     if (activeTag && !entry.tags.includes(activeTag)) return false;
     if (q) {
@@ -27,10 +38,8 @@ function filterQuestions(
         entry.instructorNotesText ?? "",
         entry.sourcesText ?? "",
         ...entry.tags,
-      ]
-        .join(" ")
-        .toLowerCase();
-      if (!searchable.includes(q)) return false;
+      ].join(" ");
+      if (!matchesQuery(searchable, q)) return false;
     }
     return true;
   });
@@ -52,21 +61,6 @@ function QuestionCard({
 
   return (
     <li className="rounded-md border border-rule p-5 study-question">
-      {entry.tags.length > 0 && (
-        <div className="mb-3 flex flex-wrap gap-1.5">
-          {entry.tags.map((tagId) => (
-            <button
-              key={tagId}
-              type="button"
-              onClick={() => onTagClick(tagId)}
-              className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
-            >
-              {tagMap[tagId]?.label ?? tagId}
-            </button>
-          ))}
-        </div>
-      )}
-
       <div
         className="study-prose text-sm"
         dangerouslySetInnerHTML={{ __html: entry.questionHtml }}
@@ -102,6 +96,21 @@ function QuestionCard({
             />
           </div>
         )}
+
+        {entry.tags.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            {entry.tags.map((tagId) => (
+              <button
+                key={tagId}
+                type="button"
+                onClick={() => onTagClick(tagId)}
+                className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
+              >
+                {tagMap[tagId]?.label ?? tagId}
+              </button>
+            ))}
+          </div>
+        )}
       </details>
     </li>
   );
@@ -124,6 +133,16 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
     () => filterQuestions(searchIndex, query, activeTag),
     [searchIndex, query, activeTag],
   );
+
+  const visibleTags = useMemo(() => {
+    const q = query.trim();
+    if (!q) return tagList;
+    return tagList.filter((tag) => matchesQuery(tag.label, q));
+  }, [tagList, query]);
+
+  const activeTagDefinition = activeTag
+    ? (tagList.find((t) => t.id === activeTag) ?? null)
+    : null;
 
   function toggleTag(id: string) {
     setActiveTag((prev) => (prev === id ? null : id));
@@ -152,30 +171,51 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
         />
       </div>
 
-      {tagList.length > 0 && (
-        <div className="mb-6">
-          <p className="mb-2 text-sm font-medium">Filter by tag</p>
-          <div className="flex flex-wrap gap-2">
-            {tagList.map((tag) => {
-              const active = activeTag === tag.id;
-              return (
-                <button
-                  key={tag.id}
-                  type="button"
-                  aria-pressed={active}
-                  onClick={() => toggleTag(tag.id)}
-                  className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors ${
-                    active
-                      ? "bg-foreground text-background"
-                      : "border border-rule text-muted hover:border-foreground hover:text-foreground"
-                  }`}
-                >
-                  {tag.label}
-                </button>
-              );
-            })}
-          </div>
+      {activeTagDefinition && (
+        <div className="mb-4">
+          <button
+            type="button"
+            onClick={() => toggleTag(activeTagDefinition.id)}
+            className="cursor-pointer inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-medium text-accent hover:border-accent/60"
+          >
+            Filtering by {activeTagDefinition.label}
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+      )}
+
+      {tagList.length > 0 && (
+        <details className="mb-6 rounded-md border border-rule px-4">
+          <summary className="cursor-pointer select-none py-3 text-sm font-medium hover:opacity-70">
+            Filter by tag
+          </summary>
+          <div className="flex flex-wrap gap-2 pb-4">
+            {visibleTags.length === 0 ? (
+              <p className="text-sm text-muted">
+                No tags match “{query.trim()}”.
+              </p>
+            ) : (
+              visibleTags.map((tag) => {
+                const active = activeTag === tag.id;
+                return (
+                  <button
+                    key={tag.id}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => toggleTag(tag.id)}
+                    className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                      active
+                        ? "bg-foreground text-background"
+                        : "border border-rule text-muted hover:border-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {tag.label}
+                  </button>
+                );
+              })
+            )}
+          </div>
+        </details>
       )}
 
       <div className="mb-4 flex items-center justify-between text-sm text-muted">
