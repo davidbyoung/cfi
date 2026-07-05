@@ -17,6 +17,6 @@ When your vacuum system fails, which instruments should you rely on for pitch? F
 
 ### Sources
 
-- [FAA Instrument Flying Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_flying_handbook)
+- [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
 - [FAA Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
 - Aircraft-specific source: AFM/POH and avionics supplements

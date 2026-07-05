@@ -17,4 +17,4 @@ If your static port becomes blocked and you descend, what happens?
 ### Sources
 
 - [FAA Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
-- [FAA Instrument Flying Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_flying_handbook)
+- [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)

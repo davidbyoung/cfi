@@ -19,8 +19,4 @@ What is the dashed brown line going over the Gulf of California, and what kind o
 
 ### Sources
 
-- [Aviation Weather Center — Aviation weather products](https://aviationweather.gov/help/data/)
-- [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
-- [14 CFR § 91.175(c) — Operation below DA/DH or MDA](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.175#p-91.175%28c%29)
-- [FAA AIM Chapter 5, Section 4 — Arrival procedures](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_4.html)
-- [FAA Instrument Procedures Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook)
+- [FAA Aviation Weather Handbook, Chapter 25 — Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)

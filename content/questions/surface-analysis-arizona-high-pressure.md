@@ -19,5 +19,4 @@ What is the blue “H” over Arizona, and what kind of conditions are associate
 
 ### Sources
 
-- [Aviation Weather Center — Aviation weather products](https://aviationweather.gov/help/data/)
-- [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
+- [FAA Aviation Weather Handbook, Chapter 25 — Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)
