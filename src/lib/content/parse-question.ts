@@ -19,12 +19,11 @@ const KNOWN_SECTIONS = new Set([
   "Sources",
 ]);
 
-const FrontmatterSchema = z.object({
-  id: z
-    .string({ error: "id is required" })
-    .regex(KEBAB, "id must be lowercase kebab-case"),
-  tags: z.array(z.string()).default([]),
-});
+const FrontmatterSchema = z
+  .object({
+    tags: z.array(z.string()).default([]),
+  })
+  .strict();
 
 function walkHast(node: Node, fn: (n: Node) => void): void {
   fn(node);
@@ -129,13 +128,12 @@ export function parseQuestionContent(
     throw new Error(`${filePath}: ${field} — ${issue.message}`);
   }
 
-  const { id, tags } = fm.data;
+  const { tags } = fm.data;
 
-  const expectedFilename = `${id}.md`;
-  const actualFilename = path.basename(filePath);
-  if (actualFilename !== expectedFilename) {
+  const id = path.basename(filePath, ".md");
+  if (!KEBAB.test(id)) {
     throw new Error(
-      `${filePath}: filename "${actualFilename}" does not match id "${id}" — expected "${expectedFilename}"`,
+      `${filePath}: filename "${path.basename(filePath)}" must be lowercase kebab-case`,
     );
   }
 

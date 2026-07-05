@@ -110,6 +110,8 @@
   label: Instrument Failures
 - id: instrument-rating-experience-requirements
   label: Instrument Rating Experience Requirements
+- id: instrument-rating-privileges
+  label: Instrument Rating Privileges
 - id: instrument-systems
   label: Instrument Systems
 - id: ipc

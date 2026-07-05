@@ -1,0 +1,20 @@
+---
+tags:
+  - ahrs
+  - instrument-systems
+---
+
+### Question
+
+What is AHRS and how does it work?
+
+### Answer
+
+- A magnetometer senses direction, accelerometers sense acceleration, and solid-state gyros sense attitude/rotation
+- The system computes aircraft attitude and heading
+
+### Sources
+
+- [FAA Instrument Flying Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_flying_handbook)
+- Aircraft-specific source: AFM/POH and avionics supplements
+- [FAA Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)

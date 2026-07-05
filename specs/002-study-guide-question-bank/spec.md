@@ -79,7 +79,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 3. **Given** the same question ID appears in two guide YAML files, **When** the build runs, **Then** the question renders in both guides without duplicating the question file.
 4. **Given** a question file is missing `### Answer`, **When** the build runs, **Then** the build fails with an error citing the file path and the specific problem.
 5. **Given** a guide references a question ID that does not exist, **When** the build runs, **Then** the build fails with an error citing the guide file path and the unknown ID.
-6. **Given** two question files share the same `id` field, **When** the build runs, **Then** the build fails with an error.
+6. **Given** a question filename is not lowercase kebab-case, **When** the build runs, **Then** the build fails with an error.
 7. **Given** a question uses a tag not defined in `content/tags.yml`, **When** the build runs, **Then** the build fails with an error citing the question file and the unknown tag.
 
 ---
@@ -90,7 +90,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - What happens when a question ID in a guide appears twice within the same guide? Build fails with a clear error.
 - What happens when two guides share the same slug? Build fails with a clear error.
 - What happens when `content/tags.yml` is missing? Build fails with a clear error.
-- What happens when a question file's name does not match its `id` field? Build fails with a clear error.
+- What happens when a question filename is not lowercase kebab-case? Build fails with a clear error.
 - What happens when a question has an unrecognized top-level section (e.g., `### Footnotes`)? Build fails with a clear error.
 - What happens when a Markdown question body references a local image that does not exist in `content/assets/`? Build fails with a clear error citing the file and missing asset path.
 - What happens when a tag key in `tags.yml` is not lowercase kebab-case? Build fails with a clear error.
@@ -111,12 +111,11 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 **Question format**
 
-- **FR-006**: Each question file MUST be a Markdown file with YAML frontmatter containing `id` and `tags`. The `title` field is not supported and MUST NOT be required or rendered.
+- **FR-006**: Each question file MUST be a Markdown file with YAML frontmatter containing exactly one field, `tags`. There is no `id` field — the filename (sans `.md`) is the question's canonical identifier. There is no `title` field — the `### Question` section is the only question text, and a stray `title` (or any other unrecognized frontmatter key) MUST fail the build.
 - **FR-007**: The question body MUST contain a `### Question` section and a `### Answer` section.
 - **FR-008**: The question body MAY contain an optional `### Instructor notes` section.
 - **FR-009**: The question body MAY contain an optional `### Sources` section supporting Markdown hyperlinks.
-- **FR-010**: Question IDs MUST be lowercase kebab-case, semantic, and stable (no numeric prefixes).
-- **FR-011**: Question filenames MUST match the question `id` (e.g., `safety-pilot-logging.md` for `id: safety-pilot-logging`).
+- **FR-010**: Question filenames (used as the question ID) MUST be lowercase kebab-case, semantic, and stable (no numeric prefixes). (FR-011 is removed: filenames no longer need to match a separate `id` field, since the filename itself is the id.)
 - **FR-012**: The same question MUST be reusable in multiple guides without duplicating the question file.
 
 **Guide format**
@@ -136,10 +135,9 @@ The site owner creates a new question file under `content/questions/`, adds its 
 **Build validation**
 
 - **FR-021**: The build MUST fail with a file path and specific error message when any of the following occur:
-  - A question is missing `id`, `title`, or either required body section.
-  - A question `id` is not lowercase kebab-case.
-  - A question `id` is duplicated.
-  - A question filename does not match its `id`.
+  - A question is missing either required body section (`### Question` or `### Answer`).
+  - A question filename is not lowercase kebab-case.
+  - A question frontmatter has a `title` field or any key other than `tags`.
   - A question uses a tag not defined in `content/tags.yml`.
   - A question has an unrecognized top-level Markdown section.
   - A guide references a question ID that does not exist.
@@ -209,7 +207,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 ### Key Entities
 
-- **Question**: A reusable unit of content with an ID, tags, required question and answer sections, and optional instructor notes and sources. Has no `title` field. No per-question URL is generated; questions are accessed only via guides or the question bank.
+- **Question**: A reusable unit of content identified by its filename (no separate `id` frontmatter field), with tags, required question and answer sections, and optional instructor notes and sources. Has no `title` field. No per-question URL is generated; questions are accessed only via guides or the question bank.
 - **Guide**: An ordered collection of chapters, each containing sections, each containing ordered question references. Has `title` and `slug` only — no `description`. Canonical URL: `/study/guides/[slug]`.
 - **Chapter**: A major heading grouping within a guide (e.g., "Pilot Qualifications, Privileges, and Currency").
 - **Section**: A subheading grouping within a chapter (e.g., "Instrument Currency"), containing an ordered list of question IDs.
@@ -253,9 +251,14 @@ The site owner creates a new question file under `content/questions/`, adds its 
 ### Session 2026-07-04 (supplement 2)
 
 - Q: Should individual question pages (`/study/questions/[slug]`) be generated? → A: No — removed entirely. Questions are accessed only through guides or the question bank.
-- Q: Should `title` remain in the question data model? → A: No — `title` and `slug` are removed from the `Question` type. The `### Question` markdown section is the question content. Question frontmatter contains only `id` and `tags`.
+- Q: Should `title` remain in the question data model? → A: No — `title` and `slug` are removed from the `Question` type. The `### Question` markdown section is the question content. Question frontmatter contains only `tags` (see supplement 3 below for removal of `id`).
 - Q: Should source links open in a new tab? → A: Yes — all `<a>` elements in the rendered `### Sources` section MUST include `target="_blank" rel="noopener noreferrer"`.
 - Q: How should tags appear and behave on guide and question bank pages? → A: Tags appear as clickable pills above the question text on both guide pages and question bank result cards. In guides, tag pills link to `/study/questions?tag=[id]`. In the question bank, tag pills on result cards activate the inline tag filter. The question bank reads a `?tag=` URL parameter on mount to pre-populate the filter.
+
+### Session 2026-07-04 (supplement 3)
+
+- Q: Should questions keep a separate `id` frontmatter field alongside the filename? → A: No — `id` is removed entirely. The filename (sans `.md`) is now the question's sole, canonical identifier; guide YAML files reference questions by filename. This also renders "filename must match id" validation moot (removed), since there is nothing left for the filename to disagree with. Question filenames were also renamed from literal slugified question text to short, semantic, theme-based slugs (e.g. `safety-pilot-flight-review-currency.md` instead of a slugified copy of the question sentence).
+- Q: `title` was already dropped from the `Question` type (supplement 2), but content files still carried a `title:` frontmatter key that was silently parsed and discarded. Worth keeping? → A: No — it was pure duplication of `### Question` with no reader. Removed from all question files. Frontmatter parsing is now `.strict()`: a `title` key, or any key other than `tags`, fails the build with a clear error instead of being silently ignored.
 
 ## Assumptions
 

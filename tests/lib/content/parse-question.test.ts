@@ -9,14 +9,10 @@ const tagMap: TagMap = {
   "safety-pilot": { id: "safety-pilot", label: "Safety Pilot" },
 };
 
-function makeContent(overrides: {
-  id?: string;
-  tags?: string;
-  body?: string;
-}): string {
-  const { id = "my-question", tags = "  - weather", body } = overrides;
+function makeContent(overrides: { tags?: string; body?: string }): string {
+  const { tags = "  - weather", body } = overrides;
   const defaultBody = `### Question\n\nWhat?\n\n### Answer\n\nThis.`;
-  return `---\nid: ${id}\ntags:\n${tags}\n---\n\n${body ?? defaultBody}`;
+  return `---\ntags:\n${tags}\n---\n\n${body ?? defaultBody}`;
 }
 
 describe("parseQuestionContent", () => {
@@ -129,19 +125,18 @@ describe("parseQuestionContent", () => {
     ).toThrow('unknown section "### Weird"');
   });
 
-  it("throws when filename does not match id", () => {
-    expect(() =>
-      parseQuestionContent(makeContent({}), "/path/wrong-name.md", tagMap),
-    ).toThrow("does not match id");
+  it("derives id from the filename", () => {
+    const q = parseQuestionContent(
+      makeContent({}),
+      "/path/some-other-name.md",
+      tagMap,
+    );
+    expect(q.id).toBe("some-other-name");
   });
 
-  it("throws when id is not lowercase kebab-case", () => {
+  it("throws when the filename is not lowercase kebab-case", () => {
     expect(() =>
-      parseQuestionContent(
-        makeContent({ id: "MyQuestion" }),
-        "/path/MyQuestion.md",
-        tagMap,
-      ),
+      parseQuestionContent(makeContent({}), "/path/MyQuestion.md", tagMap),
     ).toThrow("lowercase kebab-case");
   });
 
@@ -152,17 +147,17 @@ describe("parseQuestionContent", () => {
     ).toThrow('unknown tag "unknown-tag"');
   });
 
-  it("throws when id is missing", () => {
-    const content = `---\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
+  it("throws when frontmatter has a title field", () => {
+    const content = `---\ntitle: Old Title\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
     expect(() =>
       parseQuestionContent(content, "/path/my-question.md", tagMap),
-    ).toThrow("id is required");
+    ).toThrow('Unrecognized key: "title"');
   });
 
-  it("ignores title field if present in frontmatter", () => {
-    const content = `---\nid: my-question\ntitle: Old Title\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
-    const q = parseQuestionContent(content, "/path/my-question.md", tagMap);
-    expect(q.id).toBe("my-question");
-    expect("title" in q).toBe(false);
+  it("throws when frontmatter has any other unrecognized field", () => {
+    const content = `---\ntags:\n  - weather\nslug: my-question\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
+    expect(() =>
+      parseQuestionContent(content, "/path/my-question.md", tagMap),
+    ).toThrow("Unrecognized key");
   });
 });

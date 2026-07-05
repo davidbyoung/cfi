@@ -1,0 +1,24 @@
+---
+tags:
+  - odps
+  - vcoa
+  - departure-procedures
+  - ifr-clearances
+---
+
+### Question
+
+Let’s say our non-towered airport is in mountainous terrain. How are you going to safely navigate the terrain prior to getting into radar contact?
+
+### Answer
+
+- Check for an Obstacle Departure Procedure (ODP) by looking for a /T\ icon on an approach plate, then brief and fly it if appropriate
+- Request a Vertical Climb Over Airport (VCOA) if you have good visibility and the ability to climb over the airport
+
+### Sources
+
+- [FAA AIM Chapter 5, Section 2 — Departure procedures](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_2.html)
+- [FAA Instrument Procedures Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook)
+- [14 CFR § 91.177 — Minimum altitudes for IFR operations](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.177)
+- [14 CFR § 91.173 — ATC clearance and flight plan required](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.173)
+- [FAA AIM Chapter 4, Section 4 — ATC clearances and aircraft separation](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_4.html)
