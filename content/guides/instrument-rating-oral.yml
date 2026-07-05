@@ -69,9 +69,7 @@ chapters:
         number: "2.5"
       - title: N3096B-Specific Equipment and Limitations
         questions:
-          - n3096b-specific-equipment-and-limitations-what-is-ahrs-and-how-does-it-work
           - what-is-the-benefit-to-ahrs-over-a-vacuum-system
-          - you-lose-your-pfd-during-an-rnav-approach-in-imc-what-navigation-abilities-do-you
           - can-you-switch-your-pfd-and-your-mfd
           - can-you-use-gps-on-your-standby-obs
           - atc-asks-you-to-continue-holding-after-you-performed-a-hold-in-lieu-of-a-procedure
@@ -465,15 +463,6 @@ chapters:
           - ahrs-pfd-mfd-failures-what-is-ahrs-and-how-does-it-work
           - ahrs-pfd-mfd-failures-you-lose-your-pfd-during-an-rnav-approach-in-imc-what-navigation-abilities-do-you
         number: "12.7"
-      - title: Partial Panel Scenarios
-        questions:
-          - partial-panel-scenarios-can-you-switch-your-pfd-and-your-mfd
-          - partial-panel-scenarios-can-you-use-gps-on-your-standby-obs
-        number: "12.8"
-      - title: N3096B-Specific Failure Scenarios
-        questions:
-          - n3096b-specific-failure-scenarios-atc-asks-you-to-continue-holding-after-you-performed-a-hold-in-lieu-of-a-procedure
-        number: "12.9"
     number: "12"
   - title: Lost Communications
     sections:
