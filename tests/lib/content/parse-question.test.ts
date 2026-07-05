@@ -41,6 +41,18 @@ describe("parseQuestionContent", () => {
     expect(q.questionHtml).toContain("TAF KORD");
   });
 
+  it("renders a GFM pipe table as an HTML table", () => {
+    const body = `### Question\n\nQ?\n\n### Answer\n\n| Type | Danger |\n| ---- | ------ |\n| Rime | Disrupts airflow |`;
+    const q = parseQuestionContent(
+      makeContent({ body }),
+      "/path/my-question.md",
+      tagMap,
+    );
+    expect(q.answerHtml).toContain("<div><table>");
+    expect(q.answerHtml).toContain("<th>Type</th>");
+    expect(q.answerHtml).toContain("<td>Rime</td>");
+  });
+
   it("parses a question with instructor notes", () => {
     const body = `### Question\n\nQ?\n\n### Answer\n\nA.\n\n### Instructor notes\n\nAsk the student X.`;
     const q = parseQuestionContent(

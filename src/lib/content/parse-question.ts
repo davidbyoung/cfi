@@ -3,6 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
+import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeSanitize from "rehype-sanitize";
 import rehypeStringify from "rehype-stringify";
@@ -45,6 +46,31 @@ const rewriteImages: Plugin<[], HastRoot> = () => (tree) => {
   });
 };
 
+// Wraps every <table> in a plain <div> so wide tables can scroll
+// horizontally (via `.study-prose > div:has(> table)`) without the table's
+// own `display`/`border-collapse` needing to change.
+function wrapTablesInScrollContainer(node: Node): void {
+  const el = node as { children?: Node[] };
+  if (!el.children) return;
+  el.children = el.children.map((child) => {
+    const childEl = child as Element;
+    if (childEl.type === "element" && childEl.tagName === "table") {
+      return {
+        type: "element",
+        tagName: "div",
+        properties: {},
+        children: [child],
+      } as unknown as Node;
+    }
+    wrapTablesInScrollContainer(child);
+    return child;
+  });
+}
+
+const wrapTables: Plugin<[], HastRoot> = () => (tree) => {
+  wrapTablesInScrollContainer(tree as unknown as Node);
+};
+
 const addTargetBlank: Plugin<[], HastRoot> = () => (tree) => {
   walkHast(tree as unknown as Node, (node) => {
     const el = node as Element;
@@ -61,8 +87,10 @@ const addTargetBlank: Plugin<[], HastRoot> = () => (tree) => {
 function markdownToHtml(md: string): string {
   const file = unified()
     .use(remarkParse)
+    .use(remarkGfm)
     .use(remarkRehype)
     .use(rewriteImages)
+    .use(wrapTables)
     .use(rehypeSanitize)
     .use(rehypeStringify)
     .processSync(md);
@@ -72,8 +100,10 @@ function markdownToHtml(md: string): string {
 function markdownToHtmlSources(md: string): string {
   const file = unified()
     .use(remarkParse)
+    .use(remarkGfm)
     .use(remarkRehype)
     .use(rewriteImages)
+    .use(wrapTables)
     .use(rehypeSanitize)
     .use(addTargetBlank)
     .use(rehypeStringify)

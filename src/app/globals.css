@@ -117,6 +117,29 @@ body {
   margin: 0.75rem 0;
 }
 
+.study-prose > div:has(> table) {
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.study-prose table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.study-prose th,
+.study-prose td {
+  border: 1px solid var(--rule);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.study-prose th {
+  font-weight: 600;
+  background: var(--rule);
+}
+
 /* Print styles: expand all details/summary and show answers */
 @media print {
   details {
