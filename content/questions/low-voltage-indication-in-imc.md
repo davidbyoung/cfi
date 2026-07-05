@@ -1,6 +1,5 @@
 ---
 tags:
-  - electrical-failure
   - instrument-failures
 ---
 

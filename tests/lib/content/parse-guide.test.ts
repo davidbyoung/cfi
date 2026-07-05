@@ -66,7 +66,7 @@ describe("parseGuideContent", () => {
     ]);
   });
 
-  it("accepts and ignores extra fields like number:", () => {
+  it("throws when a chapter has an unrecognized field like number:", () => {
     const yaml = `
 title: Test Guide
 slug: test-guide
@@ -75,13 +75,29 @@ chapters:
     number: '1'
     sections:
       - title: Section A
+        questions:
+          - question-a
+`;
+    expect(() => parseGuideContent(yaml, "guides/test-guide.yml")).toThrow(
+      'Unrecognized key: "number"',
+    );
+  });
+
+  it("throws when a section has an unrecognized field like number:", () => {
+    const yaml = `
+title: Test Guide
+slug: test-guide
+chapters:
+  - title: Chapter One
+    sections:
+      - title: Section A
         number: '1.1'
         questions:
           - question-a
 `;
-    expect(() =>
-      parseGuideContent(yaml, "guides/test-guide.yml"),
-    ).not.toThrow();
+    expect(() => parseGuideContent(yaml, "guides/test-guide.yml")).toThrow(
+      'Unrecognized key: "number"',
+    );
   });
 
   it("throws when title is missing", () => {

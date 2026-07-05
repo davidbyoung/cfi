@@ -1,7 +1,6 @@
 ---
 tags:
   - airworthiness
-  - required-equipment-for-ifr-flight
 ---
 
 ### Question

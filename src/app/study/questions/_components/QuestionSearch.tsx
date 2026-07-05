@@ -164,7 +164,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
                   type="button"
                   aria-pressed={active}
                   onClick={() => toggleTag(tag.id)}
-                  className={`rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+                  className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors ${
                     active
                       ? "bg-foreground text-background"
                       : "border border-rule text-muted hover:border-foreground hover:text-foreground"
@@ -187,7 +187,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
           <button
             type="button"
             onClick={clearFilters}
-            className="text-sm underline underline-offset-2 hover:opacity-80"
+            className="cursor-pointer text-sm underline underline-offset-2 hover:opacity-80"
           >
             Clear filters
           </button>

@@ -1,6 +1,5 @@
 ---
 tags:
-  - da-mda
   - runway-environment
   - requirements-to-descend-below-da-mda
 ---

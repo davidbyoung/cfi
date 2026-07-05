@@ -162,7 +162,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 - **FR-026**: Guide pages MUST render chapters, sections, and questions in the exact order defined in the guide YAML.
 - **FR-026a**: On guide pages, each question MUST display: (1) its tags as clickable pills above the question text, each linking to `/study/questions?tag=[id]`; (2) the full question body HTML; (3) a "Show answer" control. No link to a per-question URL is rendered.
-- **FR-026b**: On guide pages, chapter headings MUST be prefixed with their 1-based ordinal number and a period (e.g., "1. Pilot Qualifications, Privileges, and Currency"). Section headings MUST be prefixed with chapter.section notation (e.g., "1.1 When an Instrument Rating Is Required").
+- **FR-026b**: On guide pages, chapter headings MUST be prefixed with their 1-based ordinal number and a period (e.g., "1. Pilot Qualifications, Privileges, and Currency"). Section headings MUST be prefixed with chapter.section notation (e.g., "1.1 When an Instrument Rating Is Required"). Numbering MUST be computed from each chapter's/section's position in the guide YAML — there is no `number` field for authors to set, and one is rejected as an unrecognized frontmatter key if present.
 - **FR-027**: Answers on guide pages MUST be hidden by default and revealed by an accessible "Show answer" control.
 - **FR-028**: Guide pages MUST support print-friendly styling with answers visible when printed.
 - **FR-029**: Guide pages MUST be readable on mobile devices.
@@ -259,6 +259,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 - Q: Should questions keep a separate `id` frontmatter field alongside the filename? → A: No — `id` is removed entirely. The filename (sans `.md`) is now the question's sole, canonical identifier; guide YAML files reference questions by filename. This also renders "filename must match id" validation moot (removed), since there is nothing left for the filename to disagree with. Question filenames were also renamed from literal slugified question text to short, semantic, theme-based slugs (e.g. `safety-pilot-flight-review-currency.md` instead of a slugified copy of the question sentence).
 - Q: `title` was already dropped from the `Question` type (supplement 2), but content files still carried a `title:` frontmatter key that was silently parsed and discarded. Worth keeping? → A: No — it was pure duplication of `### Question` with no reader. Removed from all question files. Frontmatter parsing is now `.strict()`: a `title` key, or any key other than `tags`, fails the build with a clear error instead of being silently ignored.
+- Q: Guide YAML files had a manually-authored `number` field on every chapter and section (e.g. `number: "1.4"`). Is it needed? → A: No — chapter/section numbering displayed on guide pages (FR-026b) was already computed from array position in `src/app/study/guides/[slug]/page.tsx`; the `number` field was parsed and silently discarded the same way `title` was for questions. Removed from the guide YAML and from the guide schema; `parse-guide.ts`'s chapter/section/guide schemas are now `.strict()`, so a stray `number` (or any other unrecognized key) fails the build instead of being silently ignored.
 
 ## Assumptions
 

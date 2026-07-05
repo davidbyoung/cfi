@@ -1,6 +1,6 @@
 ---
 tags:
-  - rnav
+  - rnav-rnp-approach
   - rnp
 ---
 

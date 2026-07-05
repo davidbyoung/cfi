@@ -1,7 +1,6 @@
 ---
 tags:
   - altimeter
-  - altimeter-errors
   - instrument-systems
 ---
 

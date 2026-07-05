@@ -1,7 +1,6 @@
 ---
 tags:
   - gps
-  - afm
   - equipment-codes
 ---
 

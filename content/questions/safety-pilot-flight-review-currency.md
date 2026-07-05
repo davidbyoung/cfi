@@ -3,7 +3,6 @@ tags:
   - safety-pilot
   - logging
   - instrument-currency
-  - safety-pilot-rules-and-logging
 ---
 
 ### Question

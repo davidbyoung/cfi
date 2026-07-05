@@ -4,12 +4,8 @@
   label: ADS-B Weather
 - id: adverse-weather
   label: Adverse Weather
-- id: afm
-  label: AFM
 - id: ahrs
   label: AHRS
-- id: aircraft-systems
-  label: Aircraft Systems
 - id: airmets
   label: AIRMETs
 - id: airport-lighting
@@ -46,8 +42,6 @@
   label: Avionics
 - id: awos
   label: AWOS
-- id: circling
-  label: Circling
 - id: clearance-void-time
   label: Clearance Void Time
 - id: climb-gradient
@@ -56,14 +50,10 @@
   label: Closing IFR Flight Plans
 - id: convective-sigmets
   label: Convective SIGMETs
-- id: da-mda
-  label: DA/MDA
 - id: departure-procedures
   label: Departure Procedures
 - id: dme
   label: DME
-- id: electrical-failure
-  label: Electrical Failure
 - id: enroute-charts
   label: Enroute Charts
 - id: enroute-weather
@@ -82,14 +72,10 @@
   label: GPS
 - id: gps-in-lieu
   label: GPS in Lieu
-- id: hold-for-release
-  label: Hold For Release
 - id: holds
   label: Holds
 - id: icing
   label: Icing
-- id: ifr
-  label: IFR
 - id: ifr-clearances
   label: IFR Clearances
 - id: ifr-flight-planning
@@ -136,8 +122,6 @@
   label: MCA
 - id: mea
   label: MEA
-- id: medical
-  label: Medical
 - id: metars
   label: METARs
 - id: minimum-altitudes
@@ -162,14 +146,10 @@
   label: ODPs
 - id: oroca
   label: OROCA
-- id: part-91
-  label: Part 91
 - id: partial-panel
   label: Partial Panel
 - id: pbn
   label: PBN
-- id: pilot-documents
-  label: Pilot Documents
 - id: pilot-qualifications
   label: Pilot Qualifications
 - id: pireps
@@ -178,8 +158,6 @@
   label: Pitot Static
 - id: pitot-tube-blockage
   label: Pitot Tube Blockage
-- id: pressure-errors
-  label: Pressure Errors
 - id: prognostic-charts
   label: Prognostic Charts
 - id: raim
@@ -188,14 +166,10 @@
   label: RCO
 - id: required-equipment
   label: Required Equipment
-- id: required-equipment-for-ifr-flight
-  label: Required Equipment For IFR Flight
 - id: requirements-to-descend-below-da-mda
   label: Requirements To Descend Below DA/MDA
-- id: rnav
-  label: RNAV
-- id: rnav-approach
-  label: RNAV Approach
+- id: rnav-rnp-approach
+  label: RNAV RNP Approach
 - id: rnp
   label: RNP
 - id: runway-environment
@@ -204,8 +178,6 @@
   label: Runway Lighting
 - id: safety-pilot
   label: Safety Pilot
-- id: safety-pilot-rules-and-logging
-  label: Safety Pilot Rules And Logging
 - id: sids
   label: SIDs
 - id: sigmets
@@ -222,8 +194,6 @@
   label: Takeoff Minimums
 - id: terminal-arrival-areas
   label: Terminal Arrival Areas
-- id: temperature-errors
-  label: Temperature Errors
 - id: thunderstorms
   label: Thunderstorms
 - id: tod-planning

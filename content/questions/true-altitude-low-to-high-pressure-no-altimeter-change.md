@@ -1,7 +1,7 @@
 ---
 tags:
   - altimeter
-  - pressure-errors
+  - altimeter-errors
   - instrument-systems
 ---
 

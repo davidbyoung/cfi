@@ -1,7 +1,5 @@
 ---
 tags:
-  - pilot-documents
-  - medical
   - instrument-currency
 ---
 

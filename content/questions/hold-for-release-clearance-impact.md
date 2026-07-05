@@ -1,6 +1,5 @@
 ---
 tags:
-  - hold-for-release
   - ifr-clearances
 ---
 

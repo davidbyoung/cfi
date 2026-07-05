@@ -123,16 +123,16 @@ export type ContentLibrary = {
 
 ### Guide
 
-| Field                         | Rule                                                                                                               |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `title`                       | Required. Non-empty string.                                                                                        |
-| `slug`                        | Required. Lowercase kebab-case. Unique across all guides.                                                          |
-| `chapters`                    | Required. Non-empty array.                                                                                         |
-| Chapter `title`               | Required. Non-empty string.                                                                                        |
-| Chapter `sections`            | Required. Non-empty array.                                                                                         |
-| Section `title`               | Required. Non-empty string.                                                                                        |
-| Section `questions`           | Required. Non-empty array of question IDs. Each ID must resolve in `QuestionMap`. No duplicates within same guide. |
-| Extra fields (`number`, etc.) | Accepted and ignored (`.strip()` behavior).                                                                        |
+| Field                         | Rule                                                                                                                                                                                                              |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `title`                       | Required. Non-empty string.                                                                                                                                                                                       |
+| `slug`                        | Required. Lowercase kebab-case. Unique across all guides.                                                                                                                                                         |
+| `chapters`                    | Required. Non-empty array.                                                                                                                                                                                        |
+| Chapter `title`               | Required. Non-empty string.                                                                                                                                                                                       |
+| Chapter `sections`            | Required. Non-empty array.                                                                                                                                                                                        |
+| Section `title`               | Required. Non-empty string.                                                                                                                                                                                       |
+| Section `questions`           | Required. Non-empty array of question IDs. Each ID must resolve in `QuestionMap`. No duplicates within same guide.                                                                                                |
+| Extra fields (`number`, etc.) | Not supported. Guide/chapter/section schemas are `.strict()` — any key beyond the ones listed above fails the build. Chapter/section numbers shown on guide pages are computed from array position, not authored. |
 
 ### Tags
 

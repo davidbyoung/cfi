@@ -1,7 +1,6 @@
 ---
 tags:
   - approach-briefing
-  - rnav-approach
   - n3096b-specific-equipment-and-limitations
   - avidyne
 ---

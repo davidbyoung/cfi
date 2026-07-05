@@ -1,6 +1,6 @@
 ---
 tags:
-  - aircraft-systems
+  - instrument-systems
   - avionics
   - vacuum-failure
   - ahrs
