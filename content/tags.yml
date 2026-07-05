@@ -1,13 +1,11 @@
 - id: ads-b
-  label: ADS B
+  label: ADS-B
 - id: ads-b-weather
-  label: ADS B Weather
-- id: adverse-conditions-icing-and-thunderstorms
-  label: Adverse Conditions Icing And Thunderstorms
+  label: ADS-B Weather
 - id: adverse-weather
   label: Adverse Weather
 - id: afm
-  label: Afm
+  label: AFM
 - id: ahrs
   label: AHRS
 - id: ahrs-pfd-mfd-failures
@@ -16,8 +14,6 @@
   label: Aircraft Systems
 - id: airmets
   label: AIRMETs
-- id: airmets-sigmets-and-convective-sigmets
-  label: AIRMETs SIGMETs And Convective SIGMETs
 - id: airport-lighting
   label: Airport Lighting
 - id: airport-markings
@@ -30,64 +26,50 @@
   label: Airspace And ADS B Requirements
 - id: airways
   label: Airways
-- id: airways-fixes-waypoints-and-changeover-points
-  label: Airways Fixes Waypoints And Changeover Points
 - id: airworthiness
   label: Airworthiness
 - id: alternates
   label: Alternates
 - id: altimeter
   label: Altimeter
-- id: altimeter-and-temperature-pressure-errors
-  label: Altimeter And Temperature Pressure Errors
-- id: approach-below-published-minimums
-  label: Approach Below Published Minimums
+- id: altimeter-errors
+  label: Altimeter Errors
 - id: approach-briefing
   label: Approach Briefing
 - id: approach-concepts
   label: Approach Concepts
 - id: approach-lights
   label: Approach Lights
-- id: approach-lights-and-the-100-foot-rule
-  label: Approach Lights And The 100 Foot Rule
 - id: approaches
   label: Approaches
 - id: arrival-procedures
   label: Arrival Procedures
 - id: asos
-  label: Asos
-- id: atc-clearance
-  label: ATC Clearance
+  label: ASOS
 - id: atis
-  label: Atis
+  label: ATIS
 - id: avidyne
   label: Avidyne
 - id: avionics
   label: Avionics
 - id: awos
-  label: Awos
-- id: changeover-points
-  label: Changeover Points
-- id: chart-symbols
-  label: Chart Symbols
+  label: AWOS
 - id: circling
   label: Circling
 - id: clearance-void-time
   label: Clearance Void Time
-- id: clearance-void-times-and-hold-for-release
-  label: Clearance Void Times And Hold For Release
 - id: clearances
   label: Clearances
 - id: climb-gradient
   label: Climb Gradient
 - id: closing-ifr-flight-plans
   label: Closing IFR Flight Plans
-- id: communications
-  label: Communications
+- id: convective-sigmets
+  label: Convective SIGMETs
 - id: currency
   label: Currency
 - id: da-mda
-  label: Da Mda
+  label: DA/MDA
 - id: departure-procedures
   label: Departure Procedures
 - id: dme
@@ -98,148 +80,94 @@
   label: Enroute Charts
 - id: enroute-weather
   label: Enroute Weather
-- id: enroute-weather-updates
-  label: Enroute Weather Updates
 - id: equipment-codes
   label: Equipment Codes
-- id: fixes
-  label: Fixes
 - id: flight-planning
   label: Flight Planning
 - id: flight-review
   label: Flight Review
-- id: forecast
-  label: Forecast
+- id: forecasts
+  label: Forecasts
 - id: fuel-planning
   label: Fuel Planning
 - id: gco
-  label: Gco
+  label: GCO
 - id: general-approach-concepts
   label: General Approach Concepts
-- id: gfa
-  label: Gfa
 - id: gps
   label: GPS
-- id: gps-database-afm-equipment-codes
-  label: GPS Database Afm Equipment Codes
-- id: gps-rnav-rnp
-  label: GPS RNAV RNP
+- id: gps-in-lieu
+  label: GPS in Lieu
 - id: hold-for-release
   label: Hold For Release
-- id: holding-side-vs-non-holding-side
-  label: Holding Side Vs Non Holding Side
-- id: holding-speeds
-  label: Holding Speeds
 - id: holds
   label: Holds
 - id: icing
   label: Icing
 - id: ifr
   label: IFR
-- id: ifr-alternates
-  label: IFR Alternates
-- id: ifr-clearance
-  label: IFR Clearance
+- id: ifr-clearances
+  label: IFR Clearances
 - id: ifr-communications
   label: IFR Communications
-- id: ifr-equipment
-  label: IFR Equipment
-- id: ifr-flight-plan
-  label: IFR Flight Plan
-- id: ifr-flight-plans
-  label: IFR Flight Plans
+- id: ifr-flight-planning
+  label: IFR Flight Planning
 - id: ifr-inspections
   label: IFR Inspections
 - id: ils
   label: ILS
-- id: ils-critical-area
-  label: ILS Critical Area
 - id: ils-critical-areas
   label: ILS Critical Areas
 - id: ils-loc-loc-back-course
   label: ILS LOC LOC Back Course
-- id: imc
-  label: Imc
 - id: inoperative-equipment
   label: Inoperative Equipment
-- id: inoperative-equipment-scenarios
-  label: Inoperative Equipment Scenarios
 - id: inspections
   label: Inspections
 - id: instrument-currency
   label: Instrument Currency
 - id: instrument-failures
   label: Instrument Failures
-- id: instrument-proficiency-check
-  label: Instrument Proficiency Check
 - id: instrument-rating-experience-requirements
   label: Instrument Rating Experience Requirements
+- id: instrument-systems
+  label: Instrument Systems
 - id: ipc
   label: IPC
-- id: ipc-requirements
-  label: IPC Requirements
-- id: kase
-  label: Kase
-- id: kase-loc-dme-e
-  label: Kase LOC DME E
-- id: kbuu
-  label: Kbuu
-- id: kbuu-rnav-11
-  label: Kbuu RNAV 11
-- id: kmsn
-  label: Kmsn
-- id: kmsn-ils-loc-rwy-18
-  label: Kmsn ILS LOC Rwy 18
-- id: kprc
-  label: Kprc
-- id: kprc-rnav-gps-y-03r
-  label: Kprc RNAV GPS Y 03R
-- id: kpwk
-  label: Kpwk
-- id: krfd
-  label: Krfd
-- id: krfd-bixby1-quizz-sid
-  label: Krfd Bixby1 Quizz Sid
-- id: krfd-milaa-alexs1-star
-  label: Krfd Milaa Alexs1 Star
-- id: krfd-rnav-7
-  label: Krfd RNAV 7
 - id: landing-minimums
   label: Landing Minimums
-- id: loc-back-course
-  label: LOC Back Course
+- id: localizer-back-course
+  label: Localizer Back Course
 - id: localizer
-  label: LOCalizer
+  label: Localizer
+- id: localizer-type-directional-aid
+  label: Localizer-Type Directional Aid
 - id: logging
   label: Logging
-- id: lost-comms-scenario-kpwk-to-kmsn
-  label: Lost Comms Scenario Kpwk To Kmsn
 - id: lost-communications
   label: Lost Communications
-- id: low-altitude-enroute-chart-symbols
-  label: Low Altitude Enroute Chart Symbols
 - id: maa
-  label: Maa
+  label: MAA
 - id: mandatory-ifr-reports
   label: Mandatory IFR Reports
-- id: mandatory-reports
-  label: Mandatory Reports
 - id: mca
-  label: Mca
+  label: MCA
 - id: mea
-  label: Mea
-- id: mea-moca-mra-mca-maa-and-oroca
-  label: Mea Moca Mra Mca Maa And Oroca
+  label: MEA
 - id: medical
   label: Medical
+- id: metars
+  label: METARs
 - id: mfd
   label: MFD
 - id: minimum-altitudes
   label: Minimum Altitudes
 - id: moca
-  label: Moca
+  label: MOCA
+- id: mon
+  label: MON
 - id: mra
-  label: Mra
+  label: MRA
 - id: n3096b
   label: N3096B
 - id: n3096b-specific-equipment-and-limitations
@@ -248,32 +176,24 @@
   label: N3096B Specific Failure Scenarios
 - id: navigation
   label: Navigation
-- id: navigation-database
-  label: Navigation Database
 - id: notams
-  label: Notams
+  label: NOTAMs
 - id: obstacle-clearance
   label: Obstacle Clearance
 - id: obtaining-an-ifr-clearance
   label: Obtaining An IFR Clearance
-- id: odp
-  label: Odp
-- id: odps-vcoas-and-obstacle-clearance
-  label: Odps Vcoas And Obstacle Clearance
+- id: odps
+  label: ODPs
 - id: oroca
-  label: Oroca
+  label: OROCA
 - id: part-91
   label: Part 91
 - id: partial-panel
   label: Partial Panel
-- id: partial-panel-scenarios
-  label: Partial Panel Scenarios
 - id: pbn
-  label: Pbn
+  label: PBN
 - id: personal-minimums
   label: Personal Minimums
-- id: personal-minimums-and-risk-management
-  label: Personal Minimums And Risk Management
 - id: pfd
   label: PFD
 - id: pilot-documents
@@ -284,46 +204,24 @@
   label: PIREPs
 - id: pitot-static
   label: Pitot Static
-- id: pitot-static-system
-  label: Pitot Static System
 - id: pitot-tube-blockage
   label: Pitot Tube Blockage
 - id: preflight
   label: Preflight
 - id: pressure-errors
   label: Pressure Errors
-- id: privileges
-  label: Privileges
 - id: prognostic-charts
   label: Prognostic Charts
-- id: prognostic-charts-and-gfa
-  label: Prognostic Charts And Gfa
-- id: protected-airspace
-  label: Protected Airspace
-- id: published-vs-unpublished-holds
-  label: Published Vs Unpublished Holds
 - id: raim
-  label: Raim
+  label: RAIM
 - id: rco
-  label: Rco
-- id: rcos-and-gcos
-  label: Rcos And Gcos
+  label: RCO
 - id: required-equipment
   label: Required Equipment
 - id: required-equipment-for-ifr-flight
   label: Required Equipment For IFR Flight
-- id: required-flight-visibility-and-reported-visibility
-  label: Required Flight Visibility And Reported Visibility
-- id: required-ifr-inspections
-  label: Required IFR Inspections
-- id: required-pilot-documents
-  label: Required Pilot Documents
-- id: required-preflight-information
-  label: Required Preflight Information
 - id: requirements-to-descend-below-da-mda
-  label: Requirements To Descend Below Da Mda
-- id: risk-management
-  label: Risk Management
+  label: Requirements To Descend Below DA/MDA
 - id: rnav
   label: RNAV
 - id: rnav-approach
@@ -332,72 +230,54 @@
   label: RNP
 - id: runway-environment
   label: Runway Environment
-- id: runway-environment-visual-references
-  label: Runway Environment Visual References
 - id: runway-lighting
   label: Runway Lighting
 - id: rvr
-  label: Rvr
+  label: RVR
 - id: safety-pilot
   label: Safety Pilot
 - id: safety-pilot-rules-and-logging
   label: Safety Pilot Rules And Logging
-- id: sid
-  label: Sid
+- id: sids
+  label: SIDs
 - id: sigmets
   label: SIGMETs
-- id: stable-approach
-  label: Stable Approach
-- id: stable-descent-to-landing
-  label: Stable Descent To Landing
-- id: star
-  label: Star
+- id: stars
+  label: STARs
 - id: static-port-blockage
   label: Static Port Blockage
 - id: surface-analysis
   label: Surface Analysis
-- id: surface-analysis-charts
-  label: Surface Analysis Charts
-- id: taf
-  label: TAF
 - id: tafs
   label: TAFs
 - id: takeoff-minimums
   label: Takeoff Minimums
 - id: takeoff-minimums-and-climb-rates
   label: Takeoff Minimums And Climb Rates
+- id: terminal-arrival-areas
+  label: Terminal Arrival Areas
 - id: temperature-errors
   label: Temperature Errors
 - id: thunderstorms
   label: Thunderstorms
-- id: training-requirements
-  label: Training Requirements
+- id: tod-planning
+  label: TOD Planning
 - id: vacuum-failure
   label: Vacuum Failure
 - id: vcoa
-  label: Vcoa
-- id: visibility
-  label: Visibility
-- id: visual-references
-  label: Visual References
+  label: VCOA
 - id: vor
   label: VOR
 - id: vor-checks
   label: VOR Checks
-- id: vor-navigation
-  label: VOR Navigation
 - id: waas
-  label: Waas
-- id: waypoints
-  label: Waypoints
+  label: WAAS
 - id: weather
   label: Weather
 - id: weather-advisories
   label: Weather Advisories
 - id: weather-briefing
   label: Weather Briefing
-- id: weather-briefing-strategy
-  label: Weather Briefing Strategy
 - id: weather-charts
   label: Weather Charts
 - id: when-an-instrument-rating-is-required

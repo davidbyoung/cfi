@@ -4,8 +4,6 @@ title: What inspections are required specifically for instrument flight, and how
 tags:
   - inspections
   - ifr-inspections
-  - ifr
-  - required-ifr-inspections
 ---
 
 ### Question

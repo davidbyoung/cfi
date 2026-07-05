@@ -1,16 +1,14 @@
 ---
 id: what-lighting-allows-us-to-continue-descending-to-100-ft-above-tdze
-title: What lighting allows us to continue descending to 100 ft above TDZE
+title: What lighting allows you to continue descending to 100 ft above TDZE
 tags:
   - approach-lights
   - runway-environment
-  - ifr
-  - approach-lights-and-the-100-foot-rule
 ---
 
 ### Question
 
-What lighting allows us to continue descending to 100 ft above TDZE?
+What lighting allows you to continue descending to 100 ft above TDZE?
 
 ### Answer
 

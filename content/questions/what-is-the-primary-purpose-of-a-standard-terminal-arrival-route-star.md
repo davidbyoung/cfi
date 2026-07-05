@@ -2,11 +2,7 @@
 id: what-is-the-primary-purpose-of-a-standard-terminal-arrival-route-star
 title: What is the primary purpose of a standard terminal arrival route (STAR)
 tags:
-  - star
-  - arrival-procedures
-  - krfd
-  - landing-minimums
-  - krfd-milaa-alexs1-star
+  - stars
 ---
 
 ### Question

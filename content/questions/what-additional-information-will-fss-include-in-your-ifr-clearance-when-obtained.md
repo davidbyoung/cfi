@@ -3,11 +3,7 @@ id: what-additional-information-will-fss-include-in-your-ifr-clearance-when-obta
 title: What additional information will FSS include in your IFR clearance when obtained from a non-towered airport
 tags:
   - clearance-void-time
-  - hold-for-release
-  - ifr-clearance
-  - holds
-  - ifr
-  - clearance-void-times-and-hold-for-release
+  - ifr-clearances
 ---
 
 ### Question

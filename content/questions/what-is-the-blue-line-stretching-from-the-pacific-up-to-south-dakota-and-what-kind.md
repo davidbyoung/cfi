@@ -4,8 +4,6 @@ title: What is the blue line stretching from the Pacific up to South Dakota, and
 tags:
   - surface-analysis
   - weather-charts
-  - landing-minimums
-  - surface-analysis-charts
 ---
 
 ### Question

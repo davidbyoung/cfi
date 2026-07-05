@@ -2,12 +2,9 @@
 id: what-is-the-standard-climb-gradient
 title: What is the standard climb gradient
 tags:
-  - sid
+  - sids
   - departure-procedures
-  - krfd
   - climb-gradient
-  - landing-minimums
-  - krfd-bixby1-quizz-sid
 ---
 
 ### Question

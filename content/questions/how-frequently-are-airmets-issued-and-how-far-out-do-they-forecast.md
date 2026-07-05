@@ -3,10 +3,8 @@ id: how-frequently-are-airmets-issued-and-how-far-out-do-they-forecast
 title: How frequently are AIRMETs issued, and how far out do they forecast
 tags:
   - airmets
-  - sigmets
   - weather-advisories
   - thunderstorms
-  - airmets-sigmets-and-convective-sigmets
 ---
 
 ### Question

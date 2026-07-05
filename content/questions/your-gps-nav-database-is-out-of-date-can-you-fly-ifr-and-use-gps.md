@@ -3,12 +3,6 @@ id: your-gps-nav-database-is-out-of-date-can-you-fly-ifr-and-use-gps
 title: Your GPS nav database is out of date. Can you fly IFR and use GPS
 tags:
   - gps
-  - navigation-database
-  - afm
-  - equipment-codes
-  - landing-minimums
-  - ifr
-  - gps-database-afm-equipment-codes
 ---
 
 ### Question

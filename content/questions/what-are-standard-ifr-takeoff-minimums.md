@@ -4,9 +4,6 @@ title: What are standard IFR takeoff minimums
 tags:
   - takeoff-minimums
   - climb-gradient
-  - landing-minimums
-  - ifr
-  - takeoff-minimums-and-climb-rates
 ---
 
 ### Question

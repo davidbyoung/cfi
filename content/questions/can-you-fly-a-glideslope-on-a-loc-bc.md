@@ -2,10 +2,7 @@
 id: can-you-fly-a-glideslope-on-a-loc-bc
 title: Can you fly a glideslope on a LOC BC
 tags:
-  - ils
-  - localizer
-  - loc-back-course
-  - ils-loc-loc-back-course
+  - localizer-back-course
 ---
 
 ### Question

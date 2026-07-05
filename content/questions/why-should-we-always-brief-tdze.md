@@ -4,8 +4,6 @@ title: Why should we always brief TDZE
 tags:
   - approach-lights
   - runway-environment
-  - ifr
-  - approach-lights-and-the-100-foot-rule
 ---
 
 ### Question

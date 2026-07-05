@@ -3,12 +3,8 @@ id: the-jot-vor-shows-vh-h-on-the-enroute-chart-what-does-that-mean
 title: The JOT VOR shows “(VH) (H)” on the enroute chart. What does that mean
 tags:
   - airways
-  - fixes
-  - waypoints
-  - changeover-points
-  - vor
-  - ifr
-  - airways-fixes-waypoints-and-changeover-points
+  - enroute-charts
+  - mon
 ---
 
 ### Question

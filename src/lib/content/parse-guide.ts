@@ -30,7 +30,6 @@ const GuideSchema = z.object({
   slug: z
     .string({ error: "slug is required" })
     .regex(KEBAB, "slug must be lowercase kebab-case"),
-  description: z.string().optional(),
   chapters: z
     .array(ChapterSchema)
     .min(1, "guide must have at least one chapter"),
@@ -58,7 +57,6 @@ export function parseGuideContent(content: string, filePath: string): RawGuide {
   return {
     title: g.title,
     slug: g.slug,
-    description: g.description,
     chapters: g.chapters.map((ch) => ({
       title: ch.title,
       sections: ch.sections.map((sec) => ({

@@ -4,7 +4,6 @@ title: Your airspeed indicator shows an increase during a climb and a decrease d
 tags:
   - pitot-static
   - pitot-tube-blockage
-  - ifr
 ---
 
 ### Question

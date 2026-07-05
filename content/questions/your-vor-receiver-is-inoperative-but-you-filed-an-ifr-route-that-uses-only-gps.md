@@ -5,9 +5,6 @@ tags:
   - inoperative-equipment
   - airworthiness
   - vor
-  - gps
-  - ifr
-  - inoperative-equipment-scenarios
 ---
 
 ### Question

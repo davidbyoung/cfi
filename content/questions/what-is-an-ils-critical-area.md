@@ -2,10 +2,8 @@
 id: what-is-an-ils-critical-area
 title: What is an ILS critical area
 tags:
-  - ils-critical-area
-  - airport-markings
-  - ils
   - ils-critical-areas
+  - airport-markings
 ---
 
 ### Question

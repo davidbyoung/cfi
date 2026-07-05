@@ -4,7 +4,6 @@ title: What are all the lines going across Illinois, and what are the numbers yo
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

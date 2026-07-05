@@ -6,8 +6,6 @@ import type { Question, RawGuide } from "@/lib/content/types";
 function makeQuestion(id: string): Question {
   return {
     id,
-    slug: id,
-    title: id,
     tags: [],
     questionHtml: "<p>Q</p>",
     answerHtml: "<p>A</p>",
@@ -23,7 +21,6 @@ const Q_MAP: Record<string, Question> = {
 const VALID_YAML = `
 title: Test Guide
 slug: test-guide
-description: A test guide.
 chapters:
   - title: Chapter One
     sections:
@@ -46,7 +43,6 @@ describe("parseGuideContent", () => {
     const raw = parseGuideContent(VALID_YAML, "guides/test-guide.yml");
     expect(raw.title).toBe("Test Guide");
     expect(raw.slug).toBe("test-guide");
-    expect(raw.description).toBe("A test guide.");
     expect(raw.chapters).toHaveLength(2);
   });
 

@@ -2,10 +2,7 @@
 id: can-an-lda-approach-have-vertical-guidance
 title: Can an LDA approach have vertical guidance
 tags:
-  - approaches
-  - approach-concepts
-  - landing-minimums
-  - general-approach-concepts
+  - localizer-type-directional-aid
 ---
 
 ### Question

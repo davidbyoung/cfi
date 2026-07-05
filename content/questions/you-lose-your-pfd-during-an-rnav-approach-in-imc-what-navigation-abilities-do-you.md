@@ -6,9 +6,6 @@ tags:
   - aircraft-systems
   - avionics
   - avidyne
-  - rnav
-  - ahrs
-  - ifr
   - n3096b-specific-equipment-and-limitations
 ---
 

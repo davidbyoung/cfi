@@ -3,10 +3,7 @@ id: you-fly-from-30-degrees-c-to-0-degrees-c-while-maintaining-the-same-indicate
 title: You fly from 30°C to 0°C while maintaining the same indicated altitude. What happens to your true altitude, and why
 tags:
   - altimeter
-  - pressure-errors
   - temperature-errors
-  - ifr
-  - altimeter-and-temperature-pressure-errors
 ---
 
 ### Question

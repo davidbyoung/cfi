@@ -4,8 +4,7 @@ title: How does a VOR work
 tags:
   - vor
   - navigation
-  - ifr
-  - vor-navigation
+  - instrument-systems
 ---
 
 ### Question

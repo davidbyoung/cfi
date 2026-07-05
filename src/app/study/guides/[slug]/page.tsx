@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GuidePage({ params }: Props) {
   const { slug } = await params;
-  const { guideMap } = loadContent();
+  const { guideMap, tags } = loadContent();
   const guide = guideMap[slug];
   if (!guide) notFound();
 
@@ -34,36 +34,40 @@ export default async function GuidePage({ params }: Props) {
         <span>{guide.title}</span>
       </nav>
 
-      <h1 className="mb-2 text-3xl font-semibold tracking-tight">
+      <h1 className="mb-10 text-3xl font-semibold tracking-tight">
         {guide.title}
       </h1>
-      {guide.description && (
-        <p className="mb-10 text-muted">{guide.description}</p>
-      )}
 
       {guide.chapters.map((chapter, ci) => (
         <section key={ci} className="mb-14">
           <h2 className="mb-6 border-b border-rule pb-2 text-2xl font-semibold tracking-tight">
-            {chapter.title}
+            {ci + 1}. {chapter.title}
           </h2>
 
           {chapter.sections.map((section, si) => (
             <div key={si} className="mb-8">
-              <h3 className="mb-4 text-lg font-semibold">{section.title}</h3>
+              <h3 className="mb-4 text-lg font-semibold">
+                {ci + 1}.{si + 1} {section.title}
+              </h3>
 
               {section.questions.map((question) => (
                 <div
                   key={question.id}
                   className="mb-5 rounded-md border border-rule p-5 study-question"
                 >
-                  <h4 className="mb-3 text-base font-medium">
-                    <Link
-                      href={`/study/questions/${question.slug}`}
-                      className="hover:underline hover:underline-offset-2"
-                    >
-                      {question.title}
-                    </Link>
-                  </h4>
+                  {question.tags.length > 0 && (
+                    <div className="mb-3 flex flex-wrap gap-1.5">
+                      {question.tags.map((tagId) => (
+                        <Link
+                          key={tagId}
+                          href={`/study/questions?tag=${encodeURIComponent(tagId)}`}
+                          className="rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
+                        >
+                          {tags[tagId]?.label ?? tagId}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
 
                   <div
                     className="study-prose text-sm"

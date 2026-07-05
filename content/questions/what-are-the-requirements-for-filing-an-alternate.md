@@ -3,10 +3,7 @@ id: what-are-the-requirements-for-filing-an-alternate
 title: What are the requirements for filing an alternate
 tags:
   - alternates
-  - ifr-flight-plan
-  - flight-planning
-  - ifr
-  - ifr-alternates
+  - ifr-flight-planning
 ---
 
 ### Question

@@ -3,9 +3,7 @@ id: how-will-you-adjust-your-landing-if-you-still-have-accumulated-ice-along-the
 title: How will you adjust your landing if you still have accumulated ice along the leading edge of your wings
 tags:
   - icing
-  - thunderstorms
   - adverse-weather
-  - adverse-conditions-icing-and-thunderstorms
 ---
 
 ### Question

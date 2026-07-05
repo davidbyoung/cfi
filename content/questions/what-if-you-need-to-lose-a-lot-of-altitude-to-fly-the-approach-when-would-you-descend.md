@@ -1,21 +1,17 @@
 ---
 id: what-if-you-need-to-lose-a-lot-of-altitude-to-fly-the-approach-when-would-you-descend
-title: What if you need to lose a lot of altitude to fly the approach? When would you descend
+title: What do you do if you need to lose a lot of altitude upon reaching your IAF before shooting an approach during IFR lost comms
 tags:
   - lost-communications
-  - kpwk
-  - kmsn
-  - altimeter
-  - lost-comms-scenario-kpwk-to-kmsn
 ---
 
 ### Question
 
-What if you need to lose a lot of altitude to fly the approach? When would you descend?
+What do you do if you need to lose a lot of altitude upon reaching your IAF before shooting an approach during IFR lost comms?
 
 ### Answer
 
-During the hold at the IAP
+Descend while holding at the IAP
 
 ### Sources
 

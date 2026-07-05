@@ -4,14 +4,13 @@ title: Do they need an instrument rating
 tags:
   - safety-pilot
   - logging
-  - currency
+  - instrument-currency
   - ifr
-  - safety-pilot-rules-and-logging
 ---
 
 ### Question
 
-Do they need an instrument rating?
+Does a safety pilot need an instrument rating if you are logging time under the hood?
 
 ### Answer
 

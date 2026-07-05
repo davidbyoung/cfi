@@ -3,10 +3,6 @@ id: how-can-you-tell-from-a-low-altitude-enroute-chart-whether-an-airport-has-an
 title: How can you tell from a low altitude enroute chart whether an airport has an instrument approach, and what do the different colors mean
 tags:
   - enroute-charts
-  - chart-symbols
-  - altimeter
-  - ifr
-  - low-altitude-enroute-chart-symbols
 ---
 
 ### Question

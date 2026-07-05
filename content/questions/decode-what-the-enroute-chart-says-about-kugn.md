@@ -3,10 +3,6 @@ id: decode-what-the-enroute-chart-says-about-kugn
 title: Decode what the enroute chart says about KUGN
 tags:
   - enroute-charts
-  - chart-symbols
-  - altimeter
-  - ifr
-  - low-altitude-enroute-chart-symbols
 ---
 
 ### Question

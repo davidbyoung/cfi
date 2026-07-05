@@ -4,7 +4,6 @@ title: If there are many isobars closely spaced together, what kind of condition
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

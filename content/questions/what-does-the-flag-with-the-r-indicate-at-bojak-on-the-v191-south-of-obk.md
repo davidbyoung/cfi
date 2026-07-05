@@ -3,14 +3,8 @@ id: what-does-the-flag-with-the-r-indicate-at-bojak-on-the-v191-south-of-obk
 title: What does the flag with the “R” indicate at BOJAK on the V191 south of OBK
 tags:
   - minimum-altitudes
-  - mea
-  - moca
+  - enroute-charts
   - mra
-  - mca
-  - maa
-  - oroca
-  - ifr
-  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

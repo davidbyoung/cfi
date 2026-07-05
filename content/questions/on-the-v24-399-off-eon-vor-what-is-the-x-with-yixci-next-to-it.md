@@ -3,12 +3,7 @@ id: on-the-v24-399-off-eon-vor-what-is-the-x-with-yixci-next-to-it
 title: On the V24-399 off EON VOR, what is the “X” with “(YIXCI)” next to it
 tags:
   - airways
-  - fixes
-  - waypoints
-  - changeover-points
-  - vor
-  - ifr
-  - airways-fixes-waypoints-and-changeover-points
+  - enroute-charts
 ---
 
 ### Question

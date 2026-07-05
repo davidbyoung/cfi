@@ -3,10 +3,7 @@ id: what-are-the-different-types-of-airmets
 title: What are the different types of AIRMETs
 tags:
   - airmets
-  - sigmets
   - weather-advisories
-  - thunderstorms
-  - airmets-sigmets-and-convective-sigmets
 ---
 
 ### Question

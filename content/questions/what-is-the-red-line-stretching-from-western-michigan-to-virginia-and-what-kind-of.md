@@ -4,7 +4,6 @@ title: What is the red line stretching from western Michigan to Virginia, and wh
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

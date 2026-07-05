@@ -4,9 +4,7 @@ title: Can you switch your PFD and your MFD
 tags:
   - partial-panel
   - instrument-failures
-  - ahrs
-  - ifr
-  - partial-panel-scenarios
+  - n3096b-specific-failure-scenarios
 ---
 
 ### Question

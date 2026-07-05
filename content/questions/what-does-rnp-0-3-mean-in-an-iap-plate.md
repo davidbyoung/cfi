@@ -2,12 +2,8 @@
 id: what-does-rnp-0-3-mean-in-an-iap-plate
 title: What does “RNP-0.3” mean in an IAP plate
 tags:
-  - gps
-  - rnav
   - rnp
-  - pbn
-  - ifr
-  - gps-rnav-rnp
+  - required-equipment
 ---
 
 ### Question

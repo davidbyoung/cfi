@@ -3,12 +3,9 @@ id: youre-renting-a-non-waas-gps-equipped-aircraft-and-planning-a-flight-to-an-a
 title: You’re renting a non-WAAS GPS equipped aircraft and planning a flight to an airport that is forecasting 900 ft ceilings and 3 SM visibility 30 minutes after your ETA. How does that impact your flight planning
 tags:
   - alternates
-  - ifr-flight-plan
-  - flight-planning
+  - ifr-flight-planning
   - gps
   - waas
-  - ifr
-  - ifr-alternates
 ---
 
 ### Question

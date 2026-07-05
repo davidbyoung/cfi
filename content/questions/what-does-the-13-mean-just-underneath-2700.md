@@ -3,11 +3,7 @@ id: what-does-the-13-mean-just-underneath-2700
 title: What does the “13” mean just underneath “2700”
 tags:
   - airways
-  - fixes
-  - waypoints
-  - changeover-points
-  - ifr
-  - airways-fixes-waypoints-and-changeover-points
+  - enroute-charts
 ---
 
 ### Question

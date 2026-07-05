@@ -3,11 +3,8 @@ id: can-you-use-gps-on-your-standby-obs
 title: Can you use GPS on your standby OBS
 tags:
   - n3096b
-  - aircraft-systems
   - avionics
   - avidyne
-  - gps
-  - ifr
   - n3096b-specific-equipment-and-limitations
 ---
 

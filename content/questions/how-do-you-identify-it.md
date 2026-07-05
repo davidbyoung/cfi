@@ -1,16 +1,14 @@
 ---
 id: how-do-you-identify-it
-title: How do you identify it
+title: How do you identify an ILS critical area
 tags:
-  - ils-critical-area
-  - airport-markings
-  - ils
   - ils-critical-areas
+  - airport-markings
 ---
 
 ### Question
 
-How do you identify it?
+How do you identify an ILS critical area?
 
 ### Answer
 

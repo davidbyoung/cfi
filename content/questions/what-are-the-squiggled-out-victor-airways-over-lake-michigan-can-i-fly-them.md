@@ -3,11 +3,7 @@ id: what-are-the-squiggled-out-victor-airways-over-lake-michigan-can-i-fly-them
 title: What are the squiggled-out victor airways over Lake Michigan? Can I fly them
 tags:
   - airways
-  - fixes
-  - waypoints
-  - changeover-points
-  - ifr
-  - airways-fixes-waypoints-and-changeover-points
+  - enroute-charts
 ---
 
 ### Question

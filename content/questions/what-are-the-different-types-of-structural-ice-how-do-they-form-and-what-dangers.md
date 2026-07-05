@@ -3,10 +3,7 @@ id: what-are-the-different-types-of-structural-ice-how-do-they-form-and-what-dan
 title: What are the different types of structural ice, how do they form, and what dangers does each present
 tags:
   - icing
-  - thunderstorms
   - adverse-weather
-  - landing-minimums
-  - adverse-conditions-icing-and-thunderstorms
 ---
 
 ### Question

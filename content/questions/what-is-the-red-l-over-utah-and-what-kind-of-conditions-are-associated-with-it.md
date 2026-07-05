@@ -4,7 +4,6 @@ title: What is the red “L” over Utah, and what kind of conditions are associ
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

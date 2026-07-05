@@ -1,19 +1,15 @@
 ---
 id: what-is-rnp-apch-gps-in-the-equipment-notes
-title: What is “RNP APCH - GPS” in the equipment notes
+title: On the KRFD RNAV 7, what is “RNP APCH - GPS” in the equipment notes
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - krfd
   - gps
   - rnp
-  - krfd-rnav-7
 ---
 
 ### Question
 
-What is “RNP APCH - GPS” in the equipment notes?
+On the KRFD RNAV 7, what is “RNP APCH - GPS” in the equipment notes?
 
 ### Answer
 

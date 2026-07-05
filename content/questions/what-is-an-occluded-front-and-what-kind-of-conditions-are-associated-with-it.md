@@ -4,7 +4,6 @@ title: What is an occluded front, and what kind of conditions are associated wit
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

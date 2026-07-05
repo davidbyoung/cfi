@@ -3,13 +3,9 @@ id: if-your-gps-lost-waas-during-an-lpv-approach-but-still-had-raim-what-would-h
 title: If your GPS lost WAAS during an LPV approach but still had RAIM, what would happen
 tags:
   - gps
-  - rnav
-  - rnp
   - pbn
   - waas
   - raim
-  - ifr
-  - gps-rnav-rnp
 ---
 
 ### Question

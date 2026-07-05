@@ -7,8 +7,6 @@ tags:
   - atis
   - asos
   - awos
-  - landing-minimums
-  - enroute-weather-updates
 ---
 
 ### Question

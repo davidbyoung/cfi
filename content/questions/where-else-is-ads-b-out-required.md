@@ -1,20 +1,24 @@
 ---
 id: where-else-is-ads-b-out-required
-title: Where else is ADS-B out required
+title: Where is ADS-B out required
 tags:
   - airspace
   - ads-b
-  - ifr
-  - airspace-and-ads-b-requirements
 ---
 
 ### Question
 
-Where else is ADS-B out required?
+Where is ADS-B out required?
 
 ### Answer
 
-Class A, B, and C airspace
+- Class E at or above 10,000 ft MSL, excluding at or below 2,500 ft AGL
+- Above the ceiling and within the lateral boundaries of Class B or Class C airspace up to 10,000 ft MSL
+- Mode C veil
+- Class E airspace over the Gulf of Mexico at and above 3,000 ft MSL within 12 NM of the U.S. coastline
+- Class A
+- Class B
+- Class C
 
 ### Sources
 

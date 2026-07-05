@@ -4,8 +4,6 @@ title: What errors does an alternate static source create
 tags:
   - pitot-static
   - static-port-blockage
-  - alternates
-  - ifr
 ---
 
 ### Question

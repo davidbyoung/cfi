@@ -4,9 +4,6 @@ title: If you are picking up a reliable VOR signal further than the published se
 tags:
   - vor
   - navigation
-  - icing
-  - ifr
-  - vor-navigation
 ---
 
 ### Question

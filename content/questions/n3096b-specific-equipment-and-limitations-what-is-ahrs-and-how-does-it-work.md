@@ -7,7 +7,6 @@ tags:
   - avionics
   - avidyne
   - ahrs
-  - ifr
   - n3096b-specific-equipment-and-limitations
 ---
 

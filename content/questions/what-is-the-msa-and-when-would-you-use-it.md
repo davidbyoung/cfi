@@ -1,17 +1,13 @@
 ---
 id: what-is-the-msa-and-when-would-you-use-it
-title: What is the MSA, and when would you use it
+title: What is an MSA, and when would you use it
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - krfd
-  - krfd-rnav-7
 ---
 
 ### Question
 
-What is the MSA, and when would you use it?
+What is an MSA, and when would you use it?
 
 ### Answer
 

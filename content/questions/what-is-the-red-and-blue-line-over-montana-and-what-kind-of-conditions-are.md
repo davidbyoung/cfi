@@ -4,7 +4,6 @@ title: What is the red and blue line over Montana, and what kind of conditions a
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

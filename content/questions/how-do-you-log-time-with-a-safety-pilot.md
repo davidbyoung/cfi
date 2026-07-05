@@ -4,8 +4,7 @@ title: How do you log time with a safety pilot
 tags:
   - safety-pilot
   - logging
-  - currency
-  - safety-pilot-rules-and-logging
+  - instrument-currency
 ---
 
 ### Question

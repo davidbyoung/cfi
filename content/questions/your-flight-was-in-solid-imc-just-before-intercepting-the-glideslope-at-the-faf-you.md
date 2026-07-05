@@ -3,9 +3,6 @@ id: your-flight-was-in-solid-imc-just-before-intercepting-the-glideslope-at-the-
 title: Your flight was in solid IMC. Just before intercepting the glideslope at the FAF, you transitioned to VFR. Can you log that IAP for currency
 tags:
   - instrument-currency
-  - currency
-  - ipc
-  - ifr
 ---
 
 ### Question

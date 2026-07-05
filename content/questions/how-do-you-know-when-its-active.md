@@ -1,16 +1,14 @@
 ---
 id: how-do-you-know-when-its-active
-title: How do you know when it’s active
+title: How do you know when an ILS critical area is active
 tags:
-  - ils-critical-area
-  - airport-markings
-  - ils
   - ils-critical-areas
+  - airport-markings
 ---
 
 ### Question
 
-How do you know when it’s active?
+How do you know when an ILS critical area is active?
 
 ### Answer
 

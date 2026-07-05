@@ -4,8 +4,8 @@ title: How far out is a localizer accurate
 tags:
   - ils
   - localizer
-  - loc-back-course
-  - ils-loc-loc-back-course
+  - localizer-back-course
+  - navigation
 ---
 
 ### Question

@@ -2,10 +2,7 @@
 id: what-information-do-you-need-to-have-prior-to-any-flight
 title: What information do you need to have prior to any flight
 tags:
-  - preflight
   - flight-planning
-  - ifr
-  - required-preflight-information
 ---
 
 ### Question
@@ -14,13 +11,13 @@ What information do you need to have prior to any flight?
 
 ### Answer
 
-- NOTAMs
-- Weather reports and forecasts
-- Known ATC delays
-- Runway lengths
-- Alternatives available
-- Fuel requirements
-- Takeoff and landing distances
+- **N**OTAMs
+- **W**eather reports and forecasts
+- **K**nown ATC delays
+- **R**unway lengths
+- **A**lternatives available
+- **F**uel requirements
+- **T**akeoff and landing distances
 
 ### Sources
 

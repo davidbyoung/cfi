@@ -11,7 +11,6 @@ export function resolveGuide(
   const guide: Guide = {
     title: rawGuide.title,
     slug: rawGuide.slug,
-    description: rawGuide.description,
     chapters: rawGuide.chapters.map((ch) => ({
       title: ch.title,
       sections: ch.sections.map((sec) => ({

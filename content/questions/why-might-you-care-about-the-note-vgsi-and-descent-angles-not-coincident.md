@@ -1,18 +1,13 @@
 ---
 id: why-might-you-care-about-the-note-vgsi-and-descent-angles-not-coincident
-title: Why might you care about the note “VGSI and descent angles not coincident”
+title: Why might you care about the note “VGSI and descent angles not coincident” in the profile view of an instrument approach plate
 tags:
   - approach-briefing
-  - localizer
-  - dme
-  - kase
-  - circling
-  - kase-loc-dme-e
 ---
 
 ### Question
 
-Why might you care about the note “VGSI and descent angles not coincident”?
+Why might you care about the note “VGSI and descent angles not coincident” in the profile view of an instrument approach plate?
 
 ### Answer
 

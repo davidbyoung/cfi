@@ -1,16 +1,15 @@
 ---
 id: what-qualifications-does-the-safety-pilot-need
-title: What qualifications does the safety pilot need
+title: What qualifications does a safety pilot need
 tags:
   - safety-pilot
   - logging
-  - currency
-  - safety-pilot-rules-and-logging
+  - instrument-currency
 ---
 
 ### Question
 
-What qualifications does the safety pilot need?
+What qualifications does a safety pilot need?
 
 ### Answer
 

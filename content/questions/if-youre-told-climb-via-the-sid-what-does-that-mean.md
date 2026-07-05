@@ -2,7 +2,7 @@
 id: if-youre-told-climb-via-the-sid-what-does-that-mean
 title: If you’re told “Climb via the SID”, what does that mean
 tags:
-  - sid
+  - sids
   - departure-procedures
   - krfd
   - krfd-bixby1-quizz-sid

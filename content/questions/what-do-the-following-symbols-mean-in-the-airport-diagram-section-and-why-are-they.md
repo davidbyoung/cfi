@@ -3,15 +3,19 @@ id: what-do-the-following-symbols-mean-in-the-airport-diagram-section-and-why-ar
 title: "What do the following symbols mean in the airport diagram section, and why are they relevant to us:"
 tags:
   - approach-briefing
-  - ils
-  - localizer
-  - kmsn
-  - kmsn-ils-loc-rwy-18
 ---
 
 ### Question
 
-What do the following symbols mean in the airport diagram section, and why are they relevant to us:
+What do the following symbols mean in the KMSN ILS/LOC 18 airport diagram section, and why are they relevant to us:
+
+- Three ovals across 36
+- (A) next to runway 36
+- Arrows pointing in opposite directions on runway 36
+- Star symbol on right side of the field
+- (P) next to runway 36
+- Black (L) next to “HIRL all Rwys”
+- White dots along runway 36
 
 ### Answer
 

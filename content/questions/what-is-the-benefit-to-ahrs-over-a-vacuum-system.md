@@ -2,14 +2,10 @@
 id: what-is-the-benefit-to-ahrs-over-a-vacuum-system
 title: What is the benefit to AHRS over a vacuum system
 tags:
-  - n3096b
   - aircraft-systems
   - avionics
-  - avidyne
   - vacuum-failure
   - ahrs
-  - ifr
-  - n3096b-specific-equipment-and-limitations
 ---
 
 ### Question

@@ -3,9 +3,6 @@ id: what-experience-do-you-need-to-legally-act-as-pic-on-an-ifr-flight-plan
 title: What experience do you need to legally act as PIC on an IFR flight plan
 tags:
   - instrument-currency
-  - currency
-  - ipc
-  - ifr
 ---
 
 ### Question

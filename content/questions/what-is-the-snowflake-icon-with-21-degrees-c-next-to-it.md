@@ -3,11 +3,6 @@ id: what-is-the-snowflake-icon-with-21-degrees-c-next-to-it
 title: What is the snowflake icon with -21°C next to it
 tags:
   - approach-briefing
-  - localizer
-  - dme
-  - kase
-  - circling
-  - kase-loc-dme-e
 ---
 
 ### Question

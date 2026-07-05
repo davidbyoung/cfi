@@ -4,13 +4,7 @@ title: What does “2800G” on T325 mean
 tags:
   - minimum-altitudes
   - mea
-  - moca
-  - mra
-  - mca
-  - maa
-  - oroca
-  - ifr
-  - mea-moca-mra-mca-maa-and-oroca
+  - enroute-charts
 ---
 
 ### Question

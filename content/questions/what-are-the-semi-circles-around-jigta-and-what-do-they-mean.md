@@ -1,17 +1,14 @@
 ---
 id: what-are-the-semi-circles-around-jigta-and-what-do-they-mean
-title: What are the semi-circles around JIGTA, and what do they mean
+title: On the KBUU RNAV 11, what are the semi-circles around JIGTA, and what do they mean
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - kbuu
-  - kbuu-rnav-11
+  - terminal-arrival-areas
 ---
 
 ### Question
 
-What are the semi-circles around JIGTA, and what do they mean?
+On the KBUU RNAV 11, what are the semi-circles around JIGTA, and what do they mean?
 
 ### Answer
 

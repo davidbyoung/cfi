@@ -1,17 +1,13 @@
 ---
 id: what-scenarios-would-you-not-need-to-fly-the-course-reversal-at-jigta
-title: What scenarios would you not need to fly the course reversal at JIGTA
+title: On the KBUU RNAV 11, when would you not need to fly the course reversal at JIGTA
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - kbuu
-  - kbuu-rnav-11
 ---
 
 ### Question
 
-What scenarios would you not need to fly the course reversal at JIGTA?
+On the KBUU RNAV 11, when would you not need to fly the course reversal at JIGTA?
 
 ### Answer
 

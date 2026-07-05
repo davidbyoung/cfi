@@ -2,10 +2,8 @@
 id: can-you-descend-below-the-da-without-having-any-of-the-runway-environment-in-sight
 title: Can you descend below the DA without having any of the runway environment in sight
 tags:
-  - landing-minimums
   - da-mda
   - runway-environment
-  - ifr
   - requirements-to-descend-below-da-mda
 ---
 

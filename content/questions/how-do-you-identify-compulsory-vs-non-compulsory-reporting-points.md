@@ -2,11 +2,8 @@
 id: how-do-you-identify-compulsory-vs-non-compulsory-reporting-points
 title: How do you identify compulsory vs non-compulsory reporting points
 tags:
-  - mandatory-reports
-  - ifr-communications
-  - landing-minimums
-  - ifr
   - mandatory-ifr-reports
+  - enroute-charts
 ---
 
 ### Question

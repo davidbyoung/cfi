@@ -1,23 +1,18 @@
 ---
 id: reported-visibility-is-1-4-sm-and-youre-on-the-lpv-approach-can-you-land-out-of-that
-title: Reported visibility is 1/4 SM and you’re on the LPV approach. Can you land out of that approach
+title: Per ATIS, visibility is 1/4 SM, but the instrument approach requires 1/2SM. Under what circumstances could you land out of the instrument approach?
 tags:
   - landing-minimums
-  - visibility
-  - rvr
-  - rnav
-  - ifr
-  - required-flight-visibility-and-reported-visibility
 ---
 
 ### Question
 
-Reported visibility is 1/4 SM and you’re on the LPV approach. Can you land out of that approach?
+Per ATIS, visibility is 1/4 SM, but the instrument approach requires 1/2 SM. Under what circumstances could you land out of the instrument approach?
 
 ### Answer
 
-- Possibly, if the flight visibility you determine from the cockpit meets or exceeds the required visibility/RVR
-- Operationally, this is likely a bad idea
+- The visibility minimums are _flight_ visibility, meaning it's up to the pilot to make that determination
+- If you believe visibility is at least 1/2 SM, you may land
 
 ### Sources
 

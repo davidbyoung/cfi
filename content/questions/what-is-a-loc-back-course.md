@@ -2,10 +2,7 @@
 id: what-is-a-loc-back-course
 title: What is a LOC Back Course
 tags:
-  - ils
-  - localizer
-  - loc-back-course
-  - ils-loc-loc-back-course
+  - localizer-back-course
 ---
 
 ### Question

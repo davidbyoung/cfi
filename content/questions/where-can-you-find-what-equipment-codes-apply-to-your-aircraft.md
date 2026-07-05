@@ -3,12 +3,8 @@ id: where-can-you-find-what-equipment-codes-apply-to-your-aircraft
 title: Where can you find what equipment codes apply to your aircraft
 tags:
   - gps
-  - navigation-database
   - afm
   - equipment-codes
-  - landing-minimums
-  - ifr
-  - gps-database-afm-equipment-codes
 ---
 
 ### Question

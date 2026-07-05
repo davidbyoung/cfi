@@ -4,14 +4,13 @@ title: Do they need a current flight review
 tags:
   - safety-pilot
   - logging
-  - currency
-  - flight-review
+  - instrument-currency
   - safety-pilot-rules-and-logging
 ---
 
 ### Question
 
-Do they need a current flight review?
+Does a safety pilot need a current flight review?
 
 ### Answer
 

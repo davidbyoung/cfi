@@ -3,11 +3,7 @@ id: whats-the-difference-between-a-waypoint-inscribed-in-a-circle-vs-one-that-is
 title: What’s the difference between a waypoint inscribed in a circle vs one that is not
 tags:
   - airways
-  - fixes
-  - waypoints
-  - changeover-points
-  - ifr
-  - airways-fixes-waypoints-and-changeover-points
+  - enroute-charts
 ---
 
 ### Question

@@ -5,7 +5,6 @@ tags:
   - vor-checks
   - vor
   - inspections
-  - ifr
 ---
 
 ### Question

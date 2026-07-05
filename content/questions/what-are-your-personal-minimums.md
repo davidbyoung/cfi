@@ -2,11 +2,7 @@
 id: what-are-your-personal-minimums
 title: What are your personal minimums
 tags:
-  - personal-minimums
-  - risk-management
-  - currency
-  - landing-minimums
-  - personal-minimums-and-risk-management
+  - instrument-currency
 ---
 
 ### Question
@@ -15,7 +11,8 @@ What are your personal minimums?
 
 ### Answer
 
-Avoid flying to published minimums unless very current and experienced in actual IMC
+- Ceiling and visibility requirements should reflect your recent instrument experience
+- Avoid flying to published minimums unless very current and experienced in actual IMC
 
 ### Sources
 

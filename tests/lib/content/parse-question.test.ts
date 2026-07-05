@@ -11,18 +11,12 @@ const tagMap: TagMap = {
 
 function makeContent(overrides: {
   id?: string;
-  title?: string;
   tags?: string;
   body?: string;
 }): string {
-  const {
-    id = "my-question",
-    title = "My Question",
-    tags = "  - weather",
-    body,
-  } = overrides;
+  const { id = "my-question", tags = "  - weather", body } = overrides;
   const defaultBody = `### Question\n\nWhat?\n\n### Answer\n\nThis.`;
-  return `---\nid: ${id}\ntitle: ${title}\ntags:\n${tags}\n---\n\n${body ?? defaultBody}`;
+  return `---\nid: ${id}\ntags:\n${tags}\n---\n\n${body ?? defaultBody}`;
 }
 
 describe("parseQuestionContent", () => {
@@ -33,8 +27,6 @@ describe("parseQuestionContent", () => {
       tagMap,
     );
     expect(q.id).toBe("my-question");
-    expect(q.slug).toBe("my-question");
-    expect(q.title).toBe("My Question");
     expect(q.tags).toEqual(["weather"]);
     expect(q.questionHtml).toContain("What?");
     expect(q.answerHtml).toContain("This.");
@@ -72,7 +64,7 @@ describe("parseQuestionContent", () => {
     expect(q.instructorNotesHtml).toBeUndefined();
   });
 
-  it("parses a question with sources", () => {
+  it("parses a question with sources and adds target=_blank to links", () => {
     const body = `### Question\n\nQ?\n\n### Answer\n\nA.\n\n### Sources\n\n- [FAA AC 61-98E](https://faa.gov)`;
     const q = parseQuestionContent(
       makeContent({ body }),
@@ -80,6 +72,8 @@ describe("parseQuestionContent", () => {
       tagMap,
     );
     expect(q.sourcesHtml).toContain("FAA AC 61-98E");
+    expect(q.sourcesHtml).toContain('target="_blank"');
+    expect(q.sourcesHtml).toContain("noopener noreferrer");
   });
 
   it("parses a question without sources", () => {
@@ -159,9 +153,16 @@ describe("parseQuestionContent", () => {
   });
 
   it("throws when id is missing", () => {
-    const content = `---\ntitle: Test\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
+    const content = `---\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
     expect(() =>
       parseQuestionContent(content, "/path/my-question.md", tagMap),
     ).toThrow("id is required");
+  });
+
+  it("ignores title field if present in frontmatter", () => {
+    const content = `---\nid: my-question\ntitle: Old Title\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
+    const q = parseQuestionContent(content, "/path/my-question.md", tagMap);
+    expect(q.id).toBe("my-question");
+    expect("title" in q).toBe(false);
   });
 });

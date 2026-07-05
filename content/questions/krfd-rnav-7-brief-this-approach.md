@@ -3,15 +3,11 @@ id: krfd-rnav-7-brief-this-approach
 title: Brief this approach
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - krfd
-  - krfd-rnav-7
 ---
 
 ### Question
 
-Brief this approach
+Brief the KRFD RNAV 7 approach
 
 ### Answer
 

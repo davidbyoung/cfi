@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import { loadContent } from "@/lib/content/loader";
 import QuestionSearch from "./_components/QuestionSearch";
@@ -31,7 +32,9 @@ export default function QuestionsPage() {
         {searchIndex.length} questions — search by keyword or filter by tag.
       </p>
 
-      <QuestionSearch searchIndex={searchIndex} tagList={tagList} />
+      <Suspense>
+        <QuestionSearch searchIndex={searchIndex} tagList={tagList} />
+      </Suspense>
     </main>
   );
 }

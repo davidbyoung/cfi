@@ -1,18 +1,13 @@
 ---
 id: what-does-the-e-mean-in-the-iap-name
-title: What does the “-E” mean in the IAP name
+title: On the KASE LOC/DME-E, what does the “-E” mean
 tags:
   - approach-briefing
-  - localizer
-  - dme
-  - kase
-  - circling
-  - kase-loc-dme-e
 ---
 
 ### Question
 
-What does the “-E” mean in the IAP name?
+On the KASE LOC/DME-E, what does the “-E” mean?
 
 ### Answer
 

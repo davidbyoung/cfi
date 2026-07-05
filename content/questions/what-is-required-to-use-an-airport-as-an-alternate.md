@@ -3,10 +3,8 @@ id: what-is-required-to-use-an-airport-as-an-alternate
 title: What is required to use an airport as an alternate
 tags:
   - alternates
-  - ifr-flight-plan
+  - ifr-flight-planning
   - flight-planning
-  - ifr
-  - ifr-alternates
 ---
 
 ### Question

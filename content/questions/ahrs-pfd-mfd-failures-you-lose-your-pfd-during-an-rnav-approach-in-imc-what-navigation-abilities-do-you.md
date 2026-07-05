@@ -3,12 +3,9 @@ id: ahrs-pfd-mfd-failures-you-lose-your-pfd-during-an-rnav-approach-in-imc-what-
 title: You lose your PFD during an RNAV approach in IMC. What navigation abilities do you still have
 tags:
   - ahrs
-  - pfd
-  - mfd
+  - instrument-systems
   - instrument-failures
-  - rnav
-  - ifr
-  - ahrs-pfd-mfd-failures
+  - n3096b-specific-failure-scenarios
 ---
 
 ### Question

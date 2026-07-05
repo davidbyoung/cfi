@@ -2,20 +2,13 @@
 id: what-does-maa-10000-mean
 title: What does “MAA-10000” mean
 tags:
-  - minimum-altitudes
-  - mea
-  - moca
-  - mra
-  - mca
+  - enroute-charts
   - maa
-  - oroca
-  - ifr
-  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question
 
-What does “MAA-10000” mean?
+What does “MAA-10000” on an IFR enroute chart mean?
 
 ### Answer
 

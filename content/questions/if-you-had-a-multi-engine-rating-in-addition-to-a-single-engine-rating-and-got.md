@@ -3,9 +3,6 @@ id: if-you-had-a-multi-engine-rating-in-addition-to-a-single-engine-rating-and-g
 title: If you had a multi-engine rating in addition to a single-engine rating and got instrument current in the multi-engine, are you instrument current in the single-engine
 tags:
   - instrument-currency
-  - currency
-  - ipc
-  - ifr
 ---
 
 ### Question

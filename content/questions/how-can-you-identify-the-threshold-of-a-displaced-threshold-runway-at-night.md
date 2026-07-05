@@ -4,7 +4,6 @@ title: How can you identify the threshold of a displaced threshold runway at nig
 tags:
   - airport-lighting
   - runway-lighting
-  - holds
 ---
 
 ### Question

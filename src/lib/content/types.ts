@@ -1,7 +1,5 @@
 export type Question = {
   id: string;
-  slug: string;
-  title: string;
   tags: string[];
   questionHtml: string;
   answerHtml: string;
@@ -22,7 +20,6 @@ export type GuideChapter = {
 export type Guide = {
   title: string;
   slug: string;
-  description?: string;
   chapters: GuideChapter[];
 };
 
@@ -36,13 +33,15 @@ export type TagMap = Record<string, TagDefinition>;
 
 export type QuestionSearchIndexEntry = {
   id: string;
-  slug: string;
-  title: string;
   tags: string[];
   questionText: string;
   answerText: string;
   instructorNotesText?: string;
   sourcesText?: string;
+  questionHtml: string;
+  answerHtml: string;
+  instructorNotesHtml?: string;
+  sourcesHtml?: string;
 };
 
 export type RawGuideSection = {
@@ -58,7 +57,6 @@ export type RawGuideChapter = {
 export type RawGuide = {
   title: string;
   slug: string;
-  description?: string;
   chapters: RawGuideChapter[];
 };
 

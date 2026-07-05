@@ -5,8 +5,6 @@ tags:
   - inoperative-equipment
   - airworthiness
   - pitot-static
-  - ifr
-  - inoperative-equipment-scenarios
 ---
 
 ### Question

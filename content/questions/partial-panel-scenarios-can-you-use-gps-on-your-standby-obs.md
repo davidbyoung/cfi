@@ -4,9 +4,7 @@ title: Can you use GPS on your standby OBS
 tags:
   - partial-panel
   - instrument-failures
-  - gps
-  - ifr
-  - partial-panel-scenarios
+  - n3096b-specific-failure-scenarios
 ---
 
 ### Question

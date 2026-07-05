@@ -3,9 +3,14 @@ id: we-are-planning-a-flight-from-kpwk-to-kstl-what-weather-sources-are-you-look
 title: We are planning a flight from KPWK to KSTL. What weather sources are you looking at to determine if we can fly
 tags:
   - weather-briefing
-  - preflight
+  - ifr-flight-planning
+  - surface-analysis
+  - airmets
+  - sigmets
+  - convective-sigmets
+  - metars
+  - tafs
   - weather
-  - weather-briefing-strategy
 ---
 
 ### Question

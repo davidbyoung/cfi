@@ -4,7 +4,6 @@ title: If your static port becomes blocked and you descend, what happens
 tags:
   - pitot-static
   - static-port-blockage
-  - ifr
 ---
 
 ### Question

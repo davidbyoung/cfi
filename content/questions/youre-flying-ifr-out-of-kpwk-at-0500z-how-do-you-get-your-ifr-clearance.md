@@ -2,10 +2,8 @@
 id: youre-flying-ifr-out-of-kpwk-at-0500z-how-do-you-get-your-ifr-clearance
 title: You’re flying IFR out of KPWK at 0500Z. How do you get your IFR clearance
 tags:
-  - ifr-clearance
-  - clearances
-  - ifr
-  - obtaining-an-ifr-clearance
+  - ifr-clearances
+  - airport-operations
 ---
 
 ### Question

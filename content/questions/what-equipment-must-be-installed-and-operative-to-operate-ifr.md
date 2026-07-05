@@ -2,10 +2,7 @@
 id: what-equipment-must-be-installed-and-operative-to-operate-ifr
 title: What equipment must be installed and operative to operate IFR
 tags:
-  - required-equipment
-  - ifr-equipment
   - airworthiness
-  - ifr
   - required-equipment-for-ifr-flight
 ---
 
@@ -17,38 +14,38 @@ What equipment must be installed and operative to operate IFR?
 
 Day VFR:
 
-- Airspeed indicator
-- Tachometer (for each engine)
-- Oil pressure gauge (for each engine)
-- Manifold pressure gauge (for each altitude engine)
-- Altimeter
-- Temperature gauge (for each liquid-cooled engine)
-- Oil temperature gauge (for each air-cooled engine)
-- Fuel gauge
-- Landing gear position indicator (if applicable)
-- Anti-collision lights (strobes, for aircraft certificated after March 11, 1996)
-- Magnetic direction indicator (either magnetic compass or magnetometer)
-- Emergency location transmitter
-- Seat belts
+- **A**irspeed indicator
+- **T**achometer (for each engine)
+- **O**il pressure gauge (for each engine)
+- **M**anifold pressure gauge (for each altitude engine)
+- **A**ltimeter
+- **T**emperature gauge (for each liquid-cooled engine)
+- **O**il temperature gauge (for each air-cooled engine)
+- **F**uel gauge
+- **L**anding gear position indicator (if applicable)
+- **A**nti-collision lights (strobes, for aircraft certificated after March 11, 1996)
+- **M**agnetic direction indicator (either magnetic compass or magnetometer)
+- **E**mergency location transmitter
+- **S**eat belts
 
 Night VFR (in addition to day VFR equipment)
 
-- Fuses or circuit breakers (if fuses, one spare set or three of each kind)
-- Landing light (if for hire)
-- Anti-collision lights (strobes)
-- Position lights (nav lights)
-- Source of power (e.g., alternator or generator)
+- **F**uses or circuit breakers (if fuses, one spare set or three of each kind)
+- **L**anding light (if for hire)
+- **A**nti-collision lights (strobes)
+- **P**osition lights (nav lights)
+- **S**ource of power (e.g., alternator or generator)
 
 IFR (in addition to VFR equipment):
 
-- Generator or alternator (source of electricity)
-- Radio (two-way communication and navigation equipment suitable for the route to be flown)
-- Altimeter (pressure-sensitive and adjustable)
-- Ball (inclinometer)
-- Clock (with hours, minutes, and seconds)
-- Attitude indicator
-- Rate of turn indicator
-- Directional gyro (or HSI)
+- **G**enerator or alternator (source of electricity)
+- **R**adio (two-way communication and navigation equipment suitable for the route to be flown)
+- **A**ltimeter (pressure-sensitive and adjustable)
+- **B**all (inclinometer)
+- **C**lock (with hours, minutes, and seconds)
+- **A**ttitude indicator
+- **R**ate of turn indicator
+- **D**irectional gyro (or HSI)
 
 ### Sources
 

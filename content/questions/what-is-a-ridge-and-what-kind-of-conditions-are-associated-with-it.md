@@ -4,7 +4,6 @@ title: What is a ridge, and what kind of conditions are associated with it
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

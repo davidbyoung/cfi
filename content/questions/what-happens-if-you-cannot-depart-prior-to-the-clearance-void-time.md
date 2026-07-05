@@ -3,11 +3,7 @@ id: what-happens-if-you-cannot-depart-prior-to-the-clearance-void-time
 title: What happens if you cannot depart prior to the clearance void time
 tags:
   - clearance-void-time
-  - hold-for-release
-  - ifr-clearance
-  - holds
-  - ifr
-  - clearance-void-times-and-hold-for-release
+  - ifr-clearances
 ---
 
 ### Question

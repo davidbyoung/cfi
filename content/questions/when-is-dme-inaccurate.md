@@ -4,7 +4,6 @@ title: When is DME inaccurate
 tags:
   - dme
   - navigation
-  - ifr
 ---
 
 ### Question

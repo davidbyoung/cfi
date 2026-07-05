@@ -6,7 +6,6 @@ tags:
   - avidyne
   - instrument-failures
   - holds
-  - ifr
   - n3096b-specific-failure-scenarios
 ---
 

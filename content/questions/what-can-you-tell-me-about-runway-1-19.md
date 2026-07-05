@@ -3,15 +3,11 @@ id: what-can-you-tell-me-about-runway-1-19
 title: What can you tell me about runway 1/19
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - kbuu
-  - kbuu-rnav-11
 ---
 
 ### Question
 
-What can you tell me about runway 1/19?
+What can you tell me about runway 1/19 using the KBUU RNAV 11 approach plate?
 
 ### Answer
 

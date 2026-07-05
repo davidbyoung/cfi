@@ -5,12 +5,6 @@ tags:
   - minimum-altitudes
   - mea
   - moca
-  - mra
-  - mca
-  - maa
-  - oroca
-  - ifr
-  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

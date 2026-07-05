@@ -12,8 +12,6 @@ export function buildSearchIndex(
 ): QuestionSearchIndexEntry[] {
   return questions.map((q) => ({
     id: q.id,
-    slug: q.slug,
-    title: q.title,
     tags: q.tags,
     questionText: stripHtml(q.questionHtml),
     answerText: stripHtml(q.answerHtml),
@@ -21,5 +19,9 @@ export function buildSearchIndex(
       ? stripHtml(q.instructorNotesHtml)
       : undefined,
     sourcesText: q.sourcesHtml ? stripHtml(q.sourcesHtml) : undefined,
+    questionHtml: q.questionHtml,
+    answerHtml: q.answerHtml,
+    instructorNotesHtml: q.instructorNotesHtml,
+    sourcesHtml: q.sourcesHtml,
   }));
 }

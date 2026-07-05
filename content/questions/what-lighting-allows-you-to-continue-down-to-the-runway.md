@@ -3,9 +3,7 @@ id: what-lighting-allows-you-to-continue-down-to-the-runway
 title: What lighting allows you to continue down to the runway
 tags:
   - runway-environment
-  - visual-references
-  - ifr
-  - runway-environment-visual-references
+  - approach-lights
 ---
 
 ### Question

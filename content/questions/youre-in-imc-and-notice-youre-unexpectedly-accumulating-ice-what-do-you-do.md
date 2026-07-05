@@ -3,9 +3,7 @@ id: youre-in-imc-and-notice-youre-unexpectedly-accumulating-ice-what-do-you-do
 title: You’re in IMC and notice you’re unexpectedly accumulating ice. What do you do
 tags:
   - icing
-  - thunderstorms
   - adverse-weather
-  - adverse-conditions-icing-and-thunderstorms
 ---
 
 ### Question

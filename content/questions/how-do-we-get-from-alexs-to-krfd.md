@@ -2,10 +2,7 @@
 id: how-do-we-get-from-alexs-to-krfd
 title: How do we get from ALEXS to KRFD
 tags:
-  - star
-  - arrival-procedures
-  - krfd
-  - krfd-milaa-alexs1-star
+  - stars
 ---
 
 ### Question

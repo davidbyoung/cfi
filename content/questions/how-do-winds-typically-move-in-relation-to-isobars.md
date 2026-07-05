@@ -4,7 +4,6 @@ title: How do winds typically move in relation to isobars
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

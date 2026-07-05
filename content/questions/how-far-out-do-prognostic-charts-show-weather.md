@@ -3,9 +3,7 @@ id: how-far-out-do-prognostic-charts-show-weather
 title: How far out do prognostic charts show weather
 tags:
   - prognostic-charts
-  - gfa
   - weather-charts
-  - prognostic-charts-and-gfa
 ---
 
 ### Question

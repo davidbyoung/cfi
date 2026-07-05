@@ -1,18 +1,13 @@
 ---
 id: why-is-this-not-a-straight-in-approach-if-the-final-approach-course-is-aligned-with
-title: Why is this not a straight-in approach if the final approach course is aligned with the runway
+title: On the KASE LOC/DME-E, why is it not a straight-in approach if the final approach course is aligned with the runway
 tags:
   - approach-briefing
-  - localizer
-  - dme
-  - kase
-  - circling
-  - kase-loc-dme-e
 ---
 
 ### Question
 
-Why is this not a straight-in approach if the final approach course is aligned with the runway?
+On the KASE LOC/DME-E, why is it not a straight-in approach if the final approach course is aligned with the runway?
 
 ### Answer
 

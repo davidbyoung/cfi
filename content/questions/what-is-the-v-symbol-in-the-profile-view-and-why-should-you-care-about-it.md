@@ -1,17 +1,13 @@
 ---
 id: what-is-the-v-symbol-in-the-profile-view-and-why-should-you-care-about-it
-title: What is the v symbol in the profile view, and why should you care about it
+title: On the KBUU RNAV 11, what is the v symbol in the profile view, and why should you care about it
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - kbuu
-  - kbuu-rnav-11
 ---
 
 ### Question
 
-What is the v symbol in the profile view, and why should you care about it?
+On the KBUU RNAV 11, what is the v symbol in the profile view, and why should you care about it?
 
 ### Answer
 

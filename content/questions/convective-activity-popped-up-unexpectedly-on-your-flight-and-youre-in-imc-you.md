@@ -2,11 +2,9 @@
 id: convective-activity-popped-up-unexpectedly-on-your-flight-and-youre-in-imc-you
 title: Convective activity popped up unexpectedly on your flight, and you’re in IMC. You notice a gap between cells on your ADS-B/NEXRAD that you think would allow you to proceed. Do you
 tags:
-  - icing
   - thunderstorms
   - adverse-weather
-  - ads-b
-  - adverse-conditions-icing-and-thunderstorms
+  - ads-b-weather
 ---
 
 ### Question

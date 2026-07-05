@@ -4,8 +4,6 @@ title: What is the dashed brown line going over the Gulf of California, and what
 tags:
   - surface-analysis
   - weather-charts
-  - landing-minimums
-  - surface-analysis-charts
 ---
 
 ### Question

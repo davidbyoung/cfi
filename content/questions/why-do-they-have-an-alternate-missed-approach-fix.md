@@ -1,18 +1,13 @@
 ---
 id: why-do-they-have-an-alternate-missed-approach-fix
-title: Why do they have an alternate missed approach fix
+title: On the KMSN ILS/LOC 18, why do they have an alternate missed approach fix
 tags:
   - approach-briefing
-  - ils
-  - localizer
-  - kmsn
-  - alternates
-  - kmsn-ils-loc-rwy-18
 ---
 
 ### Question
 
-Why do they have an alternate missed approach fix?
+On the KMSN ILS/LOC 18, why do they have an alternate missed approach fix?
 
 ### Answer
 

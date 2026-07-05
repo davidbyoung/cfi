@@ -3,8 +3,7 @@ id: what-is-a-notam-and-give-some-examples
 title: What is a NOTAM, and give some examples
 tags:
   - notams
-  - preflight
-  - ifr
+  - flight-planning
 ---
 
 ### Question

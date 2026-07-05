@@ -3,11 +3,7 @@ id: how-does-gps-work
 title: How does GPS work
 tags:
   - gps
-  - rnav
-  - rnp
-  - pbn
-  - ifr
-  - gps-rnav-rnp
+  - instrument-systems
 ---
 
 ### Question

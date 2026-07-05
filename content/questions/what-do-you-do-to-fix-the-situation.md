@@ -4,12 +4,11 @@ title: What do you do to fix the situation
 tags:
   - pitot-static
   - static-port-blockage
-  - ifr
 ---
 
 ### Question
 
-What do you do to fix the situation?
+What steps might you take to resolve a blocked static port?
 
 ### Answer
 

@@ -3,12 +3,7 @@ id: its-been-31-days-since-youve-done-a-vor-check-can-you-fly-a-route-that-is-gp
 title: It’s been 31 days since you’ve done a VOR check.  Can you fly a route that is GPS-only, ending with an ILS
 tags:
   - vor-checks
-  - vor
   - inspections
-  - gps
-  - ils
-  - landing-minimums
-  - ifr
 ---
 
 ### Question

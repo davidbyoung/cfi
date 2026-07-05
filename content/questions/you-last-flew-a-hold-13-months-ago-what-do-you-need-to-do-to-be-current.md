@@ -3,10 +3,7 @@ id: you-last-flew-a-hold-13-months-ago-what-do-you-need-to-do-to-be-current
 title: You last flew a hold 13 months ago. What do you need to do to be current
 tags:
   - instrument-currency
-  - currency
   - ipc
-  - holds
-  - ifr
 ---
 
 ### Question

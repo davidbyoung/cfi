@@ -2,10 +2,9 @@
 id: decode-this-taf
 title: "Decode this TAF:"
 tags:
-  - taf
-  - weather
-  - forecast
   - tafs
+  - weather
+  - forecasts
 ---
 
 ### Question

@@ -1,17 +1,13 @@
 ---
 id: when-would-you-need-to-abide-by-the-stepdown-fix-at-zevbu
-title: When would you need to abide by the stepdown fix at ZEVBU
+title: On the KRFD RNAV 7, when would you need to abide by the stepdown fix at ZEVBU
 tags:
   - approach-briefing
-  - rnav-approach
-  - rnav
-  - krfd
-  - krfd-rnav-7
 ---
 
 ### Question
 
-When would you need to abide by the stepdown fix at ZEVBU?
+On the KRFD RNAV 7, when would you need to abide by the stepdown fix at ZEVBU?
 
 ### Answer
 

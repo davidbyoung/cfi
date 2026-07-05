@@ -3,14 +3,8 @@ id: what-does-the-flag-with-the-x-mean-on-laird-on-the-v7
 title: What does the flag with the “X” mean on LAIRD on the V7
 tags:
   - minimum-altitudes
-  - mea
-  - moca
-  - mra
+  - enroute-charts
   - mca
-  - maa
-  - oroca
-  - ifr
-  - mea-moca-mra-mca-maa-and-oroca
 ---
 
 ### Question

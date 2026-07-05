@@ -3,8 +3,7 @@ id: what-are-the-different-types-of-notams
 title: What are the different types of NOTAMs
 tags:
   - notams
-  - preflight
-  - ifr
+  - ifr-flight-planning
 ---
 
 ### Question

@@ -2,10 +2,8 @@
 id: brief-the-krfd-bixby1-quizz-sid-for-takeoff-from-runway-7
 title: Brief the KRFD BIXBY1.QUIZZ SID for takeoff from runway 7
 tags:
-  - sid
+  - sids
   - departure-procedures
-  - krfd
-  - krfd-bixby1-quizz-sid
 ---
 
 ### Question

@@ -3,11 +3,7 @@ id: what-is-t325-just-east-of-kjvl
 title: What is T325 just east of KJVL
 tags:
   - airways
-  - fixes
-  - waypoints
-  - changeover-points
-  - ifr
-  - airways-fixes-waypoints-and-changeover-points
+  - enroute-charts
 ---
 
 ### Question

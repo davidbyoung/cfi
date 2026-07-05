@@ -23,9 +23,6 @@ const FrontmatterSchema = z.object({
   id: z
     .string({ error: "id is required" })
     .regex(KEBAB, "id must be lowercase kebab-case"),
-  title: z
-    .string({ error: "title is required" })
-    .min(1, "title must not be empty"),
   tags: z.array(z.string()).default([]),
 });
 
@@ -49,12 +46,37 @@ const rewriteImages: Plugin<[], HastRoot> = () => (tree) => {
   });
 };
 
+const addTargetBlank: Plugin<[], HastRoot> = () => (tree) => {
+  walkHast(tree as unknown as Node, (node) => {
+    const el = node as Element;
+    if (el.type === "element" && el.tagName === "a") {
+      el.properties = {
+        ...el.properties,
+        target: "_blank",
+        rel: "noopener noreferrer",
+      };
+    }
+  });
+};
+
 function markdownToHtml(md: string): string {
   const file = unified()
     .use(remarkParse)
     .use(remarkRehype)
     .use(rewriteImages)
     .use(rehypeSanitize)
+    .use(rehypeStringify)
+    .processSync(md);
+  return String(file);
+}
+
+function markdownToHtmlSources(md: string): string {
+  const file = unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rewriteImages)
+    .use(rehypeSanitize)
+    .use(addTargetBlank)
     .use(rehypeStringify)
     .processSync(md);
   return String(file);
@@ -107,7 +129,7 @@ export function parseQuestionContent(
     throw new Error(`${filePath}: ${field} — ${issue.message}`);
   }
 
-  const { id, title, tags } = fm.data;
+  const { id, tags } = fm.data;
 
   const expectedFilename = `${id}.md`;
   const actualFilename = path.basename(filePath);
@@ -139,8 +161,6 @@ export function parseQuestionContent(
 
   return {
     id,
-    slug: id,
-    title,
     tags,
     questionHtml: markdownToHtml(sections["Question"]),
     answerHtml: markdownToHtml(sections["Answer"]),
@@ -149,7 +169,9 @@ export function parseQuestionContent(
         ? markdownToHtml(sections["Instructor notes"])
         : undefined,
     sourcesHtml:
-      "Sources" in sections ? markdownToHtml(sections["Sources"]) : undefined,
+      "Sources" in sections
+        ? markdownToHtmlSources(sections["Sources"])
+        : undefined,
   };
 }
 

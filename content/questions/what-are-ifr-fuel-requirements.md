@@ -3,8 +3,8 @@ id: what-are-ifr-fuel-requirements
 title: What are IFR fuel requirements
 tags:
   - fuel-planning
-  - ifr-flight-plan
-  - ifr
+  - ifr-flight-planning
+  - alternates
 ---
 
 ### Question

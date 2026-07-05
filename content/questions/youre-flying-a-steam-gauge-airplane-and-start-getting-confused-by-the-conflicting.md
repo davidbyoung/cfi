@@ -5,8 +5,6 @@ tags:
   - vacuum-failure
   - instrument-failures
   - partial-panel
-  - icing
-  - ifr
 ---
 
 ### Question

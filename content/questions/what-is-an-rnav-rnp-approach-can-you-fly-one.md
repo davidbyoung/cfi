@@ -2,12 +2,8 @@
 id: what-is-an-rnav-rnp-approach-can-you-fly-one
 title: What is an RNAV (RNP) approach? Can you fly one
 tags:
-  - gps
   - rnav
   - rnp
-  - pbn
-  - ifr
-  - gps-rnav-rnp
 ---
 
 ### Question

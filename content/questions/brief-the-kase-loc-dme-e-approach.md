@@ -4,10 +4,6 @@ title: Brief the KASE LOC/DME-E approach
 tags:
   - approach-briefing
   - localizer
-  - dme
-  - kase
-  - circling
-  - kase-loc-dme-e
 ---
 
 ### Question

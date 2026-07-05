@@ -4,7 +4,7 @@ title: What can you use in place of DME
 tags:
   - dme
   - navigation
-  - ifr
+  - gps-in-lieu
 ---
 
 ### Question

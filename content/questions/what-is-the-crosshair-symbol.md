@@ -1,16 +1,13 @@
 ---
 id: what-is-the-crosshair-symbol
-title: What is the crosshair symbol
+title: On the KRFD MILAA STAR, what is the crosshair symbol on the plan view
 tags:
-  - star
-  - arrival-procedures
-  - krfd
-  - krfd-milaa-alexs1-star
+  - stars
 ---
 
 ### Question
 
-What is the crosshair symbol?
+On the KRFD MILAA STAR, what is the crosshair symbol on the plan view?
 
 ### Answer
 

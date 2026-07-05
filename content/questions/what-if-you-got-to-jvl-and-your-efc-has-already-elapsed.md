@@ -1,16 +1,13 @@
 ---
 id: what-if-you-got-to-jvl-and-your-efc-has-already-elapsed
-title: What if you got to JVL and your EFC has already elapsed
+title: During IFR lost comms, what do you do if you get to your clearance limit and your EFC has already elapsed
 tags:
   - lost-communications
-  - kpwk
-  - kmsn
-  - lost-comms-scenario-kpwk-to-kmsn
 ---
 
 ### Question
 
-What if you got to JVL and your EFC has already elapsed?
+During IFR lost comms, what do you do if you get to your clearance limit and your EFC has already elapsed?
 
 ### Answer
 

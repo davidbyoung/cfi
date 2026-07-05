@@ -32,9 +32,6 @@ export default function StudyPage() {
                 >
                   {guide.title}
                 </Link>
-                {guide.description && (
-                  <p className="mt-1 text-sm text-muted">{guide.description}</p>
-                )}
               </li>
             ))}
           </ul>

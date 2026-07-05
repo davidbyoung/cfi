@@ -28,37 +28,22 @@ A student pilot preparing for an instrument rating oral exam opens the site, nav
 
 ### User Story 2 — Student Searches the Question Bank (Priority: P2)
 
-A student wants to review everything related to instrument currency. They navigate to `/study/questions`, type "instrument currency" in the search field, and also click the `instrument-currency` tag filter. The page shows matching questions with result count, tags, and links to individual question pages.
+A student wants to review everything related to instrument currency. They navigate to `/study/questions`, type "instrument currency" in the search field, and also click the `instrument-currency` tag filter. The page shows matching questions with result count. Each question result shows the question text, tags, and a "Show answer" control.
 
 **Why this priority**: The question bank gives students direct access to any question regardless of guide membership, enabling targeted review. Depends on P1's content infrastructure.
 
-**Independent Test**: Can be fully tested by loading `/study/questions`, entering search text, selecting tag filters, and verifying that result count updates, matching questions are shown, non-matching questions are hidden, and clicking a result navigates to the question page.
+**Independent Test**: Can be fully tested by loading `/study/questions`, entering search text, selecting tag filters, and verifying that result count updates, matching questions are shown, non-matching questions are hidden, and each result shows question text, tags, and an answer reveal control.
 
 **Acceptance Scenarios**:
 
-1. **Given** a student visits `/study/questions`, **When** the page loads, **Then** all questions are listed with their tags and a link to each individual question page.
-2. **Given** a student types in the search field, **When** text is entered, **Then** only questions matching the text in title, question body, answer, instructor notes, tags, or sources are shown, and a result count is updated.
-3. **Given** a student clicks a tag filter, **When** selected, **Then** only questions bearing that tag are shown.
-4. **Given** a student has both search text and a tag filter active, **When** both are applied, **Then** only questions matching both criteria are shown.
-5. **Given** filters are active, **When** the student clicks "Clear filters," **Then** all questions are shown again and inputs are reset.
-6. **Given** a student uses a keyboard only, **When** they navigate tag filter controls, **Then** filters can be toggled without a mouse.
-
----
-
-### User Story 3 — Student Views an Individual Question (Priority: P3)
-
-A student bookmarks a specific question URL from a search result and returns to it directly. They see the question title, tags, full question text, answer, and any instructor notes or sources present.
-
-**Why this priority**: Individual question pages give stable, bookmarkable URLs and support the question bank's link-out behavior. Builds on P1 and P2 infrastructure.
-
-**Independent Test**: Can be fully tested by navigating directly to `/study/questions/safety-pilot-logging` and confirming all question fields render correctly.
-
-**Acceptance Scenarios**:
-
-1. **Given** a student visits `/study/questions/[questionSlug]`, **When** the page loads, **Then** the question title, tags, question text, and answer are shown.
-2. **Given** the question has instructor notes, **When** the page loads, **Then** a "Show instructor notes" disclosure control appears, collapsed by default, and reveals the notes when activated.
-3. **Given** the question has sources, **When** the page loads, **Then** sources appear with working hyperlinks.
-4. **Given** the question slug does not match any question, **When** the page is visited, **Then** a 404 or equivalent "not found" response is returned.
+1. **Given** a student visits `/study/questions`, **When** the page loads, **Then** all questions are listed, each showing its question text, tags as clickable pills, and a "Show answer" control.
+2. **Given** a student types in the search field, **When** text is entered, **Then** only questions matching the text in question body, answer, instructor notes, tags, or sources are shown, and a result count is updated.
+3. **Given** a student clicks a tag filter button at the top, **When** selected, **Then** only questions bearing that tag are shown.
+4. **Given** a student clicks a tag pill on an individual question result, **When** clicked, **Then** the tag filter activates for that tag, filtering all results.
+5. **Given** a student has both search text and a tag filter active, **When** both are applied, **Then** only questions matching both criteria are shown.
+6. **Given** filters are active, **When** the student clicks "Clear filters," **Then** all questions are shown again and inputs are reset.
+7. **Given** a student uses a keyboard only, **When** they navigate tag filter controls, **Then** filters can be toggled without a mouse.
+8. **Given** a student navigates to `/study/questions?tag=instrument-currency`, **When** the page loads, **Then** the `instrument-currency` tag filter is pre-selected and the results are pre-filtered.
 
 ---
 
@@ -72,7 +57,7 @@ A student accessing any study page sees a concise educational-use disclaimer at 
 
 **Acceptance Scenarios**:
 
-1. **Given** a student visits `/study`, `/study/guides/[slug]`, or `/study/questions/[slug]`, **When** the page loads, **Then** a concise educational-use disclaimer appears at the bottom of the page content area, before the site footer.
+1. **Given** a student visits `/study` or `/study/guides/[slug]`, **When** the page loads, **Then** a concise educational-use disclaimer appears at the bottom of the page content area, before the site footer.
 2. **Given** the concise disclaimer is visible, **When** the student clicks the disclaimer link, **Then** they are taken to `/study/disclaimer`.
 3. **Given** a student visits `/study/disclaimer`, **When** the page loads, **Then** the full "Student Resources Disclaimer and Terms of Use" is displayed with all required legal provisions (education-only purpose, not official FAA publications, may contain errors, verification requirement, PIC responsibility, no outcome guarantees, not legal advice, no-warranty and limitation of liability).
 4. **Given** the disclaimer text is updated, **When** the build runs, **Then** the updated text appears consistently on all pages that display the disclaimer without editing multiple files.
@@ -89,7 +74,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 **Acceptance Scenarios**:
 
-1. **Given** a valid question file is added to `content/questions/`, **When** the build runs, **Then** a page at `/study/questions/[id]` is generated.
+1. **Given** a valid question file is added to `content/questions/`, **When** the build runs, **Then** the question appears in the question bank at `/study/questions`.
 2. **Given** a guide YAML file references a question ID, **When** the build runs, **Then** the question appears in the correct chapter and section of that guide page.
 3. **Given** the same question ID appears in two guide YAML files, **When** the build runs, **Then** the question renders in both guides without duplicating the question file.
 4. **Given** a question file is missing `### Answer`, **When** the build runs, **Then** the build fails with an error citing the file path and the specific problem.
@@ -126,7 +111,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 **Question format**
 
-- **FR-006**: Each question file MUST be a Markdown file with YAML frontmatter containing `id`, `title`, and `tags`.
+- **FR-006**: Each question file MUST be a Markdown file with YAML frontmatter containing `id` and `tags`. The `title` field is not supported and MUST NOT be required or rendered.
 - **FR-007**: The question body MUST contain a `### Question` section and a `### Answer` section.
 - **FR-008**: The question body MAY contain an optional `### Instructor notes` section.
 - **FR-009**: The question body MAY contain an optional `### Sources` section supporting Markdown hyperlinks.
@@ -136,7 +121,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 **Guide format**
 
-- **FR-013**: Each guide MUST be a YAML file with `title`, `slug`, and `chapters`.
+- **FR-013**: Each guide MUST be a YAML file with `title`, `slug`, and `chapters`. Guide YAML files MUST NOT include a `description` field; guide descriptions are not supported.
 - **FR-014**: Guides MUST follow a three-level hierarchy: chapter → section → questions.
 - **FR-015**: Guide slugs MUST be lowercase kebab-case and unique across all guides.
 - **FR-016**: Guide YAML files MUST reference question IDs explicitly — guide membership MUST NOT be inferred from tags.
@@ -169,8 +154,7 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 - **FR-022**: The system MUST generate a `/study` page containing a brief intro sentence, a list of all guides with links, and a "Browse all questions" link to the question bank. The page MUST NOT include a hero section or large editorial block — matching the minimal content-first style of existing interior pages.
 - **FR-023**: The system MUST generate a `/study/guides/[guideSlug]` page for every guide YAML file.
-- **FR-024**: The system MUST generate a `/study/questions` page listing all questions.
-- **FR-025**: The system MUST generate a `/study/questions/[questionSlug]` page for every question file.
+- **FR-024**: The system MUST generate a `/study/questions` page listing all questions. No individual question pages (`/study/questions/[slug]`) are generated.
 
 **Site navigation**
 
@@ -179,6 +163,8 @@ The site owner creates a new question file under `content/questions/`, adds its 
 **Guide page behavior**
 
 - **FR-026**: Guide pages MUST render chapters, sections, and questions in the exact order defined in the guide YAML.
+- **FR-026a**: On guide pages, each question MUST display: (1) its tags as clickable pills above the question text, each linking to `/study/questions?tag=[id]`; (2) the full question body HTML; (3) a "Show answer" control. No link to a per-question URL is rendered.
+- **FR-026b**: On guide pages, chapter headings MUST be prefixed with their 1-based ordinal number and a period (e.g., "1. Pilot Qualifications, Privileges, and Currency"). Section headings MUST be prefixed with chapter.section notation (e.g., "1.1 When an Instrument Rating Is Required").
 - **FR-027**: Answers on guide pages MUST be hidden by default and revealed by an accessible "Show answer" control.
 - **FR-028**: Guide pages MUST support print-friendly styling with answers visible when printed.
 - **FR-029**: Guide pages MUST be readable on mobile devices.
@@ -186,10 +172,13 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 **Question bank behavior**
 
-- **FR-030**: The question bank page MUST provide a text search input that matches across title, question text, answer text, instructor notes, tags, and sources.
-- **FR-031**: The question bank page MUST provide a tag filter that limits results to questions bearing the selected tag.
+- **FR-030**: The question bank page MUST provide a text search input that matches across question text, answer text, instructor notes, tags, and sources (no title field exists).
+- **FR-031**: The question bank page MUST provide a tag filter at the top of the page. Each question result MUST also show its tags as clickable pills; clicking a tag pill on a result activates the tag filter for that tag.
 - **FR-032**: The question bank page MUST show a result count and a "Clear filters" control.
 - **FR-033**: Search and tag filtering MUST work without an external search service.
+- **FR-057**: All hyperlinks within the rendered `### Sources` section MUST include `target="_blank" rel="noopener noreferrer"` so they open in a new browser tab.
+- **FR-058**: The question bank MUST pre-populate the active tag filter from a `?tag=[id]` URL query parameter on load, enabling guide tag pills to link directly to a pre-filtered question bank view.
+- **FR-059**: Each question result in the question bank MUST display the full question body HTML and a "Show answer" control that reveals the answer, instructor notes (if present), and sources (if present) inline.
 
 **Accessibility**
 
@@ -200,13 +189,12 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 **URL stability**
 
-- **FR-038**: Question slugs MUST equal the question `id` and MUST NOT change if the question is moved to a different guide or section.
-- **FR-039**: A question reused in multiple guides MUST have exactly one canonical URL at `/study/questions/[questionSlug]`.
+- **FR-038**: Question IDs MUST be stable — a question moved to a different guide or section retains its `id`. No per-question URL is generated. (FR-039 is removed: individual question URLs no longer exist.)
 
 **Disclaimer**
 
 - **FR-042**: A reusable concise disclaimer component MUST be implemented as a single TypeScript component. Its text MUST NOT be duplicated or hard-coded in multiple pages.
-- **FR-043**: The concise disclaimer MUST appear at the bottom of the page content area (after main content, before the site footer) on `/study`, every `/study/guides/[slug]` page, and every `/study/questions/[slug]` page. It MUST NOT appear on the question bank page (`/study/questions`).
+- **FR-043**: The concise disclaimer MUST appear at the bottom of the page content area (after main content, before the site footer) on `/study` and every `/study/guides/[slug]` page. It MUST NOT appear on the question bank page (`/study/questions`).
 - **FR-044**: The concise disclaimer MUST include a link to `/study/disclaimer`.
 - **FR-045**: The system MUST generate a dedicated page at `/study/disclaimer` containing the full "Student Resources Disclaimer and Terms of Use."
 - **FR-046**: The full disclaimer MUST state that the materials are for general aviation education, study, and oral-exam preparation only.
@@ -221,13 +209,13 @@ The site owner creates a new question file under `content/questions/`, adds its 
 
 ### Key Entities
 
-- **Question**: A reusable unit of content with an ID, title, tags, required question and answer sections, and optional instructor notes and sources. Canonical URL: `/study/questions/[id]`.
-- **Guide**: An ordered collection of chapters, each containing sections, each containing ordered question references. Canonical URL: `/study/guides/[slug]`.
+- **Question**: A reusable unit of content with an ID, tags, required question and answer sections, and optional instructor notes and sources. Has no `title` field. No per-question URL is generated; questions are accessed only via guides or the question bank.
+- **Guide**: An ordered collection of chapters, each containing sections, each containing ordered question references. Has `title` and `slug` only — no `description`. Canonical URL: `/study/guides/[slug]`.
 - **Chapter**: A major heading grouping within a guide (e.g., "Pilot Qualifications, Privileges, and Currency").
 - **Section**: A subheading grouping within a chapter (e.g., "Instrument Currency"), containing an ordered list of question IDs.
 - **Tag**: A controlled-vocabulary label defined in `content/tags.yml` used for filtering and search categorization.
 - **Tag Catalog**: The central list of all valid tags, each with a label and optional description, stored in `content/tags.yml`.
-- **Search Index Entry**: A flattened representation of a question (plain text, no HTML) used for client-side search and filtering.
+- **Search Index Entry**: A combined search-and-display record per question: plain text fields for search matching plus HTML fields for rendering. Passed from server to the client QuestionSearch component.
 - **Concise Disclaimer**: A brief educational-use notice rendered at the bottom of study content pages, maintained as a single reusable TypeScript component, linking to the full disclaimer page.
 - **Full Disclaimer**: The complete "Student Resources Disclaimer and Terms of Use" page at `/study/disclaimer`, containing all required legal provisions.
 
@@ -255,6 +243,19 @@ The site owner creates a new question file under `content/questions/`, adds its 
 - Q: What URL should the full disclaimer page use? → A: `/study/disclaimer` — co-located with the study section.
 - Q: Where does the concise disclaimer appear on guide and question pages? → A: Bottom of page content, after main content, before the site footer. Does not interrupt the study flow.
 - Q: What is the single source of truth for disclaimer text? → A: A TypeScript component (no Markdown parser needed); developer edits one `.tsx` file and all affected pages update on next build.
+
+### Session 2026-07-04 (supplement)
+
+- Q: Should guides support a `description` field in YAML or rendered output? → A: No — `description` is removed entirely. Guide YAML files have only `title`, `slug`, and `chapters`. No description is rendered anywhere in the UI.
+- Q: How should questions appear inline on guide pages? → A: Show only the linked question title (linking to `/study/questions/[slug]`). Do not render the question body text inline on guide pages. The "Show answer" control reveals the answer directly below the linked title.
+- Q: Should chapter and section headings be numbered on guide pages? → A: Yes — chapter titles are prefixed with their 1-based ordinal (e.g., "1. Pilot Qualifications, Privileges, and Currency"); section titles are prefixed with chapter.section notation (e.g., "1.1 When an Instrument Rating Is Required", "1.2 Instrument Rating Experience Requirements").
+
+### Session 2026-07-04 (supplement 2)
+
+- Q: Should individual question pages (`/study/questions/[slug]`) be generated? → A: No — removed entirely. Questions are accessed only through guides or the question bank.
+- Q: Should `title` remain in the question data model? → A: No — `title` and `slug` are removed from the `Question` type. The `### Question` markdown section is the question content. Question frontmatter contains only `id` and `tags`.
+- Q: Should source links open in a new tab? → A: Yes — all `<a>` elements in the rendered `### Sources` section MUST include `target="_blank" rel="noopener noreferrer"`.
+- Q: How should tags appear and behave on guide and question bank pages? → A: Tags appear as clickable pills above the question text on both guide pages and question bank result cards. In guides, tag pills link to `/study/questions?tag=[id]`. In the question bank, tag pills on result cards activate the inline tag filter. The question bank reads a `?tag=` URL parameter on mount to pre-populate the filter.
 
 ## Assumptions
 

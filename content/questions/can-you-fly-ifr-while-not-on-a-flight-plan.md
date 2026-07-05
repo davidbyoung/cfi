@@ -2,10 +2,7 @@
 id: can-you-fly-ifr-while-not-on-a-flight-plan
 title: Can you fly IFR while not on a flight plan
 tags:
-  - ifr-flight-plan
-  - ifr-clearance
-  - ifr
-  - ifr-flight-plans
+  - ifr-flight-planning
 ---
 
 ### Question

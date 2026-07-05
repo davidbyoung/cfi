@@ -2,10 +2,6 @@
 id: do-you-need-to-report-reaching-compulsory-reporting-points-when-in-radar-contact
 title: Do you need to report reaching compulsory reporting points when in radar contact
 tags:
-  - mandatory-reports
-  - ifr-communications
-  - landing-minimums
-  - ifr
   - mandatory-ifr-reports
 ---
 

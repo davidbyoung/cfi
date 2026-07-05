@@ -3,9 +3,8 @@ id: how-does-an-ils-work
 title: How does an ILS work
 tags:
   - ils
-  - localizer
-  - loc-back-course
-  - ils-loc-loc-back-course
+  - navigation
+  - instrument-systems
 ---
 
 ### Question

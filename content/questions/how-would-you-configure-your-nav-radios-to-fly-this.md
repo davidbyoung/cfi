@@ -1,6 +1,6 @@
 ---
 id: how-would-you-configure-your-nav-radios-to-fly-this
-title: How would you configure your NAV radios to fly this
+title: How would you configure your NAV radios to fly the KASE LOC/DME-E
 tags:
   - approach-briefing
   - localizer
@@ -12,7 +12,7 @@ tags:
 
 ### Question
 
-How would you configure your NAV radios to fly this?
+How would you configure your NAV radios to fly the KASE LOC/DME-E?
 
 ### Answer
 

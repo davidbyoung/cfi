@@ -4,7 +4,6 @@ title: Your airspeed suddenly drops unexpectedly, but your power and pitch setti
 tags:
   - pitot-static
   - pitot-tube-blockage
-  - ifr
 ---
 
 ### Question

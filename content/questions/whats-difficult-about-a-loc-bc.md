@@ -2,10 +2,7 @@
 id: whats-difficult-about-a-loc-bc
 title: What’s difficult about a LOC BC
 tags:
-  - ils
-  - localizer
-  - loc-back-course
-  - ils-loc-loc-back-course
+  - localizer-back-course
 ---
 
 ### Question

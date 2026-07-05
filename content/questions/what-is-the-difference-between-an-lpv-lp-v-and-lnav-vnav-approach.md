@@ -2,12 +2,9 @@
 id: what-is-the-difference-between-an-lpv-lp-v-and-lnav-vnav-approach
 title: What is the difference between an LPV, LP+V, and LNAV/VNAV approach
 tags:
+  - approaches
   - gps
-  - rnav
-  - rnp
   - pbn
-  - ifr
-  - gps-rnav-rnp
 ---
 
 ### Question

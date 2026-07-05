@@ -4,7 +4,6 @@ title: What is the blue “H” over Arizona, and what kind of conditions are as
 tags:
   - surface-analysis
   - weather-charts
-  - surface-analysis-charts
 ---
 
 ### Question

@@ -4,14 +4,13 @@ title: If you’re cleared direct JIGTA for a straight-in approach, walk me thro
 tags:
   - approach-briefing
   - rnav-approach
-  - rnav
-  - kbuu
-  - kbuu-rnav-11
+  - n3096b-specific-equipment-and-limitations
+  - avidyne
 ---
 
 ### Question
 
-If you’re cleared direct JIGTA for a straight-in approach, walk me through how you’d configure your FMS (Avidyne Entegra EX5000)
+If you’re cleared direct JIGTA for a straight-in KBUU RNAV 11 approach, walk me through how you’d configure your FMS (Avidyne Entegra EX5000)
 
 ### Answer
 

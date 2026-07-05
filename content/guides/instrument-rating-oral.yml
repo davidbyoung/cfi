@@ -1,6 +1,5 @@
 title: Instrument Airplane Oral Exam Guide
 slug: instrument-rating-oral
-description: Question bank imported from the Instrument Airplane Oral Exam Guide and split into reusable Markdown question files.
 chapters:
   - title: Pilot Qualifications, Privileges, and Currency
     sections:
@@ -481,7 +480,6 @@ chapters:
       - title: "Lost Comms Scenario: KPWK to KMSN"
         questions:
           - youre-planning-a-flight-from-kpwk-to-kmsn-youre-given-the-following-clearance-archer
-          - what-direction-would-you-hold-at-jvl
           - what-if-you-got-to-jvl-and-your-efc-has-already-elapsed
           - what-if-you-get-to-the-iaf-and-your-eta-has-already-elapsed
           - what-if-you-need-to-lose-a-lot-of-altitude-to-fly-the-approach-when-would-you-descend

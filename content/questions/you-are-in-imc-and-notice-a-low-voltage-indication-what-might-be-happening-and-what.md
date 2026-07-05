@@ -4,8 +4,6 @@ title: You are in IMC and notice a low voltage indication. What might be happeni
 tags:
   - electrical-failure
   - instrument-failures
-  - icing
-  - ifr
 ---
 
 ### Question

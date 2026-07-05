@@ -2,14 +2,10 @@
 id: lets-say-our-non-towered-airport-is-in-mountainous-terrain-how-are-you-going-to
 title: Let’s say our non-towered airport is in mountainous terrain. How are you going to safely navigate the terrain prior to getting into radar contact
 tags:
-  - odp
+  - odps
   - vcoa
-  - obstacle-clearance
   - departure-procedures
-  - ifr-clearance
-  - landing-minimums
-  - ifr
-  - odps-vcoas-and-obstacle-clearance
+  - ifr-clearances
 ---
 
 ### Question

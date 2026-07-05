@@ -4,8 +4,7 @@ title: If you are flying under the hood in a high-performance airplane for which
 tags:
   - safety-pilot
   - logging
-  - currency
-  - safety-pilot-rules-and-logging
+  - instrument-currency
 ---
 
 ### Question

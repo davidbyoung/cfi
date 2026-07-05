@@ -3,10 +3,7 @@ id: what-weather-report-s-are-you-using-to-determine-the-weather-from-1-hr-befor
 title: What weather report(s) are you using to determine the weather from 1 hr before to 1 hr after your ETA
 tags:
   - alternates
-  - ifr-flight-plan
-  - flight-planning
-  - ifr
-  - ifr-alternates
+  - ifr-flight-planning
 ---
 
 ### Question

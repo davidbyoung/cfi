@@ -4,7 +4,6 @@ title: What is DME
 tags:
   - dme
   - navigation
-  - ifr
 ---
 
 ### Question
