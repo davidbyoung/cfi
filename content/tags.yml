@@ -8,8 +8,6 @@
   label: AFM
 - id: ahrs
   label: AHRS
-- id: ahrs-pfd-mfd-failures
-  label: AHRS PFD MFD Failures
 - id: aircraft-systems
   label: Aircraft Systems
 - id: airmets
@@ -22,8 +20,6 @@
   label: Airport Operations
 - id: airspace
   label: Airspace
-- id: airspace-and-ads-b-requirements
-  label: Airspace And ADS B Requirements
 - id: airways
   label: Airways
 - id: airworthiness
@@ -36,14 +32,10 @@
   label: Altimeter Errors
 - id: approach-briefing
   label: Approach Briefing
-- id: approach-concepts
-  label: Approach Concepts
 - id: approach-lights
   label: Approach Lights
 - id: approaches
   label: Approaches
-- id: arrival-procedures
-  label: Arrival Procedures
 - id: asos
   label: ASOS
 - id: atis
@@ -58,16 +50,12 @@
   label: Circling
 - id: clearance-void-time
   label: Clearance Void Time
-- id: clearances
-  label: Clearances
 - id: climb-gradient
   label: Climb Gradient
 - id: closing-ifr-flight-plans
   label: Closing IFR Flight Plans
 - id: convective-sigmets
   label: Convective SIGMETs
-- id: currency
-  label: Currency
 - id: da-mda
   label: DA/MDA
 - id: departure-procedures
@@ -84,16 +72,12 @@
   label: Equipment Codes
 - id: flight-planning
   label: Flight Planning
-- id: flight-review
-  label: Flight Review
 - id: forecasts
   label: Forecasts
 - id: fuel-planning
   label: Fuel Planning
 - id: gco
   label: GCO
-- id: general-approach-concepts
-  label: General Approach Concepts
 - id: gps
   label: GPS
 - id: gps-in-lieu
@@ -108,8 +92,6 @@
   label: IFR
 - id: ifr-clearances
   label: IFR Clearances
-- id: ifr-communications
-  label: IFR Communications
 - id: ifr-flight-planning
   label: IFR Flight Planning
 - id: ifr-inspections
@@ -118,8 +100,6 @@
   label: ILS
 - id: ils-critical-areas
   label: ILS Critical Areas
-- id: ils-loc-loc-back-course
-  label: ILS LOC LOC Back Course
 - id: inoperative-equipment
   label: Inoperative Equipment
 - id: inspections
@@ -158,8 +138,6 @@
   label: Medical
 - id: metars
   label: METARs
-- id: mfd
-  label: MFD
 - id: minimum-altitudes
   label: Minimum Altitudes
 - id: moca
@@ -178,10 +156,6 @@
   label: Navigation
 - id: notams
   label: NOTAMs
-- id: obstacle-clearance
-  label: Obstacle Clearance
-- id: obtaining-an-ifr-clearance
-  label: Obtaining An IFR Clearance
 - id: odps
   label: ODPs
 - id: oroca
@@ -192,10 +166,6 @@
   label: Partial Panel
 - id: pbn
   label: PBN
-- id: personal-minimums
-  label: Personal Minimums
-- id: pfd
-  label: PFD
 - id: pilot-documents
   label: Pilot Documents
 - id: pilot-qualifications
@@ -206,8 +176,6 @@
   label: Pitot Static
 - id: pitot-tube-blockage
   label: Pitot Tube Blockage
-- id: preflight
-  label: Preflight
 - id: pressure-errors
   label: Pressure Errors
 - id: prognostic-charts
@@ -232,8 +200,6 @@
   label: Runway Environment
 - id: runway-lighting
   label: Runway Lighting
-- id: rvr
-  label: RVR
 - id: safety-pilot
   label: Safety Pilot
 - id: safety-pilot-rules-and-logging
@@ -252,8 +218,6 @@
   label: TAFs
 - id: takeoff-minimums
   label: Takeoff Minimums
-- id: takeoff-minimums-and-climb-rates
-  label: Takeoff Minimums And Climb Rates
 - id: terminal-arrival-areas
   label: Terminal Arrival Areas
 - id: temperature-errors

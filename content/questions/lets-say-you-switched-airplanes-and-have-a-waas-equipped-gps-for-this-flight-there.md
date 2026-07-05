@@ -1,6 +1,6 @@
 ---
 id: lets-say-you-switched-airplanes-and-have-a-waas-equipped-gps-for-this-flight-there
-title: Let’s say you switched airplanes and have a WAAS-equipped GPS for this flight. There are no nonstandard alternate minimums for your selected alternate. What types of approaches can you fly at the alternate, and must the forecast weather be
+title: What types of approaches can you fly at the alternate if flying a WAAS-equipped airplane, and what must the forecast weather be
 tags:
   - alternates
   - ifr-flight-planning
