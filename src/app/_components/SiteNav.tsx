@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 
 const LINKS = [
   { href: "/about", label: "About" },
-  { href: "/study", label: "Study" },
+  { href: "/study", label: "Ground School" },
 ] as const;
 
 export default function SiteNav() {

@@ -4,7 +4,7 @@ import { loadContent } from "@/lib/content/loader";
 import StudyDisclaimer from "@/app/_components/StudyDisclaimer";
 
 export const metadata: Metadata = {
-  title: "Study Resources",
+  title: "Ground School",
 };
 
 export default function StudyPage() {
@@ -13,7 +13,7 @@ export default function StudyPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16">
       <h1 className="mb-3 text-3xl font-semibold tracking-tight">
-        Study Resources
+        Ground School
       </h1>
       <p className="mb-10 text-muted">
         Review these guides to help prepare you for oral exams, flight reviews,

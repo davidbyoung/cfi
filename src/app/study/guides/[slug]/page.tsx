@@ -28,11 +28,9 @@ export default async function GuidePage({ params }: Props) {
 
   const tocChapters: TocChapter[] = guide.chapters.map((chapter, ci) => ({
     id: chapterElementId(ci + 1),
-    number: `${ci + 1}`,
     title: chapter.title,
     sections: chapter.sections.map((section, si) => ({
       id: sectionElementId(ci + 1, si + 1),
-      number: `${ci + 1}.${si + 1}`,
       title: section.title,
     })),
   }));
@@ -40,8 +38,11 @@ export default async function GuidePage({ params }: Props) {
   return (
     <main className="mx-auto max-w-6xl px-6 py-12 sm:px-8 sm:py-16">
       <nav className="mb-6 text-sm text-muted">
-        <Link href="/study" className="hover:opacity-80">
-          Study
+        <Link
+          href="/study"
+          className="underline underline-offset-2 hover:opacity-80"
+        >
+          Ground School
         </Link>
         {" / "}
         <span>{guide.title}</span>
@@ -62,7 +63,7 @@ export default async function GuidePage({ params }: Props) {
               className="mb-14 scroll-mt-6"
             >
               <h2 className="mb-6 border-b border-rule pb-2 text-2xl font-semibold tracking-tight">
-                {ci + 1}. {chapter.title}
+                {chapter.title}
               </h2>
 
               {chapter.sections.map((section, si) => (
@@ -72,7 +73,7 @@ export default async function GuidePage({ params }: Props) {
                   className="mb-8 scroll-mt-6"
                 >
                   <h3 className="mb-4 text-lg font-semibold">
-                    {ci + 1}.{si + 1} {section.title}
+                    {section.title}
                   </h3>
 
                   {section.questions.map((question, qi) => (

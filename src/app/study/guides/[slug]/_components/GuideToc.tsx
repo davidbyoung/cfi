@@ -4,13 +4,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 export type TocSection = {
   id: string;
-  number: string;
   title: string;
 };
 
 export type TocChapter = {
   id: string;
-  number: string;
   title: string;
   sections: TocSection[];
 };
@@ -139,15 +137,12 @@ export default function GuideToc({ chapters }: Props) {
           return (
             <details key={chapter.id} open={isChapterActive}>
               <summary
-                className="flex cursor-pointer list-none items-baseline gap-2 rounded-md px-2 py-1.5 text-sm font-medium select-none hover:bg-rule/60 [&::-webkit-details-marker]:hidden"
+                className="cursor-pointer list-none rounded-md px-2 py-1.5 text-sm font-medium select-none hover:bg-rule/60 [&::-webkit-details-marker]:hidden"
                 onClick={(e) => {
                   e.preventDefault();
                   if (firstSectionId) navigateTo(chapter.id, firstSectionId);
                 }}
               >
-                <span className="min-w-[1.1rem] text-muted tabular-nums">
-                  {chapter.number}.
-                </span>
                 <span
                   className={isChapterActive ? "text-foreground" : "text-muted"}
                 >
@@ -165,16 +160,13 @@ export default function GuideToc({ chapters }: Props) {
                           e.preventDefault();
                           navigateTo(chapter.id, section.id);
                         }}
-                        className={`flex gap-2 rounded-md border-l-2 py-1.5 pr-2 pl-6 text-[0.8rem] ${
+                        className={`block rounded-md border-l-2 py-1.5 pr-2 pl-6 text-[0.8rem] ${
                           isActive
                             ? "border-foreground text-foreground"
                             : "border-transparent text-muted hover:bg-rule/60 hover:text-foreground"
                         }`}
                       >
-                        <span className="min-w-[2.1rem] tabular-nums">
-                          {section.number}
-                        </span>
-                        <span>{section.title}</span>
+                        {section.title}
                       </a>
                     </li>
                   );

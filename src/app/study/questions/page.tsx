@@ -18,8 +18,11 @@ export default function QuestionsPage() {
   return (
     <main className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16">
       <nav className="mb-6 text-sm text-muted">
-        <Link href="/study" className="hover:opacity-80">
-          Study
+        <Link
+          href="/study"
+          className="underline underline-offset-2 hover:opacity-80"
+        >
+          Ground School
         </Link>
         {" / "}
         <span>Question Bank</span>
