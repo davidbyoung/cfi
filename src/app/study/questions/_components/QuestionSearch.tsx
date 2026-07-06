@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useId, useEffect } from "react";
+import { useState, useMemo, useId } from "react";
 import { useSearchParams } from "next/navigation";
 import type {
   QuestionSearchIndexEntry,
@@ -119,15 +119,22 @@ function QuestionCard({
 export default function QuestionSearch({ searchIndex, tagList }: Props) {
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
-  const [activeTag, setActiveTag] = useState<string | null>(null);
   const inputId = useId();
 
-  useEffect(() => {
-    const tag = searchParams.get("tag");
-    if (tag && tagList.some((t) => t.id === tag)) {
-      setActiveTag(tag);
-    }
-  }, [searchParams, tagList]);
+  // Derive the tag filter from the ?tag= URL param without a useEffect: this
+  // is React's documented "adjusting state during rendering" pattern for
+  // syncing state to an external value (here, the URL). Initializing both
+  // states from `urlTag` means the filter is already correct on first
+  // paint — no post-mount effect, no flash of unfiltered results.
+  const rawUrlTag = searchParams.get("tag");
+  const urlTag =
+    rawUrlTag && tagList.some((t) => t.id === rawUrlTag) ? rawUrlTag : null;
+  const [activeTag, setActiveTag] = useState<string | null>(urlTag);
+  const [lastSyncedUrlTag, setLastSyncedUrlTag] = useState(urlTag);
+  if (urlTag !== lastSyncedUrlTag) {
+    setLastSyncedUrlTag(urlTag);
+    if (urlTag) setActiveTag(urlTag);
+  }
 
   const results = useMemo(
     () => filterQuestions(searchIndex, query, activeTag),
