@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ServicesList from "./_components/ServicesList";
 import { PAYMENT_METHODS_LINE } from "./_content";
@@ -13,11 +14,14 @@ export default function Home() {
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <img
+        <Image
           src="/images/flying.webp"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/65" />
         <div className="relative z-10 px-6 text-center text-white max-w-4xl">
