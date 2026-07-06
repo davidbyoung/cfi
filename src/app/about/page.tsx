@@ -48,7 +48,11 @@ export default function AboutPage() {
           I spent several years instructing at the university before
           transitioning into a software engineering career. I&apos;ve been a
           member of{" "}
-          <a href="https://www.leadingedgeflyingclub.com" target="_blank">
+          <a
+            href="https://www.leadingedgeflyingclub.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Leading Edge Flying Club
           </a>{" "}
           at KPWK since 2013 and have volunteered as a pilot with Angel Flight,
