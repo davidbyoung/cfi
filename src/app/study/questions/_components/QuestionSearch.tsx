@@ -60,57 +60,70 @@ function QuestionCard({
   );
 
   return (
-    <li className="rounded-md border border-rule p-5 study-question">
-      <div
-        className="study-prose text-sm"
-        dangerouslySetInnerHTML={{ __html: entry.questionHtml }}
-      />
-
-      <details className="mt-4">
-        <summary className="cursor-pointer select-none text-sm font-medium text-muted hover:opacity-80">
-          Show answer
+    <li className="study-question py-4 first:pt-0">
+      <details className="group">
+        <summary className="-mx-2 -my-1 flex cursor-pointer list-none items-start justify-between gap-3 rounded-md px-2 py-1 select-none hover:bg-rule/40 [&::-webkit-details-marker]:hidden">
+          <div
+            className="study-prose text-base font-medium"
+            dangerouslySetInnerHTML={{ __html: entry.questionHtml }}
+          />
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="mt-1.5 h-3.5 w-3.5 shrink-0 text-muted transition-transform group-open:rotate-180 print:hidden"
+          >
+            <path d="M5 7.5 10 12.5 15 7.5" />
+          </svg>
         </summary>
-        <div
-          className="study-prose mt-3 text-sm"
-          dangerouslySetInnerHTML={{ __html: entry.answerHtml }}
-        />
 
-        {entry.instructorNotesHtml && (
-          <details className="mt-4">
-            <summary className="cursor-pointer select-none text-xs font-medium text-muted hover:opacity-80">
-              Instructor notes
-            </summary>
-            <div
-              className="study-prose mt-2 text-xs text-muted"
-              dangerouslySetInnerHTML={{ __html: entry.instructorNotesHtml }}
-            />
-          </details>
-        )}
+        <div className="mt-3 border-l-2 border-rule pl-4">
+          <div
+            className="study-prose text-base"
+            dangerouslySetInnerHTML={{ __html: entry.answerHtml }}
+          />
 
-        {entry.sourcesHtml && (
-          <div className="mt-4 border-t border-rule pt-3">
-            <p className="mb-1 text-xs font-medium text-muted">Sources</p>
-            <div
-              className="study-prose text-xs text-muted"
-              dangerouslySetInnerHTML={{ __html: entry.sourcesHtml }}
-            />
-          </div>
-        )}
+          {entry.instructorNotesHtml && (
+            <details className="mt-4">
+              <summary className="cursor-pointer select-none text-sm font-medium text-muted hover:opacity-80">
+                Instructor notes
+              </summary>
+              <div
+                className="study-prose mt-2 text-sm text-muted"
+                dangerouslySetInnerHTML={{ __html: entry.instructorNotesHtml }}
+              />
+            </details>
+          )}
 
-        {entry.tags.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-1.5">
-            {entry.tags.map((tagId) => (
-              <button
-                key={tagId}
-                type="button"
-                onClick={() => onTagClick(tagId)}
-                className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
-              >
-                {tagMap[tagId]?.label ?? tagId}
-              </button>
-            ))}
-          </div>
-        )}
+          {entry.sourcesHtml && (
+            <div className="mt-4">
+              <p className="mb-1 text-sm font-medium text-muted">Sources</p>
+              <div
+                className="study-prose text-sm text-muted"
+                dangerouslySetInnerHTML={{ __html: entry.sourcesHtml }}
+              />
+            </div>
+          )}
+
+          {entry.tags.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-1.5">
+              {entry.tags.map((tagId) => (
+                <button
+                  key={tagId}
+                  type="button"
+                  onClick={() => onTagClick(tagId)}
+                  className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
+                >
+                  {tagMap[tagId]?.label ?? tagId}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
       </details>
     </li>
   );
@@ -244,7 +257,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
       {results.length === 0 ? (
         <p className="text-muted">No questions match your search.</p>
       ) : (
-        <ul className="space-y-5">
+        <ul>
           {results.map((entry) => (
             <QuestionCard
               key={entry.id}

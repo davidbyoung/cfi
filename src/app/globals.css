@@ -140,7 +140,10 @@ body {
   background: var(--rule);
 }
 
-/* Print styles: expand all details/summary and show answers */
+/* Print styles: expand all details/summary and show answers. Summaries stay
+   visible (unlike on screen, where some are pure toggles) because on the
+   question bank the question text itself lives inside the summary — hiding
+   it here would drop the question from the printed page entirely. */
 @media print {
   details {
     display: block;
@@ -148,10 +151,6 @@ body {
 
   details > * {
     display: block;
-  }
-
-  details > summary {
-    display: none;
   }
 
   .study-question {
