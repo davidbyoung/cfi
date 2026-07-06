@@ -1,3 +1,5 @@
+- id: adm
+  label: ADM
 - id: ads-b
   label: ADS-B
 - id: ads-b-weather

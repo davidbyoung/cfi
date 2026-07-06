@@ -1,6 +1,7 @@
 ---
 tags:
   - approaches
+  - adm
 ---
 
 ### Question

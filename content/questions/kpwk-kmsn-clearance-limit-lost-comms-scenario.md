@@ -2,6 +2,7 @@
 tags:
   - lost-communications
   - ifr-clearances
+  - adm
 ---
 
 ### Question

@@ -4,6 +4,7 @@ tags:
   - vcoa
   - departure-procedures
   - ifr-clearances
+  - adm
 ---
 
 ### Question

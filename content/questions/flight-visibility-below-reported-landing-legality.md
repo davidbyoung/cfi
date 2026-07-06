@@ -1,6 +1,7 @@
 ---
 tags:
   - landing-minimums
+  - adm
 ---
 
 ### Question
