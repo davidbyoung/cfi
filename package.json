@@ -12,6 +12,7 @@
     "build": "next build && npm run verify:no-booking-link",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",
@@ -33,6 +34,7 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/postcss": "^4",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^20",
@@ -44,6 +46,7 @@
     "eslint-config-next": "16.2.4",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.3",
+    "serve": "^14.2.6",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.9"

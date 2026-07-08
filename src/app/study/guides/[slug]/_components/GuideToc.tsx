@@ -156,6 +156,7 @@ export default function GuideToc({ chapters }: Props) {
                     <li key={section.id}>
                       <a
                         href={`#${section.id}`}
+                        aria-current={isActive ? "location" : undefined}
                         onClick={(e) => {
                           e.preventDefault();
                           navigateTo(chapter.id, section.id);
@@ -181,7 +182,10 @@ export default function GuideToc({ chapters }: Props) {
 
   return (
     <>
-      <aside className="hidden lg:sticky lg:top-8 lg:block lg:max-h-[calc(100vh-4rem)] lg:overflow-y-auto lg:pr-2">
+      <aside
+        data-testid="guide-toc-sidebar"
+        className="hidden lg:sticky lg:top-8 lg:block lg:max-h-[calc(100vh-4rem)] lg:overflow-y-auto lg:pr-2"
+      >
         <p className="mb-3 text-xs font-bold tracking-wide text-muted uppercase">
           Contents
         </p>
@@ -205,6 +209,7 @@ export default function GuideToc({ chapters }: Props) {
       )}
 
       <div
+        data-testid="guide-toc-drawer"
         className={`fixed top-0 bottom-0 left-0 z-50 w-[min(85vw,340px)] overflow-y-auto border-r border-rule bg-background p-5 shadow-lg transition-transform duration-200 ease-out lg:hidden motion-reduce:transition-none ${
           drawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
