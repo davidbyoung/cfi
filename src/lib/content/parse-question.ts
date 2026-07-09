@@ -10,9 +10,9 @@ import rehypeStringify from "rehype-stringify";
 import { z } from "zod";
 import type { Plugin } from "unified";
 import type { Root as HastRoot, Element, Node } from "hast";
+import { KEBAB } from "./kebab";
 import type { TagMap, Question } from "./types";
 
-const KEBAB = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const KNOWN_SECTIONS = new Set([
   "Question",
   "Answer",
@@ -37,11 +37,12 @@ function walkHast(node: Node, fn: (n: Node) => void): void {
 const rewriteImages: Plugin<[], HastRoot> = () => (tree) => {
   walkHast(tree as unknown as Node, (node) => {
     const el = node as Element;
-    if (el.type === "element" && el.tagName === "img") {
-      const src = el.properties?.src;
-      if (typeof src === "string") {
-        el.properties!.src = src.replace(/^\.\.\/assets\//, "/images/");
-      }
+    if (el.type !== "element" || el.tagName !== "img" || !el.properties) {
+      return;
+    }
+    const src = el.properties.src;
+    if (typeof src === "string") {
+      el.properties.src = src.replace(/^\.\.\/assets\//, "/images/");
     }
   });
 };
@@ -71,20 +72,28 @@ const wrapTables: Plugin<[], HastRoot> = () => (tree) => {
   wrapTablesInScrollContainer(tree as unknown as Node);
 };
 
-const addTargetBlank: Plugin<[], HastRoot> = () => (tree) => {
-  walkHast(tree as unknown as Node, (node) => {
-    const el = node as Element;
-    if (el.type === "element" && el.tagName === "a") {
-      el.properties = {
-        ...el.properties,
-        target: "_blank",
-        rel: "noopener noreferrer",
-      };
-    }
-  });
-};
+const addTargetBlank: Plugin<[{ enabled: boolean }], HastRoot> =
+  ({ enabled }) =>
+  (tree) => {
+    if (!enabled) return;
+    walkHast(tree as unknown as Node, (node) => {
+      const el = node as Element;
+      if (el.type === "element" && el.tagName === "a") {
+        el.properties = {
+          ...el.properties,
+          target: "_blank",
+          rel: "noopener noreferrer",
+        };
+      }
+    });
+  };
 
-function markdownToHtml(md: string): string {
+// `addTargetBlank` only applies to the Sources section — external links
+// there open in a new tab; links elsewhere in a question's prose don't.
+function markdownToHtml(
+  md: string,
+  options: { addTargetBlank?: boolean } = {},
+): string {
   const file = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -92,20 +101,7 @@ function markdownToHtml(md: string): string {
     .use(rewriteImages)
     .use(wrapTables)
     .use(rehypeSanitize)
-    .use(rehypeStringify)
-    .processSync(md);
-  return String(file);
-}
-
-function markdownToHtmlSources(md: string): string {
-  const file = unified()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkRehype)
-    .use(rewriteImages)
-    .use(wrapTables)
-    .use(rehypeSanitize)
-    .use(addTargetBlank)
+    .use(addTargetBlank, { enabled: options.addTargetBlank ?? false })
     .use(rehypeStringify)
     .processSync(md);
   return String(file);
@@ -129,7 +125,13 @@ function extractSections(
     if (!KNOWN_SECTIONS.has(name)) {
       throw new Error(`${filePath}: unknown section "### ${name}"`);
     }
-    headings.push({ name, start: node.position!.start.offset! });
+    const offset = node.position?.start.offset;
+    if (offset === undefined) {
+      throw new Error(
+        `${filePath}: could not determine position of "### ${name}" heading`,
+      );
+    }
+    headings.push({ name, start: offset });
   }
 
   const sections: Record<string, string> = {};
@@ -198,7 +200,7 @@ export function parseQuestionContent(
         : undefined,
     sourcesHtml:
       "Sources" in sections
-        ? markdownToHtmlSources(sections["Sources"])
+        ? markdownToHtml(sections["Sources"], { addTargetBlank: true })
         : undefined,
   };
 }

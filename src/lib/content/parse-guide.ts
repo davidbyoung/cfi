@@ -1,9 +1,8 @@
 import fs from "node:fs";
 import { load, YAMLException } from "js-yaml";
 import { z } from "zod";
+import { KEBAB } from "./kebab";
 import type { RawGuide } from "./types";
-
-const KEBAB = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 const SectionSchema = z
   .object({

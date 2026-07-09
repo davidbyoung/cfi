@@ -1,4 +1,4 @@
-import type { Question, Guide, RawGuide, TagMap } from "./types";
+import type { Question, Guide, RawGuide } from "./types";
 
 export function resolveGuide(
   rawGuide: RawGuide,
@@ -34,29 +34,6 @@ export function resolveGuide(
   };
 
   return { guide, errors };
-}
-
-export function validateUniqueness(
-  questions: Question[],
-  tagMap: TagMap,
-): string[] {
-  const errors: string[] = [];
-  const seenIds = new Set<string>();
-
-  for (const q of questions) {
-    if (seenIds.has(q.id)) {
-      errors.push(`Duplicate question id "${q.id}"`);
-    }
-    seenIds.add(q.id);
-
-    for (const tag of q.tags) {
-      if (!tagMap[tag]) {
-        errors.push(`Question "${q.id}": unknown tag "${tag}"`);
-      }
-    }
-  }
-
-  return errors;
 }
 
 export function validateGuideSlugs(guides: RawGuide[]): string[] {

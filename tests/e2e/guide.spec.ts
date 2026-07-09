@@ -68,6 +68,39 @@ test.describe("Guide table of contents (mobile)", () => {
       guide.sectionHeading("Weather Briefing Strategy"),
     ).toBeInViewport();
   });
+
+  test("closes on Escape and returns focus to the Contents button", async ({
+    page,
+  }) => {
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.openMobileDrawer();
+    await expect(guide.drawer).toHaveAttribute("aria-hidden", "false");
+
+    await page.keyboard.press("Escape");
+
+    await expect(guide.drawer).toHaveAttribute("aria-hidden", "true");
+    await expect(guide.contentsButton).toBeFocused();
+  });
+
+  test("traps Tab focus within the drawer while open", async ({ page }) => {
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.openMobileDrawer();
+    const closeButton = page.getByRole("button", { name: "Close contents" });
+    await expect(closeButton).toBeFocused();
+
+    // Shift+Tab from the first focusable element should wrap to the last
+    // focusable element in the drawer, not escape to background content.
+    await page.keyboard.press("Shift+Tab");
+    const focusedIsInsideDrawer = await guide.drawer.evaluate(
+      (drawerEl, activeEl) => drawerEl.contains(activeEl),
+      await page.evaluateHandle(() => document.activeElement),
+    );
+    expect(focusedIsInsideDrawer).toBe(true);
+  });
 });
 
 test.describe("Cross-page tag navigation", () => {

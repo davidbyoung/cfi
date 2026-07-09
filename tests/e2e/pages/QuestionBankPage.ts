@@ -57,4 +57,11 @@ export class QuestionBankPage {
     const suffix = filtered ? " matching filters" : "";
     return this.page.getByText(`${count} ${noun}${suffix}`);
   }
+
+  /** Matches any non-zero count — for asserting that filtering narrowed the
+   * results at all, without coupling the test to how many questions
+   * currently happen to carry a given tag in content. */
+  filteredResultsSummary(): Locator {
+    return this.page.getByText(/^[1-9]\d* questions? matching filters$/);
+  }
 }

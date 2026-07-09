@@ -48,7 +48,7 @@ test.describe("Question bank tag filter", () => {
     await bank.selectTag("ADM");
 
     await expect(bank.activeTagChip("ADM")).toBeVisible();
-    await expect(bank.resultsSummary(9, true)).toBeVisible();
+    await expect(bank.filteredResultsSummary()).toBeVisible();
     await expect(
       bank.question(
         "You are in IMC and notice a low voltage indication. What might be happening, and what are next steps?",
@@ -69,7 +69,7 @@ test.describe("Question bank tag filter", () => {
     await bank.goto({ tag: "adm" });
 
     await expect(bank.activeTagChip("ADM")).toBeVisible();
-    await expect(bank.resultsSummary(9, true)).toBeVisible();
+    await expect(bank.filteredResultsSummary()).toBeVisible();
   });
 });
 

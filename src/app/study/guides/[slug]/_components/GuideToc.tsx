@@ -57,6 +57,8 @@ export default function GuideToc({ chapters }: Props) {
     chapters[0]?.sections[0]?.id ?? null,
   );
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const drawerRef = useRef<HTMLDivElement>(null);
+  const contentsButtonRef = useRef<HTMLButtonElement>(null);
 
   // While a click-triggered scroll is in flight, the sections it scrolls
   // *past* (e.g. chapters 2-4 on the way to chapter 5) briefly intersect
@@ -100,6 +102,51 @@ export default function GuideToc({ chapters }: Props) {
     elements.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, [sectionToChapter]);
+
+  // Escape-to-close and a keyboard focus trap while the mobile drawer is
+  // open, per the WAI-ARIA APG dialog pattern — without this, Tab can move
+  // focus onto page content hidden behind the backdrop.
+  useEffect(() => {
+    if (!drawerOpen) return;
+    const drawerEl = drawerRef.current;
+    if (!drawerEl) return;
+    const restoreFocusTo = contentsButtonRef.current;
+
+    const focusableSelector =
+      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    const getFocusable = () =>
+      Array.from(drawerEl.querySelectorAll<HTMLElement>(focusableSelector));
+
+    getFocusable()[0]?.focus();
+
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setDrawerOpen(false);
+        return;
+      }
+      if (e.key !== "Tab") return;
+
+      const items = getFocusable();
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      restoreFocusTo?.focus();
+    };
+  }, [drawerOpen]);
 
   function navigateTo(chapterId: string, sectionId: string) {
     setActiveChapterId(chapterId);
@@ -193,6 +240,7 @@ export default function GuideToc({ chapters }: Props) {
       </aside>
 
       <button
+        ref={contentsButtonRef}
         type="button"
         onClick={() => setDrawerOpen(true)}
         className="fixed bottom-5 left-5 z-30 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background shadow-lg lg:hidden"
@@ -209,7 +257,11 @@ export default function GuideToc({ chapters }: Props) {
       )}
 
       <div
+        ref={drawerRef}
         data-testid="guide-toc-drawer"
+        role="dialog"
+        aria-modal={drawerOpen}
+        aria-label="Guide contents"
         className={`fixed top-0 bottom-0 left-0 z-50 w-[min(85vw,340px)] overflow-y-auto border-r border-rule bg-background p-5 shadow-lg transition-transform duration-200 ease-out lg:hidden motion-reduce:transition-none ${
           drawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}

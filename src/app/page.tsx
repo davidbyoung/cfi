@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16">
+      <div className="mx-auto max-w-4xl px-6 py-6 sm:px-8 sm:py-8">
         <section className="mb-12">
           <p className="max-w-prose text-muted">
             Weekend instruction available for{" "}

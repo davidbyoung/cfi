@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function DisclaimerPage() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12 sm:px-8 sm:py-16">
+    <div className="mx-auto max-w-3xl px-6 py-6 sm:px-8 sm:py-8">
       <nav className="mb-6 text-sm text-muted">
         <Link
           href="/study"
@@ -172,6 +172,6 @@ export default function DisclaimerPage() {
           ← Back to Ground School
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

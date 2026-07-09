@@ -1,9 +1,8 @@
 import fs from "node:fs";
 import { load, YAMLException } from "js-yaml";
 import { z } from "zod";
+import { KEBAB } from "./kebab";
 import type { TagMap } from "./types";
-
-const KEBAB = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
 const TagEntrySchema = z.object({
   id: z

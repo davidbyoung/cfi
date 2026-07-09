@@ -16,7 +16,7 @@ export default function QuestionsPage() {
   );
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16">
+    <div className="mx-auto max-w-4xl px-6 py-6 sm:px-8 sm:py-8">
       <nav className="mb-6 text-sm text-muted">
         <Link
           href="/study"
@@ -35,9 +35,9 @@ export default function QuestionsPage() {
         {searchIndex.length} questions — search by keyword or filter by tag.
       </p>
 
-      <Suspense>
+      <Suspense fallback={<p className="text-muted">Loading questions…</p>}>
         <QuestionSearch searchIndex={searchIndex} tagList={tagList} />
       </Suspense>
-    </main>
+    </div>
   );
 }

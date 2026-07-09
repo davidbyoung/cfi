@@ -85,7 +85,7 @@ function _loadContent(): ContentLibrary {
       guideFile,
     );
     errors.push(...guideErrors);
-    return guideErrors.length === rawGuides.length ? [] : [guide];
+    return guideErrors.length > 0 ? [] : [guide];
   });
 
   const guideMap: Record<string, (typeof guides)[0]> = {};

@@ -31,17 +31,13 @@ export type TagDefinition = {
 
 export type TagMap = Record<string, TagDefinition>;
 
-export type QuestionSearchIndexEntry = {
-  id: string;
-  tags: string[];
+// Derived from Question (not redeclared) so a new field on Question can't be
+// silently missing here.
+export type QuestionSearchIndexEntry = Question & {
   questionText: string;
   answerText: string;
   instructorNotesText?: string;
   sourcesText?: string;
-  questionHtml: string;
-  answerHtml: string;
-  instructorNotesHtml?: string;
-  sourcesHtml?: string;
 };
 
 export type RawGuideSection = {
