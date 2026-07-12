@@ -19,4 +19,7 @@ Yes, but you cannot plan your flight to count on it. Also, be very wary of loss 
 - [FAA AC 90-108 Chg. 1 — Use of Suitable RNAV Systems on Conventional Routes and Procedures](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_90-108_Chg_1.pdf)
 - [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
 - [FAA AIM Chapter 7, Section 1 — Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
-- [Supplemental: Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
+
+### Supplements
+
+- [Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)

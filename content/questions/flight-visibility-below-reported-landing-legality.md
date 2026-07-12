@@ -20,5 +20,8 @@ Per ATIS, visibility is 1/4 SM, but the instrument approach requires 1/2 SM. Und
 - [FAA Instrument Procedures Handbook, Chapter 4 — Approaches](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/FAA-H-8083-16B_Chapter_4.pdf)
 - [FAA AIM ¶ 1-2-1 — Performance-Based Navigation and Area Navigation](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
 - [FAA AIM ¶ 1-2-3 — Use of Suitable RNAV Systems on Conventional Procedures and Routes](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
-- [Supplemental: Boldmethod — How Runway Visual Range Works](https://www.boldmethod.com/learn-to-fly/weather/how-runway-visual-range-rvr-works/)
-- [Supplemental: Pilot Institute — LPV, LNAV, and VNAV](https://pilotinstitute.com/lpv-lnav-vnav-made-easy/)
+
+### Supplements
+
+- [Boldmethod — How Runway Visual Range Works](https://www.boldmethod.com/learn-to-fly/weather/how-runway-visual-range-rvr-works/)
+- [Pilot Institute — LPV, LNAV, and VNAV](https://pilotinstitute.com/lpv-lnav-vnav-made-easy/)

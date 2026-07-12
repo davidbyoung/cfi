@@ -13,6 +13,4 @@ Decode this NOTAM: !ORD 06/001 ORD RWY 04L/22R CLSD 2106231700-2106232300
 
 ### Sources
 
-- [FAA NOTAM Search](https://notams.aim.faa.gov/notamSearch/)
 - [FAA AIM Chapter 5, Section 1 — Preflight](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_1.html)
-- [14 CFR § 91.103 — Preflight action](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRe4c59b5f5506932/section-91.103)

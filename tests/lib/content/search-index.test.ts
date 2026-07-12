@@ -67,6 +67,21 @@ describe("buildSearchIndex", () => {
     expect(index[0].sourcesHtml).toBeUndefined();
   });
 
+  it("includes supplements text and HTML when present", () => {
+    const q = makeQuestion({
+      supplementsHtml: '<p><a href="#">Pilot Institute</a></p>',
+    });
+    const index = buildSearchIndex([q]);
+    expect(index[0].supplementsText).toContain("Pilot Institute");
+    expect(index[0].supplementsHtml).toContain("Pilot Institute");
+  });
+
+  it("omits supplements when absent", () => {
+    const index = buildSearchIndex([makeQuestion()]);
+    expect(index[0].supplementsText).toBeUndefined();
+    expect(index[0].supplementsHtml).toBeUndefined();
+  });
+
   it("processes multiple questions", () => {
     const questions = [makeQuestion({ id: "q1" }), makeQuestion({ id: "q2" })];
     const index = buildSearchIndex(questions);

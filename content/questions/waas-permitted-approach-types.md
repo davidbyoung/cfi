@@ -20,5 +20,8 @@ Precision-like GPS approaches (LPV, LNAV/VNAV) and non-precision GPS approaches 
 - [FAA AIM ¶ 1-1-18 — Wide Area Augmentation System (WAAS)](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
 - [FAA AIM ¶ 1-2-3 — Use of Suitable RNAV Systems on Conventional Procedures and Routes](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
 - [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
-- [Supplemental: Pilot Institute — LPV, LNAV, and VNAV](https://pilotinstitute.com/lpv-lnav-vnav-made-easy/)
-- [Supplemental: Boldmethod — What Is WAAS and How Does It Work?](https://www.boldmethod.com/learn-to-fly/systems/what-is-WAAS-and-how-does-it-work/)
+
+### Supplements
+
+- [Pilot Institute — LPV, LNAV, and VNAV](https://pilotinstitute.com/lpv-lnav-vnav-made-easy/)
+- [Boldmethod — What Is WAAS and How Does It Work?](https://www.boldmethod.com/learn-to-fly/systems/what-is-WAAS-and-how-does-it-work/)

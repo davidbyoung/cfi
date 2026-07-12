@@ -19,9 +19,13 @@ export function buildSearchIndex(
       ? stripHtml(q.instructorNotesHtml)
       : undefined,
     sourcesText: q.sourcesHtml ? stripHtml(q.sourcesHtml) : undefined,
+    supplementsText: q.supplementsHtml
+      ? stripHtml(q.supplementsHtml)
+      : undefined,
     questionHtml: q.questionHtml,
     answerHtml: q.answerHtml,
     instructorNotesHtml: q.instructorNotesHtml,
     sourcesHtml: q.sourcesHtml,
+    supplementsHtml: q.supplementsHtml,
   }));
 }

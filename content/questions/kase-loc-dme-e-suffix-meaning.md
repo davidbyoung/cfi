@@ -17,5 +17,8 @@ Circling approach
 - [FAA Digital Terminal Procedures Publication](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dtpp/)
 - [FAA Aeronautical Chart User’s Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
 - [FAA AIM Chapter 1, Section 1 — Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
-- [Supplemental: Boldmethod — How DME Works](https://www.boldmethod.com/learn-to-fly/systems/understanding-dme-on-instrument-approaches-and-vfr-use/)
-- [Supplemental: Boldmethod — GPS vs. DME Distance For IFR Flying](https://www.boldmethod.com/blog/lists/2026/06/gps-vs-dme-distance-ifr-flying/)
+
+### Supplements
+
+- [Boldmethod — How DME Works](https://www.boldmethod.com/learn-to-fly/systems/understanding-dme-on-instrument-approaches-and-vfr-use/)
+- [Boldmethod — GPS vs. DME Distance For IFR Flying](https://www.boldmethod.com/blog/lists/2026/06/gps-vs-dme-distance-ifr-flying/)

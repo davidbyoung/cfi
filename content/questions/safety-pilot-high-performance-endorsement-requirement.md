@@ -20,5 +20,8 @@ If prior to the flight it is agreed that the safety pilot will be acting as PIC,
 - [14 CFR § 61.51(f) — Logging SIC flight time](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.51#p-61.51%28f%29)
 - [14 CFR § 61.3(c) — Medical certificate requirement](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.3#p-61.3%28c%29)
 - [14 CFR § 61.51(g) — Logging instrument time](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.51#p-61.51%28g%29)
-- [Supplemental: Boldmethod — When Do You Need An IPC?](https://www.boldmethod.com/learn-to-fly/regulations/when-do-you-need-an-ipc-instrument-proficiency-check/)
-- [Supplemental: Pilot Institute — Instrument Currency Requirements Explained](https://pilotinstitute.com/instrument-currency-requirements/)
+
+### Supplements
+
+- [Boldmethod — When Do You Need An IPC?](https://www.boldmethod.com/learn-to-fly/regulations/when-do-you-need-an-ipc-instrument-proficiency-check/)
+- [Pilot Institute — Instrument Currency Requirements Explained](https://pilotinstitute.com/instrument-currency-requirements/)

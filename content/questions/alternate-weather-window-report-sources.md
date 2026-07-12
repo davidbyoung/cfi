@@ -19,5 +19,8 @@ Destination TAF if available; if not, appropriate forecasts/reports such as near
 - [14 CFR § 91.173 — ATC clearance and flight plan required](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.173)
 - [14 CFR § 91.167 — Fuel requirements for flight in IFR conditions](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.167)
 - [FAA AIM Chapter 5, Section 1 — Preflight](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_1.html)
-- [Supplemental: Boldmethod — When Do You Need To File An Alternate Under IFR?](https://www.boldmethod.com/learn-to-fly/regulations/when-do-you-need-to-file-an-alternate-under-ifr-flight/)
-- [Supplemental: Pilot Institute — IFR Flight Planning Tips](https://pilotinstitute.com/ifr-flight-planning-tips/)
+
+### Supplements
+
+- [Boldmethod — When Do You Need To File An Alternate Under IFR?](https://www.boldmethod.com/learn-to-fly/regulations/when-do-you-need-to-file-an-alternate-under-ifr-flight/)
+- [Pilot Institute — IFR Flight Planning Tips](https://pilotinstitute.com/ifr-flight-planning-tips/)

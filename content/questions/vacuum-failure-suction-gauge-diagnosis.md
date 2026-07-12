@@ -19,4 +19,7 @@ You have a vacuum system failure, and are likely to lose your attitude indicator
 - [FAA Pilot’s Handbook of Aeronautical Knowledge, Chapter 8 — Flight Instruments](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
 - [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
 - [FAA AIM Chapter 7, Section 1 — Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
-- [Supplemental: Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
+
+### Supplements
+
+- [Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)

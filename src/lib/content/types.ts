@@ -5,6 +5,7 @@ export type Question = {
   answerHtml: string;
   instructorNotesHtml?: string;
   sourcesHtml?: string;
+  supplementsHtml?: string;
 };
 
 export type GuideSection = {
@@ -38,6 +39,7 @@ export type QuestionSearchIndexEntry = Question & {
   answerText: string;
   instructorNotesText?: string;
   sourcesText?: string;
+  supplementsText?: string;
 };
 
 export type RawGuideSection = {

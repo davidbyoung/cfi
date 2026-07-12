@@ -18,6 +18,7 @@ const KNOWN_SECTIONS = new Set([
   "Answer",
   "Instructor notes",
   "Sources",
+  "Supplements",
 ]);
 
 const FrontmatterSchema = z
@@ -201,6 +202,10 @@ export function parseQuestionContent(
     sourcesHtml:
       "Sources" in sections
         ? markdownToHtml(sections["Sources"], { addTargetBlank: true })
+        : undefined,
+    supplementsHtml:
+      "Supplements" in sections
+        ? markdownToHtml(sections["Supplements"], { addTargetBlank: true })
         : undefined,
   };
 }

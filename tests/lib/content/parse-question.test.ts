@@ -93,6 +93,27 @@ describe("parseQuestionContent", () => {
     expect(q.sourcesHtml).toBeUndefined();
   });
 
+  it("parses a question with supplements and adds target=_blank to links", () => {
+    const body = `### Question\n\nQ?\n\n### Answer\n\nA.\n\n### Supplements\n\n- [Pilot Institute — AIRMETs vs. SIGMETs](https://pilotinstitute.com)`;
+    const q = parseQuestionContent(
+      makeContent({ body }),
+      "/path/my-question.md",
+      tagMap,
+    );
+    expect(q.supplementsHtml).toContain("Pilot Institute");
+    expect(q.supplementsHtml).toContain('target="_blank"');
+    expect(q.supplementsHtml).toContain("noopener noreferrer");
+  });
+
+  it("parses a question without supplements", () => {
+    const q = parseQuestionContent(
+      makeContent({}),
+      "/path/my-question.md",
+      tagMap,
+    );
+    expect(q.supplementsHtml).toBeUndefined();
+  });
+
   it("rewrites image references from ../assets/ to /images/", () => {
     const body = `### Question\n\n![Chart](../assets/chart.png)\n\n### Answer\n\nSee chart.`;
     const q = parseQuestionContent(

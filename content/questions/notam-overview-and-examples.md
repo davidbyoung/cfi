@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What is a NOTAM, and give some examples?
+What is a NOTAM, and can you provide some examples?
 
 ### Answer
 

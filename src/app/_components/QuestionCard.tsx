@@ -64,6 +64,16 @@ export default function QuestionCard({ question, renderTags }: Props) {
             </div>
           )}
 
+          {question.supplementsHtml && (
+            <div className="mt-4">
+              <p className="mb-1 text-sm font-medium text-muted">Supplements</p>
+              <div
+                className="study-prose text-sm text-muted"
+                dangerouslySetInnerHTML={{ __html: question.supplementsHtml }}
+              />
+            </div>
+          )}
+
           {question.tags.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-1.5">
               {renderTags(question.tags)}

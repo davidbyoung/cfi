@@ -25,6 +25,7 @@ export function filterQuestions(
         entry.answerText,
         entry.instructorNotesText ?? "",
         entry.sourcesText ?? "",
+        entry.supplementsText ?? "",
         ...entry.tags,
       ].join(" ");
       if (!matchesQuery(searchable, q)) return false;

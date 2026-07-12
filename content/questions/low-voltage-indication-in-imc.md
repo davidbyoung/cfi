@@ -21,4 +21,7 @@ You are in IMC and notice a low voltage indication. What might be happening, and
 - [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
 - [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
 - [FAA AIM Chapter 7, Section 1 — Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
-- [Supplemental: Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
+
+### Supplements
+
+- [Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
