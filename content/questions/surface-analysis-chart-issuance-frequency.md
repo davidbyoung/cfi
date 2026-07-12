@@ -18,4 +18,4 @@ Every 3 hr, but it takes around 90 minutes to create them, meaning they’re alw
 
 ### Sources
 
-- [FAA Aviation Weather Handbook, Chapter 25 — Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)
+- [FAA Aviation Weather Handbook, Chapter 25 - Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)

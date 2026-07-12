@@ -10,9 +10,9 @@ What are the different types of AIRMETs?
 
 ### Answer
 
-- Sierra - IFR and mountain obscuration
-- Tango - Turbulence (non-convective)
-- Zulu - Freezing levels, icing
+- **Sierra** - IFR and mountain obscuration
+- **Tango** - Turbulence (non-convective)
+- **Zulu** - Freezing levels, icing
 
 ### Sources
 

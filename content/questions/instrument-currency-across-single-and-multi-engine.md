@@ -13,4 +13,4 @@ Yes, currency applies to the category, not the class, of aircraft
 
 ### Sources
 
-- [14 CFR § 61.57(c) — Instrument experience required for IFR PIC](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.57#p-61.57%28c%29)
+- [14 CFR § 61.57(c) - Instrument experience required for IFR PIC](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-A/section-61.57#p-61.57%28c%29)

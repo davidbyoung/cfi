@@ -18,8 +18,8 @@ How will you adjust your landing if you still have accumulated ice along the lea
 ### Sources
 
 - [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
-- [FAA AIM Chapter 7, Section 1 — Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
+- [FAA AIM Chapter 7, Section 1 - Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
 
 ### Supplements
 
-- [Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
+- [Pilot Institute - Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)

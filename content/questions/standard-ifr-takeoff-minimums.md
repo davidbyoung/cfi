@@ -14,4 +14,4 @@ In Part 91, there are none. For Parts 121 and 135, it is 1 SM for aircraft with 
 
 ### Sources
 
-- [14 CFR § 91.175(f) — Civil airport takeoff minimums](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.175#p-91.175%28f%29)
+- [14 CFR § 91.175(f) - Civil airport takeoff minimums](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.175#p-91.175%28f%29)

@@ -16,5 +16,5 @@ What flight experience do you need for an instrument rating?
 
 ### Sources
 
-- [14 CFR § 61.65(d) — Aeronautical experience for instrument-airplane rating](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-B/section-61.65#p-61.65%28d%29)
-- [14 CFR § 61.65(h)-(j) — Simulator, FTD, and ATD credit for instrument rating](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-B/section-61.65#p-61.65%28h%29)
+- [14 CFR § 61.65(d) - Aeronautical experience for instrument-airplane rating](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-B/section-61.65#p-61.65%28d%29)
+- [14 CFR § 61.65(h)-(j) - Simulator, FTD, and ATD credit for instrument rating](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-B/section-61.65#p-61.65%28h%29)

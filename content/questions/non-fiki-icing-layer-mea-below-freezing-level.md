@@ -19,10 +19,10 @@ There’s an overcast layer 2,000 - 5,000 ft MSL. Your aircraft is non-FIKI. The
 ### Sources
 
 - [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
-- [FAA AIM Chapter 7, Section 1 — Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
-- [Aviation Weather Center — Aviation weather products](https://aviationweather.gov/help/data/)
+- [FAA AIM Chapter 7, Section 1 - Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
+- [Aviation Weather Center - Aviation weather products](https://aviationweather.gov/help/data/)
 
 ### Supplements
 
-- [Pilot Institute — Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
-- [Pilot Institute — AIRMETs vs. SIGMETs](https://pilotinstitute.com/airmets-vs-sigmets/)
+- [Pilot Institute - Icing Awareness in IFR Flying](https://pilotinstitute.com/icing-awareness-in-ifr/)
+- [Pilot Institute - AIRMETs vs. SIGMETs](https://pilotinstitute.com/airmets-vs-sigmets/)

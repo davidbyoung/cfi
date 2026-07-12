@@ -19,4 +19,4 @@ What is the red “L” over Utah, and what kind of conditions are associated wi
 
 ### Sources
 
-- [FAA Aviation Weather Handbook, Chapter 25 — Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)
+- [FAA Aviation Weather Handbook, Chapter 25 - Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)

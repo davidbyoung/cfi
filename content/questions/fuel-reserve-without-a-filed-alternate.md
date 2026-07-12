@@ -15,4 +15,4 @@ Yes
 
 ### Sources
 
-- [14 CFR § 91.167 — Fuel requirements for flight in IFR conditions](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.167)
+- [14 CFR § 91.167 - Fuel requirements for flight in IFR conditions](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.167)

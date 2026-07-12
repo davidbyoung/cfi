@@ -19,4 +19,4 @@ What’s the difference between ATIS, ASOS, and AWOS?
 ### Sources
 
 - [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
-- [FAA AIM Chapter 4, Section 1 — Services available to pilots](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_1.html)
+- [FAA AIM Chapter 4, Section 1 - Services available to pilots](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_1.html)
