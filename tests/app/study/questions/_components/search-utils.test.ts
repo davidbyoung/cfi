@@ -50,6 +50,13 @@ describe("matchesQuery", () => {
   it("treats regex special characters in the query as literal text", () => {
     expect(matchesQuery("what is a vor/dme?", "vor/dme?")).toBe(true);
   });
+
+  // Regression test: a leading `\b` can never match immediately before a
+  // non-word character, so a query starting with one (e.g. a section
+  // symbol) used to never match even when present verbatim in the text.
+  it("matches a query that starts with a non-word character", () => {
+    expect(matchesQuery("see § 91.175 for details", "§ 91.175")).toBe(true);
+  });
 });
 
 describe("filterQuestions", () => {
