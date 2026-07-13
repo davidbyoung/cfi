@@ -57,5 +57,10 @@ export type AirportId = (typeof AIRPORT_OPTIONS)[number]["id"];
 
 export const INSTRUCTOR_NAME = "Dave Young";
 
+export const NAV_LINKS = [
+  { href: "/about", label: "About" },
+  { href: "/study", label: "Ground School" },
+] as const;
+
 export const PAYMENT_METHODS_LINE =
   "Payment accepted via Venmo, Zelle, or cash.";

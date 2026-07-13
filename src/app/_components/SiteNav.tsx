@@ -1,15 +1,11 @@
 import Link from "next/link";
-import { INSTRUCTOR_NAME } from "../_content";
+import { INSTRUCTOR_NAME, NAV_LINKS } from "../_content";
+import MobileNavMenu from "./MobileNavMenu";
 import NavLink from "./NavLink";
-
-const LINKS = [
-  { href: "/about", label: "About" },
-  { href: "/study", label: "Ground School" },
-] as const;
 
 export default function SiteNav() {
   return (
-    <header className="border-b border-rule">
+    <header className="sticky top-0 z-50 border-b border-rule bg-background/95 backdrop-blur-sm">
       <nav
         aria-label="Primary"
         className="mx-auto flex max-w-4xl items-center justify-between px-6 py-5 sm:px-8"
@@ -24,8 +20,8 @@ export default function SiteNav() {
             <span className="text-muted">, Certified Flight Instructor</span>
           </span>
         </Link>
-        <ul className="flex items-center gap-5 text-base sm:gap-7">
-          {LINKS.map((link) => (
+        <ul className="hidden items-center gap-5 text-base md:flex md:gap-7">
+          {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <NavLink href={link.href}>{link.label}</NavLink>
             </li>
@@ -39,6 +35,8 @@ export default function SiteNav() {
             </Link>
           </li>
         </ul>
+
+        <MobileNavMenu />
       </nav>
     </header>
   );

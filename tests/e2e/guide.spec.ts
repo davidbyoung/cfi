@@ -46,6 +46,22 @@ test.describe("Guide table of contents (desktop)", () => {
 test.describe("Guide table of contents (mobile)", () => {
   test.use({ viewport: { width: 390, height: 844 } });
 
+  test("a question with an unwrapped code block doesn't widen the page", async ({
+    page,
+  }) => {
+    // Regression test: a long unwrapped line inside a question's <pre> is a
+    // flex item (alongside the disclosure chevron) with no min-width: 0, so
+    // it used to refuse to shrink below the code block's full width and
+    // blew out the whole page's layout width instead of scrolling locally.
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    const overflowX = await page.evaluate(
+      () => document.documentElement.scrollWidth - window.innerWidth,
+    );
+    expect(overflowX).toBeLessThanOrEqual(0);
+  });
+
   test("opens via the Contents button, navigates, and auto-closes", async ({
     page,
   }) => {

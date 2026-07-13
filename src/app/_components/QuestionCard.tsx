@@ -17,7 +17,7 @@ export default function QuestionCard({ question, renderTags }: Props) {
       <details className="group">
         <summary className="-mx-2 -my-1 flex cursor-pointer list-none items-start justify-between gap-3 rounded-md px-2 py-1 select-none hover:bg-rule/40 [&::-webkit-details-marker]:hidden">
           <div
-            className="study-prose text-base font-medium"
+            className="study-prose min-w-0 text-base font-medium"
             dangerouslySetInnerHTML={{ __html: question.questionHtml }}
           />
           <svg

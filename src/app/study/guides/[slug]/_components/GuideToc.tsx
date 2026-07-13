@@ -243,7 +243,8 @@ export default function GuideToc({ chapters }: Props) {
         ref={contentsButtonRef}
         type="button"
         onClick={() => setDrawerOpen(true)}
-        className="fixed bottom-5 left-5 z-30 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background shadow-lg lg:hidden"
+        style={{ bottom: "max(1.25rem, env(safe-area-inset-bottom))" }}
+        className="fixed left-5 z-30 inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background shadow-lg lg:hidden"
       >
         <span aria-hidden="true">☰</span> Contents
       </button>
