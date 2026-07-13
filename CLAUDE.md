@@ -13,6 +13,7 @@ Run these in order before reporting the task as done:
 ```bash
 npm run format       # auto-format with Prettier
 npx tsc --noEmit     # type-check — fix all errors before finishing
+npm run lint         # lint
 ```
 
 ## Active Technologies
