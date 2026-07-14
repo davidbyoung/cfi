@@ -17,3 +17,7 @@ What is AHRS and how does it work?
 
 - [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
 - [FAA Pilot’s Handbook of Aeronautical Knowledge, Chapter 8 - Flight Instruments](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/phak/chapter-8-flight-instruments)
+
+### Supplements
+
+- [Boldmethod - How does AHRS Work?](https://www.boldmethod.com/blog/learn-to-fly/systems/how-does-an-attitude-indicator-work-for-round-dial-and-glass-panel-aircraft/?authuser=0)

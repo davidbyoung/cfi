@@ -385,6 +385,11 @@ chapters:
         questions:
           - ahrs-overview
           - pfd-loss-rnav-approach-navigation-options
+  - title: Unusual Attitudes
+    sections:
+      - title: Recovery from Unusual Attitudes
+        questions:
+          - unusual-attitudes
   - title: Lost Communications
     sections:
       - title: "Lost Comms Scenario: KPWK to KMSN"
