@@ -58,11 +58,22 @@ export type RawGuide = {
   chapters: RawGuideChapter[];
 };
 
+export type RawGuideCategory = {
+  title: string;
+  guideSlugs: string[];
+};
+
+export type GuideCategory = {
+  title: string;
+  guides: Guide[];
+};
+
 export type ContentLibrary = {
   questions: Question[];
   questionMap: Record<string, Question>;
   guides: Guide[];
   guideMap: Record<string, Guide>;
+  guideCategories: GuideCategory[];
   tags: TagMap;
   searchIndex: QuestionSearchIndexEntry[];
 };

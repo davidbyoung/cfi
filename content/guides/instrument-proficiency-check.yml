@@ -1,5 +1,5 @@
-title: Instrument Airplane Oral Exam
-slug: instrument-rating-oral
+title: Instrument Proficiency Check
+slug: instrument-proficiency-check
 chapters:
   - title: Pilot Qualifications, Privileges, and Currency
     sections:
@@ -64,13 +64,11 @@ chapters:
     sections:
       - title: Weather Briefing Strategy
         questions:
-          - kpwk-to-kstl-weather-source-briefing
           - imc-flight-weather-briefing-considerations
       - title: TAFs
         questions:
           - taf-valid-area
           - taf-publication-frequency
-          - decode-taf-kbwi
       - title: AIRMETs, SIGMETs, and Convective SIGMETs
         questions:
           - airmet-overview
@@ -104,7 +102,6 @@ chapters:
           - pirep-overview
           - pirep-types
           - pirep-sources
-          - decode-pirep-eau-light-chop
           - pirep-filing-procedure
       - title: Enroute Weather Updates
         questions:
@@ -134,7 +131,6 @@ chapters:
           - ads-b-out-requirement-class-e-g-ifr
           - ads-b-out-required-airspace
           - enroute-chart-airspace-type-identification
-          - class-b-entry-clearance-while-ifr
       - title: Takeoff Minimums and Climb Rates
         questions:
           - standard-ifr-takeoff-minimums
@@ -159,10 +155,6 @@ chapters:
           - kpwk-non-towered-ifr-clearance-method
           - non-towered-ifr-clearance-options
           - depart-vfr-vs-ground-clearance
-      - title: RCOs and GCOs
-        questions:
-          - rco-vs-gco
-          - gco-usage
       - title: Clearance Void Times and Hold for Release
         questions:
           - fss-clearance-additional-info-non-towered
@@ -220,8 +212,6 @@ chapters:
           - gps-in-lieu-of-vor-for-approach
       - title: DME
         questions:
-          - dme-overview
-          - dme-inaccuracy-conditions
           - dme-substitutes
       - title: Mandatory IFR Reports
         questions:
@@ -243,8 +233,6 @@ chapters:
     sections:
       - title: General Approach Concepts
         questions:
-          - lda-approach-definition
-          - lda-vertical-guidance
           - straight-in-approach-vs-straight-in-landing
           - straight-in-approach-clearance-vs-landing
           - approach-programming-time-pressure-response

@@ -3,7 +3,12 @@ import path from "node:path";
 import { parseTags } from "./parse-tags";
 import { parseQuestion } from "./parse-question";
 import { parseGuide } from "./parse-guide";
-import { resolveGuide, validateGuideSlugs } from "./validate";
+import { parseGuideCategories } from "./parse-guide-categories";
+import {
+  resolveGuide,
+  resolveGuideCategories,
+  validateGuideSlugs,
+} from "./validate";
 import { buildSearchIndex } from "./search-index";
 import type { ContentLibrary, Question, RawGuide } from "./types";
 
@@ -93,6 +98,22 @@ function _loadContent(): ContentLibrary {
     guideMap[g.slug] = g;
   }
 
+  // Guide categories
+  const guideCategoriesPath = path.join(CONTENT_DIR, "guide-categories.yml");
+  let guideCategories: ContentLibrary["guideCategories"] = [];
+  try {
+    const rawCategories = parseGuideCategories(guideCategoriesPath);
+    const { categories, errors: categoryErrors } = resolveGuideCategories(
+      rawCategories,
+      guideMap,
+      guideCategoriesPath,
+    );
+    guideCategories = categories;
+    errors.push(...categoryErrors);
+  } catch (e) {
+    errors.push((e as Error).message);
+  }
+
   if (errors.length > 0) {
     throw new Error(
       `Content validation failed with ${errors.length} error${errors.length === 1 ? "" : "s"}:\n\n` +
@@ -107,6 +128,7 @@ function _loadContent(): ContentLibrary {
     questionMap,
     guides,
     guideMap,
+    guideCategories,
     tags: tagMap,
     searchIndex,
   };

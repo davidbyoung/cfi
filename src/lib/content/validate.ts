@@ -1,4 +1,10 @@
-import type { Question, Guide, RawGuide } from "./types";
+import type {
+  Question,
+  Guide,
+  RawGuide,
+  RawGuideCategory,
+  GuideCategory,
+} from "./types";
 
 export function resolveGuide(
   rawGuide: RawGuide,
@@ -46,4 +52,49 @@ export function validateGuideSlugs(guides: RawGuide[]): string[] {
     seen.add(g.slug);
   }
   return errors;
+}
+
+export function resolveGuideCategories(
+  rawCategories: RawGuideCategory[],
+  guideMap: Record<string, Guide>,
+  filePath: string,
+): { categories: GuideCategory[]; errors: string[] } {
+  const errors: string[] = [];
+  const seenTitles = new Set<string>();
+  const seenSlugs = new Set<string>();
+
+  const categories: GuideCategory[] = rawCategories.map((raw) => {
+    if (seenTitles.has(raw.title)) {
+      errors.push(`${filePath}: duplicate category title "${raw.title}"`);
+    }
+    seenTitles.add(raw.title);
+
+    return {
+      title: raw.title,
+      guides: raw.guideSlugs.flatMap((slug) => {
+        if (!guideMap[slug]) {
+          errors.push(
+            `${filePath}: unknown guide slug "${slug}" in category "${raw.title}"`,
+          );
+          return [];
+        }
+        if (seenSlugs.has(slug)) {
+          errors.push(
+            `${filePath}: guide "${slug}" appears in more than one category`,
+          );
+          return [];
+        }
+        seenSlugs.add(slug);
+        return [guideMap[slug]];
+      }),
+    };
+  });
+
+  for (const slug of Object.keys(guideMap)) {
+    if (!seenSlugs.has(slug)) {
+      errors.push(`${filePath}: guide "${slug}" is not listed in any category`);
+    }
+  }
+
+  return { categories, errors };
 }

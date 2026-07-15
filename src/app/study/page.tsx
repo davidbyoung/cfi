@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function StudyPage() {
-  const { guides } = loadContent();
+  const { guideCategories } = loadContent();
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-6 sm:px-8 sm:py-8">
@@ -20,21 +20,30 @@ export default function StudyPage() {
         and instrument proficiency checks.
       </p>
 
-      {guides.length > 0 && (
+      {guideCategories.length > 0 && (
         <section className="mb-10">
           <h2 className="mb-4 text-xl font-semibold tracking-tight">Guides</h2>
-          <ul className="space-y-4">
-            {guides.map((guide) => (
-              <li key={guide.slug}>
-                <Link
-                  href={`/study/guides/${guide.slug}`}
-                  className="font-medium underline underline-offset-2 hover:opacity-80"
-                >
-                  {guide.title}
-                </Link>
-              </li>
+          <div className="space-y-6">
+            {guideCategories.map((category) => (
+              <div key={category.title}>
+                <h3 className="mb-3 text-xs font-bold tracking-wide text-muted uppercase">
+                  {category.title}
+                </h3>
+                <ul className="space-y-4">
+                  {category.guides.map((guide) => (
+                    <li key={guide.slug}>
+                      <Link
+                        href={`/study/guides/${guide.slug}`}
+                        className="font-medium underline underline-offset-2 hover:opacity-80"
+                      >
+                        {guide.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
       )}
 
