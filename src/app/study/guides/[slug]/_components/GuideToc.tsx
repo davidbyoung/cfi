@@ -208,7 +208,7 @@ export default function GuideToc({ chapters }: Props) {
                           e.preventDefault();
                           navigateTo(chapter.id, section.id);
                         }}
-                        className={`block rounded-md border-l-2 py-1.5 pr-2 pl-6 text-[0.8rem] ${
+                        className={`block rounded-r-md border-l-2 py-1.5 pr-2 pl-6 text-[0.8rem] ${
                           isActive
                             ? "border-foreground text-foreground"
                             : "border-transparent text-muted hover:bg-rule/60 hover:text-foreground"

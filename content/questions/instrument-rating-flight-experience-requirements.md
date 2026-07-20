@@ -11,6 +11,7 @@ What flight experience do you need for an instrument rating?
 
 - 50 hr of cross-country PIC time, including 10 hr in airplanes
 - 40 hr of actual or simulated instrument time, including 15 hr with a CFII
+  - Up to 30 hr of the required instrument time may be completed in a full flight simulator or flight training device if completed under Part 142; otherwise, the maximum is 20 hr
 - 3 hr of instrument training in an airplane within 2 calendar months before the practical test
 - 250 NM cross-country flight with a CFII under an IFR flight plan along airways or an ATC-directed route, with 3 different types of approaches
 

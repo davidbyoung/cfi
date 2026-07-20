@@ -14,7 +14,7 @@ type Props = {
 export default function QuestionCard({ question, renderTags }: Props) {
   return (
     <li className="study-question py-4 first:pt-0">
-      <details className="group">
+      <details className="group" suppressHydrationWarning>
         <summary className="-mx-2 -my-1 flex cursor-pointer list-none items-start justify-between gap-3 rounded-md px-2 py-1 select-none hover:bg-rule/40 [&::-webkit-details-marker]:hidden">
           <div
             className="study-prose min-w-0 text-base font-medium"
