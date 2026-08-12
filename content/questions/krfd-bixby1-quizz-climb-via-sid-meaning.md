@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-If you’re told “Climb via the SID”, what does that mean?
+If you’re told "Climb via the SID", what does that mean?
 
 ### Answer
 

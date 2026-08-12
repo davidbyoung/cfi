@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What does the “13” mean just underneath “2700”?
+What does the "13" mean just underneath "2700"?
 
 ### Answer
 

@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What does “MON” mean for KDPA? Why does it matter to you?
+What does "MON" mean for KDPA? Why does it matter to you?
 
 ### Answer
 

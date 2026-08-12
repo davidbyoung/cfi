@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-On the KRFD MILAA STAR, what does “RNAV 1” in the equipment requirements mean?
+On the KRFD MILAA STAR, what does "RNAV 1" in the equipment requirements mean?
 
 ### Answer
 

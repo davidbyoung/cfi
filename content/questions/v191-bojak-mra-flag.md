@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-What does the flag with the “R” indicate at BOJAK on the V191 south of OBK?
+What does the flag with the "R" indicate at BOJAK on the V191 south of OBK?
 
 ### Answer
 

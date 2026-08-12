@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-Why might you care about the note “VGSI and descent angles not coincident” in the profile view of an instrument approach plate?
+Why might you care about the note "VGSI and descent angles not coincident" in the profile view of an instrument approach plate?
 
 ### Answer
 

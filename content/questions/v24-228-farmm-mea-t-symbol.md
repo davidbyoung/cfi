@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-What does the “T” shape on either side of FARMM indicate?
+What does the "T" shape on either side of FARMM indicate?
 
 ### Answer
 

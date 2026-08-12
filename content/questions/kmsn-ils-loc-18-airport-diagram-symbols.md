@@ -12,7 +12,7 @@ What do the following symbols mean in the KMSN ILS/LOC 18 airport diagram sectio
 - Arrows pointing in opposite directions on runway 36
 - Star symbol on right side of the field
 - (P) next to runway 36
-- Black (L) next to “HIRL all Rwys”
+- Black (L) next to "HIRL all Rwys"
 - White dots along runway 36
 
 ### Answer
@@ -27,7 +27,7 @@ What do the following symbols mean in the KMSN ILS/LOC 18 airport diagram sectio
   - Airport beacon - Useful to help find the airport in low visibility
 - (P) next to runway 36
   - PAPI - Useful to know where the indicator is that transitions us from instrument to visual flight
-- Black (L) next to “HIRL all Rwys”
+- Black (L) next to "HIRL all Rwys"
   - Pilot-controlled lighting for high-intensity runway lighting
 - White dots along runway 36
   - Runway centerline lights - Useful to laterally orient ourselves when transitioning to visual flight

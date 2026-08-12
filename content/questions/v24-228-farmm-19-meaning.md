@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What does the “19” mean next to FARMM on the V24-228 airway mean?
+What does the "19" mean next to FARMM on the V24-228 airway mean?
 
 ### Answer
 

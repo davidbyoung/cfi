@@ -11,7 +11,7 @@ How do you identify an ILS critical area?
 ### Answer
 
 - Yellow painted ladder-style markings
-- Red sign with white letters “ILS”
+- Red sign with white letters "ILS"
 
 ### Sources
 

@@ -206,6 +206,8 @@
   label: Vacuum Failure
 - id: vcoa
   label: VCOA
+- id: visual-approaches
+  label: Visual Approaches
 - id: vor
   label: VOR
 - id: vor-checks

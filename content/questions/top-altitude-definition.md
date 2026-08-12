@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What is a “top altitude”
+What is a "top altitude"
 
 ### Answer
 

@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-What does “2800G” on T325 mean?
+What does "2800G" on T325 mean?
 
 ### Answer
 

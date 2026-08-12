@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-ATC gives you your clearance, but includes “Hold for release”. How does that impact your departure?
+ATC gives you your clearance, but includes "Hold for release". How does that impact your departure?
 
 ### Answer
 

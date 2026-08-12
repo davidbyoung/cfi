@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-If you’re on the SID and are told by ATC “Climb and maintain 4,000”, what does that mean?
+If you’re on the SID and are told by ATC "Climb and maintain 4,000", what does that mean?
 
 ### Answer
 

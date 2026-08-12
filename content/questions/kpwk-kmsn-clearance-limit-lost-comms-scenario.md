@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-You’re planning a flight from KPWK to KMSN. You’re given the following clearance: “Archer 12345, you are cleared to JVL VOR via radar vectors OBK, V24 JVL. Climb and maintain 2,000, expect 3,000 10 minutes after departure. Expect further clearance at 1830Z.” The time of departure is 1800Z. You depart, switch to departure, but hear nothing. What do you do?
+You’re planning a flight from KPWK to KMSN. You’re given the following clearance: "Archer 12345, you are cleared to JVL VOR via radar vectors OBK, V24 JVL. Climb and maintain 2,000, expect 3,000 10 minutes after departure. Expect further clearance at 1830Z." The time of departure is 1800Z. You depart, switch to departure, but hear nothing. What do you do?
 
 ### Answer
 

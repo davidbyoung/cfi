@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KRFD BIXBY SID, what does “3,000” mean between BIXBY and QUIZZ, and when would you abide by it?
+On the KRFD BIXBY SID, what does "3,000" mean between BIXBY and QUIZZ, and when would you abide by it?
 
 ### Answer
 

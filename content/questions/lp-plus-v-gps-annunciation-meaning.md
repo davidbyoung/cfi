@@ -8,7 +8,7 @@ tags:
 
 ### Question
 
-You see “LP+V” on your GPS. What does that mean?
+You see "LP+V" on your GPS. What does that mean?
 
 ### Answer
 

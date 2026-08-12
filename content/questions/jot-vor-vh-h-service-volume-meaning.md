@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-The JOT VOR shows “(VH) (H)” on the enroute chart. What does that mean?
+The JOT VOR shows "(VH) (H)" on the enroute chart. What does that mean?
 
 ### Answer
 

@@ -163,6 +163,11 @@ chapters:
       - title: ODPs, VCOAs, and Obstacle Clearance
         questions:
           - mountainous-non-towered-departure-terrain-avoidance
+      - title: Visual Approaches
+        questions:
+          - visual-approach-weather-requirements
+          - visual-approach-safety
+          - visual-approach-clearance
   - title: Enroute IFR Navigation and Charts
     sections:
       - title: Low Altitude Enroute Chart Symbols

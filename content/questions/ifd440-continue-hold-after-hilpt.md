@@ -11,7 +11,7 @@ ATC asks you to continue holding after you performed a hold in lieu of a procedu
 
 ### Answer
 
-Press the “Continue Hold” button before crossing the holding fix inbound
+Press the "Continue Hold" button before crossing the holding fix inbound
 
 ### Sources
 

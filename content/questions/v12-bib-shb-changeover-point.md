@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-On the V12 airway between BIB and SHB VORs, what does the symbol mean approximately halfway between with “61” and “70”?
+On the V12 airway between BIB and SHB VORs, what does the symbol mean approximately halfway between with "61" and "70"?
 
 ### Answer
 

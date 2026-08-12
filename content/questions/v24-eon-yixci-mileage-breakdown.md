@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-On the V24-399 off EON VOR, what is the “X” with “(YIXCI)” next to it?
+On the V24-399 off EON VOR, what is the "X" with "(YIXCI)" next to it?
 
 ### Answer
 

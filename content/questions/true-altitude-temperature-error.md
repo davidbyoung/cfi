@@ -11,7 +11,7 @@ You fly from 30°C to 0°C while maintaining the same indicated altitude. What h
 ### Answer
 
 - True altitude decreases. Your altimeter assumes standard pressure-level spacing, but in cold air those levels compress and occur at lower true altitudes.
-- Remember - “High to low, warm to cold - look out below!”
+- Remember - "High to low, warm to cold - look out below!"
 
 ### Sources
 

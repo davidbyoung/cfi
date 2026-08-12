@@ -10,7 +10,7 @@ How do you file a PIREP?
 
 ### Answer
 
-Transmit the conditions to ATC, e.g., “Chicago Approach, Archer 12345. Cloud bases were at 2,000 ft MSL and tops were at 4,000 ft MSL.”
+Transmit the conditions to ATC, e.g., "Chicago Approach, Archer 12345. Cloud bases were at 2,000 ft MSL and tops were at 4,000 ft MSL."
 
 ### Sources
 

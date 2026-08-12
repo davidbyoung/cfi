@@ -10,7 +10,7 @@ Refer to the surface analysis chart from the source guide.
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
 
-What is the red “L” over Utah, and what kind of conditions are associated with it?
+What is the red "L" over Utah, and what kind of conditions are associated with it?
 
 ### Answer
 

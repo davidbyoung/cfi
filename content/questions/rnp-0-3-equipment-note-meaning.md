@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What does “RNP-0.3” mean in an IAP plate?
+What does "RNP-0.3" mean in an IAP plate?
 
 ### Answer
 

@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What does “MAA-10000” on an IFR enroute chart mean?
+What does "MAA-10000" on an IFR enroute chart mean?
 
 ### Answer
 

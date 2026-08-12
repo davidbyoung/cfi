@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KASE LOC/DME-E, what does the “-E” mean?
+On the KASE LOC/DME-E, what does the "-E" mean?
 
 ### Answer
 

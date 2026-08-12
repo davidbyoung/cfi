@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-What does the flag with the “X” mean on LAIRD on the V7?
+What does the flag with the "X" mean on LAIRD on the V7?
 
 ### Answer
 

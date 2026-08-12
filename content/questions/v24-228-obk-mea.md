@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-On V24-228 off of OBK, what does “2700” mean? Why is it important?
+On V24-228 off of OBK, what does "2700" mean? Why is it important?
 
 ### Answer
 

@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KPRC RNAV GPS-Y 03R, what is the meaning of the “Y” in the IAP title?
+On the KPRC RNAV GPS-Y 03R, what is the meaning of the "Y" in the IAP title?
 
 ### Answer
 
