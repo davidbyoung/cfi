@@ -10,7 +10,7 @@ What is a good practice to maintain situational awareness while flying a visual 
 
 ### Answer
 
-Back up your visual approach with an IAP, such as an RNAV approach, to provide vertical and lateral guidance.  Some avionics, such as the Avidyne Entegra, even allow you to program a visual approach in your flight plan, including specifying your entry (e.g., left base for runway 25R).
+Back up your visual approach with an IAP, such as an RNAV approach, to provide vertical and lateral guidance. Some avionics, such as the Avidyne Entegra, even allow you to program a visual approach in your flight plan, including specifying your entry (e.g., left base for runway 25R).
 
 ### Sources
 
