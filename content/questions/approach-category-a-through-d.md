@@ -10,7 +10,7 @@ What are the A, B, C, and D categories?
 
 ### Answer
 
-- Used to categorize aircraft by 1.3 x VREF (IAS) to determine required maneuvering airspace and approach minimums
+- Used to categorize aircraft by 1.3 x VSO (IAS) to determine required maneuvering airspace and approach minimums
   - A: < 91 kt
   - B: 91 to < 121 kt
   - C: 121 to < 141 kt

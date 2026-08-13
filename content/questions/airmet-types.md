@@ -6,13 +6,17 @@ tags:
 
 ### Question
 
-What are the different types of AIRMETs?
+What weather hazards are covered by G-AIRMETs?
 
 ### Answer
 
-- **Sierra** - IFR and mountain obscuration
-- **Tango** - Turbulence (non-convective)
-- **Zulu** - Freezing levels, icing
+- IFR conditions - ceilings below 1,000 ft and/or visibility below 3 SM
+- Mountain obscuration
+- Moderate turbulence
+- Non-convective low-level wind shear (LLWS)
+- Strong surface winds - greater than 30 kt
+- Moderate icing
+- Freezing levels
 
 ### Sources
 
