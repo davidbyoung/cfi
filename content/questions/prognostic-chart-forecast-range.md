@@ -15,5 +15,5 @@ They show weather in 12 hr increments
 ### Sources
 
 - [Aviation Weather Center - Aviation weather products](https://aviationweather.gov/help/data/)
-- [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
+- [FAA Aviation Weather Handbook](https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf)
 - [Aviation Weather Center - Graphical Forecasts for Aviation help](https://aviationweather.gov/gfa/help/)

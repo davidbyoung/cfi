@@ -15,5 +15,5 @@ Transmit the conditions to ATC, e.g., "Chicago Approach, Archer 12345. Cloud bas
 ### Sources
 
 - [Aviation Weather Center - Aviation weather products](https://aviationweather.gov/help/data/#pirep)
-- [FAA Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
+- [FAA Aviation Weather Handbook](https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf)
 - [FAA AIM Chapter 7, Section 1 - Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
