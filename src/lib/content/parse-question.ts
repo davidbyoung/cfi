@@ -89,8 +89,9 @@ const addTargetBlank: Plugin<[{ enabled: boolean }], HastRoot> =
     });
   };
 
-// `addTargetBlank` only applies to the Sources section — external links
-// there open in a new tab; links elsewhere in a question's prose don't.
+// `addTargetBlank` applies to Question, Sources, and Supplements — external
+// links in any of those open in a new tab. Answer and Instructor notes don't
+// currently carry external links, so it's left off there.
 function markdownToHtml(
   md: string,
   options: { addTargetBlank?: boolean } = {},
@@ -193,7 +194,9 @@ export function parseQuestionContent(
   return {
     id,
     tags,
-    questionHtml: markdownToHtml(sections["Question"]),
+    questionHtml: markdownToHtml(sections["Question"], {
+      addTargetBlank: true,
+    }),
     answerHtml: markdownToHtml(sections["Answer"]),
     instructorNotesHtml:
       "Instructor notes" in sections
