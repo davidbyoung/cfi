@@ -12,7 +12,7 @@ If your GPS lost WAAS during an LPV approach but still had RAIM, what would happ
 
 ### Answer
 
-It may downgrade to a non-precision LNAV approach, and, if so, you’d need to change your minimums. Otherwise, execute the missed.
+It may downgrade to a non-precision LNAV approach, and, if so, you'd need to change your minimums. Otherwise, execute the missed.
 
 ### Sources
 

@@ -8,7 +8,7 @@ tags:
 
 ### Question
 
-What’s the difference between ATIS, ASOS, and AWOS?
+What's the difference between ATIS, ASOS, and AWOS?
 
 ### Answer
 

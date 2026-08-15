@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-What’s the difference between an RCO and a GCO?
+What's the difference between an RCO and a GCO?
 
 ### Answer
 

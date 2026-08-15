@@ -9,7 +9,7 @@ tags:
 
 ### Question
 
-Let’s say our non-towered airport is in mountainous terrain. How are you going to safely navigate the terrain prior to getting into radar contact?
+Let's say our non-towered airport is in mountainous terrain. How are you going to safely navigate the terrain prior to getting into radar contact?
 
 ### Answer
 

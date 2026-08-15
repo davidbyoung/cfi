@@ -20,7 +20,7 @@ What do the following symbols mean in the KMSN ILS/LOC 18 airport diagram sectio
 - Three ovals across 36
   - Displaced threshold - Useful for knowing where landable runway begins
 - (A) next to runway 36
-  - High-intensity Approach Lighting System (ALSF-2) - Helpful to know what type of lighting we’ll first see
+  - High-intensity Approach Lighting System (ALSF-2) - Helpful to know what type of lighting we'll first see
 - Arrows pointing in opposite directions on runway 36
   - Bi-directional arrestor cables - Informational for civilians
 - Star symbol on right side of the field
@@ -35,5 +35,5 @@ What do the following symbols mean in the KMSN ILS/LOC 18 airport diagram sectio
 ### Sources
 
 - [FAA Digital Terminal Procedures Publication](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dtpp/)
-- [FAA Aeronautical Chart User’s Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
+- [FAA Aeronautical Chart User's Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
 - [FAA AIM Chapter 1, Section 1 - Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)

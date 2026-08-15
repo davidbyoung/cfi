@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Your airspeed indicator shows an increase during a climb and a decrease during a descent. What’s happening?
+Your airspeed indicator shows an increase during a climb and a decrease during a descent. What's happening?
 
 ### Answer
 
@@ -14,5 +14,5 @@ You likely have a blocked ram air and drain hole, which causes the airspeed indi
 
 ### Sources
 
-- [FAA Pilot’s Handbook of Aeronautical Knowledge, Chapter 8 — Flight Instruments](https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf)
+- [FAA Pilot's Handbook of Aeronautical Knowledge, Chapter 8 — Flight Instruments](https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf)
 - [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)

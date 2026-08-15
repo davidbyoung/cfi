@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-You’re flying into a non-towered airport on an IFR flight plan, and it’s VMC. What should you consider doing prior to arrival?
+You're flying into a non-towered airport on an IFR flight plan, and it's VMC. What should you consider doing prior to arrival?
 
 ### Answer
 

@@ -11,7 +11,7 @@ Can you use GPS in lieu of the localizer for lateral guidance?
 
 ### Answer
 
-Yes, prior to the final approach segment as long as you’re monitoring the raw LOC data (AC-90-108), but cannot on the final approach segment
+Yes, prior to the final approach segment as long as you're monitoring the raw LOC data (AC-90-108), but cannot on the final approach segment
 
 ### Sources
 

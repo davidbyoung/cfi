@@ -9,7 +9,7 @@ Can you fly an approach if the weather is below published minimums?
 
 ### Answer
 
-Under Part 91, yes, although it’s probably not a great idea
+Under Part 91, yes, although it's probably not a great idea
 
 ### Sources
 

@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-You’re flying IFR out of KPWK at 0500Z. How do you get your IFR clearance?
+You're flying IFR out of KPWK at 0500Z. How do you get your IFR clearance?
 
 ### Answer
 

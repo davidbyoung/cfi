@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-What’s the difference between a straight-in approach and a straight-in landing?
+What's the difference between a straight-in approach and a straight-in landing?
 
 ### Answer
 

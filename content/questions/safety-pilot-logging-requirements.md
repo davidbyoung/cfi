@@ -12,7 +12,7 @@ How do you log time with a safety pilot?
 ### Answer
 
 - The pilot flying under the hood may log PIC as sole manipulator if rated for the airplane
-- The safety pilot may log PIC only if acting as PIC by agreement; otherwise, they may log SIC while serving as a required crewmember. Include the safety pilot’s full name in the remarks.
+- The safety pilot may log PIC only if acting as PIC by agreement; otherwise, they may log SIC while serving as a required crewmember. Include the safety pilot's full name in the remarks.
 
 ### Sources
 

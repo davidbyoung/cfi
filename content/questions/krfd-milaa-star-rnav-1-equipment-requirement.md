@@ -10,7 +10,7 @@ On the KRFD MILAA STAR, what does "RNAV 1" in the equipment requirements mean?
 
 ### Answer
 
-Your aircraft’s RNAV must be able to stay within 1 NM of the intended flight path for 95% of the total flight time
+Your aircraft's RNAV must be able to stay within 1 NM of the intended flight path for 95% of the total flight time
 
 ### Sources
 

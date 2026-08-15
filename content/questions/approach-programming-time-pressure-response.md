@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-You’re struggling to get an approach programmed in time. What do you do next?
+You're struggling to get an approach programmed in time. What do you do next?
 
 ### Answer
 

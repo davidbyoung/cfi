@@ -12,7 +12,7 @@ What are the different types of NOTAMs?
 
 - Distant (D) - For airports, enroute NAVAIDs, procedures, hazards, and services
 - Flight Data Center (FDC) - TFRs, other special airspaces, and changes to IFR operations, including IAPs, SIDs, STARs, and airways
-- Pointer - Literally points to a nearby NOTAM, e.g., issuing one for an airport that is nearby a NOTAM’d parachute jumping area
+- Pointer - Literally points to a nearby NOTAM, e.g., issuing one for an airport that is nearby a NOTAM'd parachute jumping area
 - Special Activity Airspace (SAA) - Issued for airspaces (e.g., MOAs) that are active outside their published schedule
 - Field Conditions (FICON) - Reports field conditions such as surface contaminants, and braking action
 

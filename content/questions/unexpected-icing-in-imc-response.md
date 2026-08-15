@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-You’re in IMC and notice you’re unexpectedly accumulating ice. What do you do?
+You're in IMC and notice you're unexpectedly accumulating ice. What do you do?
 
 ### Answer
 

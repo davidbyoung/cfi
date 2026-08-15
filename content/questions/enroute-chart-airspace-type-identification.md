@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-How do you identify airports’ airspace types on an enroute chart?
+How do you identify airports' airspace types on an enroute chart?
 
 ### Answer
 

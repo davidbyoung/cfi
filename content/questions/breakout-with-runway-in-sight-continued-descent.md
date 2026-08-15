@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-Let’s say you break out and have clear visibility of the runway. Can you always continue your descent?
+Let's say you break out and have clear visibility of the runway. Can you always continue your descent?
 
 ### Answer
 

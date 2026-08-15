@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-If you didn’t file an alternate, do you still need the 45-minute reserve?
+If you didn't file an alternate, do you still need the 45-minute reserve?
 
 ### Answer
 

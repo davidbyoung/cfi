@@ -8,7 +8,7 @@ tags:
 
 ### Question
 
-Convective activity popped up unexpectedly on your flight, and you’re in IMC. You notice a gap between cells on your ADS-B/NEXRAD that you think would allow you to proceed. Do you?
+Convective activity popped up unexpectedly on your flight, and you're in IMC. You notice a gap between cells on your ADS-B/NEXRAD that you think would allow you to proceed. Do you?
 
 ### Answer
 

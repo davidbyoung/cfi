@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-What’s difficult about a LOC BC?
+What's difficult about a LOC BC?
 
 ### Answer
 

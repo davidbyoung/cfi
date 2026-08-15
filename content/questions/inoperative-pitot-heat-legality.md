@@ -11,7 +11,7 @@ Your pitot heat is inoperative. Can you fly?
 
 ### Answer
 
-As long as it’s not required on your aircraft’s equipment list - yes, but it may be unsafe if flying in visible moisture and freezing temperatures
+As long as it's not required on your aircraft's equipment list - yes, but it may be unsafe if flying in visible moisture and freezing temperatures
 
 ### Sources
 

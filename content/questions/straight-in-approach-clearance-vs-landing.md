@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-If you’re cleared for a straight-in approach, do you have to make a straight-in landing?
+If you're cleared for a straight-in approach, do you have to make a straight-in landing?
 
 ### Answer
 
