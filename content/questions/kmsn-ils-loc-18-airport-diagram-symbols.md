@@ -36,4 +36,4 @@ What do the following symbols mean in the [KMSN ILS/LOC 18](https://www.airnav.c
 
 - [FAA Digital Terminal Procedures Publication](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dtpp/)
 - [FAA Aeronautical Chart User's Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
-- [FAA AIM Chapter 1, Section 1 - Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
+- [FAA AIM ¶ 1-1 - Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)

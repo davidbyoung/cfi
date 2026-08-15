@@ -17,4 +17,4 @@ How far out is a localizer accurate?
 
 ### Sources
 
-- [FAA AIM Chapter 1, Section 1 - Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
+- [FAA AIM ¶ 1-1 - Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)

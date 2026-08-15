@@ -11,7 +11,7 @@ What is the purpose of the "Chicago Maple Park 134.825 307.275" box on an enrout
 
 ### Answer
 
-It is a Remote Center Air/Ground facility, located in Maple Park.  This is the frequency to use if you need to re-establish ATC contact, but do not have a specific frequency to use.
+It is a Remote Center Air/Ground facility, located in Maple Park. This is the frequency to use if you need to re-establish ATC contact, but do not have a specific frequency to use.
 
 ### Sources
 

@@ -20,7 +20,7 @@ What are the different types of structural ice, how do they form, and what dange
 ### Sources
 
 - [FAA Aviation Weather Handbook](https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf)
-- [FAA AIM Chapter 7, Section 1 - Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
+- [FAA AIM ¶ 7-1 - Meteorology](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html)
 
 ### Supplements
 
