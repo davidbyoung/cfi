@@ -9,7 +9,7 @@ ATC vectors you toward Class B airspace while on an IFR flight plan. Do you need
 
 ### Answer
 
-No, your IFR clearance already allows it.  VFR flights do need explicit clearance, though, before entering.
+No, your IFR clearance already allows it. VFR flights do need explicit clearance, though, before entering.
 
 ### Sources
 

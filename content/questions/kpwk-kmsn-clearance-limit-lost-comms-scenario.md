@@ -33,16 +33,17 @@ If IMC:
 
 For routing:
 
-- Assigned
-- Vectored
-- Expected
-- Filed
+- **A**ssigned
+- **V**ectored
+- **E**xpected
+- **F**iled
 
-For altitude, the highest of:
+For altitude, the _highest_ of:
 
-- Minimum
-- Expected
-- Assigned
+- **M**inimum for your route segment (could be an MEA or OROCA)
+- **E**xpected
+  - **Note:** Wait until the expected time has elapsed before considering climbing to the expected altitude. For example, if told "Climb to 3,000 ft, expect 4,000 ft 10 minutes after departure", do not immediately climb to 4,000 ft if that's the highest altitude - wait until the 10 minutes have elapsed, then evaluate the highest altitude and climb to that.
+- **A**ssigned
 
 ### Sources
 
