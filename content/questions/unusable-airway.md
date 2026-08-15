@@ -6,11 +6,13 @@ tags:
 
 ### Question
 
-What are the squiggled-out victor airways over Lake Michigan? Can I fly them?
+What is the squiggled-out V165 airway? Can I fly it?
+
+![Unusable airway](../assets/unusable-airway.png)
 
 ### Answer
 
-- They are unusable parts of the route, due to not enough guaranteed signal over the lake
+- They are unusable parts of the route, due to not enough guaranteed signal
 - You cannot file or accept a clearance that includes them, although you could fly point-to-point using RNAV
 
 ### Sources

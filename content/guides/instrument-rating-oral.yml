@@ -198,7 +198,7 @@ chapters:
           - t325-2800g-gps-mea
       - title: Airways, Fixes, Waypoints, and Changeover Points
         questions:
-          - mea-gap-victor-airways-lake-michigan
+          - unusable-airway
           - v24-228-segment-distance-13
           - v24-228-farmm-19-meaning
           - v24-eon-yixci-mileage-breakdown
