@@ -1,0 +1,27 @@
+---
+tags:
+  - approach-briefing
+  - localizer
+  - dme
+---
+
+### Question
+
+How would you configure your NAV radios to fly the [KASE LOC/DME-E](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05889LDE.PDF)?
+
+### Answer
+
+- NAV1 111.15 for I-ASE, 108.5 for I-PKN to minimize button pushing to switch primary navigation source, and 115.2 for EKR once inbound to GLENO
+- NAV2 113.0 for R-244 from DBL
+
+### Sources
+
+- [FAA Instrument Procedures Handbook, Chapter 4 - Approaches](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/FAA-H-8083-16B_Chapter_4.pdf)
+- [FAA Digital Terminal Procedures Publication](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dtpp/)
+- [FAA Aeronautical Chart User's Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
+- [FAA AIM ¶ 1-1 - Navigation aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
+
+### Supplements
+
+- [Boldmethod - How DME Works](https://www.boldmethod.com/learn-to-fly/systems/understanding-dme-on-instrument-approaches-and-vfr-use/)
+- [Boldmethod - GPS vs. DME Distance For IFR Flying](https://www.boldmethod.com/blog/lists/2026/06/gps-vs-dme-distance-ifr-flying/)

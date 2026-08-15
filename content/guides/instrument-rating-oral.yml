@@ -1,0 +1,407 @@
+title: Instrument Airplane Oral Exam
+slug: instrument-rating-oral
+chapters:
+  - title: Pilot Qualifications, Privileges, and Currency
+    sections:
+      - title: When an Instrument Rating Is Required
+        questions:
+          - instrument-rating-requirement-triggers
+          - instrument-rating-aircraft-privileges
+      - title: Instrument Rating Experience Requirements
+        questions:
+          - instrument-rating-flight-experience-requirements
+      - title: Required Pilot Documents
+        questions:
+          - required-pic-documents
+      - title: Instrument Currency
+        questions:
+          - instrument-currency-across-single-and-multi-engine
+          - pic-experience-requirements-ifr-flight-plan
+          - currency-simulator-iaps-hold-lapse-7-months
+          - currency-hold-lapse-13-months
+          - approach-currency-vfr-before-glideslope-intercept
+      - title: Safety Pilot Rules and Logging
+        questions:
+          - safety-pilot-logging-requirements
+          - safety-pilot-qualifications
+          - safety-pilot-instrument-rating-requirement
+          - safety-pilot-flight-review-currency
+          - safety-pilot-high-performance-endorsement-requirement
+      - title: IPC Requirements
+        questions:
+          - ipc-requirements-source
+      - title: Personal Minimums and Risk Management
+        questions:
+          - personal-minimums
+  - title: Aircraft Airworthiness and IFR Equipment
+    sections:
+      - title: Required Equipment for IFR Flight
+        questions:
+          - required-ifr-equipment
+      - title: Inoperative Equipment Scenarios
+        questions:
+          - inoperative-vor-receiver-gps-only-route
+          - inoperative-pitot-heat-legality
+      - title: Required IFR Inspections
+        questions:
+          - ifr-specific-inspection-requirements
+      - title: VOR Checks
+        questions:
+          - vor-check-types
+          - vor-check-logging-requirements
+          - vor-check-currency-lapse-gps-only-route
+      - title: GPS Database / AFM / Equipment Codes
+        questions:
+          - equipment-code-reference-source
+          - expired-gps-nav-database-ifr-legality
+      - title: N3096B-Specific Equipment and Limitations
+        questions:
+          - ahrs-vs-vacuum-system-benefit
+          - n3096b-pfd-mfd-reversion
+          - n3096b-gps-standby-obs
+          - ifd440-continue-hold-after-hilpt
+  - title: Weather Products and Weather Decision-Making
+    sections:
+      - title: Weather Briefing Strategy
+        questions:
+          - kpwk-to-kstl-weather-source-briefing
+          - imc-flight-weather-briefing-considerations
+      - title: TAFs
+        questions:
+          - taf-valid-area
+          - taf-publication-frequency
+          - decode-taf-kbwi
+      - title: AIRMETs, SIGMETs, and Convective SIGMETs
+        questions:
+          - airmet-overview
+          - airmet-types
+          - airmet-issuance-frequency-and-forecast-range
+          - sigmet-overview
+          - sigmet-issuance-frequency
+          - convective-sigmet-overview
+          - convective-sigmet-issuance-frequency
+      - title: Surface Analysis Charts
+        questions:
+          - surface-analysis-chart-issuance-frequency
+          - surface-analysis-arizona-high-pressure
+          - surface-analysis-utah-low-pressure
+          - surface-analysis-michigan-to-virginia-warm-front
+          - surface-analysis-pacific-to-south-dakota-cold-front
+          - surface-analysis-montana-stationary-front
+          - surface-analysis-western-northern-texas-weather
+          - surface-analysis-illinois-isobar-lines
+          - tightly-spaced-isobars-conditions
+          - wind-flow-relative-to-isobars
+          - surface-analysis-gulf-of-california-trough
+          - surface-analysis-ridge-conditions
+          - surface-analysis-occluded-front-conditions
+      - title: Prognostic Charts and GFA
+        questions:
+          - prognostic-chart-overview
+          - prognostic-chart-forecast-range
+      - title: PIREPs
+        questions:
+          - pirep-overview
+          - pirep-types
+          - pirep-sources
+          - decode-pirep-eau-light-chop
+          - pirep-filing-procedure
+      - title: Enroute Weather Updates
+        questions:
+          - enroute-weather-update-sources
+          - atis-vs-asos-vs-awos
+      - title: "Adverse Conditions: Icing and Thunderstorms"
+        questions:
+          - non-fiki-icing-layer-mea-below-freezing-level
+          - structural-ice-types-formation-and-hazards
+          - unexpected-icing-in-imc-response
+          - landing-adjustment-with-residual-wing-ice
+          - convective-cell-gap-in-imc-decision
+  - title: IFR Flight Planning
+    sections:
+      - title: Required Preflight Information
+        questions:
+          - preflight-required-information
+      - title: IFR Flight Plans
+        questions:
+          - ifr-flight-without-a-flight-plan
+      - title: Fuel Planning
+        questions:
+          - ifr-fuel-requirements
+          - fuel-reserve-without-a-filed-alternate
+      - title: Airspace and ADS-B Requirements
+        questions:
+          - ads-b-out-requirement-class-e-g-ifr
+          - ads-b-out-required-airspace
+          - enroute-chart-airspace-type-identification
+          - class-b-entry-clearance-while-ifr
+      - title: Takeoff Minimums and Climb Rates
+        questions:
+          - standard-ifr-takeoff-minimums
+          - standard-ifr-climb-rate
+      - title: IFR Alternates
+        questions:
+          - non-waas-alternate-forecast-window-planning
+          - alternate-filing-requirements
+          - alternate-weather-window-report-sources
+          - alternate-airport-requirements
+          - waas-equipped-alternate-approach-options
+      - title: NOTAMs
+        questions:
+          - notam-overview-and-examples
+          - notam-sources
+          - decode-notam-ord-runway-closure
+          - notam-types
+  - title: IFR Clearances and Departures
+    sections:
+      - title: Obtaining an IFR Clearance
+        questions:
+          - kpwk-non-towered-ifr-clearance-method
+          - non-towered-ifr-clearance-options
+          - depart-vfr-vs-ground-clearance
+      - title: RCOs and GCOs
+        questions:
+          - rco-vs-gco
+          - gco-usage
+      - title: Clearance Void Times and Hold for Release
+        questions:
+          - fss-clearance-additional-info-non-towered
+          - missed-clearance-void-time-consequence
+          - hold-for-release-clearance-impact
+      - title: ODPs, VCOAs, and Obstacle Clearance
+        questions:
+          - mountainous-non-towered-departure-terrain-avoidance
+      - title: Visual Approaches
+        questions:
+          - visual-approach-weather-requirements
+          - visual-approach-safety
+          - visual-approach-clearance
+          - visual-approach-go-around
+  - title: Enroute IFR Navigation and Charts
+    sections:
+      - title: Low Altitude Enroute Chart Symbols
+        questions:
+          - enroute-chart-airport-approach-and-color-coding
+          - decode-enroute-chart-kugn
+          - kdpa-mon-designation-significance
+          - enroute-chart-remote-center-air-ground
+      - title: MEA, MOCA, MRA, MCA, MAA, and OROCA
+        questions:
+          - enroute-chart-oroca-numbers
+          - oroca-use-case
+          - mea-to-moca-descent-request
+          - v24-228-obk-mea
+          - v7-laird-mca-flag
+          - v24-228-farmm-mea-t-symbol
+          - v191-bojak-mra-flag
+          - maa-10000-meaning
+          - t325-2800g-gps-mea
+      - title: Airways, Fixes, Waypoints, and Changeover Points
+        questions:
+          - unusable-airway
+          - v24-228-segment-distance-13
+          - v24-228-farmm-19-meaning
+          - v24-eon-yixci-mileage-breakdown
+          - v12-bib-shb-changeover-point
+          - jot-vor-vh-h-service-volume-meaning
+          - t325-kjvl-rnav-airway-identification
+          - waypoint-circled-vs-uncircled-meaning
+      - title: GPS / RNAV / RNP
+        questions:
+          - gps-operating-principle
+          - raim-definition
+          - raim-vs-waas
+          - raim-permitted-approach-types
+          - waas-permitted-approach-types
+          - lpv-vs-lp-v-vs-lnav-vnav
+          - waas-loss-with-raim-during-lpv-approach
+          - rnp-overview
+          - rnp-0-3-equipment-note-meaning
+          - rnav-rnp-approach-eligibility
+      - title: VOR Navigation
+        questions:
+          - vor-operating-principle
+          - vor-signal-reliable-range
+          - vor-signal-beyond-published-service-volume
+          - gps-in-lieu-of-vor-enroute
+          - gps-in-lieu-of-vor-for-approach
+      - title: DME
+        questions:
+          - dme-overview
+          - dme-inaccuracy-conditions
+          - dme-substitutes
+      - title: Mandatory IFR Reports
+        questions:
+          - mandatory-reporting-points-in-radar-contact
+          - compulsory-vs-noncompulsory-reporting-points
+          - compulsory-reporting-points-in-radar-contact
+  - title: Holds
+    sections:
+      - title: Holding Speeds
+        questions:
+          - standard-max-holding-speeds
+      - title: Published vs Unpublished Holds
+        questions:
+          - unpublished-hold-required-atc-information
+      - title: Holding Side vs Non-Holding Side
+        questions:
+          - hold-holding-vs-non-holding-side
+  - title: Arrivals and Approach Procedures
+    sections:
+      - title: General Approach Concepts
+        questions:
+          - lda-approach-definition
+          - lda-vertical-guidance
+          - straight-in-approach-vs-straight-in-landing
+          - straight-in-approach-clearance-vs-landing
+          - approach-programming-time-pressure-response
+      - title: ILS / LOC / LOC Back Course
+        questions:
+          - ils-operating-principle
+          - localizer-accurate-range
+          - glideslope-loss-outside-faf
+          - gps-in-lieu-of-localizer
+          - loc-back-course-overview
+          - loc-bc-ils-compatibility
+          - loc-bc-glideslope-availability
+          - loc-bc-flying-challenges
+          - loc-bc-flying-technique-on-hsi
+  - title: Landing from an Instrument Approach
+    sections:
+      - title: Approach Below Published Minimums
+        questions:
+          - approach-legality-below-published-minimums
+      - title: Requirements to Descend Below DA/MDA
+        questions:
+          - descend-below-da-without-runway-in-sight
+      - title: Required Flight Visibility and Reported Visibility
+        questions:
+          - flight-visibility-below-reported-landing-legality
+      - title: Runway Environment / Visual References
+        questions:
+          - lighting-for-descent-to-runway
+      - title: Approach Lights and the 100-Foot Rule
+        questions:
+          - tdze-briefing-importance
+          - lighting-for-descent-to-100-ft-above-tdze
+      - title: Stable Descent to Landing
+        questions:
+          - breakout-with-runway-in-sight-continued-descent
+  - title: Approach, SID, and STAR Briefing Scenarios
+    sections:
+      - title: KRFD RNAV 7
+        questions:
+          - krfd-rnav-7-approach-briefing
+          - krfd-rnav-7-rnp-apch-gps-equipment-note
+          - msa-definition-and-use
+          - krfd-rnav-7-zevbu-stepdown-fix
+          - krfd-rnav-7-lpv-da-line-decoding
+          - approach-category-a-through-d
+          - krfd-rnav-7-rudge-crossing-restriction
+      - title: KBUU RNAV 11
+        questions:
+          - kbuu-rnav-11-jigta-taa-semicircles
+          - kbuu-rnav-11-jigta-straight-in-clearance-options
+          - kbuu-rnav-11-jigta-course-reversal-exceptions
+          - kbuu-rnav-11-jigta-fms-configuration
+          - lp-plus-v-gps-annunciation-meaning
+          - kbuu-rnav-11-profile-view-v-symbol
+          - kbuu-rnav-11-runway-1-19-details
+      - title: KMSN ILS/LOC RWY 18
+        questions:
+          - kmsn-ils-loc-18-airport-diagram-symbols
+          - kmsn-ils-loc-18-alternate-missed-approach-use
+          - kmsn-ils-loc-18-alternate-missed-approach-purpose
+      - title: KPRC RNAV GPS Y 03R
+        questions:
+          - kprc-rnav-gps-y-suffix-meaning
+      - title: KASE LOC/DME-E
+        questions:
+          - kase-loc-dme-e-suffix-meaning
+          - kase-loc-dme-e-straight-in-disqualification
+          - kase-loc-dme-e-approach-briefing
+          - cold-temperature-airport-snowflake-symbol
+          - kase-loc-dme-e-nav-radio-setup
+          - vgsi-descent-angle-not-coincident-note
+      - title: KRFD BIXBY1.QUIZZ SID
+        questions:
+          - sid-primary-purpose
+          - krfd-bixby1-quizz-sid-briefing
+          - climb-gradient-to-vsi-rate-conversion
+          - standard-climb-gradient
+          - top-altitude-definition
+          - krfd-bixby1-quizz-sid-3000-crossing-restriction
+          - sid-climb-and-maintain-instruction-meaning
+          - krfd-bixby1-quizz-climb-via-sid-meaning
+      - title: KRFD ALEXS ONE STAR
+        questions:
+          - star-primary-purpose
+          - krfd-alexs1-arrival-briefing
+          - krfd-alexs1-star-rnav-1-equipment-requirement
+          - krfd-alexs1-star-descent-planning-milaa-to-frrnk
+          - krfd-alexs1-alexs-to-krfd-routing
+          - krfd-alexs1-star-crosshair-symbol
+  - title: Airport Operations
+    sections:
+      - title: Closing IFR Flight Plans
+        questions:
+          - kpwk-post-landing-ifr-flight-plan-closure
+          - close-ifr-flight-plan-after-landing
+          - non-towered-vmc-arrival-considerations
+      - title: Airport Lighting
+        questions:
+          - runway-threshold-strobe-lights
+          - runway-edge-light-color
+          - displaced-threshold-identification-at-night
+          - runway-centerline-light-color
+          - taxiway-centerline-lead-off-lights
+          - taxiway-identification-lighting
+      - title: ILS Critical Areas
+        questions:
+          - ils-critical-area-definition
+          - ils-critical-area-identification
+          - ils-critical-area-activation
+  - title: Instrument Systems and Failures
+    sections:
+      - title: Pitot-Static System
+        questions:
+          - altimeter-operating-principle
+      - title: Altimeter and Temperature / Pressure Errors
+        questions:
+          - altimeter-setting-change-at-fl180
+          - altimeter-error-vs-published-field-elevation
+          - true-altitude-temperature-error
+          - true-altitude-low-to-high-pressure-no-altimeter-change
+      - title: Static Port Blockage
+        questions:
+          - blocked-static-port-during-descent
+          - blocked-static-port-remedy
+          - alternate-static-source-errors
+      - title: Pitot Tube Blockage
+        questions:
+          - pitot-blockage-airspeed-drop-troubleshooting
+          - pitot-blockage-airspeed-climb-descent-symptom
+      - title: Electrical Failure
+        questions:
+          - low-voltage-indication-in-imc
+      - title: Vacuum Failure
+        questions:
+          - vacuum-failure-suction-gauge-diagnosis
+          - vacuum-failure-instrument-reliance
+      - title: AHRS / PFD / MFD Failures
+        questions:
+          - ahrs-overview
+          - pfd-loss-rnav-approach-navigation-options
+  - title: Unusual Attitudes
+    sections:
+      - title: Recovery from Unusual Attitudes
+        questions:
+          - unusual-attitudes
+  - title: Lost Communications
+    sections:
+      - title: "Lost Comms Scenario: KPWK to KMSN"
+        questions:
+          - kpwk-kmsn-clearance-limit-lost-comms-scenario
+          - lost-comms-efc-elapsed-at-clearance-limit
+          - lost-comms-eta-elapsed-at-iaf
+          - lost-comms-descent-timing-at-iaf

@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+  --muted: #636d7e;
+  --rule: #e5e7eb;
+  --accent: #1d4ed8;
+  --input-bg: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f3f4f6;
+    --muted: #9ca3af;
+    --rule: #404040;
+    --accent: #60a5fa;
+    --input-bg: #1e1e1e;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-input-bg: var(--input-bg);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+@layer base {
+  a:not([class]) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a:not([class]):hover {
+    opacity: 0.7;
+  }
+}
+
+/* Study section prose styles */
+.study-prose ul,
+.study-prose ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.study-prose ul {
+  list-style-type: disc;
+}
+
+.study-prose ol {
+  list-style-type: decimal;
+}
+
+.study-prose li {
+  margin: 0.2rem 0;
+}
+
+.study-prose p {
+  margin: 0.5rem 0;
+}
+
+.study-prose p:first-child {
+  margin-top: 0;
+}
+
+.study-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.study-prose code {
+  font-family: ui-monospace, monospace;
+  background: var(--rule);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.875em;
+}
+
+.study-prose pre {
+  background: var(--rule);
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.study-prose pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+.study-prose a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  color: var(--accent);
+}
+
+.study-prose a:hover {
+  opacity: 0.8;
+}
+
+.study-prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem 0;
+}
+
+.study-prose > div:has(> table) {
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.study-prose table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.study-prose th,
+.study-prose td {
+  border: 1px solid var(--rule);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.study-prose th {
+  font-weight: 600;
+  background: var(--rule);
+}
+
+/* Print styles: expand all details/summary and show answers. Summaries stay
+   visible (unlike on screen, where some are pure toggles) because on the
+   question bank the question text itself lives inside the summary — hiding
+   it here would drop the question from the printed page entirely. */
+@media print {
+  details {
+    display: block;
+  }
+
+  details > * {
+    display: block;
+  }
+
+  .study-question {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

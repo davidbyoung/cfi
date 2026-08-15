@@ -25,7 +25,7 @@ npm run dev          # verify in browser at http://localhost:3000
 npm run build
 ```
 
-Runs `next build` (producing the `out/` static export) then `verify:no-booking-link`, which fails the build if any Google Calendar booking URL appears in the export. The booking link is shared manually after intake review and must never ship in the static bundle.
+Runs `next build`, producing the `out/` static export.
 
 ## Where things live
 

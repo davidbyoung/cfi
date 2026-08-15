@@ -29,5 +29,4 @@ Configuration is CSS-first — there is no `tailwind.config.js`. All customizati
 ## Content guardrails
 
 - The instructor's email address must not appear anywhere in rendered HTML — no footer, no error messages, no mailto links. Contact is exclusively through the Formspree form.
-- No Google Calendar booking links may appear in the static export — the `verify:no-booking-link` build step enforces this. Booking links are shared manually after intake.
 - Aircraft access is through Leading Edge Flying Club (LEFC) or student-provided only. Do not add or imply other aircraft sources.

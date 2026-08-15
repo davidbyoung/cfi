@@ -1,0 +1,21 @@
+---
+tags:
+  - airways
+  - enroute-charts
+---
+
+### Question
+
+On the V12 airway between BIB and SHB VORs, what does the symbol mean approximately halfway between with "61" and "70"?
+
+![Changeover point](../assets/changeover-point.png)
+
+### Answer
+
+- The changeover point, which in this case says to switch from navigating V12 using BIB at 70 NM from BIB to using the SHB VOR at 61 NM from SHB
+- These appear on long airways
+
+### Sources
+
+- [FAA Aeronautical Chart User's Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
+- [FAA AIM ¶ 5-3 - En Route procedures](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_3.html)
