@@ -184,6 +184,7 @@ chapters:
           - enroute-chart-airport-approach-and-color-coding
           - decode-enroute-chart-kugn
           - kdpa-mon-designation-significance
+          - enroute-chart-remote-center-air-ground
       - title: MEA, MOCA, MRA, MCA, MAA, and OROCA
         questions:
           - enroute-chart-oroca-numbers
