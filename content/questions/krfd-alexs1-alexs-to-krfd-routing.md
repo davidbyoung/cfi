@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-How do we get from ALEXS to KRFD?
+How do we get from ALEXS to KRFD on the [KRFD ALEX ONE STAR](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954ALEXS.PDF)?
 
 ### Answer
 

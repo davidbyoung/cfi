@@ -23,7 +23,7 @@ If VMC:
 
 If IMC:
 
-- Climb to 3,000 ft
+- Climb to 2,000 ft, then 3,000 ft 10 minutes after departure
   - Use the highest of assigned, expected, or minimum IFR altitude
 - Proceed direct to OBK, then V24 to JVL
   - You have not been assigned direct OBK, but you were being vectored to it (assigned, vectored, expected, filed - AVEF)

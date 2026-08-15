@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-Let's say you're proceeding direct to RUDGE on the KRFD RNAV 7, and are told "Cross RUDGE at 6,000 ft, you are cleared for the RNAV 7 approach". What do you do when you get to RUDGE?
+Let's say you're proceeding direct to RUDGE on the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954R7.PDF), and are told "Cross RUDGE at 6,000 ft, you are cleared for the RNAV 7 approach". What do you do when you get to RUDGE?
 
 ### Answer
 

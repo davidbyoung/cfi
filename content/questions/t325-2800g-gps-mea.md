@@ -9,6 +9,8 @@ tags:
 
 What does "2800G" on T325 mean?
 
+![T325](../assets/t325.png)
+
 ### Answer
 
 GPS Minimum Enroute Altitude

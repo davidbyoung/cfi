@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-If you're told "Climb via the SID", what does that mean?
+If you're told "Climb via the SID" on the [KRFD BIXBY ONE SID](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954BIXBY.PDF), what does that mean?
 
 ### Answer
 

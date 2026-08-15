@@ -8,6 +8,8 @@ tags:
 
 On the V24-399 off EON VOR, what is the "X" with "(YIXCI)" next to it?
 
+![Mileage breakdown](../assets/mileage-breakdown.png)
+
 ### Answer
 
 It is not a fix, just a mileage breakdown, and may indicate a course change

@@ -5,11 +5,11 @@ tags:
 
 ### Question
 
-Brief the KRFD RNAV 7 approach
+Brief the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954R7.PDF) approach
 
 ### Answer
 
-[Listen for the flow, how well they capture all data and relate it back to their operations]
+Listen for the flow, how well they capture all data and relate it back to their operations
 
 ### Sources
 

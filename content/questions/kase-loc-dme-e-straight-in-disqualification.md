@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KASE LOC/DME-E, why is it not a straight-in approach if the final approach course is aligned with the runway?
+On the [KASE LOC/DME-E](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05889LDE.PDF), why is it not a straight-in approach if the final approach course is aligned with the runway?
 
 ### Answer
 

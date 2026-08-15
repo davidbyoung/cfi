@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-What do the following symbols mean in the KMSN ILS/LOC 18 airport diagram section, and why are they relevant to us:
+What do the following symbols mean in the [KMSN ILS/LOC 18](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00245IL18.PDF) airport diagram section, and why are they relevant to us:
 
 - Three ovals across 36
 - (A) next to runway 36

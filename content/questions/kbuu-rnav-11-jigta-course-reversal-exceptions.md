@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KBUU RNAV 11, when would you not need to fly the course reversal at JIGTA?
+On the [KBUU RNAV 11](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05901R11.PDF), when would you not need to fly the course reversal at JIGTA?
 
 ### Answer
 

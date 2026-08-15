@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KRFD RNAV 7, when would you need to abide by the stepdown fix at ZEVBU?
+On the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954R7.PDF), when would you need to abide by the stepdown fix at ZEVBU?
 
 ### Answer
 

@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KPRC RNAV GPS-Y 03R, what is the meaning of the "Y" in the IAP title?
+On the [KPRC RNAV GPS-Y 03R](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00546RY3R.PDF), what is the meaning of the "Y" in the IAP title?
 
 ### Answer
 

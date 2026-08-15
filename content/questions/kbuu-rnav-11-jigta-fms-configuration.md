@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-If you're cleared direct JIGTA for a straight-in KBUU RNAV 11 approach, walk me through how you'd configure your FMS (Avidyne Entegra EX5000)
+If you're cleared direct JIGTA for a straight-in [KBUU RNAV 11 approach](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05901R11.PDF), walk me through how you'd configure your FMS (Avidyne Entegra EX5000)
 
 ### Answer
 

@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KMSN ILS/LOC 18, why do they have an alternate missed approach fix?
+On the [KMSN ILS/LOC 18](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00245IL18.PDF), why do they have an alternate missed approach fix?
 
 ### Answer
 

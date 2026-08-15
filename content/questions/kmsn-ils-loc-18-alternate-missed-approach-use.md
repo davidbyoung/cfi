@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-On the KMSN ILS/LOC 18, when would you fly the alternate missed approach?
+On the [KMSN ILS/LOC 18](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00245IL18.PDF), when would you fly the alternate missed approach?
 
 ### Answer
 

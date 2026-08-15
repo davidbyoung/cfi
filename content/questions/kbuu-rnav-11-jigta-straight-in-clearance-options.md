@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-Let's say we're at 4,000 ft, 19 NM due west of JIGTA on the KBUU RNAV 11, and ATC has cleared us for the straight-in approach. What can we do?
+Let's say we're at 4,000 ft, 19 NM due west of JIGTA on the [KBUU RNAV 11](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05901R11.PDF), and ATC has cleared us for the straight-in approach. What can we do?
 
 ### Answer
 

@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-On the KRFD RNAV 7, what does "942/24" and "200 (200-½)" mean on the LPV DA line?
+On the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954R7.PDF), what does "942/24" and "200 (200-½)" mean on the LPV DA line?
 
 ### Answer
 

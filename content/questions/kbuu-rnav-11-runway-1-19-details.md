@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-What can you tell me about runway 1/19 using the KBUU RNAV 11 approach plate?
+What can you tell me about runway 1/19 using the [KBUU RNAV 11](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05901R11.PDF) approach plate?
 
 ### Answer
 

@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Brief the KRFD BIXBY1.QUIZZ SID for takeoff from runway 7
+Brief the [KRFD BIXBY1.QUIZZ SID](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954BIXBY.PDF) for takeoff from runway 7
 
 ### Answer
 

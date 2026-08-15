@@ -6,7 +6,9 @@ tags:
 
 ### Question
 
-What does the "13" mean just underneath "2700"?
+On V24-228 off of OBK, what does the "13" mean just underneath "2700"?
+
+![OBK](../assets/obk.png)
 
 ### Answer
 

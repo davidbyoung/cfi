@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KASE LOC/DME-E, what does the "-E" mean?
+On the [KASE LOC/DME-E](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05889LDE.PDF), what does the "-E" mean?
 
 ### Answer
 

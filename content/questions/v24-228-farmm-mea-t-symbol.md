@@ -9,6 +9,8 @@ tags:
 
 What does the "T" shape on either side of FARMM indicate?
 
+![FARMM](../assets/farmm.png)
+
 ### Answer
 
 A change in the MEA occurs at that fix

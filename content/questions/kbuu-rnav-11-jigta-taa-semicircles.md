@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-On the KBUU RNAV 11, what are the semi-circles around JIGTA, and what do they mean?
+On the [KBUU RNAV 11](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05901R11.PDF), what are the semi-circles around JIGTA, and what do they mean?
 
 ### Answer
 

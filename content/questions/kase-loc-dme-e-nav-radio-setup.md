@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-How would you configure your NAV radios to fly the KASE LOC/DME-E?
+How would you configure your NAV radios to fly the [KASE LOC/DME-E](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05889LDE.PDF)?
 
 ### Answer
 

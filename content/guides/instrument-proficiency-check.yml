@@ -168,6 +168,7 @@ chapters:
           - visual-approach-weather-requirements
           - visual-approach-safety
           - visual-approach-clearance
+          - visual-approach-go-around
   - title: Enroute IFR Navigation and Charts
     sections:
       - title: Low Altitude Enroute Chart Symbols
@@ -319,14 +320,14 @@ chapters:
           - krfd-bixby1-quizz-sid-3000-crossing-restriction
           - sid-climb-and-maintain-instruction-meaning
           - krfd-bixby1-quizz-climb-via-sid-meaning
-      - title: KRFD MILAA.ALEXS1 STAR
+      - title: KRFD ALEXS ONE STAR
         questions:
           - star-primary-purpose
-          - krfd-milaa-alexs1-arrival-briefing
-          - krfd-milaa-star-rnav-1-equipment-requirement
-          - krfd-milaa-star-descent-planning-milaa-to-frrnk
-          - krfd-milaa-alexs1-alexs-to-krfd-routing
-          - krfd-milaa-star-crosshair-symbol
+          - krfd-alexs1-arrival-briefing
+          - krfd-alexs1-star-rnav-1-equipment-requirement
+          - krfd-alexs1-star-descent-planning-milaa-to-frrnk
+          - krfd-alexs1-alexs-to-krfd-routing
+          - krfd-alexs1-star-crosshair-symbol
   - title: Airport Operations
     sections:
       - title: Closing IFR Flight Plans

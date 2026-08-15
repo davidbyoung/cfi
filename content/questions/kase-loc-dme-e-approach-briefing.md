@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Brief the KASE LOC/DME-E approach
+Brief the [KASE LOC/DME-E approach](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05889LDE.PDF)
 
 ### Answer
 

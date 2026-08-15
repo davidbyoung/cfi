@@ -8,6 +8,8 @@ tags:
 
 What does the "19" mean next to FARMM on the V24-228 airway mean?
 
+![FARMM](../assets/farmm.png)
+
 ### Answer
 
 The total distance from the navaid (OBK) to that fix

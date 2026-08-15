@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-On the KRFD RNAV 7, what is "RNP APCH - GPS" in the equipment notes?
+On the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954R7.PDF), what is "RNP APCH - GPS" in the equipment notes?
 
 ### Answer
 

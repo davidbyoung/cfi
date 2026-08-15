@@ -7,6 +7,8 @@ tags:
 
 Decode what the enroute chart says about KUGN
 
+![KUGN](../assets/kugn.png)
+
 ### Answer
 
 Identifier UGN, part-time Class D (star), 728 ft airport elevation, pilot-controlled lighting (circled L), longest runway is 6,000 ft, ATIS 132.4

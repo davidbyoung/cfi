@@ -7,7 +7,7 @@ tags:
 
 ### Question
 
-You land at KPWK at 0600Z after an IFR flight. What do you do after you land?
+You land at [KPWK](https://www.aopa.org/ustprocs/20260806/chart/pwk_chart_supplement.pdf) at 0600Z after an IFR flight. What do you do after you land?
 
 ### Answer
 

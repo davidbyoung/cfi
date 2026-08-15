@@ -8,6 +8,8 @@ tags:
 
 On the V12 airway between BIB and SHB VORs, what does the symbol mean approximately halfway between with "61" and "70"?
 
+![Changeover point](../assets/changeover-point.png)
+
 ### Answer
 
 - The changeover point, which in this case says to switch from navigating V12 using BIB at 70 NM from BIB to using the SHB VOR at 61 NM from SHB

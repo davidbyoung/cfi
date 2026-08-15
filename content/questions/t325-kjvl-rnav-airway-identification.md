@@ -8,6 +8,8 @@ tags:
 
 What is T325 just east of KJVL?
 
+![T325](../assets/t325.png)
+
 ### Answer
 
 A Tango airway - an RNAV airway made up of GPS fixes

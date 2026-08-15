@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-On the KBUU RNAV 11, what is the v symbol in the profile view, and why should you care about it?
+On the [KBUU RNAV 11](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/05901R11.PDF), what is the v symbol in the profile view, and why should you care about it?
 
 ### Answer
 
