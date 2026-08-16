@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import HeroVideo from "./_components/HeroVideo";
 import ServicesList from "./_components/ServicesList";
 import { PAYMENT_METHODS_LINE } from "./_content";
 
@@ -14,16 +14,8 @@ export default function Home() {
   return (
     <>
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <Image
-          src="/images/flying.webp"
-          alt=""
-          aria-hidden="true"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/65" />
+        <HeroVideo />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-black/50" />
         <div className="relative z-10 px-6 text-center text-white max-w-4xl">
           <h1
             className="text-5xl font-semibold leading-tight tracking-tight sm:text-6xl"
