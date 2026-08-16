@@ -5,24 +5,29 @@ tags:
 
 ### Question
 
-What are the mandatory reporting points when in radar contact?
+What are the mandatory reporting points when flying IFR? When not in radar contact?
 
 ### Answer
+
+All times:
 
 - Missed approach
 - Airspeed changes of 10 kt or 5% file TAS (whichever is greater)
 - Reaching a holding fix
 - VFR-on-top altitude changes
-- ETA error of 3 minutes or more (when not in radar contact)
 - Leaving a holding fix
-- Outer marker inbound (when not in radar contact)
 - Unforecasted weather conditions
 - Safety of flight issues
 - Vacating a previously assigned altitude
-- Final approach fix inbound (when not in radar contact)
 - Radio or navigation equipment failure
-- Compulsory reporting points (when not in radar contact)
 - 500 fpm climb/descent not possible
+
+When not in radar contact:
+
+- ETA error of 3 minutes or more
+- Outer marker inbound
+- Final approach fix inbound
+- Compulsory reporting points
 
 ### Sources
 

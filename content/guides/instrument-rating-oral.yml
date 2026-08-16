@@ -232,7 +232,7 @@ chapters:
           - dme-substitutes
       - title: Mandatory IFR Reports
         questions:
-          - mandatory-reporting-points-in-radar-contact
+          - mandatory-reporting-points-ifr
           - compulsory-vs-noncompulsory-reporting-points
           - compulsory-reporting-points-in-radar-contact
   - title: Holds

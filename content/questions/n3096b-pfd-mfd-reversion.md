@@ -8,7 +8,7 @@ tags:
 
 ### Question
 
-Can you switch your PFD and your MFD?
+In N3096B, can you switch your PFD and your MFD?
 
 ### Answer
 
@@ -16,5 +16,4 @@ No, you must rely on standby instruments
 
 ### Sources
 
-- [FAA Pilot's Handbook of Aeronautical Knowledge, Chapter 8 — Flight Instruments](https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf)
-- [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
+- [Avidyne Entegra EX5000 Manual](https://www.avidyne.com/download/entegra-ex5000-mfd-for-piper-pa28-32-44-release-7-or-earlier/?wpdmdl=15879&refresh=6a81ceb66cb481786891958)

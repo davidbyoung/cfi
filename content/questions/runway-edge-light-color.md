@@ -16,7 +16,6 @@ What color are runway edge lights?
 ### Sources
 
 - [FAA AIM ¶ 2-1 — Airport lighting and visual aids](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap2_section_1.html)
-- [FAA Aeronautical Chart User's Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
 
 ### Supplements
 
