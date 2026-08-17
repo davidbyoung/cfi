@@ -11,7 +11,7 @@ export class SiteNav {
   }
 
   async gotoGroundSchool() {
-    await this.root.getByRole("link", { name: "Ground School" }).click();
+    await this.root.getByRole("link", { name: "Ground school" }).click();
   }
 
   async gotoAbout() {

@@ -59,7 +59,7 @@ export const INSTRUCTOR_NAME = "Dave Young";
 
 export const NAV_LINKS = [
   { href: "/about", label: "About" },
-  { href: "/study", label: "Ground School" },
+  { href: "/study", label: "Ground school" },
 ] as const;
 
 export const PAYMENT_METHODS_LINE =

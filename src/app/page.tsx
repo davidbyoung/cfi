@@ -64,6 +64,23 @@ export default function Home() {
         </section>
 
         <section className="mb-12">
+          <h2 className="mb-3 text-xl font-semibold tracking-tight">
+            Ground school
+          </h2>
+          <p className="max-w-prose text-foreground/90 leading-relaxed">
+            A free, searchable question bank and in-depth study guides — built
+            to help you prepare for oral exams, flight reviews, and instrument
+            proficiency checks.
+          </p>
+          <Link
+            href="/study"
+            className="mt-2 inline-block text-foreground underline decoration-1 underline-offset-2 hover:opacity-80"
+          >
+            Explore ground school
+          </Link>
+        </section>
+
+        <section className="mb-12">
           <h2 className="mb-3 text-xl font-semibold tracking-tight">Pricing</h2>
           <p className="text-foreground/90 leading-relaxed">
             Instruction is billed at $65/hr, handshake to handshake — including

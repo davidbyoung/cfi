@@ -13,7 +13,7 @@ export default function DisclaimerPage() {
           href="/study"
           className="underline underline-offset-2 hover:opacity-80"
         >
-          Ground School
+          Ground school
         </Link>
         {" / "}
         <span>Disclaimer</span>
@@ -169,7 +169,7 @@ export default function DisclaimerPage() {
           href="/study"
           className="text-sm underline underline-offset-2 hover:opacity-80"
         >
-          ← Back to Ground School
+          ← Back to Ground school
         </Link>
       </div>
     </div>

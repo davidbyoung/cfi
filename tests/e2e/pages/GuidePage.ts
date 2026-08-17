@@ -23,13 +23,13 @@ export class GuidePage {
     await this.page.goto(`/study/guides/${this.slug}`);
   }
 
-  /** The breadcrumb's "Ground School" link — distinct from the identically
+  /** The breadcrumb's "Ground school" link — distinct from the identically
    * named link in the primary nav, which is also active on this page. */
   breadcrumbGroundSchoolLink(): Locator {
     return this.page
       .locator("nav")
-      .filter({ hasText: "Ground School /" })
-      .getByRole("link", { name: "Ground School" });
+      .filter({ hasText: "Ground school /" })
+      .getByRole("link", { name: "Ground school" });
   }
 
   /** Click a chapter or section title within the given TOC instance

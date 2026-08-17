@@ -43,7 +43,7 @@ export default async function GuidePage({ params }: Props) {
           href="/study"
           className="underline underline-offset-2 hover:opacity-80"
         >
-          Ground School
+          Ground school
         </Link>
         {" / "}
         <span>{guide.title}</span>

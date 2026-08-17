@@ -3,7 +3,7 @@ import { SiteNav } from "./pages/SiteNav";
 import { GuidePage } from "./pages/GuidePage";
 
 test.describe("Primary navigation", () => {
-  test("Ground School link leads to the guides + question bank landing page", async ({
+  test("Ground school link leads to the guides + question bank landing page", async ({
     page,
   }) => {
     const nav = new SiteNav(page);
@@ -13,11 +13,11 @@ test.describe("Primary navigation", () => {
 
     await expect(page).toHaveURL(/\/study\/?$/);
     await expect(
-      page.getByRole("heading", { name: "Ground School", level: 1 }),
+      page.getByRole("heading", { name: "Ground school", level: 1 }),
     ).toBeVisible();
     await expect(page.getByRole("heading", { name: "Guides" })).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "Question Bank" }),
+      page.getByRole("heading", { name: "Question bank" }),
     ).toBeVisible();
   });
 
@@ -33,7 +33,7 @@ test.describe("Primary navigation", () => {
     ).toBeVisible();
   });
 
-  test("the guide page's breadcrumb links back to Ground School", async ({
+  test("the guide page's breadcrumb links back to Ground school", async ({
     page,
   }) => {
     const guide = new GuidePage(page);
@@ -66,7 +66,7 @@ test.describe("Primary navigation (mobile)", () => {
     await page.goto("/");
 
     await expect(
-      nav.root.getByRole("link", { name: "Ground School" }),
+      nav.root.getByRole("link", { name: "Ground school" }),
     ).toBeHidden();
 
     await nav.openMobileMenu();

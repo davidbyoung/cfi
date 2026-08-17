@@ -5,7 +5,7 @@ import { loadContent } from "@/lib/content/loader";
 import QuestionSearch from "./_components/QuestionSearch";
 
 export const metadata: Metadata = {
-  title: "Question Bank",
+  title: "Question bank",
 };
 
 export default function QuestionsPage() {
@@ -22,14 +22,14 @@ export default function QuestionsPage() {
           href="/study"
           className="underline underline-offset-2 hover:opacity-80"
         >
-          Ground School
+          Ground school
         </Link>
         {" / "}
-        <span>Question Bank</span>
+        <span>Question bank</span>
       </nav>
 
       <h1 className="mb-2 text-3xl font-semibold tracking-tight">
-        Question Bank
+        Question bank
       </h1>
       <p className="mb-10 text-muted">
         {searchIndex.length} questions — search by keyword or filter by tag.
