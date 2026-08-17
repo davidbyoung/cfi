@@ -6,11 +6,9 @@ tags:
 
 ### Question
 
-Refer to the surface analysis chart from the source guide.
+What is an occluded front, and what kind of conditions are associated with it?
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
-
-What is an occluded front, and what kind of conditions are associated with it?
 
 ### Answer
 

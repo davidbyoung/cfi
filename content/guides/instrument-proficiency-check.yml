@@ -135,6 +135,7 @@ chapters:
         questions:
           - standard-ifr-takeoff-minimums
           - standard-ifr-climb-rate
+          - climb-gradient-to-vsi-rate-conversion
       - title: IFR Alternates
         questions:
           - non-waas-alternate-forecast-window-planning
@@ -315,8 +316,6 @@ chapters:
         questions:
           - sid-primary-purpose
           - krfd-bixby1-quizz-sid-briefing
-          - climb-gradient-to-vsi-rate-conversion
-          - standard-climb-gradient
           - top-altitude-definition
           - krfd-bixby1-quizz-sid-3000-crossing-restriction
           - sid-climb-and-maintain-instruction-meaning

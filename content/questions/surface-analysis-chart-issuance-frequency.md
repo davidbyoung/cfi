@@ -6,10 +6,6 @@ tags:
 
 ### Question
 
-Refer to the surface analysis chart from the source guide.
-
-![Surface analysis chart](../assets/surface-analysis-chart.png)
-
 How frequently are surface analysis charts issued?
 
 ### Answer

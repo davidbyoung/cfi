@@ -6,11 +6,9 @@ tags:
 
 ### Question
 
-Refer to the surface analysis chart from the source guide.
+What is the red and blue line over Montana, and what kind of conditions are associated with it?
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
-
-What is the red and blue line over Montana, and what kind of conditions are associated with it?
 
 ### Answer
 

@@ -6,11 +6,9 @@ tags:
 
 ### Question
 
-Refer to the surface analysis chart from the source guide.
+What are all the lines going across Illinois, and what are the numbers you find along them?
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
-
-What are all the lines going across Illinois, and what are the numbers you find along them?
 
 ### Answer
 

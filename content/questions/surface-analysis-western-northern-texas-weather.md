@@ -6,11 +6,9 @@ tags:
 
 ### Question
 
-Refer to the surface analysis chart from the source guide.
+Tell me about the weather going through western/northern Texas
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
-
-Tell me about the weather going through western/northern Texas
 
 ### Answer
 

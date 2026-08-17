@@ -6,11 +6,9 @@ tags:
 
 ### Question
 
-Refer to the surface analysis chart from the source guide.
+What is the dashed brown line going over the Gulf of California, and what kind of conditions can you expect?
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
-
-What is the dashed brown line going over the Gulf of California, and what kind of conditions can you expect?
 
 ### Answer
 
