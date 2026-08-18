@@ -281,8 +281,6 @@ chapters:
       - title: Runway Environment / Visual References
         questions:
           - lighting-for-descent-to-runway
-      - title: Approach Lights and the 100-Foot Rule
-        questions:
           - tdze-briefing-importance
           - lighting-for-descent-to-100-ft-above-tdze
       - title: Stable Descent to Landing
@@ -328,7 +326,7 @@ chapters:
           - cold-temperature-airport-snowflake-symbol
           - kase-loc-dme-e-nav-radio-setup
           - vgsi-descent-angle-not-coincident-note
-      - title: KRFD BIXBY1.QUIZZ SID
+      - title: KRFD BIXBY ONE SID
         questions:
           - sid-primary-purpose
           - krfd-bixby1-quizz-sid-briefing
