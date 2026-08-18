@@ -44,6 +44,8 @@
   label: Avionics
 - id: awos
   label: AWOS
+- id: circling-approaches
+  label: Circling Approaches
 - id: clearance-void-time
   label: Clearance Void Time
 - id: climb-gradient
@@ -128,6 +130,8 @@
   label: METARs
 - id: minimum-altitudes
   label: Minimum Altitudes
+- id: missed-approaches
+  label: Missed Approaches
 - id: moca
   label: MOCA
 - id: mon

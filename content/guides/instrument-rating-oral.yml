@@ -288,6 +288,10 @@ chapters:
       - title: Stable Descent to Landing
         questions:
           - breakout-with-runway-in-sight-continued-descent
+      - title: Circling Approaches
+        questions:
+          - circling-approach-radius
+          - circling-approach-missed-approach
   - title: Approach, SID, and STAR Briefing Scenarios
     sections:
       - title: KRFD RNAV 7
