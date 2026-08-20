@@ -57,11 +57,15 @@ export default async function GuidePage({ params }: Props) {
         <GuideToc chapters={tocChapters} />
 
         <div>
+          {/* scroll-mt-[88px] clears the sticky header (~65-77px tall
+              depending on viewport) with a small buffer, so a TOC jump lands
+              with the heading visible just below it instead of hidden behind
+              it or floating with a big gap underneath. */}
           {guide.chapters.map((chapter, ci) => (
             <section
               key={ci}
               id={chapterElementId(ci + 1)}
-              className="mb-14 scroll-mt-6"
+              className="mb-14 scroll-mt-[88px]"
             >
               <h2 className="mb-6 border-b border-rule pb-2 text-2xl font-semibold tracking-tight">
                 {chapter.title}
@@ -71,7 +75,7 @@ export default async function GuidePage({ params }: Props) {
                 <div
                   key={si}
                   id={sectionElementId(ci + 1, si + 1)}
-                  className="mb-8 scroll-mt-6"
+                  className="mb-8 scroll-mt-[88px]"
                 >
                   <h3 className="mb-4 text-lg font-semibold">
                     {section.title}

@@ -120,6 +120,8 @@
   label: Lost Communications
 - id: maa
   label: MAA
+- id: magnetic-compass-errors
+  label: Magnetic Compass Errors
 - id: mandatory-ifr-reports
   label: Mandatory IFR Reports
 - id: mca

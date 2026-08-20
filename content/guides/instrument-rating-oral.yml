@@ -364,6 +364,9 @@ chapters:
           - ils-critical-area-activation
   - title: Instrument Systems and Failures
     sections:
+      - title: Magnetic Compass
+        questions:
+          - magnetic-compass-errors
       - title: Pitot-Static System
         questions:
           - altimeter-operating-principle

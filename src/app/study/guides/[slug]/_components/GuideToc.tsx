@@ -148,12 +148,21 @@ export default function GuideToc({ chapters }: Props) {
     };
   }, [drawerOpen]);
 
-  function navigateTo(chapterId: string, sectionId: string) {
+  // `scrollTargetId` defaults to `sectionId` (clicking a section scrolls to
+  // that section). Clicking a chapter instead highlights its first section
+  // as active but scrolls to the chapter heading itself — otherwise the
+  // chapter's own h2 would land above the fold, scrolled past en route to
+  // its first section's h3.
+  function navigateTo(
+    chapterId: string,
+    sectionId: string,
+    scrollTargetId: string = sectionId,
+  ) {
     setActiveChapterId(chapterId);
     setActiveSectionId(sectionId);
     setDrawerOpen(false);
 
-    const el = document.getElementById(sectionId);
+    const el = document.getElementById(scrollTargetId);
     if (!el) return;
 
     isNavigatingRef.current = true;
@@ -187,7 +196,9 @@ export default function GuideToc({ chapters }: Props) {
                 className="cursor-pointer list-none rounded-md px-2 py-1.5 text-sm font-medium select-none hover:bg-rule/60 [&::-webkit-details-marker]:hidden"
                 onClick={(e) => {
                   e.preventDefault();
-                  if (firstSectionId) navigateTo(chapter.id, firstSectionId);
+                  if (firstSectionId) {
+                    navigateTo(chapter.id, firstSectionId, chapter.id);
+                  }
                 }}
               >
                 <span
