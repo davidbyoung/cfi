@@ -6,13 +6,18 @@ export class SiteNav {
   readonly mobileMenuButton: Locator;
   /** The whole sticky `<header>`, not just the `<nav>` inside it — its
    * rendered height (including the border) is what an in-page scroll
-   * target needs to clear to actually be visible, not just "in viewport". */
+   * target needs to clear to actually be visible, not just "in viewport".
+   * Selected by its implicit `banner` landmark role rather than the `header`
+   * tag: /about and /request-training each have their own in-page `<header>`
+   * too (nested inside an `<article>`, so it doesn't carry the `banner`
+   * role) — `page.locator("header")` would match both there and throw in
+   * Playwright's strict mode. */
   readonly header: Locator;
 
   constructor(page: Page) {
     this.root = page.getByLabel("Primary");
     this.mobileMenuButton = this.root.getByRole("button", { name: "Menu" });
-    this.header = page.locator("header");
+    this.header = page.getByRole("banner");
   }
 
   async gotoGroundSchool() {

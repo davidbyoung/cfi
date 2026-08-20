@@ -78,8 +78,9 @@ export class GuidePage {
   }
 
   /** The copy-link button sits outside the question's <details> (a sibling,
-   * not nested inside its interactive <summary>), so it isn't found by
-   * scoping into question(questionText) the way tagPill() does. */
+   * not nested inside its interactive <summary>) — unlike tagPill(), which
+   * lives inside <details> and so needs the card expanded first, this is
+   * reachable even while the card is still collapsed. */
   copyLinkButton(questionText: string): Locator {
     return this.question(questionText).getByRole("button", {
       name: "Copy link to this question",

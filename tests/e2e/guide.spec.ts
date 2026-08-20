@@ -30,11 +30,16 @@ test.describe("Guide table of contents (desktop)", () => {
 
     await guide.clickTocEntry(guide.sidebar, "IFR Clearances and Departures");
 
-    expect(
-      await guide.nav.clearsHeader(
-        guide.sectionHeading("Obtaining an IFR Clearance"),
-      ),
-    ).toBe(true);
+    // Poll rather than a single check: the TOC scrolls smoothly
+    // (scrollIntoView({ behavior: "smooth" })), so the heading may not have
+    // reached its final position the instant the click resolves.
+    await expect
+      .poll(() =>
+        guide.nav.clearsHeader(
+          guide.sectionHeading("Obtaining an IFR Clearance"),
+        ),
+      )
+      .toBe(true);
   });
 
   test("clicking a chapter lands its own heading visibly below the sticky header", async ({
@@ -52,11 +57,14 @@ test.describe("Guide table of contents (desktop)", () => {
       "Aircraft Airworthiness and IFR Equipment",
     );
 
-    expect(
-      await guide.nav.clearsHeader(
-        guide.chapterHeading("Aircraft Airworthiness and IFR Equipment"),
-      ),
-    ).toBe(true);
+    // Poll rather than a single check — see the same note above.
+    await expect
+      .poll(() =>
+        guide.nav.clearsHeader(
+          guide.chapterHeading("Aircraft Airworthiness and IFR Equipment"),
+        ),
+      )
+      .toBe(true);
   });
 
   test("navigating away collapses the previous chapter instead of leaving it open", async ({
