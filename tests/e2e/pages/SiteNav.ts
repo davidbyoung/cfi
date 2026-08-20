@@ -4,10 +4,20 @@ import type { Locator, Page } from "@playwright/test";
 export class SiteNav {
   readonly root: Locator;
   readonly mobileMenuButton: Locator;
+  /** The whole sticky `<header>`, not just the `<nav>` inside it — its
+   * rendered height (including the border) is what an in-page scroll
+   * target needs to clear to actually be visible, not just "in viewport".
+   * Selected by its implicit `banner` landmark role rather than the `header`
+   * tag: /about and /request-training each have their own in-page `<header>`
+   * too (nested inside an `<article>`, so it doesn't carry the `banner`
+   * role) — `page.locator("header")` would match both there and throw in
+   * Playwright's strict mode. */
+  readonly header: Locator;
 
   constructor(page: Page) {
     this.root = page.getByLabel("Primary");
     this.mobileMenuButton = this.root.getByRole("button", { name: "Menu" });
+    this.header = page.getByRole("banner");
   }
 
   async gotoGroundSchool() {
@@ -22,5 +32,18 @@ export class SiteNav {
    * menu — open it before any gotoX() call can find them. */
   async openMobileMenu() {
     await this.mobileMenuButton.click();
+  }
+
+  /** Whether `target` is currently positioned below the sticky header,
+   * rather than merely somewhere in the viewport (Playwright's built-in
+   * `toBeInViewport()` doesn't know the header exists, so it can't catch a
+   * scroll target landing underneath it). */
+  async clearsHeader(target: Locator): Promise<boolean> {
+    const [headerBox, targetBox] = await Promise.all([
+      this.header.boundingBox(),
+      target.boundingBox(),
+    ]);
+    if (!headerBox || !targetBox) return false;
+    return targetBox.y >= headerBox.y + headerBox.height;
   }
 }

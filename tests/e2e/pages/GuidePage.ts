@@ -50,6 +50,10 @@ export class GuidePage {
     return this.page.getByRole("heading", { name: title, level: 3 });
   }
 
+  chapterHeading(title: string): Locator {
+    return this.page.getByRole("heading", { name: title, level: 2 });
+  }
+
   async openMobileDrawer() {
     await this.contentsButton.click();
   }
@@ -71,5 +75,19 @@ export class GuidePage {
       name: tagLabel,
       exact: true,
     });
+  }
+
+  /** The copy-link button sits outside the question's <details> (a sibling,
+   * not nested inside its interactive <summary>) — unlike tagPill(), which
+   * lives inside <details> and so needs the card expanded first, this is
+   * reachable even while the card is still collapsed. */
+  copyLinkButton(questionText: string): Locator {
+    return this.question(questionText).getByRole("button", {
+      name: "Copy link to this question",
+    });
+  }
+
+  detailsFor(questionText: string): Locator {
+    return this.question(questionText).locator("details").first();
   }
 }

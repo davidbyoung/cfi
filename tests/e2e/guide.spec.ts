@@ -19,6 +19,54 @@ test.describe("Guide table of contents (desktop)", () => {
     ).toBeInViewport();
   });
 
+  test("clicking a section lands it visibly below the sticky header, not underneath it", async ({
+    page,
+  }) => {
+    // Regression test: the section heading's scroll-margin-top used to be
+    // too small (scroll-mt-6, 24px) to clear the sticky header (65-77px
+    // tall), so the heading landed partially hidden behind it.
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.clickTocEntry(guide.sidebar, "IFR Clearances and Departures");
+
+    // Poll rather than a single check: the TOC scrolls smoothly
+    // (scrollIntoView({ behavior: "smooth" })), so the heading may not have
+    // reached its final position the instant the click resolves.
+    await expect
+      .poll(() =>
+        guide.nav.clearsHeader(
+          guide.sectionHeading("Obtaining an IFR Clearance"),
+        ),
+      )
+      .toBe(true);
+  });
+
+  test("clicking a chapter lands its own heading visibly below the sticky header", async ({
+    page,
+  }) => {
+    // Regression test: clicking a chapter used to scroll to its *first
+    // section* (the h3) instead of the chapter heading itself (the h2) —
+    // the chapter title would be scrolled past and hidden behind the
+    // header, even though the section below it landed correctly.
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.clickTocEntry(
+      guide.sidebar,
+      "Aircraft Airworthiness and IFR Equipment",
+    );
+
+    // Poll rather than a single check — see the same note above.
+    await expect
+      .poll(() =>
+        guide.nav.clearsHeader(
+          guide.chapterHeading("Aircraft Airworthiness and IFR Equipment"),
+        ),
+      )
+      .toBe(true);
+  });
+
   test("navigating away collapses the previous chapter instead of leaving it open", async ({
     page,
   }) => {
