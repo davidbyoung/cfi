@@ -36,6 +36,24 @@ export class QuestionBankPage {
     await this.question(questionText).click();
   }
 
+  /** The copy-link button sits outside the question's <details> (a sibling,
+   * not nested inside its interactive <summary>) — scope up to the whole
+   * card rather than the question text node to find it. */
+  copyLinkButton(questionText: string): Locator {
+    return this.page
+      .locator(".study-question")
+      .filter({ hasText: questionText })
+      .getByRole("button", { name: "Copy link to this question" });
+  }
+
+  detailsFor(questionText: string): Locator {
+    return this.page
+      .locator(".study-question")
+      .filter({ hasText: questionText })
+      .locator("details")
+      .first();
+  }
+
   async openTagFilterPanel() {
     await this.filterByTagToggle.click();
   }
