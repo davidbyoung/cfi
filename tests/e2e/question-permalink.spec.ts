@@ -21,6 +21,22 @@ test.describe("Question permalinks (question bank)", () => {
     expect(copied).toBe(`${page.url()}#${QUESTION_ID}`);
   });
 
+  test("preserves an existing ?tag= filter in the copied URL", async ({
+    page,
+  }) => {
+    // Regression test: building the URL from origin + pathname alone (as
+    // opposed to the full current URL) silently dropped any query string,
+    // e.g. losing which tag filter was active on the sender's page.
+    const bank = new QuestionBankPage(page);
+    await bank.goto({ tag: "vor" });
+
+    await bank.copyLinkButton(QUESTION_TEXT).click();
+
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(copied).toBe(`${page.url()}#${QUESTION_ID}`);
+    expect(copied).toContain("?tag=vor");
+  });
+
   test("clicking the copy-link button doesn't toggle the question open or closed", async ({
     page,
   }) => {

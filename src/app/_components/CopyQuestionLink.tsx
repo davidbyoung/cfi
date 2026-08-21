@@ -31,8 +31,20 @@ export default function CopyQuestionLink({ questionId }: Props) {
   }, [questionId]);
 
   async function handleCopy() {
-    const url = `${window.location.origin}${window.location.pathname}#${questionId}`;
-    await navigator.clipboard.writeText(url);
+    // Built from the full current URL (preserves an existing ?tag= filter,
+    // for example) rather than origin + pathname alone, with the hash
+    // replaced to point at this question specifically.
+    const url = new URL(window.location.href);
+    url.hash = questionId;
+    try {
+      await navigator.clipboard.writeText(url.toString());
+    } catch {
+      // Can reject if permission is denied or the document lost focus
+      // between the click and this call — leave the icon as-is rather than
+      // claim success, but don't let it surface as an unhandled rejection
+      // for what's a non-critical convenience feature.
+      return;
+    }
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   }
