@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Question } from "@/lib/content/types";
+import { highlightHtml } from "@/lib/search";
 import CopyQuestionLink from "./CopyQuestionLink";
 
 type Props = {
@@ -8,11 +9,23 @@ type Props = {
    * (a button), a guide links out to the filtered question bank (a Link).
    * The caller owns each returned element's `key`. */
   renderTags: (tagIds: string[]) => ReactNode;
+  /** The active search query, if any — wraps matching text in every
+   * rendered field in <mark>, using the same word-boundary match that
+   * decided this card appears in results at all, so a highlighted span is
+   * always something that made the card match. */
+  highlightQuery?: string;
 };
 
 // Shared between the question bank and every guide page — previously this
 // markup was duplicated by hand in both places.
-export default function QuestionCard({ question, renderTags }: Props) {
+export default function QuestionCard({
+  question,
+  renderTags,
+  highlightQuery,
+}: Props) {
+  const highlight = (html: string) =>
+    highlightQuery ? highlightHtml(html, highlightQuery) : html;
+
   return (
     <li
       id={question.id}
@@ -23,7 +36,9 @@ export default function QuestionCard({ question, renderTags }: Props) {
           <summary className="-mx-2 -my-1 flex cursor-pointer list-none items-start justify-between gap-3 rounded-md px-2 py-1 select-none hover:bg-rule/40 [&::-webkit-details-marker]:hidden">
             <div
               className="study-prose min-w-0 text-base font-medium"
-              dangerouslySetInnerHTML={{ __html: question.questionHtml }}
+              dangerouslySetInnerHTML={{
+                __html: highlight(question.questionHtml),
+              }}
             />
             <svg
               aria-hidden="true"
@@ -42,7 +57,9 @@ export default function QuestionCard({ question, renderTags }: Props) {
           <div className="mt-3 border-l-2 border-rule pl-4">
             <div
               className="study-prose text-base"
-              dangerouslySetInnerHTML={{ __html: question.answerHtml }}
+              dangerouslySetInnerHTML={{
+                __html: highlight(question.answerHtml),
+              }}
             />
 
             {question.instructorNotesHtml && (
@@ -53,7 +70,7 @@ export default function QuestionCard({ question, renderTags }: Props) {
                 <div
                   className="study-prose mt-2 text-sm text-muted"
                   dangerouslySetInnerHTML={{
-                    __html: question.instructorNotesHtml,
+                    __html: highlight(question.instructorNotesHtml),
                   }}
                 />
               </details>
@@ -64,7 +81,9 @@ export default function QuestionCard({ question, renderTags }: Props) {
                 <p className="mb-1 text-sm font-medium text-muted">Sources</p>
                 <div
                   className="study-prose text-sm text-muted"
-                  dangerouslySetInnerHTML={{ __html: question.sourcesHtml }}
+                  dangerouslySetInnerHTML={{
+                    __html: highlight(question.sourcesHtml),
+                  }}
                 />
               </div>
             )}
@@ -76,7 +95,9 @@ export default function QuestionCard({ question, renderTags }: Props) {
                 </p>
                 <div
                   className="study-prose text-sm text-muted"
-                  dangerouslySetInnerHTML={{ __html: question.supplementsHtml }}
+                  dangerouslySetInnerHTML={{
+                    __html: highlight(question.supplementsHtml),
+                  }}
                 />
               </div>
             )}

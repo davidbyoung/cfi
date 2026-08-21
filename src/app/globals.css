@@ -7,6 +7,7 @@
   --rule: #e5e7eb;
   --accent: #1d4ed8;
   --input-bg: transparent;
+  --highlight-bg: #fef08a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
     --rule: #404040;
     --accent: #60a5fa;
     --input-bg: #1e1e1e;
+    --highlight-bg: rgba(202, 138, 4, 0.5);
   }
 }
 
@@ -138,6 +140,17 @@ body {
 .study-prose th {
   font-weight: 600;
   background: var(--rule);
+}
+
+/* Search-match highlighting — a dedicated token rather than a Tailwind
+   utility so the exact same look applies whether a match is wrapped via a
+   raw HTML string (highlightHtml, for dangerouslySetInnerHTML content) or
+   via the HighlightedText component (plain-text contexts like tag pills). */
+.search-highlight {
+  background: var(--highlight-bg);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 0.15em;
 }
 
 /* Print styles: expand all details/summary and show answers. Summaries stay

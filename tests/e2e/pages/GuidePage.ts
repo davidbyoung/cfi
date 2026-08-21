@@ -98,4 +98,10 @@ export class GuidePage {
   detailsFor(questionText: string): Locator {
     return this.question(questionText).locator("details").first();
   }
+
+  /** Every <mark> highlighting a search match within this question's card —
+   * question text, answer, sources, tag pills, wherever it landed. */
+  highlightsIn(questionText: string): Locator {
+    return this.question(questionText).locator("mark.search-highlight");
+  }
 }

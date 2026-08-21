@@ -3,6 +3,7 @@
 import { useId, useMemo, useState } from "react";
 import Link from "next/link";
 import QuestionCard from "@/app/_components/QuestionCard";
+import HighlightedText from "@/app/_components/HighlightedText";
 import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import GuideToc, { type TocChapter } from "./GuideToc";
 import {
@@ -114,6 +115,7 @@ export default function GuideBody({ chapters, tags }: Props) {
                         <QuestionCard
                           key={question.id}
                           question={question}
+                          highlightQuery={debouncedQuery}
                           renderTags={(tagIds) =>
                             tagIds.map((tagId) => (
                               <Link
@@ -121,7 +123,10 @@ export default function GuideBody({ chapters, tags }: Props) {
                                 href={`/study/questions?tag=${encodeURIComponent(tagId)}`}
                                 className="rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
                               >
-                                {tags[tagId]?.label ?? tagId}
+                                <HighlightedText
+                                  text={tags[tagId]?.label ?? tagId}
+                                  query={debouncedQuery}
+                                />
                               </Link>
                             ))
                           }

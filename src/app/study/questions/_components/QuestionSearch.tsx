@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback, useId } from "react";
 import { useSearchParams } from "next/navigation";
 import QuestionCard from "@/app/_components/QuestionCard";
+import HighlightedText from "@/app/_components/HighlightedText";
 import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import { matchesQuery, filterQuestions } from "./search-utils";
 import type {
@@ -117,6 +118,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
           <QuestionCard
             key={entry.id}
             question={entry}
+            highlightQuery={debouncedQuery}
             renderTags={(tagIds) =>
               tagIds.map((tagId) => (
                 <button
@@ -125,7 +127,10 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
                   onClick={() => toggleTag(tagId)}
                   className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
                 >
-                  {tagMap[tagId]?.label ?? tagId}
+                  <HighlightedText
+                    text={tagMap[tagId]?.label ?? tagId}
+                    query={debouncedQuery}
+                  />
                 </button>
               ))
             }
@@ -133,7 +138,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
         ))}
       </ul>
     );
-  }, [results, tagMap, toggleTag]);
+  }, [results, tagMap, toggleTag, debouncedQuery]);
 
   return (
     <div>
