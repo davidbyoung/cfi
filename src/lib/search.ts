@@ -10,6 +10,11 @@ export function escapeRegExp(value: string): string {
 // recompiling it per entry.
 const queryRegexCache = new Map<string, RegExp>();
 
+// Caps how many distinct queries stay cached — without a limit, a long
+// session of varied searches would retain a growing pile of regexes for
+// queries that will never be looked up again.
+const MAX_QUERY_REGEX_CACHE_SIZE = 50;
+
 function compileQueryRegex(query: string): RegExp {
   const cached = queryRegexCache.get(query);
   if (cached) return cached;
@@ -20,6 +25,12 @@ function compileQueryRegex(query: string): RegExp {
   // itself starts with a word character.
   const pattern = /^\w/.test(query) ? `\\b${escaped}` : escaped;
   const regex = new RegExp(pattern, "i");
+
+  if (queryRegexCache.size >= MAX_QUERY_REGEX_CACHE_SIZE) {
+    // Map iterates in insertion order, so the first key is the oldest.
+    const oldestQuery = queryRegexCache.keys().next().value;
+    if (oldestQuery !== undefined) queryRegexCache.delete(oldestQuery);
+  }
   queryRegexCache.set(query, regex);
   return regex;
 }

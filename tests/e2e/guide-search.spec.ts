@@ -39,6 +39,14 @@ test.describe("Guide search", () => {
 
     await guide.search("clearance void time");
 
+    // Prove the debounced filter has actually taken effect before checking
+    // `open` below — otherwise this assertion could trivially pass against
+    // the pre-filter DOM (nothing is expanded there either), never actually
+    // exercising the behavior under test.
+    await expect(
+      guide.sidebar.getByText("Aircraft Airworthiness and IFR Equipment"),
+    ).not.toBeVisible();
+
     await expect(
       guide.chapterDetails(guide.sidebar, "IFR Clearances and Departures"),
     ).toHaveJSProperty("open", false);
