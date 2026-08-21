@@ -23,6 +23,14 @@ export class GuidePage {
     await this.page.goto(`/study/guides/${this.slug}`);
   }
 
+  searchInput(): Locator {
+    return this.page.getByLabel("Search this guide");
+  }
+
+  async search(query: string) {
+    await this.searchInput().fill(query);
+  }
+
   /** The breadcrumb's "Ground school" link — distinct from the identically
    * named link in the primary nav, which is also active on this page. */
   breadcrumbGroundSchoolLink(): Locator {

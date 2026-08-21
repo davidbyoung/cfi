@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { loadContent } from "@/lib/content/loader";
 import StudyDisclaimer from "@/app/_components/StudyDisclaimer";
-import QuestionCard from "@/app/_components/QuestionCard";
-import GuideToc, { type TocChapter } from "./_components/GuideToc";
+import GuideBody from "./_components/GuideBody";
+import type { GuideSearchChapter } from "./_components/guide-search-utils";
 import { chapterElementId, sectionElementId } from "./_components/toc-ids";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -23,18 +23,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function GuidePage({ params }: Props) {
   const { slug } = await params;
-  const { guideMap, tags } = loadContent();
+  const { guideMap, tags, searchIndex } = loadContent();
   const guide = guideMap[slug];
   if (!guide) notFound();
 
-  const tocChapters: TocChapter[] = guide.chapters.map((chapter, ci) => ({
-    id: chapterElementId(ci + 1),
-    title: chapter.title,
-    sections: chapter.sections.map((section, si) => ({
-      id: sectionElementId(ci + 1, si + 1),
-      title: section.title,
-    })),
-  }));
+  // Guide chapters/sections hold plain `Question`s; the search index has
+  // the same questions with the extra stripped-text fields free-text search
+  // needs. Look each one up by id to pair them without duplicating parsing.
+  const searchIndexById = new Map(
+    searchIndex.map((entry) => [entry.id, entry]),
+  );
+
+  const searchChapters: GuideSearchChapter[] = guide.chapters.map(
+    (chapter, ci) => ({
+      id: chapterElementId(ci + 1),
+      title: chapter.title,
+      sections: chapter.sections.map((section, si) => ({
+        id: sectionElementId(ci + 1, si + 1),
+        title: section.title,
+        questions: section.questions.map((question) => {
+          const entry = searchIndexById.get(question.id);
+          if (!entry) {
+            throw new Error(
+              `Question "${question.id}" is missing from the search index`,
+            );
+          }
+          return entry;
+        }),
+      })),
+    }),
+  );
 
   return (
     <div className="mx-auto max-w-6xl px-6 py-6 sm:px-8 sm:py-8">
@@ -53,59 +71,7 @@ export default async function GuidePage({ params }: Props) {
         {guide.title}
       </h1>
 
-      <div className="lg:grid lg:grid-cols-[260px_minmax(0,1fr)] lg:items-start lg:gap-12">
-        <GuideToc chapters={tocChapters} />
-
-        <div>
-          {/* scroll-mt-[88px] clears the sticky header (~65-77px tall
-              depending on viewport) with a small buffer, so a TOC jump lands
-              with the heading visible just below it instead of hidden behind
-              it or floating with a big gap underneath. */}
-          {guide.chapters.map((chapter, ci) => (
-            <section
-              key={ci}
-              id={chapterElementId(ci + 1)}
-              className="mb-14 scroll-mt-[88px]"
-            >
-              <h2 className="mb-6 border-b border-rule pb-2 text-2xl font-semibold tracking-tight">
-                {chapter.title}
-              </h2>
-
-              {chapter.sections.map((section, si) => (
-                <div
-                  key={si}
-                  id={sectionElementId(ci + 1, si + 1)}
-                  className="mb-8 scroll-mt-[88px]"
-                >
-                  <h3 className="mb-4 text-lg font-semibold">
-                    {section.title}
-                  </h3>
-
-                  <ul>
-                    {section.questions.map((question) => (
-                      <QuestionCard
-                        key={question.id}
-                        question={question}
-                        renderTags={(tagIds) =>
-                          tagIds.map((tagId) => (
-                            <Link
-                              key={tagId}
-                              href={`/study/questions?tag=${encodeURIComponent(tagId)}`}
-                              className="rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
-                            >
-                              {tags[tagId]?.label ?? tagId}
-                            </Link>
-                          ))
-                        }
-                      />
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </section>
-          ))}
-        </div>
-      </div>
+      <GuideBody chapters={searchChapters} tags={tags} />
 
       <StudyDisclaimer />
     </div>

@@ -40,6 +40,10 @@ export type QuestionSearchIndexEntry = Question & {
   instructorNotesText?: string;
   sourcesText?: string;
   supplementsText?: string;
+  // Human-readable tag labels (e.g. "Surface Analysis"), not the raw
+  // hyphenated ids in `tags` (e.g. "surface-analysis") — free-text search
+  // matches against these so a multi-word query can match a tag by name.
+  tagLabels: string[];
 };
 
 export type RawGuideSection = {
