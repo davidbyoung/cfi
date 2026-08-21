@@ -121,7 +121,7 @@ function _loadContent(): ContentLibrary {
     );
   }
 
-  const searchIndex = buildSearchIndex(questions);
+  const searchIndex = buildSearchIndex(questions, tagMap);
 
   return {
     questions,

@@ -1,13 +1,19 @@
 "use client";
 
-import { useState, useMemo, useId } from "react";
+import { useState, useMemo, useCallback, useId } from "react";
 import { useSearchParams } from "next/navigation";
 import QuestionCard from "@/app/_components/QuestionCard";
+import { useDebouncedValue } from "@/lib/useDebouncedValue";
 import { matchesQuery, filterQuestions } from "./search-utils";
 import type {
   QuestionSearchIndexEntry,
   TagDefinition,
 } from "@/lib/content/types";
+
+// How long typing has to pause before a keystroke triggers a re-filter —
+// short enough to feel instant, long enough that a fast typist doesn't
+// re-render the results list on every character.
+const SEARCH_DEBOUNCE_MS = 200;
 
 type Props = {
   searchIndex: QuestionSearchIndexEntry[];
@@ -21,6 +27,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
   );
   const searchParams = useSearchParams();
   const [query, setQuery] = useState("");
+  const debouncedQuery = useDebouncedValue(query, SEARCH_DEBOUNCE_MS);
   const inputId = useId();
 
   // Derive the tag filter from the ?tag= URL param without a useEffect: this
@@ -39,23 +46,26 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
   }
 
   const results = useMemo(
-    () => filterQuestions(searchIndex, query, activeTag),
-    [searchIndex, query, activeTag],
+    () => filterQuestions(searchIndex, debouncedQuery, activeTag),
+    [searchIndex, debouncedQuery, activeTag],
   );
 
   const visibleTags = useMemo(() => {
-    const q = query.trim();
+    const q = debouncedQuery.trim();
     if (!q) return tagList;
     return tagList.filter((tag) => matchesQuery(tag.label, q));
-  }, [tagList, query]);
+  }, [tagList, debouncedQuery]);
 
   const activeTagDefinition = activeTag
     ? (tagList.find((t) => t.id === activeTag) ?? null)
     : null;
 
-  function toggleTag(id: string) {
+  // Stable identity (not just the query it wraps) so the memoized results
+  // list below can list it as a dependency without invalidating on every
+  // keystroke.
+  const toggleTag = useCallback((id: string) => {
     setActiveTag((prev) => (prev === id ? null : id));
-  }
+  }, []);
 
   function clearFilters() {
     setQuery("");
@@ -63,6 +73,67 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
   }
 
   const hasFilters = query.trim() !== "" || activeTag !== null;
+
+  // Typing updates `query` on every keystroke, but `results` only changes
+  // once `debouncedQuery` settles — memoizing the list means React reuses
+  // the exact same element tree (and skips re-rendering every QuestionCard,
+  // each of which renders a fair amount of HTML) on the keystrokes in
+  // between, instead of redoing that work only to produce identical output.
+  const tagPills = useMemo(() => {
+    if (visibleTags.length === 0) {
+      return (
+        <p className="text-sm text-muted">
+          No tags match “{debouncedQuery.trim()}”.
+        </p>
+      );
+    }
+    return visibleTags.map((tag) => {
+      const active = activeTag === tag.id;
+      return (
+        <button
+          key={tag.id}
+          type="button"
+          aria-pressed={active}
+          onClick={() => toggleTag(tag.id)}
+          className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors ${
+            active
+              ? "bg-foreground text-background"
+              : "border border-rule text-muted hover:border-foreground hover:text-foreground"
+          }`}
+        >
+          {tag.label}
+        </button>
+      );
+    });
+  }, [visibleTags, activeTag, debouncedQuery, toggleTag]);
+
+  const resultsList = useMemo(() => {
+    if (results.length === 0) {
+      return <p className="text-muted">No questions match your search.</p>;
+    }
+    return (
+      <ul>
+        {results.map((entry) => (
+          <QuestionCard
+            key={entry.id}
+            question={entry}
+            renderTags={(tagIds) =>
+              tagIds.map((tagId) => (
+                <button
+                  key={tagId}
+                  type="button"
+                  onClick={() => toggleTag(tagId)}
+                  className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
+                >
+                  {tagMap[tagId]?.label ?? tagId}
+                </button>
+              ))
+            }
+          />
+        ))}
+      </ul>
+    );
+  }, [results, tagMap, toggleTag]);
 
   return (
     <div>
@@ -98,32 +169,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
           <summary className="cursor-pointer select-none py-3 text-sm font-medium hover:opacity-70">
             Filter by tag
           </summary>
-          <div className="flex flex-wrap gap-2 pb-4">
-            {visibleTags.length === 0 ? (
-              <p className="text-sm text-muted">
-                No tags match “{query.trim()}”.
-              </p>
-            ) : (
-              visibleTags.map((tag) => {
-                const active = activeTag === tag.id;
-                return (
-                  <button
-                    key={tag.id}
-                    type="button"
-                    aria-pressed={active}
-                    onClick={() => toggleTag(tag.id)}
-                    className={`cursor-pointer rounded-full px-3 py-1 text-xs font-medium transition-colors ${
-                      active
-                        ? "bg-foreground text-background"
-                        : "border border-rule text-muted hover:border-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {tag.label}
-                  </button>
-                );
-              })
-            )}
-          </div>
+          <div className="flex flex-wrap gap-2 pb-4">{tagPills}</div>
         </details>
       )}
 
@@ -143,30 +189,7 @@ export default function QuestionSearch({ searchIndex, tagList }: Props) {
         )}
       </div>
 
-      {results.length === 0 ? (
-        <p className="text-muted">No questions match your search.</p>
-      ) : (
-        <ul>
-          {results.map((entry) => (
-            <QuestionCard
-              key={entry.id}
-              question={entry}
-              renderTags={(tagIds) =>
-                tagIds.map((tagId) => (
-                  <button
-                    key={tagId}
-                    type="button"
-                    onClick={() => toggleTag(tagId)}
-                    className="cursor-pointer rounded-full border border-rule px-2.5 py-0.5 text-xs text-muted hover:border-foreground hover:text-foreground"
-                  >
-                    {tagMap[tagId]?.label ?? tagId}
-                  </button>
-                ))
-              }
-            />
-          ))}
-        </ul>
-      )}
+      {resultsList}
     </div>
   );
 }

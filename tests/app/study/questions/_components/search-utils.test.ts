@@ -12,6 +12,7 @@ function entry(
   return {
     id: "test-question",
     tags: [],
+    tagLabels: [],
     questionText: "",
     answerText: "",
     questionHtml: "<p></p>",
@@ -113,5 +114,27 @@ describe("filterQuestions", () => {
 
   it("trims whitespace from the query", () => {
     expect(filterQuestions(index, "  alternator  ", null)).toHaveLength(1);
+  });
+
+  it("matches a multi-word tag label even though the tag's id is hyphenated", () => {
+    // Regression test: a real bug — free-text search used to join each
+    // entry's raw tag ids ("surface-analysis") into the searchable text
+    // instead of their labels ("Surface Analysis"), so a query containing a
+    // space could never match a tag whose id uses a hyphen instead.
+    const withTaggedIndex = [
+      ...index,
+      entry({
+        id: "surface-analysis-chart-question",
+        tags: ["surface-analysis"],
+        tagLabels: ["Surface Analysis"],
+        questionText: "What is the blue H over Arizona?",
+        answerText: "A high pressure system.",
+      }),
+    ];
+
+    const results = filterQuestions(withTaggedIndex, "surface analysis", null);
+    expect(results.map((r) => r.id)).toEqual([
+      "surface-analysis-chart-question",
+    ]);
   });
 });

@@ -1,4 +1,4 @@
-import type { Question, QuestionSearchIndexEntry } from "./types";
+import type { Question, QuestionSearchIndexEntry, TagMap } from "./types";
 
 function stripHtml(html: string): string {
   return html
@@ -9,10 +9,12 @@ function stripHtml(html: string): string {
 
 export function buildSearchIndex(
   questions: Question[],
+  tagMap: TagMap,
 ): QuestionSearchIndexEntry[] {
   return questions.map((q) => ({
     id: q.id,
     tags: q.tags,
+    tagLabels: q.tags.map((tagId) => tagMap[tagId]?.label ?? tagId),
     questionText: stripHtml(q.questionHtml),
     answerText: stripHtml(q.answerHtml),
     instructorNotesText: q.instructorNotesHtml
