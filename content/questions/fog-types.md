@@ -25,4 +25,4 @@ What are the different types of fog, and how do they form?
 
 ### Supplements
 
-- [Boldmethod - The 6 Types of Fog](https://pilotinstitute.com/airmets-vs-sigmets/](https://www.boldmethod.com/blog/lists/2026/07/these-six-types-of-fog/)
+- [Boldmethod - The 6 Types of Fog](https://www.boldmethod.com/blog/lists/2026/07/these-six-types-of-fog/)

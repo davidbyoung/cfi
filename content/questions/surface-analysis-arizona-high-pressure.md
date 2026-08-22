@@ -13,7 +13,7 @@ What is the blue "H" over Arizona, and what kind of conditions are associated wi
 ### Answer
 
 - A high-pressure system, with air generally sinking, moving outward, and rotating clockwise
-- It results in stable conditions such as smooth air and few clouds
+- It results in stable conditions such as smooth air and few clouds.
 
 ### Sources
 

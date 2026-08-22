@@ -11,7 +11,7 @@ Your VOR receiver is inoperative, but you filed an IFR route that uses only GPS 
 
 ### Answer
 
-If no portion of your route requires VORs for navigation or GPS can be substituted for VORs, then yes
+If no portion of your route requires VORs for navigation or GPS can be substituted for VORs, then yes.
 
 ### Sources
 

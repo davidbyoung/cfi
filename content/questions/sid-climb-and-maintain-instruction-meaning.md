@@ -9,7 +9,7 @@ If you're on the SID and are told by ATC "Climb and maintain 4,000", what does t
 
 ### Answer
 
-You must still fly the lateral path and comply with any speed restrictions, but published altitude restrictions are canceled and you climb to 4,000 ft
+You must still fly the lateral path and comply with any speed restrictions, but published altitude restrictions are canceled and you climb to 4,000 ft.
 
 ### Sources
 

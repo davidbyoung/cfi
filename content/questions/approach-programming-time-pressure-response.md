@@ -10,7 +10,7 @@ You're struggling to get an approach programmed in time. What do you do next?
 
 ### Answer
 
-Request delay vectors; accepting a hold may increase workload
+Request delay vectors; accepting a hold may increase workload.
 
 ### Sources
 

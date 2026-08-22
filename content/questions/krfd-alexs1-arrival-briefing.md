@@ -9,7 +9,7 @@ Brief the [KRFD MILAA.ALEXS1](https://www.airnav.com/depart?http://aeronav.faa.g
 
 ### Answer
 
-Listen for valid chart date, frequencies, required equipment, lateral, vertical, and speed instructions
+Listen for valid chart date, frequencies, required equipment, lateral, vertical, and speed instructions.
 
 ### Sources
 

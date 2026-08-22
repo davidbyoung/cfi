@@ -10,7 +10,7 @@ Altimeter setting is 30.42, and you reach FL180 and re-adjust your altimeter set
 
 ### Answer
 
-You'll reset to 29.92 at FL180, which will show 17,500 ft (you moved the datum 0.50 inHg lower, which corresponds to about a 500 ft drop)
+You'll reset to 29.92 at FL180, which will show 17,500 ft (you moved the datum 0.50 inHg lower, which corresponds to about a 500 ft drop).
 
 ### Sources
 

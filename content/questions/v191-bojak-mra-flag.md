@@ -13,7 +13,7 @@ What does the flag with the "R" indicate at BOJAK on the V191 south of OBK?
 
 ### Answer
 
-Minimum Reception Altitude (MRA) - The lowest altitude at which you can identify a fix using an off-course NAVAID (e.g., where a cross-radial is needed)
+Minimum Reception Altitude (MRA) - The lowest altitude at which you can identify a fix using an off-course NAVAID (e.g., where a cross-radial is needed).
 
 ### Sources
 

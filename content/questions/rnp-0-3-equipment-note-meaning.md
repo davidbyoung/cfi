@@ -10,7 +10,7 @@ What does "RNP-0.3" mean in an IAP plate?
 
 ### Answer
 
-Your navigation must be accurate to within 0.3 NM
+Your navigation must be accurate to within 0.3 NM.
 
 ### Sources
 

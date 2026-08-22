@@ -9,7 +9,7 @@ What's the difference between a straight-in approach and a straight-in landing?
 
 ### Answer
 
-Straight-in approach is one without a course reversal (e.g., procedure turn), and a straight-in landing is one in which you land on the designated runway for the IAP (i.e., not a circling approach)
+Straight-in approach is one without a course reversal (e.g., procedure turn), and a straight-in landing is one in which you land on the designated runway for the IAP (i.e., not a circling approach).
 
 ### Sources
 

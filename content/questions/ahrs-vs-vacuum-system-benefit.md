@@ -12,7 +12,7 @@ What is the benefit to AHRS over a vacuum system?
 
 ### Answer
 
-Fewer mechanical parts that can break, and less prone to gyro tumbling
+Fewer mechanical parts that can break, and less prone to gyro tumbling.
 
 ### Sources
 

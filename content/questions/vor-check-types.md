@@ -27,7 +27,7 @@ Air:
   - Select a prominent ground point roughly 20 NM from the VOR that is along that radial
   - Note the indicated VOR bearing as compared to the charted course
 - Dual check: +/- 4°
-  - Tune both nav radios to same station and center both
+  - Tune both nav radios to same station and center both.
 
 ### Sources
 

@@ -14,7 +14,7 @@ What are the light brown numbers on the enroute chart, and what do they mean?
 ### Answer
 
 - Off-route obstruction clearance altitude (OROCA) - Guarantees 1,000 ft clearance in non-mountainous areas and 2,000 ft in mountainous areas
-- You are not guaranteed any reception
+- You are not guaranteed any reception.
 
 ### Sources
 

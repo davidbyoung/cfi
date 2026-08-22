@@ -26,7 +26,7 @@ Lateral Navigation/Vertical Navigation (LNAV/VNAV) - Precision-like approach wit
 
 - Requires WAAS or barometric VNAV
 - Frequently has temperature restrictions if using barometric VNAV
-- WAAS-equipped aircraft will almost always default to LPV over LNAV/VNAV
+- WAAS-equipped aircraft will almost always default to LPV over LNAV/VNAV.
 
 ### Sources
 

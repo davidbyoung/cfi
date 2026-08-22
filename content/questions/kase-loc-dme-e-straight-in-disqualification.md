@@ -9,7 +9,7 @@ On the [KASE LOC/DME-E](https://www.airnav.com/depart?http://aeronav.faa.gov/d-t
 
 ### Answer
 
-The 6.59° descent angle exceeds the 400 ft/NM straight-in descent-gradient limit
+The 6.59° descent angle exceeds the 400 ft/NM straight-in descent-gradient limit.
 
 ### Sources
 

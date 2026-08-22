@@ -12,7 +12,7 @@ On the [KBUU RNAV 11](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp
 - Cleared for a straight-in approach
 - Receiving radar vectors
 - 022° course clockwise to 202° course to JIGTA
-- Remember - when in doubt, ask ATC for clarification
+- Remember - when in doubt, ask ATC for clarification.
 
 ### Sources
 

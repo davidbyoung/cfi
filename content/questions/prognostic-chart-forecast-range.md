@@ -10,7 +10,7 @@ How far out do prognostic charts show weather?
 
 ### Answer
 
-They show weather in 12 hr increments
+They show weather in 12 hr increments.
 
 ### Sources
 

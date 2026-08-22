@@ -11,7 +11,7 @@ What type of aircraft will the instrument rating permit you to fly as PIC in IMC
 
 ### Answer
 
-Any airplane for which you are rated and otherwise qualified to act as PIC
+Any airplane for which you are rated and otherwise qualified to act as PIC.
 
 ### Sources
 

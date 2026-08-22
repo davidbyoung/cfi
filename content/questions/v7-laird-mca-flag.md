@@ -13,7 +13,7 @@ What does the flag with the "X" mean on LAIRD on the V7?
 
 ### Answer
 
-Minimum Crossing Altitude (MCA) - You must cross LAIRD at or above 2700 ft when going south on V7
+Minimum Crossing Altitude (MCA) - You must cross LAIRD at or above 2700 ft when going south on V7.
 
 ### Sources
 

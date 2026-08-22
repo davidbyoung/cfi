@@ -10,7 +10,7 @@ If you're told "Climb via the SID" on the [KRFD BIXBY ONE SID](https://www.airna
 
 ### Answer
 
-You must fly the lateral and vertical path, and comply with any speed restrictions
+You must fly the lateral and vertical path, and comply with any speed restrictions.
 
 ### Sources
 

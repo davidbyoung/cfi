@@ -9,7 +9,7 @@ What is the holding and non-holding side of a hold?
 
 ### Answer
 
-The holding side is where the actual racetrack pattern is flown, and provides more of a protected area than the non-holding side (which still has some protection)
+The holding side is where the actual racetrack pattern is flown, and provides more of a protected area than the non-holding side (which still has some protection).
 
 ### Sources
 

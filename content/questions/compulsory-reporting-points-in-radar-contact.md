@@ -9,7 +9,7 @@ Do you need to report reaching compulsory reporting points when in radar contact
 
 ### Answer
 
-No, only when not in radar contact
+No, only when not in radar contact.
 
 ### Sources
 

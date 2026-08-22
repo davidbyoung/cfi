@@ -13,7 +13,7 @@ You are in IMC and notice a low voltage indication. What might be happening, and
 - Possible alternator failure
 - Follow the checklist, reduce electrical load, and troubleshoot
 - Notify ATC and request vectors or routing to the nearest VMC or suitable airport
-- Land as soon as possible
+- Land as soon as possible.
 
 ### Sources
 

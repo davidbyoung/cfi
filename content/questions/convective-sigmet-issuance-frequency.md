@@ -10,7 +10,7 @@ How frequently are Convective SIGMETs issued?
 
 ### Answer
 
-Every hour at 55 minutes past the hour, valid for 2 hr
+Every hour at 55 minutes past the hour, valid for 2 hr.
 
 ### Sources
 

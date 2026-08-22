@@ -12,7 +12,7 @@ You're in IMC and notice you're unexpectedly accumulating ice. What do you do?
 ### Answer
 
 - Pitot heat on, defroster on, notify ATC, and request an immediate turn, climb, descent, or vector to exit icing conditions
-- Monitor for signs of carb ice and apply carb heat as necessary
+- Monitor for signs of carb ice and apply carb heat as necessary.
 
 ### Sources
 

@@ -13,7 +13,7 @@ What is the red "L" over Utah, and what kind of conditions are associated with i
 ### Answer
 
 - A low-pressure system, with air generally rising, moving inward, and rotating counterclockwise
-- It results in unstable conditions such as rain, wind, icing, and even thunderstorms
+- It results in unstable conditions such as rain, wind, icing, and even thunderstorms.
 
 ### Sources
 

@@ -9,7 +9,7 @@ If you lose your glideslope outside the FAF, can you continue your approach? Wha
 
 ### Answer
 
-Yes, and you'd fly to the LOC MDA instead of the ILS DA
+Yes, and you'd fly to the LOC MDA instead of the ILS DA.
 
 ### Sources
 

@@ -10,7 +10,7 @@ What are AIRMETs?
 
 ### Answer
 
-Weather advisories for conditions that may be hazardous, especially to light aircraft
+Weather advisories for conditions that may be hazardous, especially to light aircraft.
 
 ### Sources
 

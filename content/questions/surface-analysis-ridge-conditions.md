@@ -13,7 +13,7 @@ What is a ridge, and what kind of conditions are associated with it?
 ### Answer
 
 - An elongated area of relatively high pressure
-- It brings clear skies and light winds
+- It brings clear skies and light winds.
 
 ### Sources
 

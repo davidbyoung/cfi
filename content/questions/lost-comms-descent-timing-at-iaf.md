@@ -9,7 +9,7 @@ What do you do if you need to lose a lot of altitude upon reaching your IAF befo
 
 ### Answer
 
-Descend while holding at the IAP
+Descend while holding at the IAP.
 
 ### Sources
 

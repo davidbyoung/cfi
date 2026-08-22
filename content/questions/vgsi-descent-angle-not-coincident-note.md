@@ -9,7 +9,7 @@ Why might you care about the note "VGSI and descent angles not coincident" in th
 
 ### Answer
 
-The vertical navigation path of your IAP does not match the PAPI/VASI path, and should not alarm you when your instruments indicate on-glideslope but the PAPI/VASI does not
+The vertical navigation path of your IAP does not match the PAPI/VASI path, and should not alarm you when your instruments indicate on-glideslope but the PAPI/VASI does not.
 
 ### Sources
 

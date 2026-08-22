@@ -9,7 +9,7 @@ Can an LDA approach have vertical guidance?
 
 ### Answer
 
-Yes, it would be listed as LDA/Glideslope
+Yes, it would be listed as LDA/Glideslope.
 
 ### Sources
 

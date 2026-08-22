@@ -11,7 +11,7 @@ What qualifications does a safety pilot need?
 
 ### Answer
 
-They must be rated in the category and class of aircraft being used and have a current FAA medical because they are a required crewmember
+They must be rated in the category and class of aircraft being used and have a current FAA medical because they are a required crewmember.
 
 ### Sources
 

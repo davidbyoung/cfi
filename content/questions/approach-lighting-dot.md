@@ -9,7 +9,7 @@ What does a dot above an approach lighting system symbol, e.g., (A5), mean?
 
 ### Answer
 
-The approach lighting system has sequenced flashing lights, commonly referred to as a "rabbit"
+The approach lighting system has sequenced flashing lights, commonly referred to as a "rabbit".
 
 ### Sources
 

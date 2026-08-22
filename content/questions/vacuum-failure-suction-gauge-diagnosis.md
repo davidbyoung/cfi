@@ -11,7 +11,7 @@ You're flying a steam gauge airplane, and start getting confused by the conflict
 
 ### Answer
 
-You have a vacuum system failure, and are likely to lose your attitude indicator and directional gyro
+You have a vacuum system failure, and are likely to lose your attitude indicator and directional gyro.
 
 ### Sources
 

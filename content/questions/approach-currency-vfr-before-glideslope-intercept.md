@@ -10,7 +10,7 @@ Your flight was in solid IMC. Just before intercepting the glideslope at the FAF
 ### Answer
 
 - No. To log an IAP for currency, you must be in IMC until the final approach segment.
-- When using a view-limiting device, you must descend to the DA/MDA to count the IAP toward currency
+- When using a view-limiting device, you must descend to the DA/MDA to count the IAP toward currency.
 
 ### Sources
 

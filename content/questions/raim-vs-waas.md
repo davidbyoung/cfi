@@ -12,7 +12,7 @@ How does RAIM differ from WAAS?
 ### Answer
 
 - Wide Area Augmentation System (WAAS) - Uses ground-based reference stations and satellite corrections to improve GPS accuracy and integrity
-- Accuracy is typically less than 3 m
+- Accuracy is typically less than 3 m.
 
 ### Sources
 

@@ -10,7 +10,7 @@ What additional information will FSS include in your IFR clearance when obtained
 
 ### Answer
 
-A clearance void time, which you must be off the ground by (not necessarily in contact with ATC by); otherwise, your IFR clearance is no longer valid
+A clearance void time, which you must be off the ground by (not necessarily in contact with ATC by); otherwise, your IFR clearance is no longer valid.
 
 ### Sources
 

@@ -13,7 +13,7 @@ What does the "T" shape on either side of FARMM indicate?
 
 ### Answer
 
-A change in the MEA occurs at that fix
+A change in the MEA occurs at that fix.
 
 ### Sources
 

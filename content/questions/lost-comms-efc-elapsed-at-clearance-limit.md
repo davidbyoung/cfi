@@ -9,7 +9,7 @@ During IFR lost comms, what do you do if you get to your clearance limit and you
 
 ### Answer
 
-Proceed direct to an IAF and hold until your ETA
+Proceed direct to an IAF and hold until your ETA.
 
 ### Sources
 

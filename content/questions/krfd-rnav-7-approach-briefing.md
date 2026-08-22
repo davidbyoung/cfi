@@ -9,7 +9,7 @@ Brief the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-t
 
 ### Answer
 
-Listen for the flow, how well they capture all data and relate it back to their operations
+Listen for the flow, how well they capture all data and relate it back to their operations.
 
 ### Sources
 

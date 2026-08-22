@@ -9,7 +9,7 @@ Can you fly a glideslope on a LOC BC?
 
 ### Answer
 
-No, although you may see a false glideslope
+No, although you may see a false glideslope.
 
 ### Sources
 

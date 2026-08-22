@@ -9,7 +9,7 @@ Why might you want to depart VFR instead of getting your clearance on the ground
 
 ### Answer
 
-IFR releases can sometimes take a while, adding fuel burn and total flight time
+IFR releases can sometimes take a while, adding fuel burn and total flight time.
 
 ### Sources
 

@@ -11,7 +11,7 @@ You land at [KPWK](https://www.aopa.org/ustprocs/20260806/chart/pwk_chart_supple
 
 ### Answer
 
-Close my IFR flight plan through 1-800-WX-BRIEF or ForeFlight
+Close my IFR flight plan through 1-800-WX-BRIEF or ForeFlight.
 
 ### Sources
 

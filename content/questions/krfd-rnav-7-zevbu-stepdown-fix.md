@@ -9,7 +9,7 @@ On the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/
 
 ### Answer
 
-When using LNAV or circling - LPV and LNAV/VNAV does not need to respect the stepdown fix
+When using LNAV or circling - LPV and LNAV/VNAV does not need to respect the stepdown fix.
 
 ### Sources
 

@@ -9,7 +9,7 @@ You flew 6 IAPs and intercepted courses in a simulator today, but last flew a ho
 
 ### Answer
 
-Complete one holding procedure/task, either in an approved simulator or in an airplane with a safety pilot, CFI, or DPE
+Complete one holding procedure/task, either in an approved simulator or in an airplane with a safety pilot, CFI, or DPE.
 
 ### Sources
 

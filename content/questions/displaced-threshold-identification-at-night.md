@@ -10,7 +10,7 @@ How can you identify the threshold of a displaced threshold runway at night?
 
 ### Answer
 
-Green threshold lights show the beginning of the landing area
+Green threshold lights show the beginning of the landing area.
 
 ### Sources
 
