@@ -20,7 +20,7 @@ You might request VFR-on-top when you want the flexibility to choose your own al
 
 **How to request it**
 
-To request it, you can call ATC and say "Chicago Center, Archer 3096B, request VFR-on-top".
+To request it, you can call ATC and say "Chicago Approach, Archer 3096B, request VFR-on-top".
 
 **Rules to follow**
 
