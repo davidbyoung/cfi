@@ -6,6 +6,8 @@
   label: ADS-B Weather
 - id: adverse-weather
   label: Adverse Weather
+- id: aeromedical-factors
+  label: Aeromedical Factors
 - id: ahrs
   label: AHRS
 - id: airmets
@@ -66,6 +68,8 @@
   label: Equipment Codes
 - id: flight-planning
   label: Flight Planning
+- id: fog
+  label: Fog
 - id: forecasts
   label: Forecasts
 - id: fuel-planning
@@ -190,6 +194,8 @@
   label: SIDs
 - id: sigmets
   label: SIGMETs
+- id: special-vfr
+  label: Special VFR
 - id: stars
   label: STARs
 - id: static-port-blockage
@@ -212,6 +218,8 @@
   label: Vacuum Failure
 - id: vcoa
   label: VCOA
+- id: vfr-on-top
+  label: VFR-On-Top
 - id: visual-approaches
   label: Visual Approaches
 - id: vor
