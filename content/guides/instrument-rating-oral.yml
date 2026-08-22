@@ -66,6 +66,10 @@ chapters:
         questions:
           - kpwk-to-kstl-weather-source-briefing
           - imc-flight-weather-briefing-considerations
+      - title: Weather Condition Categories
+        questions:
+          - ifr-definition
+          - mvfr-definition
       - title: TAFs
         questions:
           - taf-valid-area
@@ -178,6 +182,10 @@ chapters:
           - visual-approach-safety
           - visual-approach-clearance
           - visual-approach-go-around
+      - title: Special VFR and VFR-on-Top
+        questions:
+          - special-vfr
+          - vfr-on-top
   - title: Enroute IFR Navigation and Charts
     sections:
       - title: Low Altitude Enroute Chart Symbols
@@ -231,6 +239,7 @@ chapters:
           - dme-overview
           - dme-inaccuracy-conditions
           - dme-substitutes
+          - dme-dme-iru
       - title: Mandatory IFR Reports
         questions:
           - mandatory-reporting-points-ifr
@@ -283,6 +292,7 @@ chapters:
           - lighting-for-descent-to-runway
           - tdze-briefing-importance
           - lighting-for-descent-to-100-ft-above-tdze
+          - approach-lighting-dot
       - title: Stable Descent to Landing
         questions:
           - breakout-with-runway-in-sight-continued-descent
@@ -357,6 +367,7 @@ chapters:
           - runway-centerline-light-color
           - taxiway-centerline-lead-off-lights
           - taxiway-identification-lighting
+          - pilot-controlled-lighting
       - title: ILS Critical Areas
         questions:
           - ils-critical-area-definition
@@ -396,6 +407,11 @@ chapters:
         questions:
           - ahrs-overview
           - pfd-loss-rnav-approach-navigation-options
+  - title: Aeromedical Factors
+    sections:
+      - title: Spatial Disorientation and Illusions
+        questions:
+          - spatial-disorientation
   - title: Unusual Attitudes
     sections:
       - title: Recovery from Unusual Attitudes
