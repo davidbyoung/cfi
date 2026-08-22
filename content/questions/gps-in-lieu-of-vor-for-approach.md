@@ -11,7 +11,7 @@ Can you use GPS in place of a VOR for an IAP?
 
 ### Answer
 
-Yes, although the VOR must be operational and monitored during the final approach segment (AIM 1-2-3)
+Yes, although the VOR must be operational and monitored during the final approach segment (AIM 1-2-3).
 
 ### Sources
 

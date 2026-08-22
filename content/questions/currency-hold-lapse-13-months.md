@@ -10,7 +10,7 @@ You last flew a hold 13 months ago. What do you need to do to be current?
 
 ### Answer
 
-Perform an IPC with a CFII or DPE
+Perform an IPC with a CFII or DPE.
 
 ### Sources
 

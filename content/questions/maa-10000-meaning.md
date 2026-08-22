@@ -10,7 +10,7 @@ What does "MAA-10000" on an IFR enroute chart mean?
 
 ### Answer
 
-Maximum Authorized Altitude (MAA) – The max altitude that you may use this route (10,000 ft in this case)
+Maximum Authorized Altitude (MAA) – The max altitude that you may use this route (10,000 ft in this case).
 
 ### Sources
 

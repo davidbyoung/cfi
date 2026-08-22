@@ -10,7 +10,7 @@ Where can you find what equipment codes apply to your aircraft?
 
 ### Answer
 
-Your Aircraft Flight Manual (AFM) and avionics supplements will list approved equipment and navigation capabilities
+Your Aircraft Flight Manual (AFM) and avionics supplements will list approved equipment and navigation capabilities.
 
 ### Sources
 

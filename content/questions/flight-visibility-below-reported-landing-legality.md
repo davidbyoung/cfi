@@ -11,7 +11,7 @@ Per ATIS, visibility is 1/4 SM, but the instrument approach requires 1/2 SM. Und
 ### Answer
 
 - The visibility minimums are _flight_ visibility, meaning it's up to the pilot to make that determination
-- If you believe visibility is at least 1/2 SM, you may land
+- If you believe visibility is at least 1/2 SM, you may land.
 
 ### Sources
 

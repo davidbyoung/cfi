@@ -11,7 +11,7 @@ You're flying into a non-towered airport on an IFR flight plan, and it's VMC. Wh
 
 ### Answer
 
-Cancel IFR so that ATC does not need to lock down the airspace for other IFR traffic
+Cancel IFR so that ATC does not need to lock down the airspace for other IFR traffic.
 
 ### Sources
 

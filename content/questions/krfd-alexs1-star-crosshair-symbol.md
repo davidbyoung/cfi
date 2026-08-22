@@ -9,7 +9,7 @@ On the [KRFD ALEXS ONE STAR](https://www.airnav.com/depart?http://aeronav.faa.go
 
 ### Answer
 
-It represents the airport
+It represents the airport.
 
 ### Sources
 

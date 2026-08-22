@@ -12,7 +12,7 @@ On the V24-399 off EON VOR, what is the "X" with "(YIXCI)" next to it?
 
 ### Answer
 
-It is not a fix, just a mileage breakdown, and may indicate a course change
+It is not a fix, just a mileage breakdown, and may indicate a course change.
 
 ### Sources
 

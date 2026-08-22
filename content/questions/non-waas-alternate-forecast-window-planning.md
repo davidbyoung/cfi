@@ -13,7 +13,7 @@ You're renting a non-WAAS GPS equipped aircraft and planning a flight to an airp
 ### Answer
 
 - You must file an alternate
-- That alternate must have something other than a GPS approach
+- That alternate must have something other than a GPS approach.
 
 ### Sources
 

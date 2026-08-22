@@ -10,7 +10,7 @@ What is an MSA, and when would you use it?
 ### Answer
 
 - Minimum Safe/Sector Altitude (MSA) - Provides at least 1,000 ft of obstacle clearance within the specified sector/radius, usually 25 NM from the named fix or facility. It is primarily for emergency use to ensure terrain avoidance.
-- It doesn't guarantee navigational signal, though
+- It doesn't guarantee navigational signal, though.
 
 ### Sources
 

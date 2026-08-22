@@ -13,7 +13,7 @@ What is the blue line stretching from the Pacific up to South Dakota, and what k
 ### Answer
 
 - A cold front, where a cold air mass advances under and lifts a warmer air mass
-- Weather changes are abrupt and typically more severe, including thunderstorms, heavy rainfall, and a temperature drop
+- Weather changes are abrupt and typically more severe, including thunderstorms, heavy rainfall, and a temperature drop.
 
 ### Sources
 

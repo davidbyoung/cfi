@@ -13,7 +13,7 @@ On V24-228 off of OBK, what does "2700" mean? Why is it important?
 
 ### Answer
 
-Minimum Enroute Altitude (MEA) - It guarantees obstacle clearance and navigational signal along the airway
+Minimum Enroute Altitude (MEA) - It guarantees obstacle clearance and navigational signal along the airway.
 
 ### Sources
 

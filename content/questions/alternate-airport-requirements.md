@@ -15,7 +15,7 @@ What is required to use an airport as an alternate?
 - If nonstandard alternate minimums are published in the IAPs ("/A\"), forecast weather must be at least what is prescribed in the IFR Alternate Airport Minimums portion of the Terminal Procedures Publication (TPP)
   - In ForeFlight, they can be found on the airport's Procedure -> Arrival -> Alternate Minimums
 - If no nonstandard alternate minimums are published in the IAPs, forecast weather must be 600 ft and 2 SM visibility for precision approaches, or 800 ft and 2 SM visibility for non-precision approaches
-- No IAP is required if forecast weather at your ETA allows for descent from the MEA, approach, and landing under VFR
+- No IAP is required if forecast weather at your ETA allows for descent from the MEA, approach, and landing under VFR.
 
 ### Sources
 

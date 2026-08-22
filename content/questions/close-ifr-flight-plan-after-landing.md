@@ -11,7 +11,7 @@ Do I need to close my IFR flight plan if I land at 2300Z?
 
 ### Answer
 
-No, the tower is still open, and towered airports will automatically close your IFR flight plan upon arrival
+No, the tower is still open, and towered airports will automatically close your IFR flight plan upon arrival.
 
 ### Sources
 

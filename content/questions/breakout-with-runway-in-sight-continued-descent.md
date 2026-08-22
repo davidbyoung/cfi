@@ -9,7 +9,7 @@ Let's say you break out and have clear visibility of the runway. Can you always 
 
 ### Answer
 
-No, you must execute the missed approach if you cannot make a stable descent while maintaining the required visual references
+No, you must execute the missed approach if you cannot make a stable descent while maintaining the required visual references.
 
 ### Sources
 

@@ -10,7 +10,7 @@ You're flying IFR out of [KPWK](https://www.aopa.org/ustprocs/20260806/chart/pwk
 
 ### Answer
 
-Per the Chart Supplement, call 847-289-0926
+Per the Chart Supplement, call 847-289-0926.
 
 ### Sources
 

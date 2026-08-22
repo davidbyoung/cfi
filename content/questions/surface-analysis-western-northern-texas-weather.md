@@ -12,7 +12,7 @@ Tell me about the weather going through western/northern Texas
 
 ### Answer
 
-A dry line is moving through, which can trigger intense, fast-developing supercell thunderstorms, hail, and tornadoes due to the sudden uplifting of the nearby moist air
+A dry line is moving through, which can trigger intense, fast-developing supercell thunderstorms, hail, and tornadoes due to the sudden uplifting of the nearby moist air.
 
 ### Sources
 

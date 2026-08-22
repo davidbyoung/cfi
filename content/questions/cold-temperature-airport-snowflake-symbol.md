@@ -9,7 +9,7 @@ What is the snowflake icon with -21°C next to it?
 
 ### Answer
 
-Indicates a cold temperature airport (CTA), which indicates an airport where extreme cold can create a wide enough discrepancy between true and indicated altitude that you are not guaranteed obstacle clearance
+Indicates a cold temperature airport (CTA), which indicates an airport where extreme cold can create a wide enough discrepancy between true and indicated altitude that you are not guaranteed obstacle clearance.
 
 ### Sources
 

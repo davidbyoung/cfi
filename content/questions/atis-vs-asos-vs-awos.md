@@ -14,7 +14,7 @@ What's the difference between ATIS, ASOS, and AWOS?
 
 - Automated Terminal Information Service (ATIS) - Local weather data combined with non-weather operational details
 - Automated Surface Observing System (ASOS) - Continuous, automated weather reporting with type/intensity of precipitation and fog/haze
-- Automated Weather Observing System (AWOS) - Continuous, automated weather that reports basic meteorological data
+- Automated Weather Observing System (AWOS) - Continuous, automated weather that reports basic meteorological data.
 
 ### Sources
 

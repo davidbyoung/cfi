@@ -10,7 +10,7 @@ What is an ILS critical area?
 
 ### Answer
 
-A protected area near the runway localizer and glideslope antennas that keeps aircraft and vehicles from disturbing ILS signals for inbound aircraft
+A protected area near the runway localizer and glideslope antennas that keeps aircraft and vehicles from disturbing ILS signals for inbound aircraft.
 
 ### Sources
 

@@ -13,7 +13,7 @@ You're on a circling approach on an IFR flight plan at a non-towered airport. Yo
 - Contact ATC as soon as possible to obtain an amended clearance
 - If unable, attempt to re-intercept a published segment of the missed approach and comply with the route and altitude instructions
 - If unable and, in your judgment, you can no longer fly the published missed approach, consider maintaining visual conditions and reattempt a landing
-- If unable, commence a circle-climb over the airport until you are able to establish contact with ATC
+- If unable, commence a circle-climb over the airport until you are able to establish contact with ATC.
 
 ### Sources
 

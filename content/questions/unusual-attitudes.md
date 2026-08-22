@@ -12,7 +12,7 @@ Explain how to recover from unusual attitudes, and why it differs when in a clim
 - When in a climb, go full power while lowering the nose, the roll wings level
   - Lowering the nose may require strong nose down pressure
 - When in a descent, pull the power out while rolling wings level, then slowly pitch up
-- Rolling wings level while in a descent is necessary to unload the wing so that it does not stall at a higher airspeed during recovery
+- Rolling wings level while in a descent is necessary to unload the wing so that it does not stall at a higher airspeed during recovery.
 
 ### Sources
 

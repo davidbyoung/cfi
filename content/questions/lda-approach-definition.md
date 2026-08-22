@@ -9,7 +9,7 @@ What is an LDA approach?
 
 ### Answer
 
-Localizer type Directional Aid (LDA) - A localizer that, for obstacle clearance reasons, may be offset from the runway
+Localizer type Directional Aid (LDA) - A localizer that, for obstacle clearance reasons, may be offset from the runway.
 
 ### Sources
 

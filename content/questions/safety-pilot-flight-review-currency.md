@@ -11,7 +11,7 @@ Does a safety pilot need a current flight review?
 
 ### Answer
 
-No, unless they are acting as PIC
+No, unless they are acting as PIC.
 
 ### Sources
 

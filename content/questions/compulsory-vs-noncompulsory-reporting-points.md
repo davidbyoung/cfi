@@ -10,7 +10,7 @@ How do you identify compulsory vs non-compulsory reporting points?
 
 ### Answer
 
-Compulsory are filled in black triangles, non-compulsory are not filled in
+Compulsory are filled in black triangles, non-compulsory are not filled in.
 
 ### Sources
 

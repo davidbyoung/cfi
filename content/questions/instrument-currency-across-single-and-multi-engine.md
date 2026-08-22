@@ -9,7 +9,7 @@ If you had a multi-engine rating in addition to a single-engine rating and got i
 
 ### Answer
 
-Yes, currency applies to the category, not the class, of aircraft
+Yes, currency applies to the category, not the class, of aircraft.
 
 ### Sources
 

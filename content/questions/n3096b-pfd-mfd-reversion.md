@@ -12,7 +12,7 @@ In N3096B, can you switch your PFD and your MFD?
 
 ### Answer
 
-No, you must rely on standby instruments
+No, you must rely on standby instruments.
 
 ### Sources
 

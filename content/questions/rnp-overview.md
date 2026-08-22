@@ -10,7 +10,7 @@ What is RNP?
 
 ### Answer
 
-Required Navigational Performance (RNP) - A type of performance-based navigation (PBN) that allows aircraft to fly a specified route
+Required Navigational Performance (RNP) - A type of performance-based navigation (PBN) that allows aircraft to fly a specified route.
 
 ### Sources
 

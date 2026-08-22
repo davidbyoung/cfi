@@ -10,7 +10,7 @@ How would you fly a LOC BC on an HSI?
 
 ### Answer
 
-Set the front course in your HSI, and you will get normal sensing and reduce the cognitive load
+Set the front course in your HSI, and you will get normal sensing and reduce the cognitive load.
 
 ### Sources
 

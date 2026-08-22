@@ -11,7 +11,7 @@ ATC gives you your clearance, but includes "Hold for release". How does that imp
 
 - You can taxi, but you cannot take off until ATC releases you (i.e., clears the airspace of other IFR traffic)
 - When ready to take off, call ATC back by RCO, GCO, or cell phone and obtain your release
-- The release time is the earliest you can depart
+- The release time is the earliest you can depart.
 
 ### Sources
 

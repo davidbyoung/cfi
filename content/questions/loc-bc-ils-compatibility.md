@@ -10,7 +10,7 @@ Can you fly a LOC BC on any ILS?
 
 ### Answer
 
-Not unless they're part of a published IAP
+Not unless they're part of a published IAP.
 
 ### Sources
 

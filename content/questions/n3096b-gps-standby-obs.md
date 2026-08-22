@@ -12,7 +12,7 @@ In N3096B, can you use GPS on your standby OBS?
 
 ### Answer
 
-No, you must use VLOC
+No, you must use VLOC.
 
 ### Sources
 

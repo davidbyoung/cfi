@@ -12,7 +12,7 @@ If you're cleared direct JIGTA for a straight-in [KBUU RNAV 11 approach](https:/
 ### Answer
 
 - Load KBUU RNAV 11, JIGTA IAF
-- Delete the course reversal at JIGTA if one exists (we were cleared straight-in)
+- Delete the course reversal at JIGTA if one exists (we were cleared straight-in).
 
 ### Sources
 

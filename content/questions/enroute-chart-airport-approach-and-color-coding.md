@@ -9,7 +9,7 @@ How can you tell from a low altitude enroute chart whether an airport has an ins
 
 ### Answer
 
-Green means it has an IAP, blue means it has an IAP and a DoD approach, and brown means it has no IAP
+Green means it has an IAP, blue means it has an IAP and a DoD approach, and brown means it has no IAP.
 
 ### Sources
 

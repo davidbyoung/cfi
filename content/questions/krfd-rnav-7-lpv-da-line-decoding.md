@@ -12,7 +12,7 @@ On the [KRFD RNAV 7](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/
 
 - Decision altitude is 942 ft, runway visual range (RVR) minimum is 2,400 ft
 - 200 ft height above touchdown (HAT)
-- Parenthesized values (200-½) are used by military pilots
+- Parenthesized values (200-½) are used by military pilots.
 
 ### Sources
 

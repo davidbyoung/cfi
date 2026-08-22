@@ -10,7 +10,7 @@ What happens if you cannot depart prior to the clearance void time?
 
 ### Answer
 
-You must call back for another IFR clearance
+You must call back for another IFR clearance.
 
 ### Sources
 

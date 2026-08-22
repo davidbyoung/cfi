@@ -65,6 +65,10 @@ chapters:
       - title: Weather Briefing Strategy
         questions:
           - imc-flight-weather-briefing-considerations
+      - title: Weather Condition Categories
+        questions:
+          - ifr-definition
+          - mvfr-definition
       - title: TAFs
         questions:
           - taf-valid-area
@@ -271,6 +275,7 @@ chapters:
           - lighting-for-descent-to-runway
           - tdze-briefing-importance
           - lighting-for-descent-to-100-ft-above-tdze
+          - approach-lighting-dot
       - title: Stable Descent to Landing
         questions:
           - breakout-with-runway-in-sight-continued-descent
@@ -345,6 +350,7 @@ chapters:
           - runway-centerline-light-color
           - taxiway-centerline-lead-off-lights
           - taxiway-identification-lighting
+          - pilot-controlled-lighting
       - title: ILS Critical Areas
         questions:
           - ils-critical-area-definition
@@ -381,6 +387,11 @@ chapters:
         questions:
           - ahrs-overview
           - pfd-loss-rnav-approach-navigation-options
+  - title: Aeromedical Factors
+    sections:
+      - title: Spatial Disorientation and Illusions
+        questions:
+          - spatial-disorientation
   - title: Unusual Attitudes
     sections:
       - title: Recovery from Unusual Attitudes

@@ -10,7 +10,7 @@ How can you identify a taxiway?
 
 ### Answer
 
-Blue edge lights, and some have green centerline lights
+Blue edge lights, and some have green centerline lights.
 
 ### Sources
 

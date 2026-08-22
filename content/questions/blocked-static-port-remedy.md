@@ -10,7 +10,7 @@ What steps might you take to resolve a blocked static port?
 
 ### Answer
 
-Turn on the alternate static source
+Turn on the alternate static source.
 
 ### Sources
 

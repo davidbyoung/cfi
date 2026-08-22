@@ -10,7 +10,7 @@ Let's say you're proceeding direct to RUDGE on the [KRFD RNAV 7](https://www.air
 ### Answer
 
 - Enter a 4 NM hold, and start your descent to 2,500 ft
-- Upon reaching 2,500 ft and you're on the inbound leg, you may continue to CUDUP
+- Upon reaching 2,500 ft and you're on the inbound leg, you may continue to CUDUP.
 
 ### Sources
 

@@ -13,7 +13,7 @@ How does GPS work?
 - A constellation of satellites in medium Earth orbit, with enough satellites visible for the receiver to calculate position
 - Each satellite sends a signal containing its position and the highly accurate time the signal was sent
 - Your GPS receiver uses those signals to calculate distance from each satellite, producing a sphere of possible positions
-- Additional satellite signals narrow the position solution and help correct receiver clock error
+- Additional satellite signals narrow the position solution and help correct receiver clock error.
 
 ### Sources
 

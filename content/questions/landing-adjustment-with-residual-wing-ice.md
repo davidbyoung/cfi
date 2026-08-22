@@ -13,7 +13,7 @@ How will you adjust your landing if you still have accumulated ice along the lea
 
 - Land at the nearest airport
 - Stall speed may be much higher, so use an appropriate higher approach speed
-- Consider a no-flap landing if recommended by the AFM/POH or checklist
+- Consider a no-flap landing if recommended by the AFM/POH or checklist.
 
 ### Sources
 

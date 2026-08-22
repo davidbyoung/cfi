@@ -9,7 +9,7 @@ During IFR lost comms, what do you do if you get to the IAF and your ETA has alr
 
 ### Answer
 
-Commence the IAP immediately
+Commence the IAP immediately.
 
 ### Sources
 

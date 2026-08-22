@@ -10,7 +10,7 @@ Your airspeed indicator shows an increase during a climb and a decrease during a
 
 ### Answer
 
-You likely have a blocked ram air and drain hole, which causes the airspeed indicator to act as an altimeter
+You likely have a blocked ram air and drain hole, which causes the airspeed indicator to act as an altimeter.
 
 ### Sources
 

@@ -11,7 +11,7 @@ How frequently are TAFs published?
 ### Answer
 
 - Typically every 6 hr (0000Z, 0600Z, 1200Z, and 1800Z)
-- They can be amended as needed
+- They can be amended as needed.
 
 ### Sources
 

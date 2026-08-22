@@ -9,7 +9,7 @@ Using ATIS-supplied altimeter setting, your altimeter is showing an airport elev
 
 ### Answer
 
-No, it exceeds the 75 ft tolerance
+No, it exceeds the 75 ft tolerance.
 
 ### Sources
 
