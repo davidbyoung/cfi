@@ -150,7 +150,6 @@ body {
   background: var(--highlight-bg);
   color: inherit;
   border-radius: 2px;
-  padding: 0 0.15em;
 }
 
 /* Print styles: expand all details/summary and show answers. Summaries stay
