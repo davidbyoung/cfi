@@ -13,7 +13,7 @@ The approach lighting system has sequenced flashing lights, commonly referred to
 
 ### Sources
 
-- [FAA Instrument Approach Procedures - Appending 15](https://www.faa.gov/air_traffic/flight_info/aeronav/iac/media/IAC4/IAC-4-20JUL2026-complete.pdf)
+- [FAA Instrument Approach Procedures - Appendix 15](https://www.faa.gov/air_traffic/flight_info/aeronav/iac/media/IAC4/IAC-4-20JUL2026-complete.pdf)
 
 ### Supplements
 

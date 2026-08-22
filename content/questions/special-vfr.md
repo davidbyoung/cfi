@@ -24,7 +24,7 @@ To request it, you can call tower and say "Tower, Archer 3096B, request Special 
 
 **Rules to follow**
 
-For airplanes, you need at least 1 SM visibility and must remain clear of clouds. At night, the pilot must meet be instrument rated and the airplane must be IFR equipped. SVFR is traffic permitting, applies only within the surface area, and is prohibited for fixed-wing aircraft at certain airports.
+For airplanes, you need at least 1 SM visibility and must remain clear of clouds. At night, the pilot must be instrument rated and the airplane must be IFR equipped. SVFR is traffic permitting, applies only within the surface area, and is prohibited for fixed-wing aircraft at certain airports.
 
 ### Sources
 

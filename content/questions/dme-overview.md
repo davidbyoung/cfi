@@ -10,7 +10,7 @@ What is DME? What types of stations can have it?
 
 ### Answer
 
-Distance Measuring Equipment (DME) - A UHF signal typically paired with a VOR or localizer that provides slant distance (i.e., not lateral distance). They can be available on some VORs, NDBs, and localizers, but not all.
+Distance Measuring Equipment (DME) - A UHF signal typically paired with a VOR or localizer that provides slant distance (i.e., not lateral distance). They can be available on some VORs, TACANs, NDBs, and localizers, but not all.
 
 ### Sources
 
