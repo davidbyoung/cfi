@@ -1,5 +1,11 @@
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
-import { parseGuideCategoriesContent } from "@/lib/content/parse-guide-categories";
+import {
+  parseGuideCategories,
+  parseGuideCategoriesContent,
+} from "@/lib/content/parse-guide-categories";
 import { resolveGuideCategories } from "@/lib/content/validate";
 import type { Guide, RawGuideCategory } from "@/lib/content/types";
 
@@ -75,6 +81,27 @@ describe("parseGuideCategoriesContent", () => {
     expect(() =>
       parseGuideCategoriesContent(yaml, "guide-categories.yml"),
     ).toThrow("at least one guide");
+  });
+});
+
+describe("parseGuideCategories", () => {
+  it("reads and parses a guide-categories.yml file from disk", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "parse-categories-"));
+    const filePath = path.join(dir, "guide-categories.yml");
+    fs.writeFileSync(filePath, VALID_YAML);
+
+    const categories = parseGuideCategories(filePath);
+
+    expect(categories).toHaveLength(2);
+    expect(categories[0].title).toBe("Instrument Rating");
+  });
+
+  it("returns an empty list when the file doesn't exist", () => {
+    const missingPath = path.join(
+      os.tmpdir(),
+      "does-not-exist-guide-categories.yml",
+    );
+    expect(parseGuideCategories(missingPath)).toEqual([]);
   });
 });
 

@@ -26,7 +26,7 @@ type Status =
   | { kind: "success" }
   | { kind: "error" };
 
-type FormState = {
+export type FormState = {
   fullName: string;
   email: string;
   phone: string;
@@ -39,7 +39,7 @@ type FormState = {
   _gotcha: string;
 };
 
-function buildPayload(state: FormState) {
+export function buildPayload(state: FormState) {
   const certLabels = state.certificates
     .map((id) => CERTIFICATE_OPTIONS.find((o) => o.id === id)?.label ?? id)
     .join(", ");
@@ -69,7 +69,7 @@ function buildPayload(state: FormState) {
   };
 }
 
-const INITIAL: FormState = {
+export const INITIAL: FormState = {
   fullName: "",
   email: "",
   phone: "",
@@ -82,9 +82,9 @@ const INITIAL: FormState = {
   _gotcha: "",
 };
 
-type Errors = Partial<Record<keyof FormState, string>>;
+export type Errors = Partial<Record<keyof FormState, string>>;
 
-function validate(state: FormState): Errors {
+export function validate(state: FormState): Errors {
   const errors: Errors = {};
   const name = state.fullName.trim();
   if (!name) errors.fullName = "Please enter your full name.";
