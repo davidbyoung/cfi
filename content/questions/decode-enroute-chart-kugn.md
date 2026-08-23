@@ -5,7 +5,7 @@ tags:
 
 ### Question
 
-Decode what the enroute chart says about KUGN
+Decode what the enroute chart says about KUGN.
 
 ![KUGN](../assets/kugn.png)
 

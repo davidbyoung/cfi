@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Talk me through your descent planning from MILAA to FRRNK on the KRFD MILAA STAR with a groundspeed of 240 kt
+Talk me through your descent planning from MILAA to FRRNK on the KRFD MILAA STAR with a groundspeed of 240 kt.
 
 ### Answer
 

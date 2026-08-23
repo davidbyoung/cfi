@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Decode this PIREP: EAU UA /OV EAU/TM 2247/FL340/TP CRJ7/TB OCNL LGT CHOP
+Decode this PIREP: EAU UA /OV EAU/TM 2247/FL340/TP CRJ7/TB OCNL LGT CHOP.
 
 ### Answer
 

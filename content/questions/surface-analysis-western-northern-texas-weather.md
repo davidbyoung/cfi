@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Tell me about the weather going through western/northern Texas
+Tell me about the weather going through western/northern Texas.
 
 ![Surface analysis chart](../assets/surface-analysis-chart.png)
 
