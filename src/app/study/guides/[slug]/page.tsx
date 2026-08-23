@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { loadContent } from "@/lib/content/loader";
 import StudyDisclaimer from "@/app/_components/StudyDisclaimer";
+import ScrollToTopButton from "@/app/_components/ScrollToTopButton";
 import GuideBody from "./_components/GuideBody";
 import type { GuideSearchChapter } from "./_components/guide-search-utils";
 import { chapterElementId, sectionElementId } from "./_components/toc-ids";
@@ -74,6 +75,8 @@ export default async function GuidePage({ params }: Props) {
       <GuideBody chapters={searchChapters} tags={tags} />
 
       <StudyDisclaimer />
+
+      <ScrollToTopButton />
     </div>
   );
 }

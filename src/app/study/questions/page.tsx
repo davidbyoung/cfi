@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
 import { loadContent } from "@/lib/content/loader";
+import ScrollToTopButton from "@/app/_components/ScrollToTopButton";
 import QuestionSearch from "./_components/QuestionSearch";
 
 export const metadata: Metadata = {
@@ -38,6 +39,8 @@ export default function QuestionsPage() {
       <Suspense fallback={<p className="text-muted">Loading questions…</p>}>
         <QuestionSearch searchIndex={searchIndex} tagList={tagList} />
       </Suspense>
+
+      <ScrollToTopButton />
     </div>
   );
 }
