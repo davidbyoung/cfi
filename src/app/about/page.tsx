@@ -80,7 +80,7 @@ export default function AboutPage() {
           teach on weekends. The schedule is consistent week to week, which
           makes it easy to plan a regular lesson cadence. My up-to-date schedule
           will be shared after you{" "}
-          <a href="/request-training">request training</a>.
+          <Link href="/request-training">request training</Link>.
         </p>
       </section>
 

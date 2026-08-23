@@ -36,35 +36,47 @@ export class QuestionBankPage {
     return this.page.getByText(questionText);
   }
 
+  /** The whole card a question renders in — copyLinkButton(), detailsFor(),
+   * highlightsIn(), and resultTagPill() all scope down from this rather
+   * than each re-deriving it, so there's exactly one place that knows a
+   * card is found by ".study-question" + its question text. */
+  private card(questionText: string): Locator {
+    return this.page
+      .locator(".study-question")
+      .filter({ hasText: questionText });
+  }
+
   async expandQuestion(questionText: string) {
     await this.question(questionText).click();
   }
 
   /** The copy-link button sits outside the question's <details> (a sibling,
    * not nested inside its interactive <summary>) — scope up to the whole
-   * card rather than the question text node to find it. */
+   * card rather than the question text node to find it. Found by test id,
+   * not accessible name/role: the button's aria-label deliberately changes
+   * to "Link copied" after a click, which a name-based locator can't track
+   * across (re-querying it would then never match "Copy link to this
+   * question" again). */
   copyLinkButton(questionText: string): Locator {
-    return this.page
-      .locator(".study-question")
-      .filter({ hasText: questionText })
-      .getByRole("button", { name: "Copy link to this question" });
+    return this.card(questionText).getByTestId("copy-link-button");
   }
 
   detailsFor(questionText: string): Locator {
-    return this.page
-      .locator(".study-question")
-      .filter({ hasText: questionText })
-      .locator("details")
-      .first();
+    return this.card(questionText).locator("details").first();
   }
 
   /** Every <mark> highlighting a search match within this question's card —
    * question text, answer, sources, tag pills, wherever it landed. */
   highlightsIn(questionText: string): Locator {
-    return this.page
-      .locator(".study-question")
-      .filter({ hasText: questionText })
-      .locator("mark.search-highlight");
+    return this.card(questionText).locator("mark.search-highlight");
+  }
+
+  /** The visible answer text for a question, wherever it happens to render
+   * on the page — not scoped to a specific card, since a caller checking
+   * this is typically confirming a collapsed question's answer isn't
+   * visible yet at all. */
+  answerText(text: string): Locator {
+    return this.page.getByText(text, { exact: false });
   }
 
   async openTagFilterPanel() {
@@ -88,10 +100,10 @@ export class QuestionBankPage {
    * that navigates here instead). Lives inside <details>, so the card must
    * be expanded first. */
   resultTagPill(questionText: string, tagLabel: string): Locator {
-    return this.page
-      .locator(".study-question")
-      .filter({ hasText: questionText })
-      .getByRole("button", { name: tagLabel, exact: true });
+    return this.card(questionText).getByRole("button", {
+      name: tagLabel,
+      exact: true,
+    });
   }
 
   clearFiltersButton(): Locator {

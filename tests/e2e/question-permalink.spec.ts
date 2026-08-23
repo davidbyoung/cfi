@@ -26,15 +26,7 @@ test.describe("Question permalinks (question bank)", () => {
   }) => {
     const bank = new QuestionBankPage(page);
     await bank.goto();
-    // Not bank.copyLinkButton(): that locator filters by accessible name,
-    // which is exactly what this test changes — re-querying it after the
-    // label flips to "Link copied" would never match "Copy link to this
-    // question" again and hang. This one is scoped by position instead, so
-    // it keeps resolving to the same button across the label change.
-    const button = page
-      .locator(".study-question")
-      .filter({ hasText: QUESTION_TEXT })
-      .getByRole("button");
+    const button = bank.copyLinkButton(QUESTION_TEXT);
     await expect(button).toHaveAttribute(
       "aria-label",
       "Copy link to this question",

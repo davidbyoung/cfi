@@ -121,9 +121,8 @@ test.describe("Question disclosure", () => {
     const bank = new QuestionBankPage(page);
     await bank.goto();
 
-    const answerText = page.getByText(
+    const answerText = bank.answerText(
       "Consists of two components - localizer and glideslope.",
-      { exact: false },
     );
 
     await expect(answerText).not.toBeVisible();

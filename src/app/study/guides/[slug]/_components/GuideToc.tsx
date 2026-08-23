@@ -203,6 +203,11 @@ export default function GuideToc({ chapters }: Props) {
     });
   }
 
+  // Rendered once and reused as-is in both the sidebar and the drawer below
+  // (a React element is just a plain description, not a live DOM node, so
+  // the same one can appear in two places in the returned tree) — this is a
+  // real duplicate-work saving, not a cosmetic one, since it maps over every
+  // chapter and section in the guide.
   function renderNav() {
     return (
       <nav aria-label="Guide contents">
@@ -257,6 +262,8 @@ export default function GuideToc({ chapters }: Props) {
     );
   }
 
+  const nav = renderNav();
+
   return (
     <>
       <aside
@@ -266,7 +273,7 @@ export default function GuideToc({ chapters }: Props) {
         <p className="mb-3 text-xs font-bold tracking-wide text-muted uppercase">
           Contents
         </p>
-        {renderNav()}
+        {nav}
       </aside>
 
       <button
@@ -281,6 +288,7 @@ export default function GuideToc({ chapters }: Props) {
 
       {drawerOpen && (
         <div
+          data-testid="guide-toc-backdrop"
           className="fixed inset-0 z-40 bg-black/45 lg:hidden dark:bg-black/60"
           onClick={() => setDrawerOpen(false)}
           aria-hidden="true"
@@ -297,6 +305,13 @@ export default function GuideToc({ chapters }: Props) {
           drawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-hidden={!drawerOpen}
+        // aria-hidden alone hides this from the accessibility tree but does
+        // NOT stop Tab from focusing its links — the drawer is only moved
+        // off-screen via a CSS transform (not display: none) when closed, so
+        // without this, tabbing past the Contents button on mobile used to
+        // land focus on the invisible, off-screen drawer instead of the
+        // page. inert enforces the non-focusability aria-hidden implies.
+        inert={!drawerOpen}
       >
         <div className="mb-4 flex items-center justify-between">
           <p className="text-sm font-bold tracking-wide text-muted uppercase">
@@ -311,7 +326,7 @@ export default function GuideToc({ chapters }: Props) {
             &times;
           </button>
         </div>
-        {renderNav()}
+        {nav}
       </div>
     </>
   );

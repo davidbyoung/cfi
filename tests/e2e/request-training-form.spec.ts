@@ -26,14 +26,12 @@ test.describe("Request training form", () => {
     const form = new RequestTrainingPage(page);
     await form.goto();
     // Valid everywhere except certificates, which is left unselected.
-    await page.getByLabel("Full name").fill("Jane Test Pilot");
-    await page.getByLabel("Email").fill("jane@example.com");
-    await page.getByLabel("Phone").fill("555-123-4567");
-    await page
-      .getByLabel("Training airport")
-      .selectOption({ label: "Chicago Executive Airport (KPWK)" });
-    await page.getByLabel("Discovery Flight").check();
-    await page.getByLabel(/I confirm I have access to an aircraft/).check();
+    await form.fillFullName();
+    await form.fillEmail();
+    await form.fillPhone();
+    await form.selectAirport();
+    await form.selectTrainingGoal();
+    await form.confirmAircraftAccess();
 
     await form.submit();
 
@@ -42,8 +40,7 @@ test.describe("Request training form", () => {
         'Please select at least one option, including "None" if you have no pilot certificate.',
       ),
     ).toBeVisible();
-    const certificatesFieldset = page.locator('[data-field="certificates"]');
-    await expect(certificatesFieldset).toBeFocused();
+    await expect(form.certificatesFieldset).toBeFocused();
   });
 
   test("submits successfully once required fields are valid", async ({

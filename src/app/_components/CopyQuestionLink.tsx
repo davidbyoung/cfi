@@ -55,6 +55,10 @@ export default function CopyQuestionLink({ questionId }: Props) {
       type="button"
       onClick={handleCopy}
       aria-label={copied ? "Link copied" : "Copy link to this question"}
+      // A stable hook for tests: the accessible name above is deliberately
+      // dynamic (it's the whole point of the "copied" feedback), so a
+      // locator built from it can't track this button across that change.
+      data-testid="copy-link-button"
       className="mt-0.5 shrink-0 rounded-md p-1 text-muted hover:bg-rule/40 hover:text-foreground print:hidden"
     >
       {copied ? (

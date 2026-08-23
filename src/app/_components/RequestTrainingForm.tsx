@@ -298,7 +298,7 @@ export default function RequestTrainingForm() {
           tabIndex={-1}
           autoComplete="off"
           aria-hidden="true"
-          style={{ display: "none" }}
+          className="hidden"
           value={state._gotcha}
           onChange={(e) => set("_gotcha", e.target.value)}
         />
@@ -312,7 +312,7 @@ export default function RequestTrainingForm() {
             required
             value={state.fullName}
             onChange={(e) => set("fullName", e.target.value)}
-            className={inputClasses(errors.fullName)}
+            className={fieldClasses(errors.fullName)}
             aria-invalid={errors.fullName ? true : undefined}
             aria-describedby={
               errors.fullName ? `${ids.fullName}-err` : undefined
@@ -331,7 +331,7 @@ export default function RequestTrainingForm() {
               required
               value={state.email}
               onChange={(e) => set("email", e.target.value)}
-              className={inputClasses(errors.email)}
+              className={fieldClasses(errors.email)}
               aria-invalid={errors.email ? true : undefined}
               aria-describedby={errors.email ? `${ids.email}-err` : undefined}
             />
@@ -347,7 +347,7 @@ export default function RequestTrainingForm() {
               required
               value={state.phone}
               onChange={(e) => set("phone", e.target.value)}
-              className={inputClasses(errors.phone)}
+              className={fieldClasses(errors.phone)}
               aria-invalid={errors.phone ? true : undefined}
               aria-describedby={errors.phone ? `${ids.phone}-err` : undefined}
             />
@@ -361,7 +361,7 @@ export default function RequestTrainingForm() {
             required
             value={state.airport}
             onChange={(e) => set("airport", e.target.value as AirportId | "")}
-            className={selectClasses(errors.airport)}
+            className={fieldClasses(errors.airport)}
             aria-invalid={errors.airport ? true : undefined}
             aria-describedby={errors.airport ? `${ids.airport}-err` : undefined}
           >
@@ -414,14 +414,10 @@ export default function RequestTrainingForm() {
                 );
               })}
             </div>
-            {errors.certificates && (
-              <p
-                id={`${ids.certificates}-err`}
-                className="mt-2 text-sm text-red-600 dark:text-red-400"
-              >
-                {errors.certificates}
-              </p>
-            )}
+            <FieldsetError
+              id={`${ids.certificates}-err`}
+              message={errors.certificates}
+            />
           </fieldset>
 
           <fieldset
@@ -455,14 +451,7 @@ export default function RequestTrainingForm() {
                 );
               })}
             </div>
-            {errors.ratings && (
-              <p
-                id={`${ids.ratings}-err`}
-                className="mt-2 text-sm text-red-600 dark:text-red-400"
-              >
-                {errors.ratings}
-              </p>
-            )}
+            <FieldsetError id={`${ids.ratings}-err`} message={errors.ratings} />
           </fieldset>
         </div>
 
@@ -497,14 +486,10 @@ export default function RequestTrainingForm() {
               );
             })}
           </div>
-          {errors.trainingGoal && (
-            <p
-              id={`${ids.trainingGoal}-err`}
-              className="mt-2 text-sm text-red-600 dark:text-red-400"
-            >
-              {errors.trainingGoal}
-            </p>
-          )}
+          <FieldsetError
+            id={`${ids.trainingGoal}-err`}
+            message={errors.trainingGoal}
+          />
         </fieldset>
 
         <Field
@@ -520,7 +505,7 @@ export default function RequestTrainingForm() {
             rows={2}
             value={state.trainingGoalNotes}
             onChange={(e) => set("trainingGoalNotes", e.target.value)}
-            className={inputClasses(errors.trainingGoalNotes)}
+            className={fieldClasses(errors.trainingGoalNotes)}
             aria-invalid={errors.trainingGoalNotes ? true : undefined}
             aria-describedby={
               errors.trainingGoalNotes
@@ -551,14 +536,11 @@ export default function RequestTrainingForm() {
               Flying Club or my own)
             </span>
           </label>
-          {errors.studentProvidesAircraft && (
-            <p
-              id={`${ids.studentProvidesAircraft}-err`}
-              className="mt-1 ml-7 text-sm text-red-600 dark:text-red-400"
-            >
-              {errors.studentProvidesAircraft}
-            </p>
-          )}
+          <FieldsetError
+            id={`${ids.studentProvidesAircraft}-err`}
+            message={errors.studentProvidesAircraft}
+            className="mt-1 ml-7"
+          />
         </div>
 
         {showError && (
@@ -585,7 +567,10 @@ export default function RequestTrainingForm() {
   );
 }
 
-function inputClasses(error?: string) {
+// Shared by every <input>/<textarea>/<select> in the form — a <select>'s
+// error state looks identical to a text input's, so this doesn't need a
+// separate selectClasses() variant.
+function fieldClasses(error?: string) {
   const base =
     "w-full rounded-md border bg-input-bg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-accent";
   return error
@@ -593,12 +578,29 @@ function inputClasses(error?: string) {
     : `${base} border-rule`;
 }
 
-function selectClasses(error?: string) {
-  const base =
-    "w-full rounded-md border bg-input-bg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-accent";
-  return error
-    ? `${base} border-red-400 dark:border-red-700`
-    : `${base} border-rule`;
+type FieldsetErrorProps = {
+  id: string;
+  message?: string;
+  className?: string;
+};
+
+// The certificates/ratings/training-goal fieldsets each render this exact
+// block for their own error, only the margin differs for the aircraft-access
+// checkbox (it sits under a single checkbox row, not a fieldset).
+function FieldsetError({
+  id,
+  message,
+  className = "mt-2",
+}: FieldsetErrorProps) {
+  if (!message) return null;
+  return (
+    <p
+      id={id}
+      className={`${className} text-sm text-red-600 dark:text-red-400`}
+    >
+      {message}
+    </p>
+  );
 }
 
 type FieldProps = {

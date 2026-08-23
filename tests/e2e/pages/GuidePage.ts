@@ -6,8 +6,11 @@ export class GuidePage {
   readonly nav: SiteNav;
   readonly sidebar: Locator;
   readonly drawer: Locator;
+  readonly backdrop: Locator;
   readonly contentsButton: Locator;
+  readonly closeDrawerButton: Locator;
   readonly scrollToTopButton: Locator;
+  readonly searchInput: Locator;
 
   constructor(
     page: Page,
@@ -17,22 +20,28 @@ export class GuidePage {
     this.nav = new SiteNav(page);
     this.sidebar = page.getByTestId("guide-toc-sidebar");
     this.drawer = page.getByTestId("guide-toc-drawer");
+    this.backdrop = page.getByTestId("guide-toc-backdrop");
     this.contentsButton = page.getByRole("button", { name: "Contents" });
+    this.closeDrawerButton = page.getByRole("button", {
+      name: "Close contents",
+    });
     this.scrollToTopButton = page.getByRole("button", {
       name: "Scroll to top",
     });
+    this.searchInput = page.getByLabel("Search this guide");
   }
 
   async goto() {
     await this.page.goto(`/study/guides/${this.slug}`);
   }
 
-  searchInput(): Locator {
-    return this.page.getByLabel("Search this guide");
+  async search(query: string) {
+    await this.searchInput.fill(query);
   }
 
-  async search(query: string) {
-    await this.searchInput().fill(query);
+  /** Shown in place of the chapter/content when a search matches nothing. */
+  noResultsMessage(): Locator {
+    return this.page.getByText("No questions in this guide match");
   }
 
   /** The breadcrumb's "Ground school" link — distinct from the identically
@@ -102,11 +111,11 @@ export class GuidePage {
   /** The copy-link button sits outside the question's <details> (a sibling,
    * not nested inside its interactive <summary>) — unlike tagPill(), which
    * lives inside <details> and so needs the card expanded first, this is
-   * reachable even while the card is still collapsed. */
+   * reachable even while the card is still collapsed. Found by test id: its
+   * aria-label deliberately changes to "Link copied" after a click, which a
+   * name-based locator can't track across (see QuestionBankPage). */
   copyLinkButton(questionText: string): Locator {
-    return this.question(questionText).getByRole("button", {
-      name: "Copy link to this question",
-    });
+    return this.question(questionText).getByTestId("copy-link-button");
   }
 
   detailsFor(questionText: string): Locator {

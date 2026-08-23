@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { GuidePage } from "./pages/GuidePage";
+import { QuestionBankPage } from "./pages/QuestionBankPage";
 
 test.describe("Guide table of contents (desktop)", () => {
   test("clicking a chapter scrolls to and activates its first section", async ({
@@ -193,7 +194,7 @@ test.describe("Guide table of contents (mobile)", () => {
     await guide.goto();
 
     await guide.openMobileDrawer();
-    const closeButton = page.getByRole("button", { name: "Close contents" });
+    const closeButton = guide.closeDrawerButton;
     await expect(closeButton).toBeFocused();
 
     // Shift+Tab from the first focusable element should wrap to the last
@@ -222,7 +223,7 @@ test.describe("Guide table of contents (mobile)", () => {
     const guide = new GuidePage(page);
     await guide.goto();
     await guide.openMobileDrawer();
-    const closeButton = page.getByRole("button", { name: "Close contents" });
+    const closeButton = guide.closeDrawerButton;
     await expect(closeButton).toBeFocused();
 
     let wrapped = false;
@@ -248,10 +249,16 @@ test.describe("Guide table of contents (mobile)", () => {
     await guide.openMobileDrawer();
     await expect(guide.drawer).toHaveAttribute("aria-hidden", "false");
 
-    // The backdrop covers the full viewport behind the drawer (which is at
-    // most 340px wide) — clicking near the right edge is guaranteed to land
-    // on it rather than the drawer itself.
-    await page.mouse.click(380, 400);
+    // The backdrop covers the full viewport, but the drawer (up to 340px
+    // wide, left-aligned, and stacked above it) visually overlaps its
+    // default click point — the geometric center — so an un-positioned
+    // click lands on the drawer instead and gets intercepted. Clicking near
+    // the backdrop's own right edge is guaranteed to miss the drawer.
+    const backdropBox = await guide.backdrop.boundingBox();
+    if (!backdropBox) throw new Error("Backdrop has no bounding box");
+    await guide.backdrop.click({
+      position: { x: backdropBox.width - 10, y: 400 },
+    });
 
     await expect(guide.drawer).toHaveAttribute("aria-hidden", "true");
   });
@@ -263,9 +270,30 @@ test.describe("Guide table of contents (mobile)", () => {
     await guide.openMobileDrawer();
     await expect(guide.drawer).toHaveAttribute("aria-hidden", "false");
 
-    await page.getByRole("button", { name: "Close contents" }).click();
+    await guide.closeDrawerButton.click();
 
     await expect(guide.drawer).toHaveAttribute("aria-hidden", "true");
+  });
+
+  test("the closed drawer isn't keyboard-reachable — Tab from the Contents button goes to the page, not the hidden drawer", async ({
+    page,
+  }) => {
+    // Regression test: the drawer is only moved off-screen via a CSS
+    // transform when closed (not display: none), and aria-hidden alone
+    // does not stop Tab from focusing an element — without `inert`, tabbing
+    // past the Contents button used to land focus inside the invisible,
+    // off-screen drawer instead of the page's real content.
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.contentsButton.focus();
+    await page.keyboard.press("Tab");
+
+    const focusedIsInsideDrawer = await guide.drawer.evaluate(
+      (drawerEl, activeEl) => drawerEl.contains(activeEl),
+      await page.evaluateHandle(() => document.activeElement),
+    );
+    expect(focusedIsInsideDrawer).toBe(false);
   });
 });
 
@@ -283,8 +311,7 @@ test.describe("Cross-page tag navigation", () => {
     await guide.tagPill(questionText, "ADM").click();
 
     await expect(page).toHaveURL(/\/study\/questions\/?\?tag=adm/);
-    await expect(
-      page.getByRole("button", { name: "Filtering by ADM" }),
-    ).toBeVisible();
+    const bank = new QuestionBankPage(page);
+    await expect(bank.activeTagChip("ADM")).toBeVisible();
   });
 });
