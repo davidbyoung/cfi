@@ -125,16 +125,30 @@ export default function GuideToc({ chapters }: Props) {
     // Tab until it's opened. querySelectorAll doesn't know that, so without
     // this filter "last" could be a link buried in a closed chapter that
     // Tab can never actually land on, and the forward-wrap check below
-    // would never fire. checkVisibility() is the one check that actually
-    // accounts for this — collapsed <details> content hides via an
-    // internal ::details-content box (see the print-CSS comment on
+    // would never fire. checkVisibility() is the check that actually
+    // accounts for this — collapsed <details> content hides via an internal
+    // ::details-content box (see the print-CSS comment on
     // ::details-content in globals.css) whose content-visibility: hidden
     // does NOT zero out getClientRects()/getBoundingClientRect() for its
     // descendants the way display: none would, so those don't work here.
+    //
+    // checkVisibility() isn't implemented in every environment (notably
+    // jsdom, which this repo now depends on for hook tests) — calling it
+    // unguarded would throw there instead of just returning a less precise
+    // answer. Fall back to walking up to the nearest <details> ancestor:
+    // a <summary> is always tabbable regardless of its own open state
+    // (that's how you open it), so it's exempted; anything else is only
+    // reachable once its containing chapter is open.
+    const isTabReachable = (el: HTMLElement): boolean => {
+      if (typeof el.checkVisibility === "function") return el.checkVisibility();
+      if (el.tagName === "SUMMARY") return true;
+      const details = el.closest("details");
+      return !details || details.open;
+    };
     const getFocusable = () =>
       Array.from(
         drawerEl.querySelectorAll<HTMLElement>(focusableSelector),
-      ).filter((el) => el.checkVisibility());
+      ).filter(isTabReachable);
 
     getFocusable()[0]?.focus();
 
