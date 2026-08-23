@@ -21,6 +21,29 @@ test.describe("Question permalinks (question bank)", () => {
     expect(copied).toBe(`${page.url()}#${QUESTION_ID}`);
   });
 
+  test("shows transient 'Link copied' feedback, then reverts", async ({
+    page,
+  }) => {
+    const bank = new QuestionBankPage(page);
+    await bank.goto();
+    const button = bank.copyLinkButton(QUESTION_TEXT);
+    await expect(button).toHaveAttribute(
+      "aria-label",
+      "Copy link to this question",
+    );
+
+    await button.click();
+
+    await expect(button).toHaveAttribute("aria-label", "Link copied");
+    // The revert is a 1500ms setTimeout — poll past it rather than a fixed
+    // wait, so this isn't flaky under CI's slower/more variable timing.
+    await expect(button).toHaveAttribute(
+      "aria-label",
+      "Copy link to this question",
+      { timeout: 3000 },
+    );
+  });
+
   test("preserves an existing ?tag= filter in the copied URL", async ({
     page,
   }) => {
@@ -85,6 +108,50 @@ test.describe("Question permalinks (guide page)", () => {
     );
     expect(await guide.nav.clearsHeader(guide.question(QUESTION_TEXT))).toBe(
       true,
+    );
+  });
+});
+
+test.describe("Copy-link clipboard failure", () => {
+  // Overrides navigator.clipboard.writeText to always reject, regardless of
+  // the file-level clipboard permission grant — simulating the real cases
+  // CopyQuestionLink's catch block exists for (permission denied, or the
+  // document losing focus between the click and the clipboard call).
+  test.beforeEach(async ({ page }) => {
+    await page.addInitScript(() => {
+      Object.defineProperty(navigator, "clipboard", {
+        value: {
+          writeText: () => Promise.reject(new Error("denied")),
+        },
+        configurable: true,
+      });
+    });
+  });
+
+  test("fails silently — no page error, and the button stays in its default state", async ({
+    page,
+  }) => {
+    const consoleErrors: string[] = [];
+    const pageErrors: string[] = [];
+    page.on("console", (msg) => {
+      if (msg.type() === "error") consoleErrors.push(msg.text());
+    });
+    page.on("pageerror", (err) => pageErrors.push(err.message));
+
+    const bank = new QuestionBankPage(page);
+    await bank.goto();
+    const button = bank.copyLinkButton(QUESTION_TEXT);
+
+    await button.click();
+
+    // Give the rejected promise a moment to surface as an unhandled
+    // rejection if the catch block weren't actually catching it.
+    await page.waitForTimeout(300);
+    expect(pageErrors).toEqual([]);
+    expect(consoleErrors).toEqual([]);
+    await expect(button).toHaveAttribute(
+      "aria-label",
+      "Copy link to this question",
     );
   });
 });

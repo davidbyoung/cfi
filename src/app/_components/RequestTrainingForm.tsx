@@ -20,13 +20,13 @@ const ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
 const EMAIL_RE = /^\S+@\S+\.\S+$/;
 const PHONE_RE = /^[\d\s+\-()]+$/;
 
-type Status =
+export type Status =
   | { kind: "idle" }
   | { kind: "submitting" }
   | { kind: "success" }
   | { kind: "error" };
 
-type FormState = {
+export type FormState = {
   fullName: string;
   email: string;
   phone: string;
@@ -39,7 +39,7 @@ type FormState = {
   _gotcha: string;
 };
 
-function buildPayload(state: FormState) {
+export function buildPayload(state: FormState) {
   const certLabels = state.certificates
     .map((id) => CERTIFICATE_OPTIONS.find((o) => o.id === id)?.label ?? id)
     .join(", ");
@@ -69,7 +69,7 @@ function buildPayload(state: FormState) {
   };
 }
 
-const INITIAL: FormState = {
+export const INITIAL: FormState = {
   fullName: "",
   email: "",
   phone: "",
@@ -82,9 +82,9 @@ const INITIAL: FormState = {
   _gotcha: "",
 };
 
-type Errors = Partial<Record<keyof FormState, string>>;
+export type Errors = Partial<Record<keyof FormState, string>>;
 
-function validate(state: FormState): Errors {
+export function validate(state: FormState): Errors {
   const errors: Errors = {};
   const name = state.fullName.trim();
   if (!name) errors.fullName = "Please enter your full name.";
@@ -139,6 +139,65 @@ const ERROR_FOCUS_ORDER: ReadonlyArray<keyof FormState> = [
   "studentProvidesAircraft",
 ];
 
+// The first field (in display order) that currently has an error — where a
+// failed submit should send focus, since a screen reader or sighted user
+// scanning top-down should land on the first thing to fix.
+export function firstErrorField(errors: Errors): keyof FormState | undefined {
+  return ERROR_FOCUS_ORDER.find((k) => errors[k]);
+}
+
+// "None" is mutually exclusive with every other certificate — selecting it
+// clears the rest, and selecting any other certificate clears "None".
+export function toggleCertificate(
+  certificates: CertificateId[],
+  id: CertificateId,
+  checked: boolean,
+): CertificateId[] {
+  if (!checked) return certificates.filter((c) => c !== id);
+  if (id === "none") return ["none"];
+  return [...certificates.filter((c) => c !== "none"), id];
+}
+
+export function toggleRating(
+  ratings: RatingId[],
+  id: RatingId,
+  checked: boolean,
+): RatingId[] {
+  return checked ? [...ratings, id] : ratings.filter((r) => r !== id);
+}
+
+export function toggleGoal(
+  trainingGoal: ServiceId[],
+  id: ServiceId,
+  checked: boolean,
+): ServiceId[] {
+  return checked ? [...trainingGoal, id] : trainingGoal.filter((g) => g !== id);
+}
+
+// Decoupled from component state so the network-success/failure/exception
+// branches are unit-testable by injecting a mock fetch, rather than only
+// reachable by driving a real form submit in a browser.
+export async function submitTrainingRequest(
+  state: FormState,
+  endpoint: string | undefined,
+  fetchImpl: typeof fetch = fetch,
+): Promise<Status> {
+  if (!endpoint) return { kind: "error" };
+  try {
+    const res = await fetchImpl(endpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(buildPayload(state)),
+    });
+    return res.ok ? { kind: "success" } : { kind: "error" };
+  } catch {
+    return { kind: "error" };
+  }
+}
+
 export default function RequestTrainingForm() {
   const [state, setState] = useState<FormState>(INITIAL);
   const [errors, setErrors] = useState<Errors>({});
@@ -162,31 +221,21 @@ export default function RequestTrainingForm() {
     setState((s) => ({ ...s, [key]: value }));
   }
 
-  function toggleCertificate(id: CertificateId, checked: boolean) {
-    setState((s) => {
-      if (!checked)
-        return { ...s, certificates: s.certificates.filter((c) => c !== id) };
-      if (id === "none") return { ...s, certificates: ["none"] };
-      return {
-        ...s,
-        certificates: [...s.certificates.filter((c) => c !== "none"), id],
-      };
-    });
-  }
-
-  function toggleRating(id: RatingId, checked: boolean) {
+  function handleCertificateChange(id: CertificateId, checked: boolean) {
     setState((s) => ({
       ...s,
-      ratings: checked ? [...s.ratings, id] : s.ratings.filter((r) => r !== id),
+      certificates: toggleCertificate(s.certificates, id, checked),
     }));
   }
 
-  function toggleGoal(id: ServiceId, checked: boolean) {
+  function handleRatingChange(id: RatingId, checked: boolean) {
+    setState((s) => ({ ...s, ratings: toggleRating(s.ratings, id, checked) }));
+  }
+
+  function handleGoalChange(id: ServiceId, checked: boolean) {
     setState((s) => ({
       ...s,
-      trainingGoal: checked
-        ? [...s.trainingGoal, id]
-        : s.trainingGoal.filter((g) => g !== id),
+      trainingGoal: toggleGoal(s.trainingGoal, id, checked),
     }));
   }
 
@@ -197,7 +246,7 @@ export default function RequestTrainingForm() {
     const v = validate(state);
     setErrors(v);
     if (Object.keys(v).length > 0) {
-      const firstField = ERROR_FOCUS_ORDER.find((k) => v[k]);
+      const firstField = firstErrorField(v);
       if (firstField && formRef.current) {
         const el = formRef.current.querySelector<HTMLElement>(
           `[name="${firstField}"], [data-field="${firstField}"]`,
@@ -207,29 +256,19 @@ export default function RequestTrainingForm() {
       return;
     }
 
+    // Short-circuit before "submitting" rather than letting
+    // submitTrainingRequest's own no-endpoint guard handle it: that guard
+    // still exists for defense-in-depth (and for callers that unit-test it
+    // directly), but going through it here would mean the button always
+    // flashes "Sending…"/disabled for a render, even when no request was
+    // ever going to be attempted.
     if (!ENDPOINT) {
       setStatus({ kind: "error" });
       return;
     }
 
     setStatus({ kind: "submitting" });
-    try {
-      const res = await fetch(ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(buildPayload(state)),
-      });
-      if (res.ok) {
-        setStatus({ kind: "success" });
-      } else {
-        setStatus({ kind: "error" });
-      }
-    } catch {
-      setStatus({ kind: "error" });
-    }
+    setStatus(await submitTrainingRequest(state, ENDPOINT));
   }
 
   if (status.kind === "success") {
@@ -270,7 +309,7 @@ export default function RequestTrainingForm() {
           tabIndex={-1}
           autoComplete="off"
           aria-hidden="true"
-          style={{ display: "none" }}
+          className="hidden"
           value={state._gotcha}
           onChange={(e) => set("_gotcha", e.target.value)}
         />
@@ -284,7 +323,7 @@ export default function RequestTrainingForm() {
             required
             value={state.fullName}
             onChange={(e) => set("fullName", e.target.value)}
-            className={inputClasses(errors.fullName)}
+            className={fieldClasses(errors.fullName)}
             aria-invalid={errors.fullName ? true : undefined}
             aria-describedby={
               errors.fullName ? `${ids.fullName}-err` : undefined
@@ -303,7 +342,7 @@ export default function RequestTrainingForm() {
               required
               value={state.email}
               onChange={(e) => set("email", e.target.value)}
-              className={inputClasses(errors.email)}
+              className={fieldClasses(errors.email)}
               aria-invalid={errors.email ? true : undefined}
               aria-describedby={errors.email ? `${ids.email}-err` : undefined}
             />
@@ -319,7 +358,7 @@ export default function RequestTrainingForm() {
               required
               value={state.phone}
               onChange={(e) => set("phone", e.target.value)}
-              className={inputClasses(errors.phone)}
+              className={fieldClasses(errors.phone)}
               aria-invalid={errors.phone ? true : undefined}
               aria-describedby={errors.phone ? `${ids.phone}-err` : undefined}
             />
@@ -333,7 +372,7 @@ export default function RequestTrainingForm() {
             required
             value={state.airport}
             onChange={(e) => set("airport", e.target.value as AirportId | "")}
-            className={selectClasses(errors.airport)}
+            className={fieldClasses(errors.airport)}
             aria-invalid={errors.airport ? true : undefined}
             aria-describedby={errors.airport ? `${ids.airport}-err` : undefined}
           >
@@ -351,6 +390,12 @@ export default function RequestTrainingForm() {
         <div className="grid gap-6 sm:grid-cols-2">
           <fieldset
             data-field="certificates"
+            // A <fieldset> isn't natively focusable — without this, the
+            // onSubmit focus-the-first-error logic's el?.focus() call
+            // silently no-ops here, so a keyboard/screen-reader user never
+            // actually gets sent to this error. -1 keeps it out of normal
+            // Tab order; it's only ever focused programmatically.
+            tabIndex={-1}
             aria-invalid={errors.certificates ? true : undefined}
             aria-describedby={
               errors.certificates ? `${ids.certificates}-err` : undefined
@@ -371,7 +416,7 @@ export default function RequestTrainingForm() {
                       value={opt.id}
                       checked={checked}
                       onChange={(e) =>
-                        toggleCertificate(opt.id, e.target.checked)
+                        handleCertificateChange(opt.id, e.target.checked)
                       }
                       className="mt-1"
                     />
@@ -380,14 +425,10 @@ export default function RequestTrainingForm() {
                 );
               })}
             </div>
-            {errors.certificates && (
-              <p
-                id={`${ids.certificates}-err`}
-                className="mt-2 text-sm text-red-600 dark:text-red-400"
-              >
-                {errors.certificates}
-              </p>
-            )}
+            <FieldsetError
+              id={`${ids.certificates}-err`}
+              message={errors.certificates}
+            />
           </fieldset>
 
           <fieldset
@@ -411,7 +452,9 @@ export default function RequestTrainingForm() {
                       name="ratings"
                       value={opt.id}
                       checked={checked}
-                      onChange={(e) => toggleRating(opt.id, e.target.checked)}
+                      onChange={(e) =>
+                        handleRatingChange(opt.id, e.target.checked)
+                      }
                       className="mt-1"
                     />
                     <span>{opt.label}</span>
@@ -419,19 +462,14 @@ export default function RequestTrainingForm() {
                 );
               })}
             </div>
-            {errors.ratings && (
-              <p
-                id={`${ids.ratings}-err`}
-                className="mt-2 text-sm text-red-600 dark:text-red-400"
-              >
-                {errors.ratings}
-              </p>
-            )}
+            <FieldsetError id={`${ids.ratings}-err`} message={errors.ratings} />
           </fieldset>
         </div>
 
         <fieldset
           data-field="trainingGoal"
+          // See the identical comment on the certificates fieldset above.
+          tabIndex={-1}
           aria-invalid={errors.trainingGoal ? true : undefined}
           aria-describedby={
             errors.trainingGoal ? `${ids.trainingGoal}-err` : undefined
@@ -451,7 +489,7 @@ export default function RequestTrainingForm() {
                     name="trainingGoal"
                     value={s.id}
                     checked={checked}
-                    onChange={(e) => toggleGoal(s.id, e.target.checked)}
+                    onChange={(e) => handleGoalChange(s.id, e.target.checked)}
                     className="mt-1"
                   />
                   <span>{s.label}</span>
@@ -459,14 +497,10 @@ export default function RequestTrainingForm() {
               );
             })}
           </div>
-          {errors.trainingGoal && (
-            <p
-              id={`${ids.trainingGoal}-err`}
-              className="mt-2 text-sm text-red-600 dark:text-red-400"
-            >
-              {errors.trainingGoal}
-            </p>
-          )}
+          <FieldsetError
+            id={`${ids.trainingGoal}-err`}
+            message={errors.trainingGoal}
+          />
         </fieldset>
 
         <Field
@@ -482,7 +516,7 @@ export default function RequestTrainingForm() {
             rows={2}
             value={state.trainingGoalNotes}
             onChange={(e) => set("trainingGoalNotes", e.target.value)}
-            className={inputClasses(errors.trainingGoalNotes)}
+            className={fieldClasses(errors.trainingGoalNotes)}
             aria-invalid={errors.trainingGoalNotes ? true : undefined}
             aria-describedby={
               errors.trainingGoalNotes
@@ -513,14 +547,11 @@ export default function RequestTrainingForm() {
               Flying Club or my own)
             </span>
           </label>
-          {errors.studentProvidesAircraft && (
-            <p
-              id={`${ids.studentProvidesAircraft}-err`}
-              className="mt-1 ml-7 text-sm text-red-600 dark:text-red-400"
-            >
-              {errors.studentProvidesAircraft}
-            </p>
-          )}
+          <FieldsetError
+            id={`${ids.studentProvidesAircraft}-err`}
+            message={errors.studentProvidesAircraft}
+            className="mt-1 ml-7"
+          />
         </div>
 
         {showError && (
@@ -547,7 +578,10 @@ export default function RequestTrainingForm() {
   );
 }
 
-function inputClasses(error?: string) {
+// Shared by every <input>/<textarea>/<select> in the form — a <select>'s
+// error state looks identical to a text input's, so this doesn't need a
+// separate selectClasses() variant.
+function fieldClasses(error?: string) {
   const base =
     "w-full rounded-md border bg-input-bg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-accent";
   return error
@@ -555,12 +589,29 @@ function inputClasses(error?: string) {
     : `${base} border-rule`;
 }
 
-function selectClasses(error?: string) {
-  const base =
-    "w-full rounded-md border bg-input-bg px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-accent";
-  return error
-    ? `${base} border-red-400 dark:border-red-700`
-    : `${base} border-rule`;
+type FieldsetErrorProps = {
+  id: string;
+  message?: string;
+  className?: string;
+};
+
+// The certificates/ratings/training-goal fieldsets each render this exact
+// block for their own error, only the margin differs for the aircraft-access
+// checkbox (it sits under a single checkbox row, not a fieldset).
+function FieldsetError({
+  id,
+  message,
+  className = "mt-2",
+}: FieldsetErrorProps) {
+  if (!message) return null;
+  return (
+    <p
+      id={id}
+      className={`${className} text-sm text-red-600 dark:text-red-400`}
+    >
+      {message}
+    </p>
+  );
 }
 
 type FieldProps = {

@@ -1,5 +1,8 @@
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
-import { parseGuideContent } from "@/lib/content/parse-guide";
+import { parseGuide, parseGuideContent } from "@/lib/content/parse-guide";
 import { resolveGuide, validateGuideSlugs } from "@/lib/content/validate";
 import type { Question, RawGuide } from "@/lib/content/types";
 
@@ -210,6 +213,19 @@ describe("resolveGuide", () => {
     const { errors: e2 } = resolveGuide(raw2, Q_MAP, "guides/g2.yml");
     expect(e1).toHaveLength(0);
     expect(e2).toHaveLength(0);
+  });
+});
+
+describe("parseGuide", () => {
+  it("reads and parses a guide YAML file from disk", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "parse-guide-"));
+    const filePath = path.join(dir, "test-guide.yml");
+    fs.writeFileSync(filePath, VALID_YAML);
+
+    const raw = parseGuide(filePath);
+
+    expect(raw.title).toBe("Test Guide");
+    expect(raw.chapters).toHaveLength(2);
   });
 });
 

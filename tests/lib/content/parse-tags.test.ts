@@ -1,5 +1,8 @@
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
-import { parseTagsContent } from "@/lib/content/parse-tags";
+import { parseTags, parseTagsContent } from "@/lib/content/parse-tags";
 
 const VALID_YAML = `
 - id: safety-pilot
@@ -60,5 +63,26 @@ describe("parseTagsContent", () => {
     expect(() => parseTagsContent(yaml, "tags.yml")).toThrow(
       "label is required",
     );
+  });
+});
+
+describe("parseTags", () => {
+  it("reads and parses a tags.yml file from disk", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "parse-tags-"));
+    const filePath = path.join(dir, "tags.yml");
+    fs.writeFileSync(filePath, VALID_YAML);
+
+    const map = parseTags(filePath);
+
+    expect(map["weather"]).toEqual({
+      id: "weather",
+      label: "Weather",
+      description: undefined,
+    });
+  });
+
+  it("throws when the file doesn't exist", () => {
+    const missingPath = path.join(os.tmpdir(), "does-not-exist-tags.yml");
+    expect(() => parseTags(missingPath)).toThrow("content/tags.yml is missing");
   });
 });

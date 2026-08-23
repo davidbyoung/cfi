@@ -1,5 +1,11 @@
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 import { describe, it, expect } from "vitest";
-import { parseQuestionContent } from "@/lib/content/parse-question";
+import {
+  parseQuestion,
+  parseQuestionContent,
+} from "@/lib/content/parse-question";
 import type { TagMap } from "@/lib/content/types";
 
 const tagMap: TagMap = {
@@ -180,6 +186,13 @@ describe("parseQuestionContent", () => {
     ).toThrow('unknown tag "unknown-tag"');
   });
 
+  it("throws when a tag is not lowercase kebab-case", () => {
+    const content = makeContent({ tags: "  - Weather" });
+    expect(() =>
+      parseQuestionContent(content, "/path/my-question.md", tagMap),
+    ).toThrow('tag "Weather" is not lowercase kebab-case');
+  });
+
   it("throws when frontmatter has a title field", () => {
     const content = `---\ntitle: Old Title\ntags:\n  - weather\n---\n\n### Question\n\nQ?\n\n### Answer\n\nA.`;
     expect(() =>
@@ -192,5 +205,18 @@ describe("parseQuestionContent", () => {
     expect(() =>
       parseQuestionContent(content, "/path/my-question.md", tagMap),
     ).toThrow("Unrecognized key");
+  });
+});
+
+describe("parseQuestion", () => {
+  it("reads and parses a question .md file from disk", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "parse-question-"));
+    const filePath = path.join(dir, "my-question.md");
+    fs.writeFileSync(filePath, makeContent({}));
+
+    const q = parseQuestion(filePath, tagMap);
+
+    expect(q.id).toBe("my-question");
+    expect(q.questionHtml).toContain("What?");
   });
 });

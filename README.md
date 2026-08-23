@@ -1,6 +1,8 @@
-# cfidave
+# Dave Young, CFI, CFII, MEI
 
-Marketing website for Dave Young, an independent CFI/CFII/MEI offering flight instruction at Chicago Executive Airport (KPWK). Two public pages plus an intake form. Statically exported.
+[![codecov](https://codecov.io/gh/davidbyoung/cfi/graph/badge.svg?token=2AYQTMOQI9)](https://codecov.io/gh/davidbyoung/cfi)
+
+Marketing website for Dave Young, an independent CFI/CFII/MEI offering flight instruction out of the Chicago metro area.
 
 ## Quick start
 
@@ -45,5 +47,4 @@ Feature spec, implementation plan, and task history live under `specs/001-cfi-ma
 
 ## Notes
 
-- `NEXT_PUBLIC_FORMSPREE_ENDPOINT` is intentionally public per Formspree's integration model — it is safe to ship in the static bundle.
 - See `AGENTS.md` before making framework-level changes to Next.js or Tailwind.

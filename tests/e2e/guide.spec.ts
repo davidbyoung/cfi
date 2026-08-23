@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { GuidePage } from "./pages/GuidePage";
+import { QuestionBankPage } from "./pages/QuestionBankPage";
 
 test.describe("Guide table of contents (desktop)", () => {
   test("clicking a chapter scrolls to and activates its first section", async ({
@@ -89,6 +90,46 @@ test.describe("Guide table of contents (desktop)", () => {
 
     await expect(clearancesDetails).toHaveJSProperty("open", false);
   });
+
+  test("scrolling the page (not clicking a TOC entry) updates the active section via scrollspy", async ({
+    page,
+  }) => {
+    // Every other test in this file drives the active state by clicking a
+    // TOC entry. This is the one test that actually exercises the
+    // IntersectionObserver-driven scrollspy itself — the entire reason
+    // GuideToc tracks scroll position in the first place.
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    const pilotQualificationsDetails = guide.chapterDetails(
+      guide.sidebar,
+      "Pilot Qualifications, Privileges, and Currency",
+    );
+    await expect(pilotQualificationsDetails).toHaveJSProperty("open", true);
+
+    // A native, non-smooth scroll straight to a section several chapters
+    // down — never going through GuideToc's navigateTo()/
+    // waitForScrollSettle() path at all, so this is scrollspy responding to
+    // a scroll it didn't cause. Scrolls the section's id'd container (see
+    // sectionContainer()), matching what a real anchor scroll targets;
+    // block: "start" is deliberate too — the observer's rootMargin only
+    // counts a section as active within the top 30% of the viewport, and
+    // scrollIntoViewIfNeeded's "nearest" can leave it lower than that band.
+    await guide
+      .sectionContainer("Weather Briefing Strategy")
+      .evaluate((el) => el.scrollIntoView({ block: "start" }));
+
+    await expect(
+      guide.activeTocLink(guide.sidebar, "Weather Briefing Strategy"),
+    ).toHaveAttribute("aria-current", "location");
+    await expect(
+      guide.chapterDetails(
+        guide.sidebar,
+        "Weather Products and Weather Decision-Making",
+      ),
+    ).toHaveJSProperty("open", true);
+    await expect(pilotQualificationsDetails).toHaveJSProperty("open", false);
+  });
 });
 
 test.describe("Guide table of contents (mobile)", () => {
@@ -153,7 +194,7 @@ test.describe("Guide table of contents (mobile)", () => {
     await guide.goto();
 
     await guide.openMobileDrawer();
-    const closeButton = page.getByRole("button", { name: "Close contents" });
+    const closeButton = guide.closeDrawerButton;
     await expect(closeButton).toBeFocused();
 
     // Shift+Tab from the first focusable element should wrap to the last
@@ -164,6 +205,95 @@ test.describe("Guide table of contents (mobile)", () => {
       await page.evaluateHandle(() => document.activeElement),
     );
     expect(focusedIsInsideDrawer).toBe(true);
+  });
+
+  test("Tab never escapes the drawer, and eventually wraps forward to the first element", async ({
+    page,
+  }) => {
+    // The other half of the focus trap from the test above — Shift+Tab
+    // (backward wrap) is covered there, this is the forward-wrap branch of
+    // the same handleKeyDown. Regression test: chapter <summary> elements
+    // are natively tabbable without a tabindex, and the trap's own
+    // getFocusable() list used to omit them — so tabbing past the last
+    // chapter used to escape into the page behind the modal backdrop
+    // instead of wrapping back to the close button. Tabs through the whole
+    // drawer (bounded, rather than a fixed count) instead of assuming how
+    // many stops there are, since that depends on how many chapters the
+    // guide has.
+    const guide = new GuidePage(page);
+    await guide.goto();
+    await guide.openMobileDrawer();
+    const closeButton = guide.closeDrawerButton;
+    await expect(closeButton).toBeFocused();
+
+    let wrapped = false;
+    for (let i = 0; i < 60; i++) {
+      await page.keyboard.press("Tab");
+      const focusedIsInsideDrawer = await guide.drawer.evaluate(
+        (drawerEl, activeEl) => drawerEl.contains(activeEl),
+        await page.evaluateHandle(() => document.activeElement),
+      );
+      expect(focusedIsInsideDrawer).toBe(true);
+      if (await closeButton.evaluate((el) => el === document.activeElement)) {
+        wrapped = true;
+        break;
+      }
+    }
+    expect(wrapped).toBe(true);
+  });
+
+  test("clicking the backdrop closes the drawer", async ({ page }) => {
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.openMobileDrawer();
+    await expect(guide.drawer).toHaveAttribute("aria-hidden", "false");
+
+    // The backdrop covers the full viewport, but the drawer (up to 340px
+    // wide, left-aligned, and stacked above it) visually overlaps its
+    // default click point — the geometric center — so an un-positioned
+    // click lands on the drawer instead and gets intercepted. Clicking near
+    // the backdrop's own right edge is guaranteed to miss the drawer.
+    const backdropBox = await guide.backdrop.boundingBox();
+    if (!backdropBox) throw new Error("Backdrop has no bounding box");
+    await guide.backdrop.click({
+      position: { x: backdropBox.width - 10, y: 400 },
+    });
+
+    await expect(guide.drawer).toHaveAttribute("aria-hidden", "true");
+  });
+
+  test("clicking the drawer's own close button closes it", async ({ page }) => {
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.openMobileDrawer();
+    await expect(guide.drawer).toHaveAttribute("aria-hidden", "false");
+
+    await guide.closeDrawerButton.click();
+
+    await expect(guide.drawer).toHaveAttribute("aria-hidden", "true");
+  });
+
+  test("the closed drawer isn't keyboard-reachable — Tab from the Contents button goes to the page, not the hidden drawer", async ({
+    page,
+  }) => {
+    // Regression test: the drawer is only moved off-screen via a CSS
+    // transform when closed (not display: none), and aria-hidden alone
+    // does not stop Tab from focusing an element — without `inert`, tabbing
+    // past the Contents button used to land focus inside the invisible,
+    // off-screen drawer instead of the page's real content.
+    const guide = new GuidePage(page);
+    await guide.goto();
+
+    await guide.contentsButton.focus();
+    await page.keyboard.press("Tab");
+
+    const focusedIsInsideDrawer = await guide.drawer.evaluate(
+      (drawerEl, activeEl) => drawerEl.contains(activeEl),
+      await page.evaluateHandle(() => document.activeElement),
+    );
+    expect(focusedIsInsideDrawer).toBe(false);
   });
 });
 
@@ -181,8 +311,7 @@ test.describe("Cross-page tag navigation", () => {
     await guide.tagPill(questionText, "ADM").click();
 
     await expect(page).toHaveURL(/\/study\/questions\/?\?tag=adm/);
-    await expect(
-      page.getByRole("button", { name: "Filtering by ADM" }),
-    ).toBeVisible();
+    const bank = new QuestionBankPage(page);
+    await expect(bank.activeTagChip("ADM")).toBeVisible();
   });
 });

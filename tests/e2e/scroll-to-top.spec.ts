@@ -1,6 +1,14 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
 import { QuestionBankPage } from "./pages/QuestionBankPage";
 import { GuidePage } from "./pages/GuidePage";
+
+// Well past the button's 400px show threshold (see ScrollToTopButton.tsx),
+// with margin so this isn't sensitive to exactly where that threshold sits.
+const SCROLL_PAST_THRESHOLD_PX = 800;
+
+async function scrollDown(page: Page) {
+  await page.mouse.wheel(0, SCROLL_PAST_THRESHOLD_PX);
+}
 
 test.describe("Scroll to top button (question bank)", () => {
   test("is hidden at the top of the page, then appears once scrolled down", async ({
@@ -15,7 +23,7 @@ test.describe("Scroll to top button (question bank)", () => {
     // useSearchParams()) and is entirely client-rendered, so the page isn't
     // tall enough to scroll until it's mounted.
     await expect(bank.searchInput).toBeVisible();
-    await page.mouse.wheel(0, 800);
+    await scrollDown(page);
 
     await expect(bank.scrollToTopButton).toHaveCSS("opacity", "1");
     await expect(bank.scrollToTopButton).toHaveAttribute(
@@ -33,7 +41,7 @@ test.describe("Scroll to top button (question bank)", () => {
     // event below can fire while the page is still just the short
     // "Loading questions…" fallback.
     await expect(bank.searchInput).toBeVisible();
-    await page.mouse.wheel(0, 800);
+    await scrollDown(page);
     await expect(bank.scrollToTopButton).toHaveCSS("opacity", "1");
 
     await bank.scrollToTopButton.click();
@@ -51,7 +59,7 @@ test.describe("Scroll to top button (guide page)", () => {
 
     await expect(guide.scrollToTopButton).toHaveCSS("opacity", "0");
 
-    await page.mouse.wheel(0, 800);
+    await scrollDown(page);
 
     await expect(guide.scrollToTopButton).toHaveCSS("opacity", "1");
   });
@@ -59,7 +67,7 @@ test.describe("Scroll to top button (guide page)", () => {
   test("clicking it scrolls back to the top of the page", async ({ page }) => {
     const guide = new GuidePage(page);
     await guide.goto();
-    await page.mouse.wheel(0, 800);
+    await scrollDown(page);
     await expect(guide.scrollToTopButton).toHaveCSS("opacity", "1");
 
     await guide.scrollToTopButton.click();

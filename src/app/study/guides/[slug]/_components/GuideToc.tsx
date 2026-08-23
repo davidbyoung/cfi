@@ -112,10 +112,43 @@ export default function GuideToc({ chapters }: Props) {
     if (!drawerEl) return;
     const restoreFocusTo = contentsButtonRef.current;
 
+    // `summary` is natively focusable/tabbable without a tabindex — every
+    // collapsed chapter in the drawer is one. Omitting it here used to mean
+    // the trap's notion of "last focusable element" fell short of the real
+    // last stop in the browser's native tab order, so Tab from a chapter
+    // summary near the end of the list escaped into the page behind the
+    // modal backdrop instead of wrapping back to the close button.
     const focusableSelector =
-      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+      'a[href], button:not([disabled]), summary, [tabindex]:not([tabindex="-1"])';
+    // Every section link is always in the DOM, even inside a collapsed
+    // chapter — only that chapter's own <summary> is actually reachable by
+    // Tab until it's opened. querySelectorAll doesn't know that, so without
+    // this filter "last" could be a link buried in a closed chapter that
+    // Tab can never actually land on, and the forward-wrap check below
+    // would never fire. checkVisibility() is the check that actually
+    // accounts for this — collapsed <details> content hides via an internal
+    // ::details-content box (see the print-CSS comment on
+    // ::details-content in globals.css) whose content-visibility: hidden
+    // does NOT zero out getClientRects()/getBoundingClientRect() for its
+    // descendants the way display: none would, so those don't work here.
+    //
+    // checkVisibility() isn't implemented in every environment (notably
+    // jsdom, which this repo now depends on for hook tests) — calling it
+    // unguarded would throw there instead of just returning a less precise
+    // answer. Fall back to walking up to the nearest <details> ancestor:
+    // a <summary> is always tabbable regardless of its own open state
+    // (that's how you open it), so it's exempted; anything else is only
+    // reachable once its containing chapter is open.
+    const isTabReachable = (el: HTMLElement): boolean => {
+      if (typeof el.checkVisibility === "function") return el.checkVisibility();
+      if (el.tagName === "SUMMARY") return true;
+      const details = el.closest("details");
+      return !details || details.open;
+    };
     const getFocusable = () =>
-      Array.from(drawerEl.querySelectorAll<HTMLElement>(focusableSelector));
+      Array.from(
+        drawerEl.querySelectorAll<HTMLElement>(focusableSelector),
+      ).filter(isTabReachable);
 
     getFocusable()[0]?.focus();
 
@@ -184,6 +217,11 @@ export default function GuideToc({ chapters }: Props) {
     });
   }
 
+  // Rendered once and reused as-is in both the sidebar and the drawer below
+  // (a React element is just a plain description, not a live DOM node, so
+  // the same one can appear in two places in the returned tree) — this is a
+  // real duplicate-work saving, not a cosmetic one, since it maps over every
+  // chapter and section in the guide.
   function renderNav() {
     return (
       <nav aria-label="Guide contents">
@@ -238,6 +276,8 @@ export default function GuideToc({ chapters }: Props) {
     );
   }
 
+  const nav = renderNav();
+
   return (
     <>
       <aside
@@ -247,7 +287,7 @@ export default function GuideToc({ chapters }: Props) {
         <p className="mb-3 text-xs font-bold tracking-wide text-muted uppercase">
           Contents
         </p>
-        {renderNav()}
+        {nav}
       </aside>
 
       <button
@@ -262,6 +302,7 @@ export default function GuideToc({ chapters }: Props) {
 
       {drawerOpen && (
         <div
+          data-testid="guide-toc-backdrop"
           className="fixed inset-0 z-40 bg-black/45 lg:hidden dark:bg-black/60"
           onClick={() => setDrawerOpen(false)}
           aria-hidden="true"
@@ -278,6 +319,13 @@ export default function GuideToc({ chapters }: Props) {
           drawerOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-hidden={!drawerOpen}
+        // aria-hidden alone hides this from the accessibility tree but does
+        // NOT stop Tab from focusing its links — the drawer is only moved
+        // off-screen via a CSS transform (not display: none) when closed, so
+        // without this, tabbing past the Contents button on mobile used to
+        // land focus on the invisible, off-screen drawer instead of the
+        // page. inert enforces the non-focusability aria-hidden implies.
+        inert={!drawerOpen}
       >
         <div className="mb-4 flex items-center justify-between">
           <p className="text-sm font-bold tracking-wide text-muted uppercase">
@@ -292,7 +340,7 @@ export default function GuideToc({ chapters }: Props) {
             &times;
           </button>
         </div>
-        {renderNav()}
+        {nav}
       </div>
     </>
   );

@@ -61,9 +61,7 @@ test.describe("Guide search", () => {
     await guide.search("zzzznonexistentzzzz");
 
     await expect(guide.sidebar).not.toBeVisible();
-    await expect(
-      page.getByText("No questions in this guide match"),
-    ).toBeVisible();
+    await expect(guide.noResultsMessage()).toBeVisible();
   });
 
   test("restores the full table of contents and content after clearing the search", async ({
