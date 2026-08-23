@@ -20,7 +20,7 @@ const ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
 const EMAIL_RE = /^\S+@\S+\.\S+$/;
 const PHONE_RE = /^[\d\s+\-()]+$/;
 
-type Status =
+export type Status =
   | { kind: "idle" }
   | { kind: "submitting" }
   | { kind: "success" }
@@ -139,6 +139,65 @@ const ERROR_FOCUS_ORDER: ReadonlyArray<keyof FormState> = [
   "studentProvidesAircraft",
 ];
 
+// The first field (in display order) that currently has an error — where a
+// failed submit should send focus, since a screen reader or sighted user
+// scanning top-down should land on the first thing to fix.
+export function firstErrorField(errors: Errors): keyof FormState | undefined {
+  return ERROR_FOCUS_ORDER.find((k) => errors[k]);
+}
+
+// "None" is mutually exclusive with every other certificate — selecting it
+// clears the rest, and selecting any other certificate clears "None".
+export function toggleCertificate(
+  certificates: CertificateId[],
+  id: CertificateId,
+  checked: boolean,
+): CertificateId[] {
+  if (!checked) return certificates.filter((c) => c !== id);
+  if (id === "none") return ["none"];
+  return [...certificates.filter((c) => c !== "none"), id];
+}
+
+export function toggleRating(
+  ratings: RatingId[],
+  id: RatingId,
+  checked: boolean,
+): RatingId[] {
+  return checked ? [...ratings, id] : ratings.filter((r) => r !== id);
+}
+
+export function toggleGoal(
+  trainingGoal: ServiceId[],
+  id: ServiceId,
+  checked: boolean,
+): ServiceId[] {
+  return checked ? [...trainingGoal, id] : trainingGoal.filter((g) => g !== id);
+}
+
+// Decoupled from component state so the network-success/failure/exception
+// branches are unit-testable by injecting a mock fetch, rather than only
+// reachable by driving a real form submit in a browser.
+export async function submitTrainingRequest(
+  state: FormState,
+  endpoint: string | undefined,
+  fetchImpl: typeof fetch = fetch,
+): Promise<Status> {
+  if (!endpoint) return { kind: "error" };
+  try {
+    const res = await fetchImpl(endpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(buildPayload(state)),
+    });
+    return res.ok ? { kind: "success" } : { kind: "error" };
+  } catch {
+    return { kind: "error" };
+  }
+}
+
 export default function RequestTrainingForm() {
   const [state, setState] = useState<FormState>(INITIAL);
   const [errors, setErrors] = useState<Errors>({});
@@ -162,31 +221,21 @@ export default function RequestTrainingForm() {
     setState((s) => ({ ...s, [key]: value }));
   }
 
-  function toggleCertificate(id: CertificateId, checked: boolean) {
-    setState((s) => {
-      if (!checked)
-        return { ...s, certificates: s.certificates.filter((c) => c !== id) };
-      if (id === "none") return { ...s, certificates: ["none"] };
-      return {
-        ...s,
-        certificates: [...s.certificates.filter((c) => c !== "none"), id],
-      };
-    });
-  }
-
-  function toggleRating(id: RatingId, checked: boolean) {
+  function handleCertificateChange(id: CertificateId, checked: boolean) {
     setState((s) => ({
       ...s,
-      ratings: checked ? [...s.ratings, id] : s.ratings.filter((r) => r !== id),
+      certificates: toggleCertificate(s.certificates, id, checked),
     }));
   }
 
-  function toggleGoal(id: ServiceId, checked: boolean) {
+  function handleRatingChange(id: RatingId, checked: boolean) {
+    setState((s) => ({ ...s, ratings: toggleRating(s.ratings, id, checked) }));
+  }
+
+  function handleGoalChange(id: ServiceId, checked: boolean) {
     setState((s) => ({
       ...s,
-      trainingGoal: checked
-        ? [...s.trainingGoal, id]
-        : s.trainingGoal.filter((g) => g !== id),
+      trainingGoal: toggleGoal(s.trainingGoal, id, checked),
     }));
   }
 
@@ -197,7 +246,7 @@ export default function RequestTrainingForm() {
     const v = validate(state);
     setErrors(v);
     if (Object.keys(v).length > 0) {
-      const firstField = ERROR_FOCUS_ORDER.find((k) => v[k]);
+      const firstField = firstErrorField(v);
       if (firstField && formRef.current) {
         const el = formRef.current.querySelector<HTMLElement>(
           `[name="${firstField}"], [data-field="${firstField}"]`,
@@ -207,29 +256,8 @@ export default function RequestTrainingForm() {
       return;
     }
 
-    if (!ENDPOINT) {
-      setStatus({ kind: "error" });
-      return;
-    }
-
     setStatus({ kind: "submitting" });
-    try {
-      const res = await fetch(ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(buildPayload(state)),
-      });
-      if (res.ok) {
-        setStatus({ kind: "success" });
-      } else {
-        setStatus({ kind: "error" });
-      }
-    } catch {
-      setStatus({ kind: "error" });
-    }
+    setStatus(await submitTrainingRequest(state, ENDPOINT));
   }
 
   if (status.kind === "success") {
@@ -371,7 +399,7 @@ export default function RequestTrainingForm() {
                       value={opt.id}
                       checked={checked}
                       onChange={(e) =>
-                        toggleCertificate(opt.id, e.target.checked)
+                        handleCertificateChange(opt.id, e.target.checked)
                       }
                       className="mt-1"
                     />
@@ -411,7 +439,9 @@ export default function RequestTrainingForm() {
                       name="ratings"
                       value={opt.id}
                       checked={checked}
-                      onChange={(e) => toggleRating(opt.id, e.target.checked)}
+                      onChange={(e) =>
+                        handleRatingChange(opt.id, e.target.checked)
+                      }
                       className="mt-1"
                     />
                     <span>{opt.label}</span>
@@ -451,7 +481,7 @@ export default function RequestTrainingForm() {
                     name="trainingGoal"
                     value={s.id}
                     checked={checked}
-                    onChange={(e) => toggleGoal(s.id, e.target.checked)}
+                    onChange={(e) => handleGoalChange(s.id, e.target.checked)}
                     className="mt-1"
                   />
                   <span>{s.label}</span>

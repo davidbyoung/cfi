@@ -25,12 +25,28 @@ export default defineConfig({
       // e2e-covered — unlike page/layout files they *can* grow real logic,
       // so leaving them counted keeps that possibility visible instead of
       // silently exempt.
-      exclude: ["src/app/**/layout.tsx", "src/app/**/page.tsx"],
+      //
+      // The components below ARE excluded: each is pure JSX composition or
+      // a thin wrapper around logic that's already unit-tested elsewhere
+      // (HighlightedText/QuestionCard both delegate to lib/search.ts).
+      // Unit-testing them would only assert that .map()/.filter() work —
+      // no branching logic of their own to catch a regression in.
+      exclude: [
+        "src/app/**/layout.tsx",
+        "src/app/**/page.tsx",
+        "src/app/_components/HeroVideo.tsx",
+        "src/app/_components/ServicesList.tsx",
+        "src/app/_components/SiteFooter.tsx",
+        "src/app/_components/StudyDisclaimer.tsx",
+        "src/app/_components/SiteNav.tsx",
+        "src/app/_components/QuestionCard.tsx",
+        "src/app/_components/HighlightedText.tsx",
+      ],
       thresholds: {
-        statements: 48,
-        branches: 39,
-        functions: 35,
-        lines: 48,
+        statements: 53,
+        branches: 44,
+        functions: 42,
+        lines: 53,
       },
     },
   },

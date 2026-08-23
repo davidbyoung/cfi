@@ -1,7 +1,12 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import {
   buildPayload,
+  firstErrorField,
   INITIAL,
+  submitTrainingRequest,
+  toggleCertificate,
+  toggleGoal,
+  toggleRating,
   validate,
   type FormState,
 } from "@/app/_components/RequestTrainingForm";
@@ -194,5 +199,141 @@ describe("buildPayload", () => {
     expect(payload["Full name"]).toBe(VALID_STATE.fullName);
     expect(payload["Email"]).toBe(VALID_STATE.email);
     expect(payload["Phone"]).toBe(VALID_STATE.phone);
+  });
+});
+
+describe("toggleCertificate", () => {
+  it("adds a certificate when checked", () => {
+    expect(toggleCertificate(["private-pilot"], "cfi", true)).toEqual([
+      "private-pilot",
+      "cfi",
+    ]);
+  });
+
+  it("removes a certificate when unchecked", () => {
+    expect(toggleCertificate(["private-pilot", "cfi"], "cfi", false)).toEqual([
+      "private-pilot",
+    ]);
+  });
+
+  it("selecting 'none' clears every other selection", () => {
+    expect(toggleCertificate(["private-pilot", "cfi"], "none", true)).toEqual([
+      "none",
+    ]);
+  });
+
+  it("selecting any other certificate clears 'none'", () => {
+    expect(toggleCertificate(["none"], "private-pilot", true)).toEqual([
+      "private-pilot",
+    ]);
+  });
+});
+
+describe("toggleRating", () => {
+  it("adds a rating when checked", () => {
+    expect(toggleRating([], "instrument-rating", true)).toEqual([
+      "instrument-rating",
+    ]);
+  });
+
+  it("removes a rating when unchecked", () => {
+    expect(
+      toggleRating(
+        ["instrument-rating", "multi-engine-rating"],
+        "instrument-rating",
+        false,
+      ),
+    ).toEqual(["multi-engine-rating"]);
+  });
+});
+
+describe("toggleGoal", () => {
+  it("adds a training goal when checked", () => {
+    expect(toggleGoal([], "instrument", true)).toEqual(["instrument"]);
+  });
+
+  it("removes a training goal when unchecked", () => {
+    expect(toggleGoal(["instrument", "ipc"], "instrument", false)).toEqual([
+      "ipc",
+    ]);
+  });
+});
+
+describe("firstErrorField", () => {
+  it("returns undefined when there are no errors", () => {
+    expect(firstErrorField({})).toBeUndefined();
+  });
+
+  it("returns the first field in display order, not object key order", () => {
+    // Deliberately constructed out of display order (phone before email) —
+    // the display order (fullName, email, phone, ...) must win, since it's
+    // what determines where focus actually lands.
+    expect(
+      firstErrorField({ phone: "bad", email: "bad", fullName: "bad" }),
+    ).toBe("fullName");
+  });
+
+  it("skips fields without an error", () => {
+    expect(firstErrorField({ phone: "bad" })).toBe("phone");
+  });
+});
+
+describe("submitTrainingRequest", () => {
+  it("returns an error status when no endpoint is configured", async () => {
+    const fetchImpl = vi.fn();
+    const status = await submitTrainingRequest(
+      VALID_STATE,
+      undefined,
+      fetchImpl,
+    );
+    expect(status).toEqual({ kind: "error" });
+    expect(fetchImpl).not.toHaveBeenCalled();
+  });
+
+  it("returns a success status when the request succeeds", async () => {
+    const fetchImpl = vi.fn().mockResolvedValue({ ok: true });
+    const status = await submitTrainingRequest(
+      VALID_STATE,
+      "https://formspree.io/f/test",
+      fetchImpl,
+    );
+    expect(status).toEqual({ kind: "success" });
+  });
+
+  it("returns an error status when the response isn't ok", async () => {
+    const fetchImpl = vi.fn().mockResolvedValue({ ok: false });
+    const status = await submitTrainingRequest(
+      VALID_STATE,
+      "https://formspree.io/f/test",
+      fetchImpl,
+    );
+    expect(status).toEqual({ kind: "error" });
+  });
+
+  it("returns an error status when the request throws", async () => {
+    const fetchImpl = vi.fn().mockRejectedValue(new Error("network down"));
+    const status = await submitTrainingRequest(
+      VALID_STATE,
+      "https://formspree.io/f/test",
+      fetchImpl,
+    );
+    expect(status).toEqual({ kind: "error" });
+  });
+
+  it("posts the built payload as JSON", async () => {
+    const fetchImpl = vi.fn().mockResolvedValue({ ok: true });
+    await submitTrainingRequest(
+      VALID_STATE,
+      "https://formspree.io/f/test",
+      fetchImpl,
+    );
+
+    expect(fetchImpl).toHaveBeenCalledWith(
+      "https://formspree.io/f/test",
+      expect.objectContaining({
+        method: "POST",
+        body: JSON.stringify(buildPayload(VALID_STATE)),
+      }),
+    );
   });
 });

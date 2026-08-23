@@ -9,9 +9,13 @@ type Props = {
   children: ReactNode;
 };
 
+export function isActiveLink(pathname: string, href: string): boolean {
+  return href === "/" ? pathname === "/" : pathname.startsWith(href);
+}
+
 export default function NavLink({ href, children }: Props) {
   const pathname = usePathname();
-  const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+  const isActive = isActiveLink(pathname, href);
 
   return (
     <Link
