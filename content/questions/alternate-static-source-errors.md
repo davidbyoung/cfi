@@ -10,8 +10,8 @@ What errors does an alternate static source create?
 
 ### Answer
 
-- Cockpit static pressure is usually lower than outside static pressure
-- That lower pressure usually causes the altimeter to indicate higher
+- Cockpit static pressure is usually lower than outside static pressure.
+- That lower pressure usually causes the altimeter to indicate higher.
 - That lower static pressure usually causes the airspeed indicator to read higher.
 
 ### Sources

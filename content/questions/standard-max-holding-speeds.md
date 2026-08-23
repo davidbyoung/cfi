@@ -10,7 +10,7 @@ What are the standard max holding speeds?
 ### Answer
 
 - Surface to 6,000 ft MSL - 200 kt
-- 6,001 - 14,000 ft MSL - 230 kt
+- 6,001-14,000 ft MSL - 230 kt
 - 14,001 ft MSL and above - 265 kt
 
 ### Sources

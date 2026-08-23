@@ -10,7 +10,7 @@ How do you use a GCO?
 
 ### Answer
 
-- To talk to Center or Departure, key the microphone on the GCO frequency 4 times
+- To talk to Center or Departure, key the microphone on the GCO frequency 4 times.
 - To talk to Flight Service, key the microphone on the GCO frequency 6 times.
 
 ### Sources

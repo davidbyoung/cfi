@@ -12,7 +12,7 @@ What are all the lines going across Illinois, and what are the numbers you find 
 
 ### Answer
 
-- Isobars, which indicate lines of equal pressure
+- Isobars, which indicate lines of equal pressure.
 - The numbers are the pressure (in millibars).
 
 ### Sources

@@ -11,7 +11,7 @@ What is an RNAV (RNP) approach? Can you fly one?
 ### Answer
 
 - An RNP approach with special equipment requirements, prior authorization, and training requirements
-- It will show "RNP AR APCH - GPS" in the equipment notes
+- It will show "RNP AR APCH - GPS" in the equipment notes.
 - Usually involves things like curved segments of an approach
 - No, you cannot fly one unless you have prior authorization and training to do so.
 

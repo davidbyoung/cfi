@@ -12,7 +12,7 @@ What is the red line stretching from western Michigan to Virginia, and what kind
 
 ### Answer
 
-- A warm front, where a warm air mass advances over a cooler air mass
+- A warm front, where a warm air mass advances over a cooler air mass.
 - Weather changes are slow, and may include light rain, drizzle, and a temperature rise.
 
 ### Sources

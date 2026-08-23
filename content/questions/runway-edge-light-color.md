@@ -10,7 +10,7 @@ What color are runway edge lights?
 
 ### Answer
 
-- Runways with instrument approaches - White, but for the last 2,000 ft or 1/2 the runway length, whichever is shorter, they are yellow
+- Runways with instrument approaches - White, but for the last 2,000 ft or 1/2 the runway length, whichever is shorter, they are yellow.
 - Runways without instrument approaches - White
 
 ### Sources

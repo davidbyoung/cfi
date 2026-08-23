@@ -11,7 +11,7 @@ What are the different types of PIREPs?
 ### Answer
 
 - UA (routine) and UUA (urgent)
-- UA includes routine reports such as cloud tops, bases, and light conditions
+- UA includes routine reports such as cloud tops, bases, and light conditions.
 - UUA includes urgent reports such as severe turbulence, severe icing, and low-level wind shear.
 
 ### Sources

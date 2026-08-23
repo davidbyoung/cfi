@@ -9,7 +9,7 @@ What are your options at non-towered airports for getting your IFR clearance?
 
 ### Answer
 
-- Check the Chart Supplement - it may list phone numbers, Remote Communications Outlets (RCOs), or Ground Communications Outlets (GCOs)
+- Check the Chart Supplement - it may list phone numbers, Remote Communications Outlets (RCOs), or Ground Communications Outlets (GCOs).
 - If VMC, you can depart VFR and contact departure for an IFR clearance in the air.
 
 ### Sources

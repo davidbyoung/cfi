@@ -12,7 +12,7 @@ What is the red and blue line over Montana, and what kind of conditions are asso
 
 ### Answer
 
-- A stationary front, where two air masses meet but neither advances significantly
+- A stationary front, where two air masses meet but neither advances significantly.
 - Weather tends to persist and can produce low IFR conditions, including rain.
 
 ### Sources

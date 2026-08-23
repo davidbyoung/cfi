@@ -10,7 +10,7 @@ What are the requirements for filing an alternate?
 
 ### Answer
 
-- 1-2-3 rule: from 1 hr before to 1 hr after ETA, destination weather is forecast below a 2,000 ft ceiling or 3 SM visibility
+- 1-2-3 rule: from 1 hr before to 1 hr after ETA, destination weather is forecast below a 2,000 ft ceiling or 3 SM visibility.
 - Also, if the destination has no IAP, you must file an alternate.
 
 ### Sources

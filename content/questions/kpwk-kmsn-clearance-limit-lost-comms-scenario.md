@@ -11,25 +11,25 @@ You're planning a flight from KPWK to KMSN. You're given the following clearance
 
 ### Answer
 
-- Check that headset plugs are secure
-- Try switching to COM 2
-- Try switching to the last known good frequency
-- If you have a backup handheld radio, use it
-- Squawk 7600
+- Check that headset plugs are secure.
+- Try switching to COM 2.
+- Try switching to the last known good frequency.
+- If you have a backup handheld radio, use it.
+- Squawk 7600.
 
 If VMC:
 
-- Land as soon as practicable
+- Land as soon as practicable.
 
 If IMC:
 
-- Climb to 2,000 ft, then 3,000 ft 10 minutes after departure
-  - Use the highest of assigned, expected, or minimum IFR altitude
-- Proceed direct to OBK, then V24 to JVL
-  - You have not been assigned direct OBK, but you were being vectored to it (assigned, vectored, expected, filed - AVEF)
-- Hold at JVL until EFC, then proceed direct to an IAF at an IAP at KMSN
-- Hold at the IAF until your filed ETA, then commence the IAP
-- Call KMSN tower on the phone when safely on the ground
+- Climb to 2,000 ft, then 3,000 ft 10 minutes after departure.
+  - Use the highest of assigned, expected, or minimum IFR altitude.
+- Proceed direct to OBK, then V24 to JVL.
+  - You have not been assigned direct OBK, but you were being vectored to it (assigned, vectored, expected, filed - AVEF).
+- Hold at JVL until EFC, then proceed direct to an IAF at an IAP at KMSN.
+- Hold at the IAF until your filed ETA, then commence the IAP.
+- Call KMSN tower on the phone when safely on the ground.
 
 For routing:
 

@@ -13,7 +13,7 @@ What types of approaches can you fly at the alternate if flying a WAAS-equipped 
 
 ### Answer
 
-- WAAS-equipped GPS permits RNAV approaches in addition to all others
+- WAAS-equipped GPS permits RNAV approaches in addition to all others.
 - Although LPV provides precision approach-like capability, it is treated as non-precision for this simplified alternate-planning answer. Use 800 ft and 2 SM visibility.
 
 ### Sources

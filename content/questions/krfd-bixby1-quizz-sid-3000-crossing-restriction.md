@@ -9,7 +9,7 @@ On the [KRFD BIXBY ONE SID](https://www.airnav.com/depart?http://aeronav.faa.gov
 
 ### Answer
 
-- It's the MEA, used for obstacle clearance and lost comms planning on that segment
+- It's the MEA, used for obstacle clearance and lost comms planning on that segment.
 - Otherwise, abide by crossing restrictions up to your top altitude.
 
 ### Sources

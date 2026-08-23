@@ -10,8 +10,8 @@ If your static port becomes blocked and you descend, what happens?
 
 ### Answer
 
-- Your altimeter will continue to show the same altitude
-- Your VSI will show zero
+- Your altimeter will continue to show the same altitude.
+- Your VSI will show zero.
 - Your airspeed will show a higher indicated airspeed. The pitot side senses the higher ambient pressure during descent, while the static side remains trapped at the lower pressure from altitude, so the ASI sees an artificially large pressure differential.
 
 ### Sources

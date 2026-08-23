@@ -9,7 +9,7 @@ Your GPS nav database is out of date. Can you fly IFR and use GPS?
 
 ### Answer
 
-- The Avidyne IFD440 explicitly forbids this
+- The Avidyne IFD440 explicitly forbids this.
 - For other GPS units, you might be able to use GPS en route if you can verify the data is accurate (e.g., with current charts). You cannot fly a GPS IAP with an expired database.
 
 ### Sources

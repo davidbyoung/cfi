@@ -12,7 +12,7 @@ What is the dashed brown line going over the Gulf of California, and what kind o
 
 ### Answer
 
-- A trough, which is an elongated area of relatively low pressure
+- A trough, which is an elongated area of relatively low pressure.
 - It brings gusty winds, clouds, and precipitation.
 
 ### Sources

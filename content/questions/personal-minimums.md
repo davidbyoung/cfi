@@ -9,8 +9,8 @@ What are your personal minimums?
 
 ### Answer
 
-- Ceiling and visibility requirements should reflect your recent instrument experience
-- Avoid flying to published minimums unless very current and experienced in actual IMC
+- Ceiling and visibility requirements should reflect your recent instrument experience.
+- Avoid flying to published minimums unless very current and experienced in actual IMC.
 
 ### Sources
 

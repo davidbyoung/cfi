@@ -10,7 +10,7 @@ What is a NOTAM, and can you provide some examples?
 
 ### Answer
 
-- Notices to Airmen are time-sensitive notices issued by aviation authorities to alert pilots of essential information, hazards, or changes that could affect flight safety
+- Notices to Airmen are time-sensitive notices issued by aviation authorities to alert pilots of essential information, hazards, or changes that could affect flight safety.
 - Examples include runway or taxiway closures, NAVAIDs out of service, obstacles, temporary flight restrictions (TFRs), and parachute jumping.
 
 ### Sources

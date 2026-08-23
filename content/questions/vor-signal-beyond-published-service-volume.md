@@ -10,7 +10,7 @@ If you are picking up a reliable VOR signal further than the published service v
 
 ### Answer
 
-Yes, but you cannot plan your flight to count on it. Also, be very wary of loss of signal.
+Yes, but you cannot plan your flight to count on it if using the VOR for navigation. Also, be very wary of loss of signal.
 
 ### Sources
 

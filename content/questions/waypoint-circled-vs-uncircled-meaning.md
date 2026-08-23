@@ -10,7 +10,7 @@ What's the difference between a waypoint inscribed in a circle vs one that is no
 
 ### Answer
 
-- Circled waypoint - Flyover waypoint, i.e., one you must fly over before starting your turn
+- Circled waypoint - Flyover waypoint, i.e., one you must fly over before starting your turn.
 - Uncircled waypoint - Fly-by waypoint, i.e., one where you can start the turn before overflying it (more common).
 
 ### Sources

@@ -10,7 +10,7 @@ How do you know when an ILS critical area is active?
 
 ### Answer
 
-- Towered airport - ATIS or ATC will inform you
+- Towered airport - ATIS or ATC will inform you.
 - Non-towered airport - If ILS is being used and there is an inbound aircraft, hold short of it.
 
 ### Sources

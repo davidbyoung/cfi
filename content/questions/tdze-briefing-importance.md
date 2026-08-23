@@ -10,7 +10,7 @@ Why should we always brief TDZE?
 
 ### Answer
 
-- We can descend to 100 ft above TDZE when certain lighting is in sight
+- We can descend to 100 ft above TDZE when certain lighting is in sight.
 - Helpful to know the runway touchdown elevation for the 100 ft rule and for situational awareness
 
 ### Sources

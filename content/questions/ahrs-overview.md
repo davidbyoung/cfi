@@ -10,7 +10,7 @@ What is AHRS and how does it work?
 
 ### Answer
 
-- The system computes aircraft attitude and heading and replaces traditional six-pack instruments
+- The system computes aircraft attitude and heading and replaces traditional six-pack instruments.
 - A magnetometer senses direction, accelerometers sense acceleration, and solid-state gyros sense attitude/rotation.
 
 ### Sources

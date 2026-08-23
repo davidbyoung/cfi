@@ -12,7 +12,7 @@ What does "MON" mean for KDPA? Why does it matter to you?
 
 ### Answer
 
-- It's part of the Minimum Operational Network (MON), which indicates it has a ground-based IAP (e.g., ILS, LOC, or VOR) that does not require DME or GPS in the case of a GPS outage (e.g., all fixes can be identified using cross-radials)
+- It's part of the Minimum Operational Network (MON), which indicates it has a ground-based IAP (e.g., ILS, LOC, or VOR) that does not require DME or GPS in the case of a GPS outage (e.g., all fixes can be identified using cross-radials).
 - Useful in the case of a GPS outage or an issue with your GPS
 
 ### Sources

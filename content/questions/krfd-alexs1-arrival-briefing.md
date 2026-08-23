@@ -5,11 +5,16 @@ tags:
 
 ### Question
 
-Brief the [KRFD MILAA.ALEXS1](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954ALEXS.PDF) arrival
+Brief the [KRFD MILAA.ALEXS1](https://www.airnav.com/depart?http://aeronav.faa.gov/d-tpp/2608/00954ALEXS.PDF) arrival.
 
 ### Answer
 
-Listen for valid chart date, frequencies, required equipment, lateral, vertical, and speed instructions.
+- Verify the chart is correct and up-to-date.
+- RNAV 1 (DME/DME/IRU or GPS) and radar are required.
+- Cross MILAA at FL240 and track it on the 097° course to FRRNK 39 NM away.
+- FRNNK has a crossing restriction of 13,000 ft and 250 kt, requiring a 3° descent starting at least 33 NM from FRRNK.
+- At FRRNK, turn to course 098° to ALEXS and cross FRDEE at 7,000 ft, which requires starting a 3° descent immediately from FRRNK.
+- Expect radar vectors to the final approach course.
 
 ### Sources
 

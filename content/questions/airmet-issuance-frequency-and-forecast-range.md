@@ -11,7 +11,7 @@ How frequently are AIRMETs issued, and how far out do they forecast?
 
 ### Answer
 
-- Graphical (G) AIRMETs are issued every 3 hr
+- Graphical (G) AIRMETs are issued every 3 hr.
 - Forecasts extend 12 hr.
 
 ### Sources

@@ -12,7 +12,7 @@ You see "LP+V" on your GPS. What does that mean?
 
 ### Answer
 
-- Localizer precision, but vertical guidance is advisory only
+- Localizer precision, but vertical guidance is advisory only.
 - Lateral navigation will get more sensitive as you get closer to the airport like an ILS localizer.
 
 ### Sources

@@ -10,9 +10,10 @@ How do you identify airports' airspace types on an enroute chart?
 
 ### Answer
 
-- Class D - In airport information, e.g., [D]
-- Class C - In airport information, e.g., [C], plus a dashed blue line around it
 - Class B - Solid blue line around airspace
+- Class C - In airport information, e.g., [C], plus a dashed blue line around it
+- Class D - In airport information, e.g., [D]
+- Class E/G - Not available on the enroute chart
 
 ### Sources
 

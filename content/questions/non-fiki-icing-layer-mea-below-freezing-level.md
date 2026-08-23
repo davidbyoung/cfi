@@ -8,11 +8,11 @@ tags:
 
 ### Question
 
-There's an overcast layer 2,000 - 5,000 ft MSL. Your aircraft is non-FIKI. The MEA for your planned route is 4,000 ft, but the freezing level is 3,000 ft. There is no AIRMET Zulu. How do you proceed with planning your flight?
+There's an overcast layer 2,000-5,000 ft MSL. Your aircraft is non-FIKI. The MEA for your planned route is 4,000 ft, but the freezing level is 3,000 ft. There is no AIRMET Zulu. How do you proceed with planning your flight?
 
 ### Answer
 
-- Visible moisture plus below-freezing temperatures means there is an icing risk - do not fly this route
+- Visible moisture plus below-freezing temperatures means there is an icing risk - do not fly this route.
 - Could fly VFR under the clouds (or special VFR)
 - If you desire to fly IFR, find a route/altitude that avoids the clouds, or wait for an improvement in the weather.
 

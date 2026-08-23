@@ -10,8 +10,8 @@ Talk me through your descent planning from MILAA to FRRNK on the KRFD MILAA STAR
 
 ### Answer
 
-- We have 11,000 ft to lose (FL240 - 13,000), so we want to start a 3° descent at least 33 NM from FRRNK
-- The distance is only 39 NM, so we should start the descent right away to give ourselves a buffer
+- We have 11,000 ft to lose (FL240 - 13,000), so we want to start a 3° descent at least 33 NM from FRRNK.
+- The distance is only 39 NM, so we should start the descent right away to give ourselves a buffer.
 - Descent rate should be 1,200 fpm.
 
 ### Sources

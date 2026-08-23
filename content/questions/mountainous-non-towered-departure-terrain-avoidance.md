@@ -13,7 +13,7 @@ Let's say our non-towered airport is in mountainous terrain. How are you going t
 
 ### Answer
 
-- Check for an Obstacle Departure Procedure (ODP) by looking for a /T\ icon on an approach plate, then brief and fly it if appropriate
+- Check for an Obstacle Departure Procedure (ODP) by looking for a \_/T\_ icon on an approach plate, then brief and fly it if appropriate.
 - Request a Vertical Climb Over Airport (VCOA) if you have good visibility and the ability to climb over the airport.
 
 ### Sources

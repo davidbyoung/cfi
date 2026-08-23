@@ -10,7 +10,7 @@ What are standard IFR takeoff minimums?
 
 ### Answer
 
-In Part 91, there are none. For Parts 121 and 135, it is 1 SM for aircraft with 1-2 engines, and ½ SM for aircraft with 3+ engines.
+In Part 91, there are none, but it's good ADM to use the minimums for Parts 121 and 135: 1 SM for aircraft with 1-2 engines, and ½ SM for aircraft with 3+ engines.
 
 ### Sources
 

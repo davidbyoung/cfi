@@ -9,7 +9,7 @@ On the [KPRC RNAV GPS-Y 03R](https://www.airnav.com/depart?http://aeronav.faa.go
 
 ### Answer
 
-- There are two identical types of IAP guidance for the same runway
+- There are two identical types of IAP guidance for the same runway.
 - Note that there is also a KPRC RNAV (GPS) Z 03R IAP, which offers an RNP AR APCH.
 
 ### Sources
