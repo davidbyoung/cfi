@@ -7,6 +7,7 @@ export class QuestionBankPage {
   readonly searchInput: Locator;
   readonly emptyState: Locator;
   readonly filterByTagToggle: Locator;
+  readonly scrollToTopButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -17,6 +18,9 @@ export class QuestionBankPage {
     // browsers/AX trees, so target it by its text instead of by role. Exact
     // match, since the page intro copy also contains "filter by tag".
     this.filterByTagToggle = page.getByText("Filter by tag", { exact: true });
+    this.scrollToTopButton = page.getByRole("button", {
+      name: "Scroll to top",
+    });
   }
 
   async goto(options?: { tag?: string }) {

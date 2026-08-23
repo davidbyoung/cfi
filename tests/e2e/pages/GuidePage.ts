@@ -7,6 +7,7 @@ export class GuidePage {
   readonly sidebar: Locator;
   readonly drawer: Locator;
   readonly contentsButton: Locator;
+  readonly scrollToTopButton: Locator;
 
   constructor(
     page: Page,
@@ -17,6 +18,9 @@ export class GuidePage {
     this.sidebar = page.getByTestId("guide-toc-sidebar");
     this.drawer = page.getByTestId("guide-toc-drawer");
     this.contentsButton = page.getByRole("button", { name: "Contents" });
+    this.scrollToTopButton = page.getByRole("button", {
+      name: "Scroll to top",
+    });
   }
 
   async goto() {
