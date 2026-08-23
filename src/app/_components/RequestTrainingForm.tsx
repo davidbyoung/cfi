@@ -256,6 +256,17 @@ export default function RequestTrainingForm() {
       return;
     }
 
+    // Short-circuit before "submitting" rather than letting
+    // submitTrainingRequest's own no-endpoint guard handle it: that guard
+    // still exists for defense-in-depth (and for callers that unit-test it
+    // directly), but going through it here would mean the button always
+    // flashes "Sending…"/disabled for a render, even when no request was
+    // ever going to be attempted.
+    if (!ENDPOINT) {
+      setStatus({ kind: "error" });
+      return;
+    }
+
     setStatus({ kind: "submitting" });
     setStatus(await submitTrainingRequest(state, ENDPOINT));
   }
