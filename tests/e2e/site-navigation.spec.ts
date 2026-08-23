@@ -85,4 +85,47 @@ test.describe("Primary navigation (mobile)", () => {
 
     await expect(nav.root.getByRole("link", { name: "About" })).toBeHidden();
   });
+
+  test("clicking outside the menu closes it", async ({ page }) => {
+    const nav = new SiteNav(page);
+    await page.goto("/");
+
+    await nav.openMobileMenu();
+    await expect(nav.root.getByRole("link", { name: "About" })).toBeVisible();
+
+    // Anywhere outside the menu's own DOM subtree — the page heading is far
+    // away from the menu, which sits inside the header.
+    await page.getByRole("heading", { level: 1 }).click();
+
+    await expect(nav.root.getByRole("link", { name: "About" })).toBeHidden();
+  });
+
+  test("pressing Escape closes the menu", async ({ page }) => {
+    const nav = new SiteNav(page);
+    await page.goto("/");
+
+    await nav.openMobileMenu();
+    await expect(nav.root.getByRole("link", { name: "About" })).toBeVisible();
+
+    await page.keyboard.press("Escape");
+
+    await expect(nav.root.getByRole("link", { name: "About" })).toBeHidden();
+  });
+
+  test("clicking the menu button again closes it", async ({ page }) => {
+    const nav = new SiteNav(page);
+    await page.goto("/");
+
+    await nav.openMobileMenu();
+    await expect(nav.root.getByRole("link", { name: "About" })).toBeVisible();
+    await expect(nav.mobileMenuButton).toHaveAttribute("aria-expanded", "true");
+
+    await nav.mobileMenuButton.click();
+
+    await expect(nav.root.getByRole("link", { name: "About" })).toBeHidden();
+    await expect(nav.mobileMenuButton).toHaveAttribute(
+      "aria-expanded",
+      "false",
+    );
+  });
 });

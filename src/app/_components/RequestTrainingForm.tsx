@@ -379,6 +379,12 @@ export default function RequestTrainingForm() {
         <div className="grid gap-6 sm:grid-cols-2">
           <fieldset
             data-field="certificates"
+            // A <fieldset> isn't natively focusable — without this, the
+            // onSubmit focus-the-first-error logic's el?.focus() call
+            // silently no-ops here, so a keyboard/screen-reader user never
+            // actually gets sent to this error. -1 keeps it out of normal
+            // Tab order; it's only ever focused programmatically.
+            tabIndex={-1}
             aria-invalid={errors.certificates ? true : undefined}
             aria-describedby={
               errors.certificates ? `${ids.certificates}-err` : undefined
@@ -462,6 +468,8 @@ export default function RequestTrainingForm() {
 
         <fieldset
           data-field="trainingGoal"
+          // See the identical comment on the certificates fieldset above.
+          tabIndex={-1}
           aria-invalid={errors.trainingGoal ? true : undefined}
           aria-describedby={
             errors.trainingGoal ? `${ids.trainingGoal}-err` : undefined

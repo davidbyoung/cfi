@@ -15,6 +15,37 @@ test.describe("Request training form", () => {
     await expect(page.getByLabel("Full name")).toBeFocused();
   });
 
+  test("focuses a fieldset (not just a plain input) when it's the first invalid field", async ({
+    page,
+  }) => {
+    // Regression coverage: the focus-on-submit-error logic looks for either
+    // `[name="<field>"]` or `[data-field="<field>"]` — every other test only
+    // ever leaves a plain-input field (fullName/email) invalid, so the
+    // `data-field` branch (used by the certificates/training-goal
+    // fieldsets, which have no `name` of their own) has never actually run.
+    const form = new RequestTrainingPage(page);
+    await form.goto();
+    // Valid everywhere except certificates, which is left unselected.
+    await page.getByLabel("Full name").fill("Jane Test Pilot");
+    await page.getByLabel("Email").fill("jane@example.com");
+    await page.getByLabel("Phone").fill("555-123-4567");
+    await page
+      .getByLabel("Training airport")
+      .selectOption({ label: "Chicago Executive Airport (KPWK)" });
+    await page.getByLabel("Discovery Flight").check();
+    await page.getByLabel(/I confirm I have access to an aircraft/).check();
+
+    await form.submit();
+
+    await expect(
+      form.fieldError(
+        'Please select at least one option, including "None" if you have no pilot certificate.',
+      ),
+    ).toBeVisible();
+    const certificatesFieldset = page.locator('[data-field="certificates"]');
+    await expect(certificatesFieldset).toBeFocused();
+  });
+
   test("submits successfully once required fields are valid", async ({
     page,
   }) => {

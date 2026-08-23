@@ -71,6 +71,47 @@ test.describe("Question bank tag filter", () => {
     await expect(bank.activeTagChip("ADM")).toBeVisible();
     await expect(bank.filteredResultsSummary()).toBeVisible();
   });
+
+  test("clicking a tag pill on a result card filters in place, without navigating away", async ({
+    page,
+  }) => {
+    // Distinct from the guide page's tag pill, which is a <Link> that
+    // navigates to this same page with ?tag= set — a question bank result's
+    // own tag pill is a <button> that filters client-side instead.
+    const bank = new QuestionBankPage(page);
+    const questionText =
+      "You are in IMC and notice a low voltage indication. What might be happening, and what are next steps?";
+    await bank.goto();
+    await bank.expandQuestion(questionText);
+
+    await bank.resultTagPill(questionText, "ADM").click();
+
+    await expect(page).toHaveURL(/\/study\/questions\/?$/);
+    await expect(bank.activeTagChip("ADM")).toBeVisible();
+    await expect(bank.filteredResultsSummary()).toBeVisible();
+  });
+
+  test("'Clear filters' resets both an active search and an active tag filter together", async ({
+    page,
+  }) => {
+    const bank = new QuestionBankPage(page);
+    await bank.goto();
+    await bank.question("How does an ILS work?").waitFor();
+
+    // Tag order matters: the tag panel's own pill list is filtered by the
+    // active search query too, so selecting the tag before searching avoids
+    // searching "ils" filtering the ADM pill itself out of the list.
+    await bank.openTagFilterPanel();
+    await bank.selectTag("ADM");
+    await bank.search("ils");
+    await expect(bank.clearFiltersButton()).toBeVisible();
+
+    await bank.clearFiltersButton().click();
+
+    await expect(bank.searchInput).toHaveValue("");
+    await expect(bank.activeTagChip("ADM")).not.toBeVisible();
+    await expect(bank.question("How does an ILS work?")).toBeVisible();
+  });
 });
 
 test.describe("Question disclosure", () => {

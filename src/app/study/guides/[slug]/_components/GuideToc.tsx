@@ -112,10 +112,29 @@ export default function GuideToc({ chapters }: Props) {
     if (!drawerEl) return;
     const restoreFocusTo = contentsButtonRef.current;
 
+    // `summary` is natively focusable/tabbable without a tabindex — every
+    // collapsed chapter in the drawer is one. Omitting it here used to mean
+    // the trap's notion of "last focusable element" fell short of the real
+    // last stop in the browser's native tab order, so Tab from a chapter
+    // summary near the end of the list escaped into the page behind the
+    // modal backdrop instead of wrapping back to the close button.
     const focusableSelector =
-      'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+      'a[href], button:not([disabled]), summary, [tabindex]:not([tabindex="-1"])';
+    // Every section link is always in the DOM, even inside a collapsed
+    // chapter — only that chapter's own <summary> is actually reachable by
+    // Tab until it's opened. querySelectorAll doesn't know that, so without
+    // this filter "last" could be a link buried in a closed chapter that
+    // Tab can never actually land on, and the forward-wrap check below
+    // would never fire. checkVisibility() is the one check that actually
+    // accounts for this — collapsed <details> content hides via an
+    // internal ::details-content box (see the print-CSS comment on
+    // ::details-content in globals.css) whose content-visibility: hidden
+    // does NOT zero out getClientRects()/getBoundingClientRect() for its
+    // descendants the way display: none would, so those don't work here.
     const getFocusable = () =>
-      Array.from(drawerEl.querySelectorAll<HTMLElement>(focusableSelector));
+      Array.from(
+        drawerEl.querySelectorAll<HTMLElement>(focusableSelector),
+      ).filter((el) => el.checkVisibility());
 
     getFocusable()[0]?.focus();
 

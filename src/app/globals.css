@@ -165,6 +165,15 @@ body {
     display: block;
   }
 
+  /* Chromium (~131+) renders a closed <details>'s non-summary children
+     inside an internal ::details-content box with UA-default
+     content-visibility: hidden — independent of the `open` attribute and
+     invisible to the `details > *` rule above, which only reaches real
+     light-DOM children. Without this, closed questions print as empty. */
+  details::details-content {
+    content-visibility: visible !important;
+  }
+
   .study-question {
     break-inside: avoid;
     page-break-inside: avoid;

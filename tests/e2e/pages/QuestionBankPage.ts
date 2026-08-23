@@ -83,6 +83,21 @@ export class QuestionBankPage {
     await this.activeTagChip(label).click();
   }
 
+  /** A question card's own tag pill in the results list — a <button> that
+   * filters in place, distinct from the guide page's tag pill (a <Link>
+   * that navigates here instead). Lives inside <details>, so the card must
+   * be expanded first. */
+  resultTagPill(questionText: string, tagLabel: string): Locator {
+    return this.page
+      .locator(".study-question")
+      .filter({ hasText: questionText })
+      .getByRole("button", { name: tagLabel, exact: true });
+  }
+
+  clearFiltersButton(): Locator {
+    return this.page.getByRole("button", { name: "Clear filters" });
+  }
+
   resultsSummary(count: number, filtered = false): Locator {
     const noun = count === 1 ? "question" : "questions";
     const suffix = filtered ? " matching filters" : "";

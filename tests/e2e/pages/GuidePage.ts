@@ -62,6 +62,16 @@ export class GuidePage {
     return this.page.getByRole("heading", { name: title, level: 3 });
   }
 
+  /** The id'd, scroll-mt-[88px]-bearing div a section heading lives in —
+   * what an anchor scroll (a TOC click, or a real #section-id URL) actually
+   * targets, unlike the bare heading returned by sectionHeading(). Scrolling
+   * the heading itself lands flush with the sticky header with no margin,
+   * which can put the *next* section into the scrollspy's active band at
+   * the same time and make it win instead. */
+  sectionContainer(title: string): Locator {
+    return this.sectionHeading(title).locator("xpath=..");
+  }
+
   chapterHeading(title: string): Locator {
     return this.page.getByRole("heading", { name: title, level: 2 });
   }
