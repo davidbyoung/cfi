@@ -13,7 +13,7 @@ No, currency applies to the category _and_ class, meaning you're only current to
 
 ### Sources
 
-- [14 CFR § 61.57(a) - General experience](https://www.ecfr.gov/current/title-14/part-61/section-61.57#p-61.57(a))
+- [14 CFR § 61.57(a) - General experience](<https://www.ecfr.gov/current/title-14/part-61/section-61.57#p-61.57(a)>)
 
 ### Supplements
 
