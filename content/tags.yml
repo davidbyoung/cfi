@@ -152,6 +152,8 @@
   label: N3096B Specific Failure Scenarios
 - id: navigation
   label: Navigation
+- id: night-flight
+  label: Night Flight
 - id: notams
   label: NOTAMs
 - id: odps
@@ -162,6 +164,8 @@
   label: Partial Panel
 - id: pbn
   label: PBN
+- id: pilot-currency
+  label: Pilot Currency
 - id: pilot-qualifications
   label: Pilot Qualifications
 - id: pireps
