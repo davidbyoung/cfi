@@ -18,7 +18,7 @@ What visual illusions can bite you on an instrument approach or a night landing?
 - **False horizon** - Sloping cloud tops, a dark night with scattered ground lights and stars, or a lighted shoreline mistaken for the horizon.
 - **Autokinesis** - Stare at a single light against a dark background long enough and it appears to move.
 
-Defenses: brief the TDZE and the VGSI, fly the published or advisory vertical guidance all the way down, cross-check altitude against distance, and keep your scan going instead of staring at the runway.
+Defenses: brief the TDZE and the VGSI, fly the published vertical guidance all the way down, cross-check altitude against distance, and keep your scan going instead of staring at the runway.
 
 ### Sources
 

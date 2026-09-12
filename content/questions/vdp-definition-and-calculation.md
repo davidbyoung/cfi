@@ -12,7 +12,7 @@ What is a VDP, and what do you do if one isn't published or you can't identify i
 
 - Visual Descent Point - a defined point on the final approach course of a straight-in non-precision approach from which you can make a normal descent from the MDA to the touchdown point, provided you have the required visual references.
 - It's charted as a **"V"** on the profile view.
-- Don't descend below the MDA before the VDP, and even at the VDP you still need the flight visibility and visual references of [§ 91.175(c)](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.175#p-91.175%28c%29).
+- Descend below the MDA only when you have the required flight visibility and visual references per [§ 91.175(c)](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRef6e8c57f580cfd/section-91.175#p-91.175%28c%29) and are in a position to make a normal descent to the runway; the VDP is a planning aid, not a hard gate.
 - If you can't identify it, for example no DME or GPS distance to the fix, fly the approach as though no VDP were published.
 - If one isn't published, you can estimate it:
   - Distance: **HAT ÷ 300** = NM from the threshold

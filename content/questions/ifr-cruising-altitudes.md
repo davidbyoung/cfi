@@ -11,7 +11,7 @@ Who picks your IFR cruising altitude, and does the hemispheric rule apply?
 ### Answer
 
 - In **controlled airspace**, you fly the altitude ATC assigns. The hemispheric rule is built into how they assign it, but it isn't your call.
-- In **uncontrolled (Class G) airspace** under IFR, you pick based on magnetic course:
+- In **uncontrolled (Class G) airspace** under IFR at or above 3,000 ft AGL, you pick based on magnetic course:
   - 0° to 179° - odd thousands (3,000, 5,000, 7,000)
   - 180° to 359° - even thousands (4,000, 6,000, 8,000)
 - VFR-on-top is the exception worth remembering. You're still on an IFR clearance, but you fly **VFR cruising altitudes** (odd or even thousands plus 500 ft).

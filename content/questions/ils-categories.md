@@ -18,7 +18,7 @@ What are the ILS categories, and which one can you fly?
 | CAT IIIb | Below 50 ft, or none  | RVR 150 to 700                         |
 | CAT IIIc | None                  | No limitation                          |
 
-- As a Part 91 GA pilot, you're flying **CAT I**.
+- As a Part 91 GA pilot, you're typically flying **CAT I**.
 - CAT II and CAT III require specific aircraft equipment (such as autopilot or autoland, dual systems, or a HUD), an FAA authorization, and specific pilot training and checking.
 - The ground facility has to be certified to the category as well, and the lower minimums depend on the associated approach and runway lighting being in service.
 
