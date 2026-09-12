@@ -1,6 +1,6 @@
 ---
 tags:
-  - weather-briefing
+  - weather-briefings
   - ifr-flight-planning
   - surface-analysis
   - airmets

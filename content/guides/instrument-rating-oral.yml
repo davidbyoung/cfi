@@ -66,6 +66,7 @@ chapters:
         questions:
           - kpwk-to-kstl-weather-source-briefing
           - imc-flight-weather-briefing-considerations
+          - preflight-weather-briefing-types
       - title: Weather Condition Categories
         questions:
           - ifr-definition
@@ -120,6 +121,7 @@ chapters:
           - structural-ice-types-formation-and-hazards
           - unexpected-icing-in-imc-response
           - landing-adjustment-with-residual-wing-ice
+          - thunderstorm-formation-and-hazards
           - convective-cell-gap-in-imc-decision
   - title: IFR Flight Planning
     sections:
@@ -161,6 +163,7 @@ chapters:
     sections:
       - title: Obtaining an IFR Clearance
         questions:
+          - ifr-clearance-elements
           - kpwk-non-towered-ifr-clearance-method
           - non-towered-ifr-clearance-options
           - depart-vfr-vs-ground-clearance
@@ -173,8 +176,14 @@ chapters:
           - fss-clearance-additional-info-non-towered
           - missed-clearance-void-time-consequence
           - hold-for-release-clearance-impact
+          - release-void-and-edct-times
+      - title: Cruise and Block Altitude Clearances
+        questions:
+          - cruise-clearance
       - title: ODPs, VCOAs, and Obstacle Clearance
         questions:
+          - odp-vs-sid
+          - diverse-departure-and-dva
           - mountainous-non-towered-departure-terrain-avoidance
       - title: Visual Approaches
         questions:
@@ -194,6 +203,11 @@ chapters:
           - decode-enroute-chart-kugn
           - kdpa-mon-designation-significance
           - enroute-chart-remote-center-air-ground
+      - title: Minimum IFR Altitudes and Cruising Altitudes
+        questions:
+          - minimum-ifr-altitude-without-published-minimum
+          - mva-definition-and-use
+          - ifr-cruising-altitudes
       - title: MEA, MOCA, MRA, MCA, MAA, and OROCA
         questions:
           - enroute-chart-oroca-numbers
@@ -247,9 +261,15 @@ chapters:
           - compulsory-reporting-points-in-radar-contact
   - title: Holds
     sections:
+      - title: Holding Entries and Timing
+        questions:
+          - hold-entry-types
+          - hold-leg-timing
+          - hold-actions-at-the-fix
       - title: Holding Speeds
         questions:
           - standard-max-holding-speeds
+          - hold-speed-reduction-timing
       - title: Published vs Unpublished Holds
         questions:
           - unpublished-hold-required-atc-information
@@ -260,11 +280,21 @@ chapters:
     sections:
       - title: General Approach Concepts
         questions:
+          - approach-classification
           - lda-approach-definition
           - lda-vertical-guidance
+          - sdf-approach
           - straight-in-approach-vs-straight-in-landing
           - straight-in-approach-clearance-vs-landing
           - approach-programming-time-pressure-response
+      - title: Course Reversals
+        questions:
+          - procedure-turn-limits
+          - when-course-reversal-not-flown
+      - title: Approach Clearances
+        questions:
+          - descent-after-approach-clearance
+          - contact-approach
       - title: ILS / LOC / LOC Back Course
         questions:
           - ils-operating-principle
@@ -276,6 +306,8 @@ chapters:
           - loc-bc-glideslope-availability
           - loc-bc-flying-challenges
           - loc-bc-flying-technique-on-hsi
+          - ils-categories
+          - ils-false-glideslope
   - title: Landing from an Instrument Approach
     sections:
       - title: Approach Below Published Minimums
@@ -296,10 +328,14 @@ chapters:
       - title: Stable Descent to Landing
         questions:
           - breakout-with-runway-in-sight-continued-descent
+          - vdp-definition-and-calculation
       - title: Circling Approaches
         questions:
           - circling-approach-radius
           - circling-approach-missed-approach
+      - title: Missed Approaches
+        questions:
+          - missed-approach-triggers
   - title: Approach, SID, and STAR Briefing Scenarios
     sections:
       - title: KRFD RNAV 7
@@ -411,6 +447,7 @@ chapters:
       - title: Spatial Disorientation and Illusions
         questions:
           - spatial-disorientation
+          - vestibular-illusions
   - title: Unusual Attitudes
     sections:
       - title: Recovery from Unusual Attitudes
