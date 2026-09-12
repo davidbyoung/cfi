@@ -1,6 +1,7 @@
 ---
 tags:
   - avidyne
+  - course-reversals
   - holds
   - n3096b-specific-equipment-and-limitations
 ---

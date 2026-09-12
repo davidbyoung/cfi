@@ -56,6 +56,8 @@
   label: Closing IFR Flight Plans
 - id: convective-sigmets
   label: Convective SIGMETs
+- id: course-reversals
+  label: Course Reversals
 - id: departure-procedures
   label: Departure Procedures
 - id: dme
@@ -198,6 +200,8 @@
   label: SIDs
 - id: sigmets
   label: SIGMETs
+- id: special-use-airspace
+  label: Special Use Airspace
 - id: special-vfr
   label: Special VFR
 - id: stars
@@ -236,8 +240,8 @@
   label: Weather
 - id: weather-advisories
   label: Weather Advisories
-- id: weather-briefing
-  label: Weather Briefing
+- id: weather-briefings
+  label: Weather Briefings
 - id: weather-charts
   label: Weather Charts
 - id: when-an-instrument-rating-is-required
