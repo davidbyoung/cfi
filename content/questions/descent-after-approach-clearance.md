@@ -10,7 +10,7 @@ You're cleared for the approach. When can you start down?
 
 ### Answer
 
-- Only once you're established on a published segment or route of the approach, whether that's a feeder route, an initial segment from an IAF, or the final approach course. Then you may descend to that segment's published minimum altitude.
+- Only once you're **established on a published segment** or route of the approach, whether that's a feeder route, an initial segment from an IAF, or the final approach course. Then you may descend to that segment's published minimum altitude.
 - If you're being radar vectored, maintain your last assigned altitude until you're established on a published segment, unless ATC clears you lower, e.g., "descend and maintain 3,000 until established on the localizer."
 - Published feeder routes from the enroute structure to the IAF are part of the approach clearance, so you fly them without asking for anything additional.
 - If your position and the clearance don't obviously fit together, ask before you descend.

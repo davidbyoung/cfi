@@ -17,8 +17,8 @@ Rules to fly it by:
 - Stay within the charted **"remain within \_\_ NM"** distance, measured from the procedure turn fix.
 - The charted procedure turn altitude is a **minimum** until you're established on the inbound course.
 - Keep the speed at or below **200 KIAS** from the time you first cross the course reversal IAF through completion of the maneuver. That's what the obstacle clearance area is sized for.
-- On a barbed arrow, only the **side** of the outbound course is mandatory. The shape is up to you: 45°/180°, racetrack, teardrop, or 80°/260°, as long as you stay within the charted distance.
-- If it's charted as a **hold in lieu of a procedure turn**, the shape is mandatory. Fly the depicted turn direction and don't exceed the charted leg length or timing.
+- On a barbed arrow, only the side of the outbound course is mandatory. The shape is up to you: 45°/180°, racetrack, teardrop, or 80°/260°, as long as you stay within the charted distance.
+- If it's charted as a hold in lieu of a procedure turn, the shape is mandatory. Fly the depicted turn direction and don't exceed the charted leg length or timing.
 
 ### Sources
 

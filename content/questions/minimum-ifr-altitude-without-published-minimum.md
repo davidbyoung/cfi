@@ -9,8 +9,8 @@ If there's no published minimum altitude for where you're flying, how low can yo
 
 ### Answer
 
-- **Mountainous areas** - 2,000 ft above the highest obstacle within 4 NM of course.
-- **Non-mountainous areas** - 1,000 ft above the highest obstacle within 4 NM of course.
+- Mountainous areas - **2,000 ft** above the highest obstacle within **4 NM** of course.
+- Non-mountainous areas - **1,000 ft** above the highest obstacle within **4 NM** of course.
 - If a minimum altitude is prescribed for the segment you're flying (MEA, MOCA, an ATC-assigned altitude, etc.), that governs instead.
 - You can go below these when necessary for takeoff or landing.
 

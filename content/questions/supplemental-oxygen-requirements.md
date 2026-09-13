@@ -10,7 +10,7 @@ When do you need supplemental oxygen in an unpressurized airplane?
 
 ### Answer
 
-- **Above 12,500 ft MSL up to and including 14,000 ft MSL** - The required minimum flight crew must use oxygen for the portion of the flight at those altitudes lasting more than 30 minutes.
+- **Above 12,500 ft MSL up to and including 14,000 ft MSL** - The required minimum flight crew must use oxygen for the portion of the flight at those altitudes lasting **more than 30 minutes**.
 - **Above 14,000 ft MSL** - The required minimum flight crew must use it the entire time at those altitudes.
 - **Above 15,000 ft MSL** - Each occupant must be **provided** with supplemental oxygen. They aren't required to use it.
 

@@ -11,7 +11,7 @@ Your pitot heat is not working. Can you fly?
 
 ### Answer
 
-Since it is not required per 14 CFR § 91.205, as long as it's not required on your aircraft's equipment list - yes. However, it may be unsafe if flying in visible moisture and freezing temperatures. Per 14 CFR § 91.213, you must placard the pitot heat switch and deactivate it (eg pulling a circuit breaker and zip tying it to prevent reactivation prior to service).
+Since it is not required per 14 CFR § 91.205, as long as it's not required on your aircraft's equipment list - yes. However, it may be unsafe if flying in visible moisture and freezing temperatures. Per 14 CFR § 91.213, you must **placard** the pitot heat switch and **deactivate** it (eg pulling a circuit breaker and zip tying it to prevent reactivation prior to service).
 
 ### Sources
 

@@ -14,7 +14,7 @@ Where is ADS-B out required?
 - Class A
 - Class B
 - Class C
-- Class E at or above 10,000 ft MSL, excluding at or below 2,500 ft AGL
+- Class E at or above 10,000 ft MSL, **excluding at or below 2,500 ft AGL**
 - Above the ceiling and within the lateral boundaries of Class B or Class C airspace up to 10,000 ft MSL
 - Mode C veil
 

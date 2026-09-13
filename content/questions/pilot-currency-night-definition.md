@@ -10,7 +10,7 @@ When can you log night flight hours? What about takeoffs and landings for night 
 
 ### Answer
 
-Night flight can be logged between the end of evening civil twilight and the beginning of morning civil twilight (usually ~30 minutes after sunset to ~30 minutes before sunrise). Takeoffs and landings only count towards night current between one hour after sunset and one hour before sunrise.
+Night flight can be logged between the end of **evening civil twilight** and the beginning of **morning civil twilight** (usually ~30 minutes after sunset to ~30 minutes before sunrise). Takeoffs and landings only count towards night current between **one hour after sunset** and **one hour before sunrise**.
 
 ### Sources
 

@@ -16,7 +16,7 @@ Localizer Performance with Vertical guidance (LPV) - Precision-like approach wit
 - Requires WAAS
 - Think of it as GPS guidance that behaves similarly to an ILS.
 
-Localizer Performance with advisory Vertical guidance (LP+V) – Non-precision approach with localizer-performance lateral navigation and advisory vertical guidance
+Localizer Performance with advisory Vertical guidance (LP+V) – Non-precision approach with localizer-performance lateral navigation and **advisory only** vertical guidance
 
 - May have obstacles or step-down fixes along the approach path
 - Think of it as GPS lateral guidance similar to a LOC approach, with advisory vertical guidance.

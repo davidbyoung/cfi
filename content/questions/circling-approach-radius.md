@@ -9,7 +9,7 @@ How far out does the protected area for an airplane extend during a circling app
 
 ### Answer
 
-It depends on both the Vso of the airplane and the MDA, but for most general aviation airplanes and approaches, it's 1.3 NM:
+It depends on both the Vso of the airplane and the MDA, but for most general aviation airplanes and approaches, it's **1.3 NM**:
 
 | Circling MDA in feet MSL | Category A | Category B | Category C | Category D | Category E |
 | ------------------------ | ---------- | ---------- | ---------- | ---------- | ---------- |

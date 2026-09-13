@@ -9,7 +9,7 @@ You only flew at nighttime once in the past 90 days, and it was 10 days ago. You
 
 ### Answer
 
-No, night currency requires 3 takeoffs and landings to a full stop in the past 90 days.
+No, night currency requires 3 takeoffs and landings **to a full stop** in the past **90 days**.
 
 ### Sources
 

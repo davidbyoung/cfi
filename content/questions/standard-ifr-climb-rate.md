@@ -10,7 +10,7 @@ What is the standard IFR climb rate?
 
 ### Answer
 
-You must cross the departure end of the runway (DER) at a minimum altitude of 35 ft AGL and continue climbing to 400 ft AGL before making a turn. You must climb at 200 ft/NM.
+You must cross the departure end of the runway (DER) at a minimum altitude of **35 ft AGL** and continue climbing to **400 ft AGL** before making a turn. You must climb at **200 ft/NM**.
 
 ### Sources
 

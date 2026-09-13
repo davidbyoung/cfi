@@ -10,7 +10,7 @@ Visibility is 2.5 SM and the ceiling is 3,000 ft. Are you permitted to fly a vis
 
 ### Answer
 
-No. A visual approach requires VMC (3 SM visibility and 1,000 ft ceilings or greater) and for you to remain clear of clouds to the airport.
+No. A visual approach requires VMC (**3 SM** visibility and **1,000 ft** ceilings or greater) and for you to remain clear of clouds to the airport.
 
 ### Sources
 

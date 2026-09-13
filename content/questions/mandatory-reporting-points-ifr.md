@@ -12,7 +12,7 @@ What are the mandatory reporting points when flying IFR? When not in radar conta
 All times:
 
 - Missed approach
-- Airspeed changes of 10 kt or 5% file TAS (whichever is greater)
+- Airspeed changes of **10 kt or 5%** of filed TAS (whichever is greater)
 - Reaching a holding fix
 - VFR-on-top altitude changes
 - Leaving a holding fix
@@ -20,11 +20,11 @@ All times:
 - Safety of flight issues
 - Vacating a previously assigned altitude
 - Radio or navigation equipment failure
-- 500 fpm climb/descent not possible
+- **500 fpm** climb/descent not possible
 
 When not in radar contact:
 
-- ETA error of 3 minutes or more
+- ETA error of **3 minutes** or more
 - Outer marker inbound
 - Final approach fix inbound
 - Compulsory reporting points
