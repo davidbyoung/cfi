@@ -11,7 +11,7 @@ What is RAIM?
 ### Answer
 
 - Receiver Autonomous Integrity Monitoring - Onboard monitoring of the integrity of your signal, and allows for performance-based navigation (PBN)
-- Requires minimum of 5 satellites or 4 with a barometric altimeter unit
+- Requires minimum of **5 satellites** or **4** with a barometric altimeter unit
 - Accuracy is roughly 10-15 m.
 
 ### Sources

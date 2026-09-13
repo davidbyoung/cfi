@@ -24,7 +24,7 @@ To request it, you can call ATC and say "Chicago Approach, Archer 3096B, request
 
 **Rules to follow**
 
-While VFR-on-top, you must maintain VFR weather minimums and appropriate VFR cruising altitudes, remain above IFR minimum altitudes, continue complying with your IFR clearance and applicable IFR procedures, and see and avoid other traffic. It is not permitted in Class A airspace.
+While VFR-on-top, you must maintain VFR weather minimums and appropriate VFR cruising altitudes, remain above IFR minimum altitudes, continue complying with your IFR clearance and applicable IFR procedures, and see and avoid other traffic. It is **not permitted in Class A airspace**.
 
 ### Sources
 

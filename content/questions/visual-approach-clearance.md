@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Nearing your destination, ATC tells you to maintain 3,000 ft and turn to a heading that takes you away from the airport. They ask you to report the field in sight. You radio ATC to let them know that you have the field in sight, to which ATC responds with "Cleared for the visual approach runway 25R." Are you allowed to turn away from your assigned heading or descend from your altitude without further cleareance ATC?
+Nearing your destination, ATC tells you to maintain 3,000 ft and turn to a heading that takes you away from the airport. They ask you to report the field in sight. You radio ATC to let them know that you have the field in sight, to which ATC responds with "Cleared for the visual approach runway 25R." Are you allowed to turn away from your assigned heading or descend from your altitude without further clearance from ATC?
 
 ### Answer
 

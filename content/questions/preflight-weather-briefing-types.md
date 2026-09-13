@@ -11,7 +11,7 @@ What are the types of preflight weather briefings, and what's in a standard one?
 
 - **Standard** - The full picture, for when you haven't looked at anything yet. It covers adverse conditions, VFR flight not recommended when applicable, the synopsis, current conditions, enroute and destination forecasts, winds aloft, NOTAMs, and ATC delays.
 - **Abbreviated** - An update to a briefing or data you already have. Tell the briefer what you've already seen and when you saw it.
-- **Outlook** - For a departure 6 or more hours away. Forecast information only.
+- **Outlook** - For a departure **6 or more hours** away. Forecast information only.
 
 All three are also available in flight via Flight Service. You can also get compliant briefing by self-briefing with qualified sources (e.g., ForeFlight) because § 91.103 is about having the information, not about how you got it.
 

@@ -9,7 +9,7 @@ If you had a multi-engine rating in addition to a single-engine rating and have 
 
 ### Answer
 
-No, currency applies to the category _and_ class, meaning you're only current to take passengers up in a multi-engine airplane.
+No, currency applies to the **category and class**, meaning you're only current to take passengers up in a multi-engine airplane.
 
 ### Sources
 

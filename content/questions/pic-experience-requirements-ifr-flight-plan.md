@@ -9,7 +9,7 @@ What experience do you need to legally act as PIC on an IFR flight plan?
 
 ### Answer
 
-- Within the preceding 6 calendar months: 6 IAPs, holding procedures/tasks, and intercepting/tracking courses
+- Within the preceding **6 calendar months**: **6 IAPs**, holding procedures/tasks, and intercepting/tracking courses
 - Current flight review
 - Current FAA medical
 - Landing currency if carrying passengers

@@ -13,7 +13,7 @@ What's the difference between "hold for release," a release time, a clearance vo
 - **Hold for release** - You have your clearance, but you may not depart IFR until ATC releases you.
 - **Release time** - The **earliest** time you may depart.
 - **Clearance void time** - The **latest** time you may depart. If you don't get off by then, you can't take off on that clearance, and you must contact ATC within 30 minutes of the void time so they can release the airspace held for you.
-- **EDCT (Expect Departure Clearance Time)** - A wheels-up time assigned under a traffic management program. Plan to depart no earlier than 5 minutes before and no later than 5 minutes after it.
+- **EDCT (Expect Departure Clearance Time)** - A wheels-up time assigned under a traffic management program. Plan to depart no earlier than **5 minutes** before and no later than **5 minutes** after it.
 
 ### Sources
 

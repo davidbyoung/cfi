@@ -11,7 +11,7 @@ What are IFR fuel requirements?
 
 ### Answer
 
-Enough fuel to fly to the first airport of intended landing, then to the alternate (if one is required), then for 45 minutes at normal cruising speed
+Enough fuel to fly to the first airport of intended landing, then to the alternate (if one is required), then for **45 minutes** at normal cruising speed
 
 ### Sources
 

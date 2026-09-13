@@ -12,7 +12,7 @@ What is an MVA, and why can ATC vector you below the MEA?
 - Minimum Vectoring Altitude - the lowest altitude a radar controller may vector you to within a given sector.
 - It provides 1,000 ft above the highest obstacle in non-mountainous areas and 2,000 ft in designated mountainous areas, and at least 300 ft above the floor of controlled airspace. Sector boundaries are at least 3 NM from the obstacle that determines the MVA.
 - MVA charts are built for the controller's radar display, not for you, which is why an assignment can look lower than the MEA or MOCA you see on the enroute chart.
-- An MVA guarantees obstacle clearance. It doesn't guarantee navigation signal coverage or communications, so if you lose the vector or the radar service ends, you're back to your own minimum IFR altitude. Speak up if an assignment doesn't look right to you.
+- An MVA guarantees obstacle clearance. It **doesn't guarantee navigation signal coverage or communications**, so if you lose the vector or the radar service ends, you're back to your own minimum IFR altitude. Speak up if an assignment doesn't look right to you.
 
 ### Sources
 

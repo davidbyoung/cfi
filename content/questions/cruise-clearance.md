@@ -13,7 +13,7 @@ What does a "cruise" clearance authorize, and how is it different from a block a
 
 - "Cruise 6,000" assigns you a block of airspace from the minimum IFR altitude up to and including 6,000 ft. You may climb and descend anywhere within that block at your discretion.
 - Once you report leaving an altitude, you can't return to it without an additional clearance.
-- A cruise clearance also authorizes you to execute the approach and land at the destination without a separate approach clearance, which is why you'll hear it going into quiet non-towered airports.
+- A cruise clearance also authorizes you to **execute the approach and land** at the destination **without a separate approach clearance**, which is why you'll hear it going into quiet non-towered airports.
 
 **Block altitude**
 

@@ -30,7 +30,7 @@ Severe turbulence, wind shear and microbursts, hail (which can be thrown miles o
 
 **What it means for us**
 
-Never fly under a cell, since that's where the shear and hail live. Avoid anything severe or with an intense echo by at least 20 NM. Circumnavigate areas of heavy coverage rather than picking through them. And remember that an embedded cell in IMC gives you no visual warning at all.
+**Never fly under a cell**, since that's where the shear and hail live. Avoid anything severe or with an intense echo by **at least 20 NM**. Circumnavigate areas of heavy coverage rather than picking through them. And remember that an embedded cell in IMC gives you no visual warning at all.
 
 ### Sources
 
