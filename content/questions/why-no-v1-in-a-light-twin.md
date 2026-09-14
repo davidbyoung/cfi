@@ -17,7 +17,7 @@ Your friend flying jets talks about "V1 cuts." Does a light twin have a V1?
 - A light twin has **no such guarantee**. It may not be able to climb at all on one engine at that weight, altitude, and temperature.
 - What you have instead is accelerate-stop and accelerate-go distance data, a single-engine climb chart, and a decision point that **you** choose and brief before every takeoff.
 
-So the honest answer to an examiner is that a light twin has no V1, and that the absence of one is exactly why the takeoff briefing matters so much.
+So the honest answer to an examiner is that a light twin has no V1 in the part 25 sense, and that the absence of the guarantee behind it is exactly why the takeoff briefing matters so much. If your AFM **does** publish a V1 or V2 - some part 23 commuter-category and turboprop airplanes do - fly the AFM's number. What that number lacks is the certified stop-or-go performance standing behind a part 25 V1.
 
 ### Sources
 

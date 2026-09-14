@@ -17,7 +17,7 @@ Why does the relationship between Vmc and stall speed change as you climb, and w
 
 This matters in two directions:
 
-- It's why the ACS has you recover a Vmc demonstration at the first indication of loss of directional control, stall warning, **or buffet**. At altitude, the stall arrives first, and a stall with asymmetric thrust is a spin entry.
+- It's why the ACS has you recover a Vmc demonstration at the first indication of loss of directional control, stall warning, **or buffet**. At altitude, the stall arrives first, and a stall with asymmetric thrust can rapidly develop into a spin.
 - It's why a demonstration at a safe altitude can never show you the low-altitude case, which is the one that actually kills people.
 
 ### Sources

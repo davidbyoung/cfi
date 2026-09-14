@@ -11,8 +11,9 @@ What's the difference between deice and anti-ice equipment, and what does "known
 
 ### Answer
 
-- **Anti-ice** systems **prevent** ice from forming, and are turned on **before** entering icing conditions - heated pitot tube, heated stall warning vane, heated or alcohol-sprayed windshield panel, electrically heated propeller boots or a slinger ring, carburetor heat, and engine inlet heat.
-- **Deice** systems **remove** ice after it has accumulated, and are used **after** a measurable amount has built up - most commonly pneumatic **boots** on the leading edges, which inflate to crack the ice off.
+- **Anti-ice** systems **prevent** ice from forming, and are turned on **before** entering icing conditions - heated pitot tube, heated stall warning vane, heated or alcohol-sprayed windshield panel, a propeller **alcohol slinger ring**, carburetor heat, and engine inlet heat.
+- **Deice** systems **remove** ice after it has accumulated, and are used **after** a measurable amount has built up - most commonly pneumatic **boots** on the wing and tail leading edges, which inflate to crack the ice off, and **electrically heated propeller boots**, which cycle through the blades to shed what has built up.
+- **Propeller heat is the case where the label depends on how it is operated.** Cycled electrothermal boots shed accumulated ice, which is de-icing. Continuous heating, as on many turboprops, prevents it forming at all, which is anti-icing. Read the placard and the AFM rather than the hardware.
 - Almost every airplane has _some_ anti-ice equipment. A heated pitot tube is required for IFR under **91.205(d)**, and carburetor heat or alternate air is standard. Having a piece or two of this equipment does not make the airplane approved for icing.
 
 **Known ice / FIKI approval**

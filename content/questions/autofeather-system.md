@@ -12,7 +12,7 @@ What is an autofeather system and when is it armed?
 ### Answer
 
 - A system that **automatically feathers** a propeller when it senses a large loss of power on that engine, typically via a torque or manifold-pressure sensor.
-- It is **armed for takeoff, initial climb, approach, and landing** - the phases where the delay of a manual identification and feather would be most costly.
+- **Arming logic is AFM-specific.** Many systems arm only for **takeoff and landing**; others cover initial climb and approach as well. The common thread is the phases where the delay of a manual identify-and-feather would be most costly - but never assume the system is live without checking your airplane's arming conditions and indication.
 - It usually includes a **lockout** so that both propellers cannot feather at once, protecting against a false trigger on both sides.
 - Common on turboprops, uncommon on piston trainers.
 

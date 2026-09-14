@@ -10,7 +10,7 @@ Why must you never take the Vmc demonstration to a full stall?
 
 ### Answer
 
-Because a stall with asymmetric thrust is a **spin entry**, and light twins are not certified for spins or required to demonstrate spin recovery.
+Because a stall with asymmetric thrust can rapidly develop into a **spin**, and light twins are not certified for spins or required to demonstrate spin recovery.
 
 The ACS is explicit on the related hazard: do **not** perform this maneuver by increasing pitch attitude to a high angle with **both engines operating** and then reducing power on the critical engine. That technique is hazardous and may result in loss of airplane control - it sets up a yaw at high angle of attack, which is precisely how a spin starts.
 
