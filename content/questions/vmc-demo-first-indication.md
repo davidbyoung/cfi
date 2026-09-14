@@ -10,7 +10,7 @@ What are you looking for as the point to recover?
 
 ### Answer
 
-**The first indication of any of three things:**
+The first indication of any of three things:
 
 - **Loss of directional control** - Full rudder is in and the airplane still begins to yaw
 - **Stall warning** - Horn or light

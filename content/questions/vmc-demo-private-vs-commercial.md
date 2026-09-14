@@ -10,7 +10,7 @@ Is the Vmc demonstration required for a private AMEL add-on, or only commercial?
 
 ### Answer
 
-**Both.** It is Task X.B in the Private ACS and Task X.B in the Commercial ACS, with the same knowledge elements, risk management elements, and procedure.
+Both. It is Task X.B in the Private ACS and Task X.B in the Commercial ACS, with the same knowledge elements, risk management elements, and procedure.
 
 The only difference is the airspeed tolerance during recovery:
 
