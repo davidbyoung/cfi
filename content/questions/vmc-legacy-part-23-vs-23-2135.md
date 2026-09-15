@@ -15,7 +15,7 @@ Your Vmc sources cite [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-t
 What actually changed:
 
 - The 2017 rewrite replaced part 23's prescriptive standards with performance-based ones. **§ 23.149 no longer exists**, which is why sources cite it by its last published edition.
-- Its replacement, [§ 23.2135(c)](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf/CFR-2014-title14-vol1-sec23-149.pdf), still defines the speed: "VMC is the calibrated airspeed at which, following the sudden critical loss of thrust, it is possible to maintain control of the airplane. For multiengine airplanes, the applicant must determine VMC, if applicable, for the most critical configurations used in takeoff and landing operations."
+- Its replacement, [§ 23.2135(c)](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-23/subpart-B/section-23.2135), still defines the speed: "VMC is the calibrated airspeed at which, following the sudden critical loss of thrust, it is possible to maintain control of the airplane. For multiengine airplanes, the applicant must determine VMC, if applicable, for the most critical configurations used in takeoff and landing operations."
 - What it no longer does is **state the numbers**. No 5° bank, no 150 lb rudder force, no 20° heading change, no 1.2 Vs1 cap. Those now live in the **accepted means of compliance** an applicant uses, rather than in the CFR itself.
 
 So quote the [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf/CFR-2014-title14-vol1-sec23-149.pdf) conditions with confidence, and be able to add that they come from the version of part 23 your airplane was certified under rather than from today's CFR.

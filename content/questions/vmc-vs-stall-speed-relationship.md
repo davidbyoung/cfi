@@ -12,10 +12,10 @@ How do Vmc and stall speed relate, and which situation is the dangerous one?
 
 Which one comes first determines what the airplane does when you get slow with an engine out.
 
-- If **Vs is reached first** (Vmc is below the stall), the airplane stalls while you still have directional control. That's an ordinary stall - unpleasant, but recoverable as long as yaw and roll are controlled to prevent a spin.
+- If **Vs is reached first** (Vmc is below the stall), the airplane reaches the stall with directional control intact. Better than the alternative, but **not an ordinary stall** - stalling with asymmetric thrust is the classic spin entry. Recover by reducing power on the operating engine to cut the asymmetry and lowering the angle of attack at the first indication.
 - If **Vmc is reached first** (Vmc is above the stall), you lose directional control while the wings are still flying. The airplane yaws and rolls toward the dead engine, and at low altitude that is unrecoverable.
 
-The second case is the dangerous one, and it's why red line matters more than the stall strip in a twin. Because Vmc falls with altitude while indicated stall speed doesn't, the relationship flips somewhere in the climb - which is exactly what the Vmc demonstration is built to show you.
+The second case is the one red line exists for, and it's why red line matters more than the stall strip in a twin. In a **normally aspirated** twin, Vmc falls with altitude while indicated stall speed doesn't, so the relationship flips somewhere in the climb - which is exactly what the Vmc demonstration is built to show you.
 
 ### Sources
 

@@ -10,7 +10,7 @@ What changes on an airplane with counter-rotating propellers?
 
 ### Answer
 
-- The propellers turn in **opposite directions**, typically with the descending blade of each on the outboard side, so the thrust-line displacement is mirrored.
+- The propellers turn in **opposite directions**, with the descending blade of each on the **inboard** side. That pulls each engine's thrust line toward the fuselage and makes the two moment arms equal.
 - Both engines then produce the **same** yawing moment when the other fails, so **there is no critical engine**. A Seminole and a Baron 58TC are common examples.
 - With **both** engines running, torque and spiraling slipstream effects also cancel between them.
 

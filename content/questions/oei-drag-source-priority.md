@@ -17,7 +17,7 @@ Roughly in order of magnitude for a typical light twin:
 2. **Extended landing gear** - Large parasite drag, and usually the easiest thing to fix.
 3. **Extended flaps** - Significant beyond the takeoff setting.
 4. **Sideslip** - Flying wings level or with the ball forced center.
-5. **Open cowl flaps** - Small individually, but free to fix.
+5. **Open cowl flaps** - Small individually, and **not** a free cleanup: cowl flaps are engine-temperature control, and the operating engine at climb power may need them open. Set them as the AFM directs, not reflexively closed.
 
 The order is why the OEI flow is about **drag reduction** before it's about troubleshooting. You buy back climb in the order above, then worry about why the engine quit.
 
