@@ -15,10 +15,12 @@ Less than most people expect. The **Tasks are identical**. Both the Private and 
 
 - A - Maneuvering with One Engine Inoperative
 - B - Vmc Demonstration
-- C - Engine Failure During Flight (by reference to instruments)
-- D - Instrument Approach and Landing with an Inoperative Engine
+- C - One Engine Inoperative (Simulated), solely by reference to instruments, in straight-and-level flight and turns
+- D - Instrument Approach and Landing with an Inoperative Engine (Simulated), by reference to instruments
 
-What changes is the tolerance. During the Vmc demo recovery you must maintain Vsse/Vyse:
+**Tasks C and D are conditional in both ACSs.** They don't apply if you hold no instrument airplane rating, or if you've already shown multiengine instrument proficiency. Skip them and the certificate carries an **"Airplane Multiengine VFR Only"** limitation, removed later by flying those two Tasks in an airplane with a published Vmc.
+
+What changes between the two levels is the tolerance. During the Vmc demo recovery you must maintain Vsse/Vyse:
 
 - Private - **+10/-5 kt**
 - Commercial - **±5 kt**

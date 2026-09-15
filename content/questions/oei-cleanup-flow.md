@@ -11,7 +11,7 @@ Walk me through your flow immediately after an engine failure in a light twin.
 
 ### Answer
 
-Control first, then drag, then diagnosis. A common ordering:
+Control first, then drag, then diagnosis - the order the AFH says most AFM/POH checklists use. Your airplane's checklist is the authority; some retract the gear before the flaps.
 
 #### Control
 
@@ -29,11 +29,13 @@ Control first, then drag, then diagnosis. A common ordering:
 
 #### Identify, verify, feather
 
-- **Identify** - "Dead foot, dead engine"
-- **Verify** - Slowly retard the suspect throttle and confirm nothing changes
-- **Feather** - The failed engine's propeller
+- **Identify** - "Dead foot, dead engine," from the control inputs, not the gauges
+- **Verify** - Slowly retard the suspect throttle. **No change in performance** is the verification
+- **Feather** - Corresponding propeller control fully aft
 
-Then secure the engine per the checklist, declare as appropriate, and fly the airplane to a landing. Always finish with the **printed checklist** once the immediate items are done.
+Then secure the engine, declare as appropriate, and fly the airplane to a landing. Finish with the **printed checklist**, deliberately - other than closing the failed engine's cowl flap, none of the remaining items affects climb performance.
+
+The flow includes flaps and gear even when they're already up. A memory item either initiates an action **or confirms a condition**, and the same flow has to work for a failure during a go-around.
 
 ### Sources
 
