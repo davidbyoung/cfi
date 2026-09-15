@@ -2,3 +2,6 @@
   guides:
     - instrument-rating-oral
     - instrument-proficiency-check
+- title: Multiengine Rating
+  guides:
+    - amel-add-on-oral

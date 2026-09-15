@@ -1,0 +1,206 @@
+title: Multiengine Add-On Oral Exam
+slug: amel-add-on-oral
+chapters:
+  - title: Certificate, Privileges, and Currency
+    sections:
+      - title: Adding the Multiengine Rating
+        questions:
+          - amel-add-on-requirements
+          - amel-no-knowledge-test
+          - amel-private-vs-commercial-scope
+      - title: Certificate Limitations
+        questions:
+          - centerline-thrust-limitation
+          - amel-instrument-privileges-carryover
+      - title: Endorsements and Currency
+        questions:
+          - multiengine-complex-hp-endorsements
+          - pilot-currency-category-class
+      - title: Instructing in Multiengine Airplanes
+        questions:
+          - mei-requirements-overview
+  - title: Multiengine Aerodynamics
+    sections:
+      - title: What the Second Engine Actually Buys You
+        questions:
+          - light-twin-performance-reality
+          - oei-drag-vs-thrust
+      - title: Asymmetric Effects
+        questions:
+          - accelerated-slipstream
+      - title: Ceilings
+        questions:
+          - service-ceiling-vs-absolute-ceiling
+          - single-engine-service-ceiling
+      - title: Stalls and Spins in a Twin
+        questions:
+          - multiengine-spin-considerations
+          - vmc-vs-stall-speed-relationship
+  - title: V-Speeds
+    sections:
+      - title: Airspeed Indicator Markings
+        questions:
+          - multiengine-asi-markings
+      - title: Single-Engine Climb Speeds
+        questions:
+          - vyse-definition
+          - vxse-definition
+          - vyse-vs-vxse-when-to-use
+      - title: Training and Control Speeds
+        questions:
+          - vsse-definition
+          - vmc-definition
+      - title: Takeoff Speeds
+        questions:
+          - vr-vs-vlof-light-twin
+          - why-no-v1-in-a-light-twin
+  - title: Vmc - Certification and Factors
+    sections:
+      - title: How Vmc Is Determined
+        questions:
+          - vmc-certification-criteria
+          - vmc-legacy-part-23-vs-23-2135
+          - vmc-published-vs-actual
+      - title: Factors That Move Vmc
+        questions:
+          - vmc-effect-of-bank-angle
+          - vmc-effect-of-cg
+          - vmc-effect-of-weight
+          - vmc-effect-of-density-altitude
+          - vmc-effect-of-gear-and-flaps
+          - vmc-windmilling-vs-feathered-prop
+      - title: Vmc and Stall Speed
+        questions:
+          - vmc-and-stall-convergence-at-altitude
+      - title: Putting It Together
+        questions:
+          - vmc-factors-summary
+  - title: The Critical Engine
+    sections:
+      - title: Definition and Cause
+        questions:
+          - critical-engine-definition
+          - critical-engine-four-factors
+          - critical-engine-why-the-left
+      - title: Counter-Rotating Propellers
+        questions:
+          - critical-engine-counter-rotating
+  - title: Zero Sideslip and OEI Control
+    sections:
+      - title: Flying Zero Sideslip
+        questions:
+          - zero-sideslip-definition
+          - zero-sideslip-bank-and-ball
+      - title: Common Errors
+        questions:
+          - zero-sideslip-vs-wings-level
+          - zero-sideslip-vs-ball-centered
+      - title: Control Technique
+        questions:
+          - oei-rudder-and-trim-technique
+          - oei-control-vs-performance
+  - title: One-Engine-Inoperative Performance
+    sections:
+      - title: What to Expect
+        questions:
+          - oei-climb-performance-expectations
+          - oei-drag-source-priority
+      - title: The Cleanup Flow
+        questions:
+          - oei-cleanup-flow
+      - title: Planning Around It
+        questions:
+          - single-engine-service-ceiling-planning
+          - density-altitude-oei-decision
+          - oei-fuel-management-crossfeed
+  - title: Engine Failure by Phase of Flight
+    sections:
+      - title: Takeoff and Initial Climb
+        questions:
+          - engine-failure-before-rotation
+          - engine-failure-after-rotation-below-vyse
+          - engine-failure-after-rotation-gear-still-down
+      - title: Climb and Cruise
+        questions:
+          - engine-failure-in-climb
+          - engine-failure-in-cruise
+      - title: Approach and Landing
+        questions:
+          - engine-failure-on-approach
+          - engine-failure-during-go-around
+          - single-engine-approach-and-landing
+      - title: Identification and Securing
+        questions:
+          - engine-failure-identification-flow
+          - verify-before-feather
+          - when-not-to-feather
+          - restart-vs-secure-decision
+      - title: Planning the Takeoff Decision
+        questions:
+          - accelerate-stop-vs-accelerate-go
+          - light-twin-takeoff-briefing
+  - title: Vmc Demonstration
+    sections:
+      - title: Purpose and Setup
+        questions:
+          - vmc-demo-purpose
+          - vmc-demo-setup-and-configuration
+          - vmc-demo-entry-altitude
+      - title: Flying the Demonstration
+        questions:
+          - vmc-demo-procedure
+          - vmc-demo-first-indication
+          - vmc-demo-recovery
+      - title: Hazards and Standards
+        questions:
+          - vmc-demo-why-never-to-full-stall
+          - vmc-demo-private-vs-commercial
+  - title: Systems
+    sections:
+      - title: Propellers
+        questions:
+          - multiengine-constant-speed-prop-operation
+          - prop-governor-and-oil-pressure
+          - prop-synchronization-synchrophasing
+      - title: Feathering
+        questions:
+          - propeller-feathering-mechanism
+          - feathering-rpm-limitation
+          - propeller-unfeathering-accumulators
+          - autofeather-system
+      - title: Fuel
+        questions:
+          - fuel-crossfeed-purpose-and-limits
+          - multiengine-fuel-tank-management
+      - title: Electrical and Landing Gear
+        questions:
+          - multiengine-electrical-dual-alternators
+          - landing-gear-emergency-extension
+      - title: Ice Protection, Turbocharging, and Pressurization
+        questions:
+          - deice-vs-anti-ice
+          - turbocharging-basics
+          - pressurization-basics
+  - title: Preflight, Weight and Balance, and Performance Planning
+    sections:
+      - title: Preflight
+        questions:
+          - multiengine-preflight-differences
+      - title: Weight and Balance
+        questions:
+          - multiengine-weight-and-balance
+          - oei-cg-effect-on-control
+      - title: Performance Charts
+        questions:
+          - accelerate-stop-distance-charts
+          - single-engine-climb-charts
+  - title: Other Emergencies
+    sections:
+      - title: Fire and Rapid Descent
+        questions:
+          - engine-fire-in-flight-multiengine
+          - multiengine-emergency-descent
+      - title: System Malfunctions
+        questions:
+          - asymmetric-flap-or-gear-extension
+          - multiengine-electrical-failure

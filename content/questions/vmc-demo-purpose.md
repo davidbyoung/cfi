@@ -1,0 +1,24 @@
+---
+tags:
+  - vmc-demo
+  - vmc
+---
+
+### Question
+
+What is the purpose of a Vmc demonstration?
+
+### Answer
+
+To let you **recognize** the onset of loss of directional control with an engine inoperative, and to practice recovering from it promptly.
+
+- It is a **demonstration of a flight characteristic**, not a maneuver you would ever perform operationally.
+- It teaches the cues - the rudder running out of travel, the airplane starting to yaw despite full rudder, the buffet or stall warning.
+- It also shows, concretely, that Vmc is not a fixed number: the speed at which you lose control in the demo will usually be well below red line, and at altitude the stall may arrive first.
+
+It's Task X.B in both the Private and Commercial ACS.
+
+### Sources
+
+- [FAA Commercial Pilot - Airplane ACS (FAA-S-ACS-7), Area of Operation X - Multiengine Operations](https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf)
+- [FAA Airplane Flying Handbook, Chapter 13 - Transition to Multiengine Airplanes](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf)
