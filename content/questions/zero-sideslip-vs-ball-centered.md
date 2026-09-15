@@ -12,7 +12,7 @@ Why doesn't centering the ball give you zero sideslip, and what are the two wron
 
 **The ball is not an airflow instrument.** It is a weight in a curved tube - an accelerometer. It reports which way the combined pull of gravity and sideways acceleration leans relative to the airplane's floor, answering "are the sideways forces balanced?" It cannot sense the air at all, so it cannot answer "is the fuselage pointed into the airflow?"
 
-**In a single those are the same question**, because the only meaningful sideways force comes from the fuselage being skewed to the airflow. Balance the forces and you have necessarily lined up with the wind. That's why "step on the ball" works - and why the habit transfers wrong.
+**In a single, those are the same question**, because the only meaningful sideways force comes from the fuselage being skewed to the airflow. Balance the forces and you have necessarily lined up with the wind. That's why "step on the ball" works - and why the habit transfers wrong.
 
 **An engine failure adds a force that has nothing to do with airflow alignment: the rudder.** Left engine quits, the right engine's thrust yaws the nose left, you hold right rudder. That rudder is a wing generating a real sideways force on the tail, pointing _left_ - toward the dead engine - which is what swings the nose back. The ball now reads the sum of that rudder force and whatever sideslip force exists, and cannot tell them apart.
 
