@@ -13,7 +13,7 @@ Why does the relationship between Vmc and stall speed change as you climb, and w
 
 - In a **normally aspirated** twin, **Vmc falls** with density altitude as the operating engine loses power, while **indicated stall speed stays essentially constant**. A turbocharged twin holds full asymmetric thrust to critical altitude, so its Vmc need not fall this way.
 - Low down, Vmc may be above the stall speed - so a slowing airplane loses directional control first.
-- High up, Vmc drops below the stall speed - so the airplane **stalls before it reaches Vmc**.
+- High up, Vmc drops below the stall speed - so the airplane **stalls before it reaches Vmc**. Both the ACS and the AFH say so for normally aspirated engines: at some altitude the two speeds are the same.
 
 This matters in two directions:
 

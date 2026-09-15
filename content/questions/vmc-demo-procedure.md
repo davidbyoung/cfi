@@ -10,14 +10,15 @@ Walk me through flying the Vmc demonstration.
 
 ### Answer
 
-- Clear the area and establish the configuration at a safe altitude.
-- Set maximum power on the operating engine and idle (or simulated zero thrust) on the critical engine.
-- Establish a bank of up to **5°** toward the operating engine.
-- **Slowly increase pitch attitude to reduce airspeed at about 1 knot per second**, adding rudder pressure as needed to hold heading.
-- Continue until you reach **the first indication of loss of directional control, stall warning, or buffet**.
-- Recover immediately.
+- Clear the area and set up so the whole maneuver happens at least **3,000 ft AGL**.
+- Configure per the manufacturer; absent that, the ACS spells it out: **gear up, flaps takeoff, cowl flaps takeoff, trim takeoff, props high rpm**.
+- **Critical engine to idle with its propeller windmilling** - not the zero-thrust setting used for the engine-failure Tasks - and the **operating engine to takeoff power**.
+- Establish a climb attitude about **10 kt above Vsse** and a bank of up to **5°** toward the operating engine.
+- **Increase pitch slowly to decelerate at about 1 knot per second**, adding rudder as needed to hold heading.
+- Continue to **the first indication of loss of directional control, stall warning, or buffet**.
+- Recover immediately: reduce power on the operating engine enough to stop the yaw, lower the angle of attack, add no power on the failed engine, and recover within **20° of entry heading**.
 
-The deceleration rate matters. Going faster than about a knot per second doesn't give the aerodynamics time to develop and turns the exercise into a stall entry.
+The deceleration rate is part of the standard. Going faster takes a steeper pitch attitude, which drives the angle of attack up and can carry you past the first cue before you recognize it - and a Vmc demo that degrades into a stall with high asymmetric thrust "may result in an unrecoverable loss of control and a fatal accident."
 
 ### Sources
 

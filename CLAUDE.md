@@ -16,6 +16,30 @@ npx tsc --noEmit     # type-check — fix all errors before finishing
 npm run lint         # lint
 ```
 
+## Writing study guide answers
+
+Answers in `content/questions/` are study material for a checkride, not a brief. Two failure modes have cost real rework: claims that don't survive a look at the cited source, and answers that grow until a student won't read them.
+
+### Sources
+
+- **Write from the source text, not from memory, then cite.** Open the document and confirm the claim is in it before writing the sentence. Working knowledge of a topic is not a source — it is how wrong numbers get attached to correct-looking citations.
+- **Check the cited document actually covers the topic.** An emergency descent answer once cited AFH Chapter 13, which has no emergency descent content in it.
+- **Cite the specific place**: `§ 23.149(b)(5)`, `ACS Task IX.A`, `AFH Ch 13`. A whole-document citation hides a wrong one.
+- **Match the FAA's own scope.** Don't universalize a scoped statement, and don't hedge one the FAA states flatly. The AFH says Vyse gives minimum sink _above the single-engine absolute ceiling_ — keep the condition. The ACS says a normally aspirated twin's Vmc falls below Vs at altitude — don't soften that to "may."
+- **Where the AFM/POH governs, say so once and still give the FAA's number if there is one.** Emergency descent configuration is airplane-specific, but the 30–45° bank is an ACS standard. "It depends" teaches nothing.
+- **Watch paired numbers.** 100 fpm vs 50 fpm service ceilings, +10/−5 vs ±5 kt tolerances — these get swapped.
+
+### Length
+
+- Target **5–8 bullets and under ~180 words** of answer body. The corpus median is ~37 words; p90 is ~168. Longer is justified only for "walk me through" procedures and reference lists such as a regulation's conditions.
+- **Attribution belongs in `### Sources`, not in the prose.** "Start from what the AFH actually says…" is padding; the fact is the content.
+- **A correction replaces the wrong text — it does not append a qualifier.** Rewrite the answer as though it had been right the first time.
+- Split a grab-bag bullet into separate bullets rather than letting one carry three ideas. Bullets scan; paragraphs don't.
+
+### Reviewer feedback
+
+Automated review (Copilot and similar) reasons from priors, not from the cited PDFs. On the multiengine set roughly a third of its findings were wrong — it misattributed Part 25 propeller language to Part 23, and contradicted the AFH on checklist ordering and on Vyse as minimum sink. **Verify each finding against the source before acting on it**, and say plainly which ones you rejected and why.
+
 ## Active Technologies
 
 - TypeScript 5.x / Node.js ≥20.9 + Next.js 16.x (App Router, `output: 'export'`), React 19.x, Tailwind v4 — plus new: `gray-matter`, `unified`, `remark-parse`, `remark-rehype`, `rehype-stringify`, `rehype-sanitize`, `js-yaml`, `zod`, `vitest` (002-study-guide-question-bank)

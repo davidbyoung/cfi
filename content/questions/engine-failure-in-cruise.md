@@ -18,7 +18,7 @@ Better in every way that matters, which is why it's the phase used for training.
 
 The process is the same - control, configure, identify, verify, feather, secure - but done deliberately and backed up with the printed checklist.
 
-The new problem is **where to go**. If you are cruising above the single-engine service ceiling you will drift down to it, so pick an airport you can reach from a descending profile, consider terrain, and start the diversion early rather than troubleshooting for ten minutes first.
+The new problem is **where to go**. If you are cruising above the altitude the airplane can hold on one engine, you drift down - strictly only as far as the single-engine **absolute** ceiling, where the climb rate reaches zero, but plan on the **service** ceiling, because the AFH warns that engine and propeller wear, turbulence, and pilot technique mean the airplane may not hold altitude even at the published single-engine ceiling. Pick an airport you can reach from a descending profile, consider terrain, and start the diversion early rather than troubleshooting for ten minutes first.
 
 ### Sources
 

@@ -6,20 +6,22 @@ tags:
 
 ### Question
 
-Summarize everything that affects Vmc and which direction it moves.
+Summarize the factors that affect Vmc and which direction each one moves it.
 
 ### Answer
 
-| Factor                 | Vmc increases when...      | Vmc decreases when...                      |
-| ---------------------- | -------------------------- | ------------------------------------------ |
-| Bank angle             | Wings level                | Banked up to ~5° into the operating engine |
-| Center of gravity      | Aft                        | Forward                                    |
-| Weight                 | Lighter                    | Heavier                                    |
-| Density altitude       | Lower (normally aspirated) | Higher (normally aspirated)                |
-| Failed propeller       | Windmilling                | Feathered                                  |
-| Landing gear           | Retracted                  | Extended                                   |
-| Flaps                  | Retracted                  | Takeoff position                           |
-| Operating engine power | Full power                 | Reduced power                              |
+| Factor                 | Raises Vmc                               | Lowers Vmc                                  |
+| ---------------------- | ---------------------------------------- | ------------------------------------------- |
+| Bank angle             | Wings level                              | Up to ~5° of bank into the operating engine |
+| Center of gravity      | Aft CG                                   | Forward CG                                  |
+| Weight                 | Lighter weight                           | Heavier weight                              |
+| Density altitude       | Lower density altitude (norm. aspirated) | Higher density altitude (norm. aspirated)   |
+| Failed propeller       | Propeller windmilling                    | Propeller feathered                         |
+| Landing gear           | Gear retracted                           | Gear extended                               |
+| Flaps                  | Flaps retracted                          | Flaps in the takeoff position               |
+| Operating engine power | Takeoff power on the operating engine    | Reduced power on the operating engine       |
+
+Density altitude is the row people invert: less power at altitude means less asymmetric thrust, so Vmc falls. A turbocharged twin holds rated power to its critical altitude and doesn't fall off this way.
 
 A common mnemonic is to walk the certification conditions in § 23.149, since each one is a factor set to its most unfavorable value. If you can recite the certification list, you can derive this table rather than memorizing it.
 

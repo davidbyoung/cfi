@@ -24,7 +24,12 @@ Legacy [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf
 - **Rudder pedal force not exceeding 150 lb**, and **no need to reduce power** on the operating engine - (e).
 - No dangerous attitude, and it must be possible to prevent a **heading change of more than 20°** - (e).
 
-**Two conditions people recite that don't appear in the rule's text:** the failed propeller **windmilling** and **cowl flaps in the normal takeoff position**. Both come from the Airplane Flying Handbook's description of the maneuver. The windmilling one isn't wrong, just indirect - the rule keeps propeller controls in the recommended takeoff position, and on a twin without automatic feathering that leaves the failed propeller windmilling. An airplane certified with autofeather is a different case, which is worth knowing about your own airplane. Cowl flaps simply aren't in the rule. Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
+Two conditions people recite that **aren't in the rule's text**. Both come from the ACS's configuration for the Vmc demonstration Task:
+
+- **Windmilling propeller** - indirect, but not wrong. (b)(5) keeps the propeller controls in the recommended takeoff position, and on a twin without autofeather that leaves the failed propeller windmilling. An airplane certified with autofeather is a different case - know which one you fly.
+- **Cowl flaps set for takeoff** - not in the rule at all.
+
+Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
 
 Knowing this list is what lets you reason about every "what happens to Vmc if..." question, because each item is a variable you can move.
 
@@ -32,3 +37,4 @@ Knowing this list is what lets you reason about every "what happens to Vmc if...
 
 - [14 CFR § 23.149 (2014 edition) - Minimum control speed](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf/CFR-2014-title14-vol1-sec23-149.pdf)
 - [FAA Airplane Flying Handbook, Chapter 13 - Transition to Multiengine Airplanes](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf)
+- [FAA Commercial Pilot - Airplane ACS (FAA-S-ACS-7), Task X.B - Vmc Demonstration](https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf)

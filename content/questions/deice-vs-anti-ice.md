@@ -13,8 +13,9 @@ What's the difference between deice and anti-ice equipment, and what does "known
 
 - **Anti-ice** systems **prevent** ice forming and go on **before** you enter icing - heated pitot tube, heated stall warning vane, heated or alcohol-sprayed windshield, a propeller **alcohol slinger ring**, carburetor heat, engine inlet heat.
 - **Deice** systems **remove** ice after a measurable amount has built up - most commonly pneumatic **boots** on the wing and tail leading edges, and **electrically heated propeller boots** that cycle through the blades to shed it.
-- **Propeller heat is the case where the label follows the operation**, not the hardware: cycled electrothermal boots shed accumulated ice (de-ice), while continuous heating prevents it forming (anti-ice). Read the placard.
-- Almost every airplane has _some_ anti-ice equipment - most IFR airplanes have pitot heat, and carburetor heat or alternate air is standard. Note that [§ 91.205(d)](https://www.ecfr.gov/current/title-14/section-91.205) does **not** itself require pitot heat for IFR; whether it is installed or required comes from the AFM and the conditions you're operating in. Either way, a piece or two of this equipment does not make an airplane approved for icing.
+- **Sometimes the label follows the operation**, not the hardware: cycled electrothermal propeller boots shed accumulated ice (de-ice) while continuous heating prevents it (anti-ice), and carburetor heat both prevents carb ice and clears it once formed. Read the placard.
+- **Alternate air is not ice protection.** It's an alternate induction path for a blocked inlet or filter, and on many injected engines it opens automatically.
+- Almost every airplane has _some_ of this equipment, and a piece or two **does not make an airplane approved for icing**. Note also that [§ 91.205(d)](https://www.ecfr.gov/current/title-14/section-91.205) does **not** itself require pitot heat for IFR - that comes from the AFM and the conditions you're operating in.
 
 **Known ice / FIKI approval**
 
