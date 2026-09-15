@@ -13,7 +13,7 @@ How do you get the gear down if the normal system fails?
 Every retractable has an **emergency extension** method, and the type varies:
 
 - **Hydraulic** systems typically have a hand pump, or a valve that dumps pressure and lets the gear **free-fall** into place, sometimes assisted by airspeed and gravity.
-- **Electric** systems typically have a hand crank, and require **pulling the gear motor circuit breaker** first so the motor doesn't fight you.
+- **Electric** systems typically have a hand crank. Some AFMs have you **pull the gear motor circuit breaker** first so the motor doesn't fight the crank; others don't, and on some airplanes that breaker also feeds the position indication. Follow your AFM's sequence exactly rather than a generic one.
 
 Common points worth knowing for your airplane:
 

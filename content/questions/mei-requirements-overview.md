@@ -15,7 +15,7 @@ What does it take to become a multiengine instructor (MEI)?
 - Pass a practical test in a multiengine airplane, flown largely **from the right seat**, demonstrating the multiengine maneuvers to instructor standards - including the Vmc demo and engine failures.
 - There's no separate MEI knowledge test if you already hold a CFI; it's an added rating on the flight instructor certificate.
 
-A commercial AMEL add-on is the prerequisite step, which is why the two are usually planned together.
+Most MEI candidates get there by adding AMEL to a commercial certificate, which is why the two are usually planned together - though an ATP with AMEL satisfies the same prerequisite.
 
 ### Sources
 

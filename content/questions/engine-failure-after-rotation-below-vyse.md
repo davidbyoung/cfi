@@ -15,7 +15,7 @@ If there is usable runway ahead, **land on it.** Reduce power on the operating e
 
 - Below Vyse with the gear down and a windmilling propeller, a light twin usually cannot climb. Attempting to continue trades a landing you can make for a crash you cannot avoid.
 - Retracting the gear to climb commits you before you know whether the airplane will climb at all.
-- If you are airborne with **no** runway remaining and cannot climb, the decision becomes a controlled off-airport landing - straight ahead, wings level, at the lowest practical speed.
+- If you are airborne with **no** runway remaining and cannot climb, the decision becomes a controlled off-airport landing. Close the throttles first - with the asymmetry gone you can fly the airplane wings level - then land roughly straight ahead in the best area available. Slowing toward minimum speed while still carrying power on one side is how a forced landing turns into a Vmc rollover.
 
 This is precisely why the takeoff briefing exists. The decision is made on the ground, not in three seconds at 50 feet.
 

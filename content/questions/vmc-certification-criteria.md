@@ -24,7 +24,7 @@ Legacy [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf
 - **Rudder pedal force not exceeding 150 lb**, and **no need to reduce power** on the operating engine - (e).
 - No dangerous attitude, and it must be possible to prevent a **heading change of more than 20°** - (e).
 
-**Two conditions people recite that are not in § 23.149:** the failed propeller **windmilling** (or feathered with an automatic feathering device) and **cowl flaps in the normal takeoff position**. Both come from the Airplane Flying Handbook's description rather than the rule's text. They are the right operational picture - a windmilling propeller is what raises Vmc - just don't attribute them to the CFR. Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
+**Two conditions people recite that don't appear in the rule's text:** the failed propeller **windmilling** and **cowl flaps in the normal takeoff position**. Both come from the Airplane Flying Handbook's description of the maneuver. The windmilling one isn't wrong, just indirect - the rule keeps propeller controls in the recommended takeoff position, and on a twin without automatic feathering that leaves the failed propeller windmilling. An airplane certified with autofeather is a different case, which is worth knowing about your own airplane. Cowl flaps simply aren't in the rule. Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
 
 Knowing this list is what lets you reason about every "what happens to Vmc if..." question, because each item is a variable you can move.
 

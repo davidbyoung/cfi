@@ -23,7 +23,7 @@ What changes is the tolerance. During the Vmc demo recovery you must maintain Vs
 - Private - **+10/-5 kt**
 - Commercial - **±5 kt**
 
-Beyond Area X, the commercial test also adds the commercial maneuvers and tighter standards throughout.
+Beyond Area X, what else gets tested depends on the certificate you already hold. Adding AMEL to a certificate you already hold at that level means a practical test on the areas that apply to the new class rating, not the full commercial curriculum over again.
 
 ### Sources
 
