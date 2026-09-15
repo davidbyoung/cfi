@@ -11,7 +11,7 @@ How does the single-engine service ceiling change how you plan a flight?
 
 ### Answer
 
-- It tells you the highest altitude the airplane can still climb at 50 fpm with one engine feathered - in practice, the highest altitude you can count on holding. Cruise **above** it and an engine failure means a **drift down**, not level flight.
+- It tells you the highest altitude the airplane can still climb at 50 fpm with one engine feathered - in practice, the highest altitude you can count on holding. Above it you may still hold altitude, up to the single-engine **absolute** ceiling, but the climb margin is gone. Above **that**, a failure means a **drift down**.
 - Over terrain, that turns into a screening question: is the single-engine service ceiling above the **highest terrain and obstacles** along your route, with margin? Treat it as a screen, not a clearance calculation - the real answer comes from the AFM single-engine climb data at the weight, temperature, and altitude you'll actually be flying.
 - If it isn't, you need a different route, a lower weight, a cooler time of day, or an honest acceptance that an engine failure means an off-airport landing.
 - It also shapes your escape plan - knowing which direction leads to lower terrain matters far more in a twin that can only descend slowly than in one that can climb.

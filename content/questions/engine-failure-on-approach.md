@@ -11,9 +11,9 @@ An engine fails on approach. What changes about how you fly it?
 
 ### Answer
 
-- **Delay configuration.** Keep the gear and flaps up longer than normal, and don't extend until landing is assured.
+- **Let performance drive configuration.** If the airplane is performing, the AFH's normal schedule still applies - gear down on downwind, confirmed abeam the intended landing point. If speed decays or the sink rate builds, hold off the remaining flaps until closer in. A partial-flap landing is fine.
 - **Fly Vyse** until you are certain of the landing, then slow only as required.
-- **Plan a shallower, longer final** - You want the airplane stable and the drag under your control, not a steep descent you must arrest with power you don't have.
+- **Fly a normal 3° glidepath.** Slightly steeper is acceptable; the long, flat, low final is the one the AFH tells you to avoid, because it leaves you leaning on power you don't have.
 - **Assume you cannot go around.** With one engine inoperative and the airplane configured for landing, a go-around may be impossible. Make the first approach the one you land from.
 - Brief and fly a stabilized profile, and don't accept a slam-dunk or a short-approach request from ATC.
 
