@@ -16,7 +16,7 @@ Non-precision GPS approaches (LNAV only)
 
 ### Sources
 
-- [FAA AIM ¶ 1-2-3 - Use of Suitable RNAV Systems on Conventional Procedures and Routes](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
+- [FAA AIM ¶ 1-2-3 - Use of Suitable Area Navigation (RNAV) Systems on Conventional Procedures and Routes](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html#1-2-3)
 - [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
 
 ### Supplements

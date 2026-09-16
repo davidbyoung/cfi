@@ -14,7 +14,7 @@ Yes. Unless ATC includes an additional heading or altitude restriction with the 
 
 ### Sources
 
-- [FAA AIM ¶ 5-4-23](https://www.faa.gov/air_traffic/publications/ATpubs/AIM_html/chap5_section_4.html#5-4-23)
+- [FAA AIM ¶ 5-4-23 - Visual Approach](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_4.html#5-4-23)
 
 ### Supplements
 

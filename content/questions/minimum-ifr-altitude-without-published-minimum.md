@@ -14,7 +14,7 @@ If there's no published minimum altitude for where you're flying, how low can yo
 - If a minimum altitude is prescribed for the segment you're flying (MEA, MOCA, an ATC-assigned altitude, etc.), that governs instead.
 - You can go below these when necessary for takeoff or landing.
 
-Designated mountainous areas are defined by coordinates in 14 CFR part 95, and are the shaded areas on the enroute chart.
+Designated mountainous areas are defined by coordinates in [14 CFR part 95](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-95), and are the shaded areas on the enroute chart.
 
 ### Sources
 

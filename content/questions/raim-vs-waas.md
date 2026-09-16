@@ -16,8 +16,8 @@ How does RAIM differ from WAAS?
 
 ### Sources
 
-- [FAA AIM ¶ 1-2-1 - Performance-Based Navigation and Area Navigation](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
-- [FAA AIM ¶ 1-1-18 - Wide Area Augmentation System (WAAS)](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
+- [FAA AIM Section 1-2 - Performance-Based Navigation (PBN) and Area Navigation (RNAV)](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_2.html)
+- [FAA AIM ¶ 1-1-18 - Wide Area Augmentation System (WAAS)](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html#1-1-18)
 - [FAA Instrument Flying Handbook](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-15B.pdf)
 
 ### Supplements

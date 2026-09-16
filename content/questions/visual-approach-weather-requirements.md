@@ -14,7 +14,7 @@ No. A visual approach requires VMC (**3 SM** visibility and **1,000 ft** ceiling
 
 ### Sources
 
-- [FAA AIM ¶ 5-4-23](https://www.faa.gov/air_traffic/publications/ATpubs/AIM_html/chap5_section_4.html#5-4-23)
+- [FAA AIM ¶ 5-4-23 - Visual Approach](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_4.html#5-4-23)
 
 ### Supplements
 

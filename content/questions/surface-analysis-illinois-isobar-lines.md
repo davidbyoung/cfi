@@ -17,4 +17,4 @@ What are all the lines going across Illinois, and what are the numbers you find 
 
 ### Sources
 
-- [FAA Aviation Weather Handbook, Chapter 25 - Analysis (surface charts, isobars, fronts)](https://www.faasafety.gov/files/events/SO/SO15/2024/SO15129447/FAA-H-8083-28Chpt25.pdf)
+- [FAA Aviation Weather Handbook, Chapter 25 - Analysis (surface charts, isobars, fronts)](https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf)

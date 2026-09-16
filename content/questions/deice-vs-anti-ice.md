@@ -15,7 +15,7 @@ What's the difference between deice and anti-ice equipment, and what does "known
 - **Deice** systems **remove** ice after a measurable amount has built up - most commonly pneumatic **boots** on the wing and tail leading edges, and **electrically heated propeller boots** that cycle through the blades to shed it.
 - **Sometimes the label follows the operation**, not the hardware: cycled electrothermal propeller boots shed accumulated ice (de-ice) while continuous heating prevents it (anti-ice), and carburetor heat both prevents carb ice and clears it once formed. Read the placard.
 - **Alternate air is not ice protection.** It's an alternate induction path for a blocked inlet or filter, and on many injected engines it opens automatically.
-- Almost every airplane has _some_ of this equipment, and a piece or two **does not make an airplane approved for icing**. Note also that [§ 91.205(d)](https://www.ecfr.gov/current/title-14/section-91.205) does **not** itself require pitot heat for IFR - that comes from the AFM and the conditions you're operating in.
+- Almost every airplane has _some_ of this equipment, and a piece or two **does not make an airplane approved for icing**. Note also that [§ 91.205(d)](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-C/section-91.205#p-91.205%28d%29) does **not** itself require pitot heat for IFR - that comes from the AFM and the conditions you're operating in.
 
 **Known ice / FIKI approval**
 
@@ -25,6 +25,6 @@ What's the difference between deice and anti-ice equipment, and what does "known
 
 ### Sources
 
-- [14 CFR 91.205(d) - Instrument flight rules equipment requirements](https://www.ecfr.gov/current/title-14/section-91.205)
+- [14 CFR § 91.205(d) - Instrument flight rules equipment requirements](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-C/section-91.205#p-91.205%28d%29)
 - [FAA Aviation Weather Handbook (FAA-H-8083-28B)](https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf)
 - [FAA Airplane Flying Handbook, Chapter 11 - Transition to Complex Airplanes](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/12_afh_ch11.pdf)

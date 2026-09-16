@@ -23,7 +23,7 @@ Summarize the factors that affect Vmc and which direction each one moves it.
 
 Density altitude is the row people invert: less power at altitude means less asymmetric thrust, so Vmc falls. A turbocharged twin holds rated power to its critical altitude, so its Vmc stays high well into the climb - above that altitude it falls off like any other.
 
-A common mnemonic is to walk the certification conditions in § 23.149, since each one is a factor set to its most unfavorable value. If you can recite the certification list, you can derive this table rather than memorizing it.
+A common mnemonic is to walk the certification conditions in [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf/CFR-2014-title14-vol1-sec23-149.pdf), since each one is a factor set to its most unfavorable value. If you can recite the certification list, you can derive this table rather than memorizing it.
 
 ### Sources
 

@@ -14,8 +14,8 @@ At a towered airport, inform the tower. Unless advised by tower, overfly the run
 
 ### Sources
 
-- [Pilot/Controller Glossary](https://www.faa.gov/Air_traffic/Publications/media/PCG_10-12-17.pdf)
-- [FAA AIM ¶ 5-4-23](https://www.faa.gov/air_traffic/publications/ATpubs/AIM_html/chap5_section_4.html#5-4-23)
+- [FAA Pilot/Controller Glossary - Visual Approach](https://www.faa.gov/air_traffic/publications/atpubs/pcg_html/glossary-v.html#VISUAL_APPROACH)
+- [FAA AIM ¶ 5-4-23 - Visual Approach](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_4.html#5-4-23)
 
 ### Supplements
 

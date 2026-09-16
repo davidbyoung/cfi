@@ -13,4 +13,4 @@ Marginal VFR. It's weather that's approaching IFR, but is still legally VFR - **
 
 ### Sources
 
-- [FAA AIM ¶ 7-1-7 - Categorical Ceiling and Visibility Conditions](https://faraim.org/faa/aim/chapter-7/section-7-1-7.html)
+- [FAA AIM ¶ 7-1-7 - Categorical Ceiling and Visibility Conditions](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap7_section_1.html#7-1-7)

@@ -14,7 +14,7 @@ Yes, but you cannot plan your flight to count on it if using the VOR for navigat
 
 ### Sources
 
-- [FAA AIM ¶ 1-1-3 - VHF Omni-directional Range (VOR)](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html)
+- [FAA AIM ¶ 1-1-3 - VHF Omni-directional Range (VOR)](https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html#1-1-3)
 
 ### Supplements
 

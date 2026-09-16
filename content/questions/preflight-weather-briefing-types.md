@@ -13,7 +13,7 @@ What are the types of preflight weather briefings, and what's in a standard one?
 - **Abbreviated** - An update to a briefing or data you already have. Tell the briefer what you've already seen and when you saw it.
 - **Outlook** - For a departure **6 or more hours** away. Forecast information only.
 
-All three are also available in flight via Flight Service. You can also get compliant briefing by self-briefing with qualified sources (e.g., ForeFlight) because § 91.103 is about having the information, not about how you got it.
+All three are also available in flight via Flight Service. You can also get compliant briefing by self-briefing with qualified sources (e.g., ForeFlight) because [§ 91.103](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRe4c59b5f5506932/section-91.103) is about having the information, not about how you got it.
 
 ### Sources
 
