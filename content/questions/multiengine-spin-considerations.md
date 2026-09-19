@@ -14,7 +14,7 @@ Are multiengine airplanes approved for spins, and what happens if you enter one?
 - The dangerous combination is asymmetric thrust plus a stall. Yaw at the stall is exactly what starts a spin, and a twin gives you a powerful yawing moment for free the moment an engine fails.
 - Recovery in a twin is often unreliable, and altitude loss can be extreme.
 
-The defense is procedural, not a recovery technique: **never let the airplane get slow with asymmetric power**. That is the reason you recover a Vmc demonstration at the first indication rather than riding it to the stall.
+The defense is procedural, not a recovery technique: **never let the airplane get slow with asymmetric power**. That is the reason you recover a V<sub>MC</sub> demonstration at the first indication rather than riding it to the stall.
 
 ### Sources
 

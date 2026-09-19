@@ -12,7 +12,7 @@ An engine fails on the takeoff roll before rotation. What do you do?
 
 **Abort.** Close both throttles, maintain directional control, brake as required, and stop on the runway.
 
-- Below Vmc you have no assurance of directional control airborne, so continuing is not a real option.
+- Below V<sub>MC</sub> you have no assurance of directional control airborne, so continuing is not a real option.
 - Directional control on the ground with asymmetric thrust is itself a handful - closing **both** throttles removes the asymmetry immediately.
 - Use maximum braking as needed, and be prepared to steer with rudder and differential braking.
 

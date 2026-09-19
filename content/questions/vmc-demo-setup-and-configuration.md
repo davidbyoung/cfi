@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-How do you configure the airplane for a Vmc demonstration?
+How do you configure the airplane for a V<sub>MC</sub> demonstration?
 
 ### Answer
 

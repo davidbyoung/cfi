@@ -10,7 +10,7 @@ What climb performance should you actually expect on one engine?
 
 ### Answer
 
-- Published single-engine climb assumes the **best case**: critical engine feathered, gear and flaps up, zero sideslip, Vyse, maximum power on the good engine, and a new airplane flown by a test pilot.
+- Published single-engine climb assumes the **best case**: critical engine feathered, gear and flaps up, zero sideslip, V<sub>YSE</sub>, maximum power on the good engine, and a new airplane flown by a test pilot.
 - Real numbers in a light twin at gross on a warm day are commonly **100-200 fpm**, and can be **zero or negative**.
 - Every departure from that ideal costs you: a windmilling prop, gear down, flaps out, or a sideslip can each individually consume all of it.
 

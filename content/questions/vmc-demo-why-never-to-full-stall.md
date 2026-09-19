@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Why must you never take the Vmc demonstration to a full stall?
+Why must you never take the V<sub>MC</sub> demonstration to a full stall?
 
 ### Answer
 

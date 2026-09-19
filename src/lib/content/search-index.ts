@@ -1,10 +1,17 @@
 import type { Question, QuestionSearchIndexEntry, TagMap } from "./types";
 
 function stripHtml(html: string): string {
-  return html
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+  return (
+    html
+      // `<sub>` is inline inside a word — V<sub>yse</sub> is one token, "Vyse".
+      // It has to close up rather than become a space, or searching "Vyse" would
+      // miss every V-speed. Every other tag still becomes a space so that
+      // adjacent blocks don't run together.
+      .replace(/<\/?sub>/g, "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
 }
 
 export function buildSearchIndex(

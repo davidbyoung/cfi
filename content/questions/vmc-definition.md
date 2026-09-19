@@ -6,16 +6,16 @@ tags:
 
 ### Question
 
-What is Vmc?
+What is V<sub>MC</sub>?
 
 ### Answer
 
-Vmc is the calibrated airspeed at which, when the critical engine is suddenly made inoperative, it is still possible to maintain control of the airplane with that engine inoperative and then maintain straight flight at the same speed with a bank angle of not more than 5°.
+V<sub>MC</sub> is the calibrated airspeed at which, when the critical engine is suddenly made inoperative, it is still possible to maintain control of the airplane with that engine inoperative and then maintain straight flight at the same speed with a bank angle of not more than 5°.
 
 Two things students routinely miss:
 
-- It's about **directional control**, not performance. Being above Vmc says nothing about whether the airplane will climb.
-- The red line is one number determined under one specific set of certification conditions. Actual Vmc on any given day is usually lower, but under the wrong conditions it can be **higher** than the mark on the dial.
+- It's about **directional control**, not performance. Being above V<sub>MC</sub> says nothing about whether the airplane will climb.
+- The red line is one number determined under one specific set of certification conditions. Actual V<sub>MC</sub> on any given day is usually lower, but under the wrong conditions it can be **higher** than the mark on the dial.
 
 ### Sources
 

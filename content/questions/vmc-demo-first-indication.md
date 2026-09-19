@@ -16,9 +16,9 @@ The first indication of any of three things:
 - **Stall warning** - Horn or light
 - **Aerodynamic buffet**
 
-Whichever comes first is your cue. You are not trying to find the "real" Vmc, and you never continue past the first indication to see what happens.
+Whichever comes first is your cue. You are not trying to find the "real" V<sub>MC</sub>, and you never continue past the first indication to see what happens.
 
-At altitude in a normally aspirated twin, the stall warning or buffet very often arrives **before** the loss of directional control, because Vmc has fallen below the stall speed. Recognizing that is part of the lesson.
+At altitude in a normally aspirated twin, the stall warning or buffet very often arrives **before** the loss of directional control, because V<sub>MC</sub> has fallen below the stall speed. Recognizing that is part of the lesson.
 
 ### Sources
 

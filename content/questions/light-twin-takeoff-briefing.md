@@ -14,7 +14,7 @@ What goes into a light twin takeoff briefing?
 The point is to make every decision **before** you need it. A workable structure:
 
 - **Runway and performance** - Runway length available, accelerate-stop distance if your AFM publishes it, and whether single-engine climb is positive at today's weight, altitude, and temperature.
-- **Speeds** - Rotation speed, Vmc (red line), Vyse (blue line), Vxse if obstacles matter.
+- **Speeds** - Rotation speed, V<sub>MC</sub> (red line), V<sub>YSE</sub> (blue line), V<sub>XSE</sub> if obstacles matter.
 - **The decision point** - The specific condition that separates abort from continue. For example: any failure **on the runway**, abort; after liftoff with runway remaining and gear down, **land**; after liftoff, clean, and climbing at blue line, **continue**.
 - **The plan if you continue** - Initial heading, altitude, obstacles or terrain, which airport you'll return to.
 - **The plan if you can't climb** - Where you'll put it.

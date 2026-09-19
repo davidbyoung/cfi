@@ -13,7 +13,7 @@ What is the critical engine?
 **The engine whose failure would most adversely affect the performance or handling qualities of the airplane.**
 
 - In a conventional twin with both propellers turning clockwise as seen from the cockpit, the critical engine is the **left** one.
-- "Critical" is about the **remaining** engine's ability to yaw the airplane. Losing the left engine leaves the right engine producing the larger yawing moment, so more rudder is needed and Vmc is higher.
+- "Critical" is about the **remaining** engine's ability to yaw the airplane. Losing the left engine leaves the right engine producing the larger yawing moment, so more rudder is needed and V<sub>MC</sub> is higher.
 - If the airplane has **counter-rotating** propellers, there is no critical engine.
 
 ### Sources

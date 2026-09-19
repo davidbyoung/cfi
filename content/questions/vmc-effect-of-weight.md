@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Does a heavier airplane have a higher or lower Vmc?
+Does a heavier airplane have a higher or lower V<sub>MC</sub>?
 
 ### Answer
 
@@ -14,9 +14,9 @@ Does a heavier airplane have a higher or lower Vmc?
 
 - When you bank into the operating engine, the horizontal component of lift is what helps the rudder fight the yaw.
 - At a given bank angle, a **heavier** airplane is producing more total lift, so that horizontal component is **larger** and does more of the work.
-- More help from the lift vector means you need less help from airflow over the rudder, so Vmc goes down.
+- More help from the lift vector means you need less help from airflow over the rudder, so V<sub>MC</sub> goes down.
 
-That's why certification specifies the most unfavorable weight. Be careful not to confuse this with performance: the heavier airplane has a lower Vmc but worse single-engine climb.
+That's why certification specifies the most unfavorable weight. Be careful not to confuse this with performance: the heavier airplane has a lower V<sub>MC</sub> but worse single-engine climb.
 
 ### Sources
 

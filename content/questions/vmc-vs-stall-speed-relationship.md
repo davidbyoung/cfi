@@ -6,16 +6,16 @@ tags:
 
 ### Question
 
-How do Vmc and stall speed relate, and which situation is the dangerous one?
+How do V<sub>MC</sub> and stall speed relate, and which situation is the dangerous one?
 
 ### Answer
 
 Which one comes first determines what the airplane does when you get slow with an engine out.
 
-- If **Vs is reached first** (Vmc is below the stall), the airplane reaches the stall with directional control intact. Better than the alternative, but **not an ordinary stall** - stalling with asymmetric thrust is the classic spin entry. Recover by reducing power on the operating engine to cut the asymmetry and lowering the angle of attack at the first indication.
-- If **Vmc is reached first** (Vmc is above the stall), you lose directional control while the wings are still flying. The airplane yaws and rolls toward the dead engine, and at low altitude that is unrecoverable.
+- If **V<sub>S</sub> is reached first** (V<sub>MC</sub> is below the stall), the airplane reaches the stall with directional control intact. Better than the alternative, but **not an ordinary stall** - stalling with asymmetric thrust is the classic spin entry. Recover by reducing power on the operating engine to cut the asymmetry and lowering the angle of attack at the first indication.
+- If **V<sub>MC</sub> is reached first** (V<sub>MC</sub> is above the stall), you lose directional control while the wings are still flying. The airplane yaws and rolls toward the dead engine, and at low altitude that is unrecoverable.
 
-The second case is the one red line exists for, and it's why red line matters more than the stall strip in a twin. In a **normally aspirated** twin, Vmc falls with altitude while indicated stall speed doesn't, so the relationship flips somewhere in the climb.
+The second case is the one red line exists for, and it's why red line matters more than the stall strip in a twin. In a **normally aspirated** twin, V<sub>MC</sub> falls with altitude while indicated stall speed doesn't, so the relationship flips somewhere in the climb.
 
 That flip is why the demonstration is flown the way it is, not what it sets out to show. It's a **controllability** exercise, and because the stall may arrive first at demo altitude, the ACS has you recover at the first indication of loss of directional control, stall warning, **or** buffet.
 

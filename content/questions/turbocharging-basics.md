@@ -26,7 +26,7 @@ How does turbocharging work, and what do you need to know to operate it?
 
 **In a single**, the payoff is climb rate at altitude, higher cruise TAS, and topping weather or terrain - and the trap is being at oxygen altitudes in an unpressurized airplane.
 
-**In a twin**, you get a much better single-engine ceiling and climb, but **Vmc stays high**: a normally aspirated twin's Vmc falls with altitude as the operating engine loses power, while a turbocharged twin holds full asymmetric thrust to critical altitude, so Vmc can remain **above** stall speed much higher up.
+**In a twin**, you get a much better single-engine ceiling and climb, but **V<sub>MC</sub> stays high**: a normally aspirated twin's V<sub>MC</sub> falls with altitude as the operating engine loses power, while a turbocharged twin holds full asymmetric thrust to critical altitude, so V<sub>MC</sub> can remain **above** stall speed much higher up.
 
 Specific numbers, wastegate type, and cooldown procedure are all AFM-dependent.
 

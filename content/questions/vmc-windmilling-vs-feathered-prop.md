@@ -7,12 +7,12 @@ tags:
 
 ### Question
 
-How does the condition of the failed propeller affect Vmc?
+How does the condition of the failed propeller affect V<sub>MC</sub>?
 
 ### Answer
 
-- A **windmilling** propeller produces a large amount of drag well out on the wing, adding to the yawing moment the rudder must oppose. That **raises Vmc**.
-- A **feathered** propeller has its blades edge-on to the airflow, producing minimal drag, which **lowers Vmc** and substantially improves climb.
+- A **windmilling** propeller produces a large amount of drag well out on the wing, adding to the yawing moment the rudder must oppose. That **raises V<sub>MC</sub>**.
+- A **feathered** propeller has its blades edge-on to the airflow, producing minimal drag, which **lowers V<sub>MC</sub>** and substantially improves climb.
 
 Certification assumes the propeller is in the position it **automatically assumes** when the engine fails - for most training twins, windmilling. That's the conservative case, and it's why feathering promptly is worth so much: it improves both controllability and performance at the same time.
 

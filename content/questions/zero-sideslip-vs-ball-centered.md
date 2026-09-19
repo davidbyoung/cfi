@@ -22,7 +22,7 @@ Why doesn't centering the ball give you zero sideslip, and what are the two wron
 
 #### The two wrong ways
 
-- **Wings level, ball centered** - maximum rudder, maximum drag, higher Vmc. The classic mistake.
+- **Wings level, ball centered** - maximum rudder, maximum drag, higher V<sub>MC</sub>. The classic mistake.
 - **Banked correctly, then ball forced to center with rudder** - reintroduces a slip and leaves you turning instead of holding heading.
 
 Zero sideslip is the narrow middle: **slight bank toward the operating engine, ball slightly displaced toward the operating engine, heading constant.**

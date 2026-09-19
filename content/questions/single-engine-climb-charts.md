@@ -11,7 +11,7 @@ How do you read the single-engine climb chart, and what if the answer is negativ
 
 ### Answer
 
-- Enter with **weight, pressure altitude, and temperature** to get single-engine rate of climb, assuming the critical engine **feathered**, gear and flaps **up**, zero sideslip, and **Vyse**.
+- Enter with **weight, pressure altitude, and temperature** to get single-engine rate of climb, assuming the critical engine **feathered**, gear and flaps **up**, zero sideslip, and **V<sub>YSE</sub>**.
 - A **negative or zero** result is a legitimate answer, not a chart-reading error. A light twin at gross on a hot day at a high field frequently cannot climb on one engine.
 
 If it's negative, your options are to reduce weight, wait for cooler air, or accept that an engine failure after liftoff means a controlled off-airport landing - and brief it that way.

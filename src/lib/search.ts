@@ -72,29 +72,74 @@ export function findMatchRanges(haystack: string, query: string): MatchRange[] {
 // itself (e.g. a URL in an href) — only in the text a reader actually sees.
 const TAG_BOUNDARY = /(<[^>]+>)/;
 
+// `<sub>` is transparent to matching: it sits *inside* a word, so
+// V<sub>YSE</sub> is the single token "VYSE" — which is also how
+// stripHtml() indexes it. Treating it as a segment boundary would both
+// miss the match a search for "VYSE" made, and invent a word boundary that
+// lets "YSE" highlight a card it never matched. Every other tag still
+// separates, so a match is never highlighted across a real word break.
+const TRANSPARENT_TAG = /^<\/?sub>$/i;
+
+const isTag = (segment: string): boolean => segment.startsWith("<");
+const isSeparator = (segment: string): boolean =>
+  isTag(segment) && !TRANSPARENT_TAG.test(segment);
+
 export function highlightHtml(html: string, query: string): string {
   if (!query.trim()) return html;
 
-  return html
-    .split(TAG_BOUNDARY)
-    .map((segment) =>
-      segment.startsWith("<") ? segment : highlightPlainText(segment, query),
-    )
-    .join("");
+  const segments = html.split(TAG_BOUNDARY);
+  const out: string[] = [];
+
+  for (let i = 0; i < segments.length; ) {
+    if (isSeparator(segments[i])) {
+      out.push(segments[i]);
+      i += 1;
+      continue;
+    }
+    // Gather text and transparent tags into one run, so matching sees the
+    // text the reader sees rather than the fragments the markup happens
+    // to leave behind.
+    const run: string[] = [];
+    while (i < segments.length && !isSeparator(segments[i])) {
+      run.push(segments[i]);
+      i += 1;
+    }
+    out.push(highlightRun(run, query));
+  }
+
+  return out.join("");
 }
 
-function highlightPlainText(text: string, query: string): string {
-  const ranges = findMatchRanges(text, query);
-  if (ranges.length === 0) return text;
+// Wraps matches across a run that may be broken up by transparent tags,
+// emitting one <mark> per text part so the surrounding markup stays intact
+// and correctly nested.
+function highlightRun(parts: string[], query: string): string {
+  const ranges = findMatchRanges(
+    parts.filter((p) => !isTag(p)).join(""),
+    query,
+  );
+  if (ranges.length === 0) return parts.join("");
 
   let result = "";
-  let cursor = 0;
-  for (const { start, end } of ranges) {
-    result += text.slice(cursor, start);
-    result += `<mark class="search-highlight">${text.slice(start, end)}</mark>`;
-    cursor = end;
+  let partStart = 0;
+  for (const part of parts) {
+    if (isTag(part)) {
+      result += part;
+      continue;
+    }
+    const partEnd = partStart + part.length;
+    let cursor = partStart;
+    for (const { start, end } of ranges) {
+      if (end <= partStart || start >= partEnd) continue;
+      const from = Math.max(start, partStart);
+      const to = Math.min(end, partEnd);
+      result += part.slice(cursor - partStart, from - partStart);
+      result += `<mark class="search-highlight">${part.slice(from - partStart, to - partStart)}</mark>`;
+      cursor = to;
+    }
+    result += part.slice(cursor - partStart);
+    partStart = partEnd;
   }
-  result += text.slice(cursor);
   return result;
 }
 

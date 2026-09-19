@@ -220,3 +220,47 @@ describe("parseQuestion", () => {
     expect(q.questionHtml).toContain("What?");
   });
 });
+
+describe("subscript support", () => {
+  const render = (body: string) =>
+    parseQuestionContent(
+      makeContent({ body: `### Question\n\nQ?\n\n### Answer\n\n${body}` }),
+      "sub.md",
+      tagMap,
+    ).answerHtml;
+
+  it("renders a bare <sub> tag", () => {
+    expect(render("V<sub>yse</sub> is blue line.")).toContain(
+      "V<sub>yse</sub>",
+    );
+  });
+
+  it("renders <sub> inside other inline markup and tables", () => {
+    expect(render("**V<sub>mc</sub>**")).toContain(
+      "<strong>V<sub>mc</sub></strong>",
+    );
+    expect(render("| S |\n| --- |\n| V<sub>mc</sub> |")).toContain(
+      "<td>V<sub>mc</sub></td>",
+    );
+  });
+
+  it("subscripts nothing automatically", () => {
+    // V24 is a Victor airway and Vyse is a speed; only an explicit tag marks one.
+    const html = render("Airway V24, speed Vyse, decision speed V1.");
+    expect(html).not.toContain("<sub>");
+    expect(html).toContain("Airway V24, speed Vyse, decision speed V1.");
+  });
+
+  it("leaves <sub> literal inside code spans", () => {
+    expect(render("`V<sub>yse</sub>`")).toContain(
+      "<code>V&#x3C;sub>yse&#x3C;/sub></code>",
+    );
+  });
+
+  it("still drops every other raw HTML tag, and an unclosed <sub>", () => {
+    const html = render("Unclosed <sub>tag, and <em>emphasis</em>.");
+    expect(html).not.toContain("<sub>");
+    expect(html).not.toContain("<em>");
+    expect(html).toContain("Unclosed tag, and emphasis.");
+  });
+});

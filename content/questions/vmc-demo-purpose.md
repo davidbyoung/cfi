@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What is the purpose of a Vmc demonstration?
+What is the purpose of a V<sub>MC</sub> demonstration?
 
 ### Answer
 
@@ -14,7 +14,7 @@ To let you **recognize** the onset of loss of directional control with an engine
 
 - It is a **demonstration of a flight characteristic**, not a maneuver you would ever perform operationally.
 - It teaches the cues - the rudder running out of travel, the airplane starting to yaw despite full rudder, the buffet or stall warning.
-- It also shows, concretely, that Vmc is not a fixed number: the speed at which you lose control in the demo will usually be well below red line, and at altitude the stall may arrive first.
+- It also shows, concretely, that V<sub>MC</sub> is not a fixed number: the speed at which you lose control in the demo will usually be well below red line, and at altitude the stall may arrive first.
 
 It's Task X.B in both the [Private](https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf) and [Commercial](https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf) ACS.
 
