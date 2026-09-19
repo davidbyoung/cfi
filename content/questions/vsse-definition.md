@@ -6,12 +6,12 @@ tags:
 
 ### Question
 
-What is Vsse, and what is it for?
+What is V<sub>SSE</sub>, and what is it for?
 
 ### Answer
 
-- **Vsse** is the safe, intentional one-engine-inoperative speed - the minimum speed at which an instructor or examiner may **intentionally** render an engine inoperative in flight.
-- It exists purely for training safety. It is set comfortably above Vmc so that a deliberately induced failure doesn't put the airplane near loss of directional control.
+- **V<sub>SSE</sub>** is the safe, intentional one-engine-inoperative speed - the minimum speed at which an instructor or examiner may **intentionally** render an engine inoperative in flight.
+- It exists purely for training safety. It is set comfortably above V<sub>MC</sub> so that a deliberately induced failure doesn't put the airplane near loss of directional control.
 - It is published in the AFM but is **not** marked on the airspeed indicator.
 - It says nothing about how the airplane behaves in a real engine failure, which doesn't wait for you to be above any particular speed.
 

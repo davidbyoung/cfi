@@ -7,15 +7,15 @@ tags:
 
 ### Question
 
-After an engine failure, how do you decide between Vyse and Vxse?
+After an engine failure, how do you decide between V<sub>YSE</sub> and V<sub>XSE</sub>?
 
 ### Answer
 
-- **Default to Vyse.** It's the blue line, it's marked, and it gives the best single-engine rate of climb - and, per the AFH, the minimum rate of sink once you are above the single-engine absolute ceiling and climb is off the table.
-- **Use Vxse only when an obstacle is the immediate problem** - rising terrain off the departure end, trees, a tower. Per the ACS, establish Vxse or **Vmc + 5 kt**, whichever is higher.
-- Return to Vyse as soon as the obstacle is behind you.
+- **Default to V<sub>YSE</sub>.** It's the blue line, it's marked, and it gives the best single-engine rate of climb - and, per the AFH, the minimum rate of sink once you are above the single-engine absolute ceiling and climb is off the table.
+- **Use V<sub>XSE</sub> only when an obstacle is the immediate problem** - rising terrain off the departure end, trees, a tower. Per the ACS, establish V<sub>XSE</sub> or **V<sub>MC</sub> + 5 kt**, whichever is higher.
+- Return to V<sub>YSE</sub> as soon as the obstacle is behind you.
 
-The tradeoff: Vxse is slower, which means less margin above Vmc and more time spent in the region where a mishandled control input turns into loss of control.
+The tradeoff: V<sub>XSE</sub> is slower, which means less margin above V<sub>MC</sub> and more time spent in the region where a mishandled control input turns into loss of control.
 
 ### Sources
 

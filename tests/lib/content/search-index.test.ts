@@ -109,4 +109,26 @@ describe("buildSearchIndex", () => {
     expect(index[0].id).toBe("q1");
     expect(index[1].id).toBe("q2");
   });
+
+  it("keeps a subscripted V-speed as one searchable token", () => {
+    const index = buildSearchIndex(
+      [
+        makeQuestion({
+          answerHtml:
+            "<p>Hold <strong>V<sub>yse</sub></strong> until short final.</p>",
+        }),
+      ],
+      TAG_MAP,
+    );
+    // Not "V yse" — searching for the speed has to match.
+    expect(index[0].answerText).toBe("Hold Vyse until short final.");
+  });
+
+  it("still separates tokens split by a block-level tag", () => {
+    const index = buildSearchIndex(
+      [makeQuestion({ answerHtml: "<p>one</p><p>two</p>" })],
+      TAG_MAP,
+    );
+    expect(index[0].answerText).toBe("one two");
+  });
 });

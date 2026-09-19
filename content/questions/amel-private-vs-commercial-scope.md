@@ -14,13 +14,13 @@ What actually differs between a private AMEL add-on and a commercial AMEL add-on
 Less than most people expect. The **Tasks are identical**. Both the [Private ACS](https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf) and the [Commercial ACS](https://www.faa.gov/training_testing/testing/acs/commercial_airplane_acs_7.pdf) contain Area of Operation X, Multiengine Operations, with the same four Tasks:
 
 - A - Maneuvering with One Engine Inoperative
-- B - Vmc Demonstration
+- B - V<sub>MC</sub> Demonstration
 - C - One Engine Inoperative (Simulated), solely by reference to instruments, in straight-and-level flight and turns
 - D - Instrument Approach and Landing with an Inoperative Engine (Simulated), by reference to instruments
 
-**Tasks C and D are conditional in both ACSs.** They don't apply if you hold no instrument airplane rating, or if you've already shown multiengine instrument proficiency. Skip them and the certificate carries an **"Airplane Multiengine VFR Only"** limitation, removed later by flying those two Tasks in an airplane with a published Vmc.
+**Tasks C and D are conditional in both ACSs.** They don't apply if you hold no instrument airplane rating, or if you've already shown multiengine instrument proficiency. Skip them and the certificate carries an **"Airplane Multiengine VFR Only"** limitation, removed later by flying those two Tasks in an airplane with a published V<sub>MC</sub>.
 
-What changes between the two levels is the tolerance. During the Vmc demo recovery you must maintain Vsse/Vyse:
+What changes between the two levels is the tolerance. During the V<sub>MC</sub> demo recovery you must maintain V<sub>SSE</sub>/V<sub>YSE</sub>:
 
 - Private - **+10/-5 kt**
 - Commercial - **±5 kt**

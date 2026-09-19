@@ -13,11 +13,11 @@ Why does CG matter more in a twin than in a single?
 
 Because in a twin the CG position directly affects your **control authority** in an engine-out situation, not just handling qualities.
 
-- The rudder's yawing moment is force times the arm from the **CG** to the rudder. An aft CG shortens that arm, so the same deflection produces less corrective moment, and **Vmc rises**.
-- Certification determines Vmc at the **most unfavorable (aft) CG**, so a normally loaded airplane usually has margin - but a heavy aft load erodes it.
+- The rudder's yawing moment is force times the arm from the **CG** to the rudder. An aft CG shortens that arm, so the same deflection produces less corrective moment, and **V<sub>MC</sub> rises**.
+- Certification determines V<sub>MC</sub> at the **most unfavorable (aft) CG**, so a normally loaded airplane usually has margin - but a heavy aft load erodes it.
 - An aft CG also reduces longitudinal stability and raises the risk of a stall at the worst moment.
 
-Practical consequence: on a flight where single-engine performance is already marginal, loading forward buys you both a lower Vmc and better stall behavior.
+Practical consequence: on a flight where single-engine performance is already marginal, loading forward buys you both a lower V<sub>MC</sub> and better stall behavior.
 
 ### Sources
 

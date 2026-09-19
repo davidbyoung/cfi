@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-Is the Vmc demonstration required for a private AMEL add-on, or only commercial?
+Is the V<sub>MC</sub> demonstration required for a private AMEL add-on, or only commercial?
 
 ### Answer
 
@@ -14,8 +14,8 @@ Both. It is Task X.B in the [Private ACS](https://www.faa.gov/training_testing/t
 
 The only difference is the airspeed tolerance during recovery:
 
-- Private - maintain Vsse/Vyse **+10/-5 kt**
-- Commercial - maintain Vsse/Vyse **±5 kt**
+- Private - maintain V<sub>SSE</sub>/V<sub>YSE</sub> **+10/-5 kt**
+- Commercial - maintain V<sub>SSE</sub>/V<sub>YSE</sub> **±5 kt**
 
 Both require recovery within **20° of the entry heading**, and both require recovery at the first indication of loss of directional control, stall warning, or buffet.
 

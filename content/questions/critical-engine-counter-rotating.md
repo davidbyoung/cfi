@@ -14,7 +14,7 @@ What changes on an airplane with counter-rotating propellers?
 - Both engines then produce the **same** yawing moment when the other fails, so **there is no critical engine**. A Seminole, a Duchess, and a Seneca are common examples.
 - With **both** engines running, torque and spiraling slipstream effects also cancel between them.
 
-Two things not to over-claim: it does **not** mean the airplane has no Vmc, and it does **not** mean an engine failure is benign. You still get a large yawing moment, still need rudder and bank, and still fly the full engine-failure flow. Nor do torque, P-factor, and slipstream disappear once an engine quits - the **operating** engine still produces all three. Counter-rotation equalizes the two failure cases; it doesn't remove the effects. It just means it doesn't matter which one quits.
+Two things not to over-claim: it does **not** mean the airplane has no V<sub>MC</sub>, and it does **not** mean an engine failure is benign. You still get a large yawing moment, still need rudder and bank, and still fly the full engine-failure flow. Nor do torque, P-factor, and slipstream disappear once an engine quits - the **operating** engine still produces all three. Counter-rotation equalizes the two failure cases; it doesn't remove the effects. It just means it doesn't matter which one quits.
 
 ### Sources
 

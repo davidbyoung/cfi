@@ -10,6 +10,7 @@ import rehypeStringify from "rehype-stringify";
 import { z } from "zod";
 import type { Plugin } from "unified";
 import type { Root as HastRoot, Element, Node } from "hast";
+import type { Root as MdastRoot, RootContent } from "mdast";
 import { KEBAB } from "./kebab";
 import type { TagMap, Question } from "./types";
 
@@ -89,6 +90,50 @@ const addTargetBlank: Plugin<[{ enabled: boolean }], HastRoot> =
     });
   };
 
+// Markdown is otherwise HTML-free: `remark-rehype` drops raw HTML, and we keep
+// it that way. The single exception is `<sub>`, so V-speeds can be written the
+// way the FAA prints them (V<sub>yse</sub>). Nothing is subscripted
+// automatically — an author opts in per occurrence — so "V24" (a Victor airway)
+// and "Vyse" (a speed) stay distinguishable. Only the bare tag is recognized;
+// any other raw HTML, including `<sub class="...">`, still drops.
+const SUB_OPEN = /^<sub>$/i;
+const SUB_CLOSE = /^<\/sub>$/i;
+
+function wrapSubNodes(children: RootContent[]): RootContent[] {
+  const out: RootContent[] = [];
+  for (let i = 0; i < children.length; i++) {
+    const node = children[i];
+    if (node.type === "html" && SUB_OPEN.test(node.value)) {
+      const close = children.findIndex(
+        (n, j) => j > i && n.type === "html" && SUB_CLOSE.test(n.value),
+      );
+      // An unclosed `<sub>` is left alone, which means it drops as before.
+      if (close !== -1) {
+        out.push({
+          type: "paragraph",
+          data: { hName: "sub" },
+          children: wrapSubNodes(
+            children.slice(i + 1, close),
+          ) as RootContent[] as never,
+        } as RootContent);
+        i = close;
+        continue;
+      }
+    }
+    if ("children" in node && Array.isArray(node.children)) {
+      (node as { children: RootContent[] }).children = wrapSubNodes(
+        node.children as RootContent[],
+      );
+    }
+    out.push(node);
+  }
+  return out;
+}
+
+const remarkSubscript: Plugin<[], MdastRoot> = () => (tree) => {
+  tree.children = wrapSubNodes(tree.children as RootContent[]) as never;
+};
+
 // `addTargetBlank` applies to Question, Sources, and Supplements — external
 // links in any of those open in a new tab. Answer and Instructor notes don't
 // currently carry external links, so it's left off there.
@@ -99,6 +144,7 @@ function markdownToHtml(
   const file = unified()
     .use(remarkParse)
     .use(remarkGfm)
+    .use(remarkSubscript)
     .use(remarkRehype)
     .use(rewriteImages)
     .use(wrapTables)

@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-How do you recover from the Vmc demonstration?
+How do you recover from the V<sub>MC</sub> demonstration?
 
 ### Answer
 
@@ -16,12 +16,12 @@ How do you recover from the Vmc demonstration?
 - **Decrease the angle of attack** as necessary to regain airspeed and directional control
 - **Do not add power on the simulated failed engine**
 
-Then recover to Vsse/Vyse as appropriate and advance power smoothly.
+Then recover to V<sub>SSE</sub>/V<sub>YSE</sub> as appropriate and advance power smoothly.
 
 ACS standards:
 
 - Recover within **20° of the entry heading**
-- Maintain Vsse/Vyse during recovery within **±5 kt** (commercial) or **+10/-5 kt** (private)
+- Maintain V<sub>SSE</sub>/V<sub>YSE</sub> during recovery within **±5 kt** (commercial) or **+10/-5 kt** (private)
 
 The instinct to fix a yaw with more power on the good engine is exactly backwards here - it makes the yaw worse. Power comes **off**.
 

@@ -6,17 +6,17 @@ tags:
 
 ### Question
 
-What does center of gravity do to Vmc?
+What does center of gravity do to V<sub>MC</sub>?
 
 ### Answer
 
-**An aft CG raises Vmc**, which is why certification uses the most unfavorable (aft) CG.
+**An aft CG raises V<sub>MC</sub>**, which is why certification uses the most unfavorable (aft) CG.
 
 - The rudder generates a yawing moment equal to force times arm, and that arm is the distance from the CG to the rudder.
 - Moving the CG aft **shortens the arm**, so the same rudder deflection produces less corrective yawing moment.
 - With less authority available to oppose the asymmetric thrust, you need more airflow over the rudder to do the job - a higher speed.
 
-A forward CG has the opposite effect and lowers Vmc. It's one of the few cases where loading the airplane forward is a controllability benefit, not just a stability one.
+A forward CG has the opposite effect and lowers V<sub>MC</sub>. It's one of the few cases where loading the airplane forward is a controllability benefit, not just a stability one.
 
 ### Sources
 

@@ -10,7 +10,7 @@ What is the single-engine service ceiling, and why do you care about it before t
 
 ### Answer
 
-- The density altitude at which the airplane, with the **critical engine inoperative and its propeller feathered**, can still climb at **50 fpm** at Vyse.
+- The density altitude at which the airplane, with the **critical engine inoperative and its propeller feathered**, can still climb at **50 fpm** at V<sub>YSE</sub>.
 - It is far lower than the all-engines service ceiling - often only a few thousand feet, and on a hot day at a high field it can be **below the terrain around you**.
 - This is the number that answers the real question after an engine failure: can I climb, hold altitude, or only slow my descent?
 - It's also why a drift-down plan matters - but get the trigger right. Between this altitude and the single-engine **absolute** ceiling the airplane still climbs, just at less than 50 fpm. Only **above the absolute ceiling** does a failure mean losing altitude. Plan on the service ceiling anyway: the AFH cautions that engine and propeller wear, turbulence, and pilot technique mean the airplane **may not hold altitude even at the published single-engine ceiling**.

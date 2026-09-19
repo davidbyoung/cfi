@@ -14,7 +14,7 @@ How does a hot, high day change your thinking in a twin?
 It moves both problems in dangerous directions at once:
 
 - **Performance gets worse.** Single-engine climb drops sharply and the single-engine service ceiling falls, often below the surrounding terrain. You may have no positive single-engine climb at all.
-- **Vmc gets lower** in a normally aspirated twin, which sounds helpful but means Vmc and the stall speed converge - so the failure mode shifts from a controllability problem toward a stall/spin problem.
+- **V<sub>MC</sub> gets lower** in a normally aspirated twin, which sounds helpful but means V<sub>MC</sub> and the stall speed converge - so the failure mode shifts from a controllability problem toward a stall/spin problem.
 
 The result is a takeoff where an engine failure after liftoff may simply not be survivable as a climb-out, and where the correct plan is to treat the twin like a single: land more or less straight ahead.
 

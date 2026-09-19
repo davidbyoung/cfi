@@ -10,7 +10,7 @@ An engine fails during the climb at a safe altitude. Walk me through it.
 
 ### Answer
 
-- **Pitch for Vyse** immediately - the airplane will decelerate quickly with the yaw and drag.
+- **Pitch for V<sub>YSE</sub>** immediately - the airplane will decelerate quickly with the yaw and drag.
 - **Rudder** to stop the yaw, **bank into the operating engine** for zero sideslip.
 - **Clean up**: mixtures, props, throttles forward; flaps up; gear up; cowl flaps as needed.
 - **Identify, verify, feather** the failed engine.

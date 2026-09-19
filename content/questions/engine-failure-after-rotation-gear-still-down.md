@@ -13,7 +13,7 @@ Why does the gear position drive the decision after an engine failure on takeoff
 
 - Gear down is a large drag penalty at the moment you have the least surplus power, and it is usually enough by itself to remove any single-engine climb.
 - Gear down also signals that you are still in the phase where **landing is a realistic option** - the airplane is configured for it and you are close to the runway.
-- Once the gear is up and you're climbing at Vyse, you have committed to flying the airplane somewhere, and the problem becomes managing the pattern rather than stopping.
+- Once the gear is up and you're climbing at V<sub>YSE</sub>, you have committed to flying the airplane somewhere, and the problem becomes managing the pattern rather than stopping.
 
 A widely used rule of thumb: if the gear is still down and there is runway ahead, **land**. It's a reasonable rule precisely because it removes the hesitation that kills people.
 

@@ -15,7 +15,7 @@ What's different about weight and balance in a multiengine airplane?
 - **Fuel burn moves the CG** measurably, so you check both takeoff and landing CG, not just takeoff.
 - Useful load is often less generous than the airplane's size suggests. **Full fuel and full seats is frequently not possible.**
 - Zero fuel weight may be a published limit, which singles rarely have.
-- **CG position changes Vmc**, not just stability and elevator authority. An aft CG shortens the rudder arm and raises Vmc, so how you load the airplane sets your controllability margin with an engine out.
+- **CG position changes V<sub>MC</sub>**, not just stability and elevator authority. An aft CG shortens the rudder arm and raises V<sub>MC</sub>, so how you load the airplane sets your controllability margin with an engine out.
 
 ### Sources
 

@@ -7,15 +7,15 @@ tags:
 
 ### Question
 
-How does bank angle affect Vmc, and how much does it matter?
+How does bank angle affect V<sub>MC</sub>, and how much does it matter?
 
 ### Answer
 
 It is the **largest single lever you have**, and the only one you control directly in the moment.
 
 - Banking toward the operating engine tilts the lift vector, and its horizontal component helps the rudder oppose the yaw from asymmetric thrust.
-- Certification allows a bank of **not more than 5°**. Flying **wings level instead of banked raises Vmc dramatically** - the AFH says Vmc may increase **more than 3 knots for each degree** of bank reduction between 5° and wings level, which is why it also says loss of directional control can come almost 20 knots above the published number with the wings held level.
-- Banking beyond about 5° keeps lowering Vmc but degrades climb performance and moves you away from zero sideslip, so it isn't free.
+- Certification allows a bank of **not more than 5°**. Flying **wings level instead of banked raises V<sub>MC</sub> dramatically** - the AFH says V<sub>MC</sub> may increase **more than 3 knots for each degree** of bank reduction between 5° and wings level, which is why it also says loss of directional control can come almost 20 knots above the published number with the wings held level.
+- Banking beyond about 5° keeps lowering V<sub>MC</sub> but degrades climb performance and moves you away from zero sideslip, so it isn't free.
 
 This is why "bank into the good engine" is the reflex being trained, not an optional refinement.
 

@@ -6,11 +6,11 @@ tags:
 
 ### Question
 
-What happens to Vmc as density altitude increases?
+What happens to V<sub>MC</sub> as density altitude increases?
 
 ### Answer
 
-**Vmc decreases** with altitude in a normally aspirated twin.
+**V<sub>MC</sub> decreases** with altitude in a normally aspirated twin.
 
 - The operating engine loses power as density altitude rises, so the asymmetric thrust producing the yaw gets weaker.
 - Less yaw to oppose means less rudder authority required, which means a lower speed will do.
@@ -18,7 +18,7 @@ What happens to Vmc as density altitude increases?
 Two important qualifiers:
 
 - **Indicated stall speed does not change** with altitude, so the gap between the two closes and eventually reverses.
-- A **turbocharged** twin holds full rated power up to its critical altitude, so its Vmc may stay high well into the climb - and can remain above the stall speed where a normally aspirated twin's would not.
+- A **turbocharged** twin holds full rated power up to its critical altitude, so its V<sub>MC</sub> may stay high well into the climb - and can remain above the stall speed where a normally aspirated twin's would not.
 
 ### Sources
 

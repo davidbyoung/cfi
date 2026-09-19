@@ -17,7 +17,7 @@ What does feathering do, and how does the system work?
 - Pulling the propeller control fully aft dumps governor oil pressure, and the counterweights and spring feather the blade.
 - That design is deliberate: if the engine fails and oil pressure is lost, the propeller moves toward feather rather than toward flat pitch.
 
-It's the highest-value action after an engine failure because it fixes controllability and performance together - it lowers Vmc and removes the single largest drag source.
+It's the highest-value action after an engine failure because it fixes controllability and performance together - it lowers V<sub>MC</sub> and removes the single largest drag source.
 
 ### Sources
 

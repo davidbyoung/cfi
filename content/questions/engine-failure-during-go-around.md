@@ -13,15 +13,15 @@ Why is a go-around with one engine inoperative so dangerous?
 
 It combines every adverse factor at once:
 
-- **Low airspeed**, near or below Vyse and closer to Vmc
+- **Low airspeed**, near or below V<sub>YSE</sub> and closer to V<sub>MC</sub>
 - **Full configuration** - gear down, flaps out, maximum drag
 - **Low altitude**, with no room to trade for speed
 - A **sudden power application** on one side, producing a large yawing moment exactly when control authority is at its weakest
 - Nose-up trim from the approach, encouraging a pitch-up toward the stall
 
-That's a textbook Vmc rollover or a stall/spin entry, and the altitude available makes recovery unlikely.
+That's a textbook V<sub>MC</sub> rollover or a stall/spin entry, and the altitude available makes recovery unlikely.
 
-The mitigation is procedural: with an engine out, treat the approach as **committed to land**. Configure late, stay at Vyse until landing is assured, and don't put yourself in a position where a go-around is the only remaining option.
+The mitigation is procedural: with an engine out, treat the approach as **committed to land**. Configure late, stay at V<sub>YSE</sub> until landing is assured, and don't put yourself in a position where a go-around is the only remaining option.
 
 ### Sources
 
