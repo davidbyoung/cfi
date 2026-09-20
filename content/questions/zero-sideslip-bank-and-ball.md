@@ -11,9 +11,9 @@ How do you actually establish zero sideslip, and what do the instruments show?
 
 ### Answer
 
-- Bank approximately **2° to 3°** toward the **operating** engine (published figures vary by airplane, generally up to 5°).
+- Bank approximately **2°** toward the **operating** engine. The precise angle varies by model from **1.5° to 2.5°** - the 5° certification limit is not a zero-sideslip figure and does not establish it.
 - Hold enough rudder toward the operating engine to stop the yaw.
-- The inclinometer ball ends up **roughly half a ball width displaced toward the operating engine** - not centered.
+- The inclinometer ball ends up **one-third to one-half of a ball width displaced toward the operating engine** - not centered.
 
 So the picture is: slight bank into the good engine, ball split toward the good engine, heading steady. A **yaw string** will show you directly whether the fuselage is aligned with the airflow - the AFH recommends one for exactly this - but it won't hand you the bank-and-rudder combination or your airplane's performance optimum. The ball alone certainly won't; the combination is what matters.
 

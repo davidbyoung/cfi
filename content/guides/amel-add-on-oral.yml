@@ -94,7 +94,8 @@ chapters:
       - title: Common Errors
         questions:
           - zero-sideslip-vs-wings-level
-          - zero-sideslip-vs-ball-centered
+          - zero-sideslip-excessive-bank
+          - zero-sideslip-why-ball-off-center
       - title: Control Technique
         questions:
           - oei-rudder-and-trim-technique

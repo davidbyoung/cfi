@@ -16,7 +16,7 @@ Control first, then drag, then diagnosis - the order the AFH says most AFM/POH c
 #### Control
 
 - **Pitch** for **V<sub>YSE</sub>** (blue line)
-- **Rudder** to stop the yaw, **bank ~2-3° into the operating engine** (zero sideslip)
+- **Rudder** to stop the yaw, **bank ~2° into the operating engine** (zero sideslip)
 
 #### Configure / reduce drag
 
