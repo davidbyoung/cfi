@@ -36,6 +36,12 @@ Answers in `content/questions/` are study material for a checkride, not a brief.
 - **A correction replaces the wrong text — it does not append a qualifier.** Rewrite the answer as though it had been right the first time.
 - Split a grab-bag bullet into separate bullets rather than letting one carry three ideas. Bullets scan; paragraphs don't.
 
+### Self-containment
+
+- **Every answer stands alone.** A student meets one question at a time, on a card or in a list. Never send them elsewhere to finish an answer — no "see the X question."
+- **Answer the whole question at the level that question needs.** A summary states a neighboring fact in a clause; the dedicated question derives it. Both are complete; neither is a pointer.
+- **Self-containment beats deduplication.** The same one-line mechanism in two answers is fine. The same full derivation, worked example, or bulleted breakdown in two answers is not — that means either the two questions should be one, or the detail belongs to only one of them.
+
 ### V-speeds and subscripts
 
 - V-speeds are written with a real subscript: `V<sub>YSE</sub>`, not `Vyse`. The pipeline supports a bare `<sub>` tag and nothing else — all other raw HTML still drops, and **nothing is subscripted automatically**, so `V24` (a Victor airway) stays plain while `V<sub>1</sub>` (decision speed) is marked by hand.

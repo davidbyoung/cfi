@@ -24,14 +24,12 @@ Legacy [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf
 - **Rudder pedal force not exceeding 150 lb**, and **no need to reduce power** on the operating engine - (e).
 - No dangerous attitude, and it must be possible to prevent a **heading change of more than 20°** - (e).
 
-Two conditions people recite that **aren't in the rule's text**. Both come from the ACS's configuration for the V<sub>MC</sub> demonstration Task:
+Two conditions people recite that the rule doesn't name explicitly. Both still come from it:
 
-- **Windmilling propeller** - indirect, but not wrong. (b)(5) keeps the propeller controls in the recommended takeoff position, and on a twin without autofeather that leaves the failed propeller windmilling. An airplane certified with autofeather is a different case - know which one you fly.
-- **Cowl flaps set for takeoff** - not in the rule at all.
+- **Windmilling propeller** - (b)(5) keeps the propeller controls in the recommended takeoff position, and on a twin without autofeather that leaves the failed propeller windmilling. An airplane certified with autofeather is a different case - know which one you fly.
+- **Cowl flaps set for takeoff** - the AFH reads the (b)(3) takeoff flap condition as covering wing flaps **and** cowl flaps.
 
 Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
-
-Knowing this list is what lets you reason about every "what happens to V<sub>MC</sub> if..." question, because each item is a variable you can move.
 
 ### Sources
 

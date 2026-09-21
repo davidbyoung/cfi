@@ -11,11 +11,11 @@ What's wrong with flying wings level with the ball centered after an engine fail
 
 ### Answer
 
-It feels correct and it costs you climb.
+Although it feels correct, it worsens your climb rate.
 
-- With wings level and the ball centered, the rudder is doing **all** the work of opposing the yaw, and the airplane ends up **slipping sideways** through the air.
+- With wings level and the ball centered, the rudder is doing **all** the work of opposing the yaw, and the airplane ends up **slipping through the air toward the inoperative engine**.
 - The fuselage is presented at an angle to the relative wind, which adds substantial parasite drag at exactly the moment you have no surplus power.
-- Measured differences are real - on the order of **100 fpm** of climb in a light twin, which can be the entire difference between climbing and not.
+- Zero sideslip is what produces the **best rate of climb** - or the least rate of descent. In a light twin that margin is thin enough that giving up part of it can be the entire difference between climbing and not.
 - It also raises V<sub>MC</sub>, because you have given up the help of the lift vector's horizontal component.
 
 Wings level is the single most common way trained pilots quietly throw away their single-engine performance.
