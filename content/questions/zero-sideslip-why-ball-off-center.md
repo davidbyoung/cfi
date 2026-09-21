@@ -25,8 +25,8 @@ Why is the ball off center when you're flying zero sideslip?
 
 #### Why this contradicts the single
 
-- In a single, the only sideways aerodynamic force available is the one the **sideslip itself** creates (including a **slip**, where the ball is toward the low wing and a **skid**, where the ball is toward the high wing).
-- Any rudder you hold in a single is there to correct that sideslip, so it leaves when the sideslip does. Centering the ball and zeroing the sideslip are the same act, which is why **"step on the ball"** works in either direction.
+- In a single, a **slip** (ball toward the low wing) and a **skid** (ball toward the high wing) are the same thing in opposite directions - both are sideslip, and both show on the ball.
+- What a single doesn't have is a **standing** sideways force. The rudder can certainly make one - a forward slip is exactly that - but it is a force you are choosing to hold, and releasing it removes the force and the sideslip together. Centering the ball and zeroing the sideslip normally coincide, which is why **"step on the ball"** works in either direction.
 - With an engine out, the rudder you hold is opposing a yawing moment from **thrust**, not from the relative wind. It stays there whether or not the fuselage is aligned, and the ball - which only sees the sum of the forces - cannot tell the two sources apart.
 - So "balanced" now has two solutions: let the **air** balance the rudder, which takes a sideslip, or let the **horizontal component of lift** balance it, which does not. Only the second is zero sideslip.
 

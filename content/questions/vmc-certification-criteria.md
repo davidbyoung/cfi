@@ -27,7 +27,7 @@ Legacy [§ 23.149](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf
 Two conditions people recite that the rule doesn't name explicitly. Both still come from it:
 
 - **Windmilling propeller** - (b)(5) keeps the propeller controls in the recommended takeoff position, and on a twin without autofeather that leaves the failed propeller windmilling. An airplane certified with autofeather is a different case - know which one you fly.
-- **Cowl flaps set for takeoff** - the takeoff flap position in (b)(3) covers wing flaps **and** cowl flaps.
+- **Cowl flaps set for takeoff** - the AFH reads the (b)(3) takeoff flap condition as covering wing flaps **and** cowl flaps.
 
 Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
 
