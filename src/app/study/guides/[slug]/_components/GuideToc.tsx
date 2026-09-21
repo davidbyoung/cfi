@@ -1,5 +1,6 @@
 "use client";
 
+import SubscriptText from "@/app/_components/SubscriptText";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 export type TocSection = {
@@ -242,7 +243,7 @@ export default function GuideToc({ chapters }: Props) {
                 <span
                   className={isChapterActive ? "text-foreground" : "text-muted"}
                 >
-                  {chapter.title}
+                  <SubscriptText text={chapter.title} />
                 </span>
               </summary>
               <ul className="mt-0.5 mb-1.5 flex flex-col gap-0.5">
@@ -263,7 +264,7 @@ export default function GuideToc({ chapters }: Props) {
                             : "border-transparent text-muted hover:bg-rule/60 hover:text-foreground"
                         }`}
                       >
-                        {section.title}
+                        <SubscriptText text={section.title} />
                       </a>
                     </li>
                   );

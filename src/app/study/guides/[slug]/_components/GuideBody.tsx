@@ -1,5 +1,6 @@
 "use client";
 
+import SubscriptText from "@/app/_components/SubscriptText";
 import { useId, useMemo, useState } from "react";
 import Link from "next/link";
 import QuestionCard from "@/app/_components/QuestionCard";
@@ -97,7 +98,7 @@ export default function GuideBody({ chapters, tags }: Props) {
                 className="mb-14 scroll-mt-[88px]"
               >
                 <h2 className="mb-6 border-b border-rule pb-2 text-2xl font-semibold tracking-tight">
-                  {chapter.title}
+                  <SubscriptText text={chapter.title} />
                 </h2>
 
                 {chapter.sections.map((section) => (
@@ -107,7 +108,7 @@ export default function GuideBody({ chapters, tags }: Props) {
                     className="mb-8 scroll-mt-[88px]"
                   >
                     <h3 className="mb-4 text-lg font-semibold">
-                      {section.title}
+                      <SubscriptText text={section.title} />
                     </h3>
 
                     <ul>

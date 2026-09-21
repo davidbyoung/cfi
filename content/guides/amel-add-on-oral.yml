@@ -54,14 +54,14 @@ chapters:
         questions:
           - vr-vs-vlof-light-twin
           - why-no-v1-in-a-light-twin
-  - title: Vmc - Certification and Factors
+  - title: V<sub>MC</sub> - Certification and Factors
     sections:
-      - title: How Vmc Is Determined
+      - title: How V<sub>MC</sub> Is Determined
         questions:
           - vmc-certification-criteria
           - vmc-legacy-part-23-vs-23-2135
           - vmc-published-vs-actual
-      - title: Factors That Move Vmc
+      - title: Factors That Move V<sub>MC</sub>
         questions:
           - vmc-effect-of-bank-angle
           - vmc-effect-of-power
@@ -70,7 +70,7 @@ chapters:
           - vmc-effect-of-density-altitude
           - vmc-effect-of-gear-and-flaps
           - vmc-windmilling-vs-feathered-prop
-      - title: Vmc and Stall Speed
+      - title: V<sub>MC</sub> and Stall Speed
         questions:
           - vmc-and-stall-convergence-at-altitude
       - title: Putting It Together
@@ -141,7 +141,7 @@ chapters:
         questions:
           - accelerate-stop-vs-accelerate-go
           - light-twin-takeoff-briefing
-  - title: Vmc Demonstration
+  - title: V<sub>MC</sub> Demonstration
     sections:
       - title: Purpose and Setup
         questions:
