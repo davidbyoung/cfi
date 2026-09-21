@@ -32,7 +32,7 @@ export default function Home() {
   // Server component in a statically exported app: this runs at build time and
   // is baked into the HTML, so the counts and the guide list never need to be
   // maintained by hand.
-  const { questions, guides } = loadContent();
+  const { questions, guides, guideCategories } = loadContent();
 
   return (
     <>
@@ -79,27 +79,36 @@ export default function Home() {
             checks.
           </p>
 
-          {guides.length > 0 && (
-            <ul className="mt-5 max-w-prose border-y border-rule">
-              {guides.map((guide) => (
-                <li
-                  key={guide.slug}
-                  className="border-b border-rule last:border-b-0"
-                >
-                  <Link
-                    href={`/study/guides/${guide.slug}`}
-                    className="-mx-2 flex items-baseline justify-between gap-4 rounded px-2 py-3 hover:bg-rule/40"
-                  >
-                    <span className="font-medium underline decoration-1 underline-offset-2">
-                      <SubscriptText text={guide.title} />
-                    </span>
-                    <span className="shrink-0 text-sm text-muted">
-                      {guideQuestionCount(guide)} questions
-                    </span>
-                  </Link>
-                </li>
+          {guideCategories.length > 0 && (
+            <div className="mt-5 max-w-prose space-y-5">
+              {guideCategories.map((category) => (
+                <div key={category.title}>
+                  <h3 className="mb-2 text-xs font-bold tracking-wide text-muted uppercase">
+                    {category.title}
+                  </h3>
+                  <ul className="border-y border-rule">
+                    {category.guides.map((guide) => (
+                      <li
+                        key={guide.slug}
+                        className="border-b border-rule last:border-b-0"
+                      >
+                        <Link
+                          href={`/study/guides/${guide.slug}`}
+                          className="-mx-2 flex items-baseline justify-between gap-4 rounded px-2 py-3 hover:bg-rule/40"
+                        >
+                          <span className="font-medium underline decoration-1 underline-offset-2">
+                            <SubscriptText text={guide.title} />
+                          </span>
+                          <span className="shrink-0 text-sm text-muted">
+                            {guideQuestionCount(guide)} questions
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           )}
 
           <Link
