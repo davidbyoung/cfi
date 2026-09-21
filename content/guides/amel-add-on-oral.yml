@@ -64,6 +64,7 @@ chapters:
       - title: Factors That Move Vmc
         questions:
           - vmc-effect-of-bank-angle
+          - vmc-effect-of-power
           - vmc-effect-of-cg
           - vmc-effect-of-weight
           - vmc-effect-of-density-altitude
