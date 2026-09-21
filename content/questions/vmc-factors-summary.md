@@ -12,7 +12,7 @@ Summarize the factors that affect V<sub>MC</sub> and which direction each one mo
 
 **SMACFUM** is the list of conditions your airplane's published V<sub>MC</sub> was measured under. Every letter but **U** is set to make V<sub>MC</sub> as high as possible - which is why the red line is a worst case rather than a number you will see in normal flight.
 
-|       | Condition (as certified)                  | V<sub>MC</sub> | Why                                                                                                                                                                           |
+|       | Condition                                 | V<sub>MC</sub> | Why                                                                                                                                                                           |
 | ----- | ----------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **S** | Sea level / low density altitude          | **Raises**     | Most power available, so the most asymmetric thrust                                                                                                                           |
 | **M** | Max takeoff power on the operating engine | **Raises**     | More thrust, more yawing moment                                                                                                                                               |

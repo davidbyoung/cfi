@@ -31,8 +31,6 @@ Two conditions people recite that the rule doesn't name explicitly. Both still c
 
 Paragraph (c) adds the landing configuration, but exempts reciprocating airplanes of 6,000 lb or less, which is every piston trainer.
 
-Knowing this list is what lets you reason about every "what happens to V<sub>MC</sub> if..." question, because each item is a variable you can move.
-
 ### Sources
 
 - [14 CFR § 23.149 (2014 edition) - Minimum control speed](https://www.govinfo.gov/content/pkg/CFR-2014-title14-vol1/pdf/CFR-2014-title14-vol1-sec23-149.pdf)
