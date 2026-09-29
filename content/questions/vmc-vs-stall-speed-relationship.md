@@ -17,8 +17,6 @@ Which one comes first determines what the airplane does when you get slow with a
 
 The second case is the one red line exists for, and it's why red line matters more than the stall strip in a twin. In a **normally aspirated** twin, V<sub>MC</sub> falls with altitude while indicated stall speed doesn't, so the relationship flips somewhere in the climb.
 
-That flip is why the demonstration is flown the way it is, not what it sets out to show. It's a **controllability** exercise, and because the stall may arrive first at demo altitude, the ACS has you recover at the first indication of loss of directional control, stall warning, **or** buffet.
-
 ### Sources
 
 - [FAA Airplane Flying Handbook, Chapter 13 - Transition to Multiengine Airplanes](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf)
