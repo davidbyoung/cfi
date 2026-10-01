@@ -159,6 +159,9 @@ chapters:
           - vmc-demo-private-vs-commercial
   - title: Systems
     sections:
+      - title: Engine Cooling
+        questions:
+          - multiengine-cowl-flap-management
       - title: Propellers
         questions:
           - multiengine-constant-speed-prop-operation

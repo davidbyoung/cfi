@@ -6,7 +6,7 @@ tags:
 
 ### Question
 
-What are you looking for as the point to recover?
+During a V<sub>MC</sub> demonstration, what are you looking for as the point to recover?
 
 ### Answer
 

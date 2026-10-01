@@ -152,6 +152,8 @@
   label: MCA
 - id: mea
   label: MEA
+- id: mei
+  label: MEI
 - id: metars
   label: METARs
 - id: minimum-altitudes

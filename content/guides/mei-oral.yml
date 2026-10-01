@@ -1,0 +1,137 @@
+title: Multiengine Instructor (MEI) Oral Exam
+slug: mei-oral
+chapters:
+  - title: Instructor Privileges and Limitations
+    sections:
+      - title: Becoming and Acting as an MEI
+        questions:
+          - mei-requirements-overview
+          - mei-five-hours-make-and-model
+          - amel-instrument-privileges-carryover
+          - centerline-thrust-limitation
+      - title: The Instructor Standard
+        questions:
+          - mei-demonstrate-and-explain
+          - mei-area-xiii-tasks
+
+  - title: Simulating Engine Failures
+    sections:
+      - title: Choosing the Method
+        questions:
+          - mei-simulating-engine-failure-methods
+          - mei-unannounced-engine-failures
+          - mei-throttle-smoothness-counterweights
+      - title: Zero Thrust
+        questions:
+          - mei-zero-thrust-sequence
+          - mei-caring-for-the-simulated-failed-engine
+          - multiengine-cowl-flap-management
+          - mei-windmilling-vs-zero-thrust-demo
+      - title: Limits on Simulation
+        questions:
+          - mei-simulated-failure-altitude-gates
+
+  - title: Guarding and Intervention
+    sections:
+      - title: Preventing the Irreversible Mistake
+        questions:
+          - mei-guarding-against-the-wrong-control
+          - verify-before-feather
+          - engine-failure-identification-flow
+          - when-not-to-feather
+          - restart-vs-secure-decision
+
+  - title: Teaching Multiengine Aerodynamics
+    sections:
+      - title: The Critical Engine
+        questions:
+          - critical-engine-definition
+          - critical-engine-four-factors
+          - critical-engine-why-the-left
+          - critical-engine-counter-rotating
+      - title: What Moves V<sub>MC</sub>
+        questions:
+          - vmc-definition
+          - vmc-certification-criteria
+          - vmc-published-vs-actual
+          - vmc-effect-of-bank-angle
+          - vmc-effect-of-power
+          - vmc-effect-of-cg
+          - vmc-effect-of-weight
+          - vmc-effect-of-density-altitude
+          - vmc-effect-of-gear-and-flaps
+          - vmc-windmilling-vs-feathered-prop
+          - vmc-and-stall-convergence-at-altitude
+          - vmc-factors-summary
+      - title: Zero Sideslip
+        questions:
+          - zero-sideslip-definition
+          - zero-sideslip-bank-and-ball
+          - zero-sideslip-vs-wings-level
+          - zero-sideslip-excessive-bank
+          - zero-sideslip-why-ball-off-center
+          - oei-rudder-and-trim-technique
+          - oei-control-vs-performance
+
+  - title: The V<sub>MC</sub> Demonstration
+    sections:
+      - title: Purpose and Setup
+        questions:
+          - vmc-demo-purpose
+          - vmc-demo-setup-and-configuration
+          - vmc-demo-entry-altitude
+      - title: Flying and Teaching It
+        questions:
+          - vmc-demo-procedure
+          - vmc-demo-first-indication
+          - vmc-demo-recovery
+          - mei-vmc-demo-instructor-vigilance
+      - title: Hazards and Alternatives
+        questions:
+          - vmc-demo-why-never-to-full-stall
+          - mei-vmc-demo-prohibited-entry
+          - mei-vmc-demo-rudder-limiting
+          - multiengine-spin-considerations
+
+  - title: Teaching OEI Performance
+    sections:
+      - title: What the Airplane Will Actually Do
+        questions:
+          - light-twin-performance-reality
+          - oei-drag-vs-thrust
+          - oei-climb-performance-expectations
+          - oei-drag-source-priority
+          - oei-cleanup-flow
+      - title: Making It Realistic
+        questions:
+          - mei-limiting-manifold-pressure
+          - single-engine-service-ceiling
+          - single-engine-service-ceiling-planning
+          - density-altitude-oei-decision
+
+  - title: Engine Failure by Phase of Flight
+    sections:
+      - title: Takeoff and Initial Climb
+        questions:
+          - engine-failure-before-rotation
+          - engine-failure-after-rotation-below-vyse
+          - engine-failure-after-rotation-gear-still-down
+          - accelerate-stop-vs-accelerate-go
+          - light-twin-takeoff-briefing
+      - title: Climb, Cruise, and Approach
+        questions:
+          - engine-failure-in-climb
+          - engine-failure-in-cruise
+          - engine-failure-on-approach
+          - engine-failure-during-go-around
+          - single-engine-approach-and-landing
+
+  - title: Conducting Training Flights
+    sections:
+      - title: Operations and Loading
+        questions:
+          - mei-touch-and-goes-in-twins
+          - mei-training-flight-ballast
+      - title: On the Practical Test
+        questions:
+          - mei-landing-simulated-feathered-prop
