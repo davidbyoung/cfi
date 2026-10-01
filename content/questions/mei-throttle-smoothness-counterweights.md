@@ -13,7 +13,7 @@ Beyond startling the student, why do simulated engine failures have to be introd
 
 **If the engines have dynamic counterweights**, abrupt throttle reductions damage them, and repeated abuse eventually leads to engine failure.
 
-- High rpm with low manifold pressure, over-boosting, and propeller feathering do the same damage.
+- High rpm with low manifold pressure, over-boosting, and feathering the propeller while the engine is still running can cause the same damage.
 - **Not every engine has them**, and you cannot tell from the engine family. Check your exact model with maintenance or the manufacturer.
 
 The exposure is yours more than the student's. You are the one pulling throttles several times a flight, several flights a week.
