@@ -14,7 +14,7 @@ While the student flies the airplane single-engine, who is looking after the eng
 You are. The instructor cares for the "failed" engine exactly as the student cares for the operative one.
 
 - At a zero-thrust setting, the **cowl flap is normally closed** and the **mixture leaned**.
-- **Clear the engine occasionally.**
+- **Clear the engine occasionally** so the plugs do not foul at a prolonged low power setting.
 - **Avoid a high power application** immediately after a prolonged cool-down at zero thrust.
 
 The reason is that a simulation quietly becomes an emergency if the engine is shock-cooled or loaded up and then does not respond when you need it. The whole premise of simulating with the throttle is that the engine remains available, and that is only true if somebody is tending it.

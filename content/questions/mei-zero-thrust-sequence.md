@@ -12,7 +12,7 @@ Walk me through the zero-thrust sequence when you simulate an engine failure.
 ### Answer
 
 1. **Reduce the throttle smoothly** on the engine you are failing.
-2. The student runs the memory items and **retards the propeller control toward FEATHER**.
+2. The student runs the memory items and **retards the propeller control toward feather**.
 3. **Before it reaches feather**, move the propeller control forward and set the manifold pressure and rpm that produce **zero thrust** in your airplane.
 4. **Say what you did, out loud.** Words to the effect of: "I have the right engine; you have the left. I have set zero thrust and the right engine is simulated feathered."
 

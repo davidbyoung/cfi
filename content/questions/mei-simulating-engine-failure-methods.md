@@ -17,8 +17,6 @@ How do you simulate an engine failure, and does the method change by phase of fl
 - **Smoothly, every time.** Engines with dynamic crankshaft counterweights are damaged by abrupt throttle movement.
 - **Never below V<sub>SSE</sub>.** If no V<sub>SSE</sub> is published, use V<sub>YSE</sub>. Simulating a failure below that speed is a very high and unnecessary training risk.
 
-Read that silence carefully. It is not an endorsement of anything you like. Turning a fuel valve off is the one option that leaves the engine genuinely unavailable while the lines refill, and no FAA source names the fuel selector as a way to simulate a failure. Every method the guidance does name leaves you able to restore power immediately.
-
 ### Sources
 
 - [FAA Airplane Flying Handbook, Chapter 13 - Transition to Multiengine Airplanes](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf)

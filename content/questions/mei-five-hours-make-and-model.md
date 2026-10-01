@@ -10,15 +10,12 @@ You hold a flight instructor certificate with an Airplane Multiengine rating. Ca
 
 ### Answer
 
-**No.** You need at least **5 flight hours of pilot-in-command time in the specific make and model** before you can give training in it.
+**Not for certificate or rating training.** You need at least **5 flight hours of PIC time in the specific make and model** first.
 
 - The requirement is per **make and model**, not per class. Hours in a Seminole do not qualify you to instruct in a Baron.
 - It applies to multiengine airplanes, helicopters, and powered-lifts alike.
-- It binds you personally as an instructor limitation, whatever the operator or the owner is willing to let you fly.
-
-One naming point worth having straight: the instructor rating is **Airplane Multiengine**, with no land or sea distinction. The AMEL and AMES split exists only on the **pilot** certificate, which is where your multiengine rating carries "land."
-
-This is the rule most often discovered late, when an instructor with plenty of twin time is asked to check someone out in an unfamiliar model and cannot legally do it that day. Plan the 5 hours before the student is on the schedule.
+- **The scope is training for a certificate or rating.** A flight review or a routine checkout falls outside this paragraph, though you still need the category and class ratings on both your instructor and pilot certificates.
+- Your MEI permits you to instruct in any multiengine airplane class (land or sea) for which you are rated on your commercial or ATP certificate. The instructor certificate carries "Airplane Multiengine" with no land or sea distinction.
 
 ### Sources
 
