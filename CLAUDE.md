@@ -37,6 +37,11 @@ Answers in `content/questions/` are study material for a checkride, not a brief.
 - Split a grab-bag bullet into separate bullets rather than letting one carry three ideas. Bullets scan; paragraphs don't.
 - **No em dashes.** Use a period, colon, or comma. Spaced hyphens are the house style in answer bodies. This applies to prose anywhere in the repo, including these instruction files.
 
+### Voice
+
+- **Quote the source, don't imitate it.** Match the FAA's facts, not its register. Absorbing the habits of whatever document was open is how this corpus drifts: the em dashes came from these instruction files, "learner" came from the AFH.
+- **"Student," not "learner."** The AFH uses "learner" throughout; this guide does not. Keep the source's word only inside a verbatim quotation.
+
 ### Self-containment
 
 - **Every answer stands alone.** A student meets one question at a time, on a card or in a list. Never send them elsewhere to finish an answer. No "see the X question."
